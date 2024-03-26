@@ -16,7 +16,7 @@
 <p>production volume ratio &#x3D; efficiency ratio x capacity ratio</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph TD</span><br><span class="line">		id1[labour cost] --&gt;id2[general production coost] &amp; id3[general non-production cost];</span><br><span class="line">		id2 ---&gt;id4[basic pay] &amp; id5[O/T premium]</span><br><span class="line">		id3 ---&gt;id4 &amp; id5</span><br><span class="line">		id1 --&gt;id6[specific overtime]</span><br></pre></td></tr></table></figure>
 
-<p>通过上图，了解那些部分是直接费用，那些事是间接费用。</p>
+<p>通过上图，了解那些部分是直接费用，那些事是间接费用。加一个</p>
 ]]></content>
   </entry>
   <entry>
@@ -35,6 +35,12 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2024/03/26/%E6%9C%AA%E5%91%BD%E5%90%8D/</url>
+    <content><![CDATA[<h1 id="below-is-a-pic"><a href="#below-is-a-pic" class="headerlink" title="below is a pic"></a>below is a pic</h1><p><img src="https://cdn.jsdelivr.net/gh/231126/blogpicture@img/img/202403261154444.png"></p>
 ]]></content>
   </entry>
 </search>
