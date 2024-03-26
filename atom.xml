@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>茗泽爸爸的博客</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2024-03-26T07:45:02.317Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Ken</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2024/03/26/%E6%97%A0%E7%BA%BA%E5%B8%83%E4%B8%93%E4%B8%9A%E8%8B%B1%E8%AF%AD%E6%9C%AF%E8%AF%AD1/"/>
+    <id>http://example.com/2024/03/26/%E6%97%A0%E7%BA%BA%E5%B8%83%E4%B8%93%E4%B8%9A%E8%8B%B1%E8%AF%AD%E6%9C%AF%E8%AF%AD1/</id>
+    <published>2024-03-26T05:20:14.635Z</published>
+    <updated>2024-03-26T07:45:02.317Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;聚酯切片：&lt;/p&gt;
+&lt;p&gt;淀粉：&lt;/p&gt;
+&lt;p&gt;丙烯酸胶：&lt;/p&gt;
+&lt;p&gt;玻纤纱：&lt;/p&gt;
+&lt;p&gt;针刺机：&lt;/p&gt;
+&lt;p&gt;涤纶纺粘胎基布：&lt;/p&gt;
+&lt;p&gt;免税通过海关：free of duty through customs&lt;/p&gt;
+&lt;p&gt;钢结构：steel structu</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2024/03/24/hello-world/"/>
+    <id>http://example.com/2024/03/24/hello-world/</id>
+    <published>2024-03-24T15:19:20.557Z</published>
+    <updated>2024-03-24T15:19:20.557Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
