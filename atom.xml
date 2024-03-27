@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-03-26T16:07:22.745Z</updated>
+  <updated>2024-03-27T06:21:27.933Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,43 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2024/03/27/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E6%8A%95%E8%B5%84%E6%B5%81%E7%A8%8B/"/>
+    <id>http://example.com/2024/03/27/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E6%8A%95%E8%B5%84%E6%B5%81%E7%A8%8B/</id>
+    <published>2024-03-27T03:42:24.571Z</published>
+    <updated>2024-03-27T06:21:27.933Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;工业园提供的产品和服务&quot;&gt;&lt;a href=&quot;#工业园提供的产品和服务&quot; class=&quot;headerlink&quot; title=&quot;工业园提供的产品和服务&quot;&gt;&lt;/a&gt;工业园提供的产品和服务&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;工业用地：Modon在沙特全境提供工业用地，满足工业投资</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2024/03/27/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%B7%A5%E5%8E%82%E8%BF%90%E8%A1%8C%E8%AE%B8%E5%8F%AF%E8%AF%81%E7%9A%84%E8%A6%81%E6%B1%82%E5%92%8C%E8%A7%84%E5%AE%9A/"/>
+    <id>http://example.com/2024/03/27/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%B7%A5%E5%8E%82%E8%BF%90%E8%A1%8C%E8%AE%B8%E5%8F%AF%E8%AF%81%E7%9A%84%E8%A6%81%E6%B1%82%E5%92%8C%E8%A7%84%E5%AE%9A/</id>
+    <published>2024-03-27T03:41:12.851Z</published>
+    <updated>2024-03-27T06:29:18.100Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;第一阶段：通过MODON账户提交申请&quot;&gt;&lt;a href=&quot;#第一阶段：通过MODON账户提交申请&quot; class=&quot;headerlink&quot; title=&quot;第一阶段：通过MODON账户提交申请&quot;&gt;&lt;/a&gt;第一阶段：通过MODON账户提交申请&lt;/h1&gt;&lt;h2 id=&quot;申</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>mermaid 流程图练习</title>
