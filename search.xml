@@ -1,133 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>Hello World</title>
-    <url>/2024/03/24/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2024/03/26/%E6%97%A0%E7%BA%BA%E5%B8%83%E4%B8%93%E4%B8%9A%E8%8B%B1%E8%AF%AD%E6%9C%AF%E8%AF%AD1/</url>
-    <content><![CDATA[<p>聚酯切片：</p>
-<p>淀粉：</p>
-<p>丙烯酸胶：</p>
-<p>玻纤纱：</p>
-<p>针刺机：</p>
-<p>涤纶纺粘胎基布：</p>
-<p>免税通过海关：free of duty through customs</p>
-<p>钢结构：steel structure</p>
-<p>钢筋：rebar /ˈriːˌbɑːr/</p>
-<p>电缆：electrical cable</p>
-<p>电子元器件：electron component /ɪˈlektrɑːn/</p>
-<p>进口材料：imported material</p>
-<p>外商独资项目：wholly foreign owned enterprise</p>
-<p>全资子公司：subsidiary of solo investment</p>
-<p>进口材料及设备占投资金额的比例限制是多少？<br>What is the <strong>limit</strong> <strong>on</strong> the proportion of imported materials and equipment <strong>in</strong> the investment amount？</p>
-<p>型钢：structural steel</p>
-<p>圆钢：round steel</p>
-<p>角钢：angle steel</p>
-<p>工型钢：universal beams</p>
-<p>槽型钢：channel steel</p>
-<p>六角钢：hexagonal steel</p>
-<p>扁钢：flat steel</p>
-<p>矩形：rectangle</p>
-<p>无缝管：seamless tube</p>
-<p>备案手续：recordation formalities of relevant documents</p>
-<p>示范合同、标准合同：model contract /ˈmɑːd(ə)l/</p>
-<p>特种作业人员：special appliance operator</p>
-<p>电工：electrician</p>
-<p>焊工：welder</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>mermaid 流程图练习</title>
-    <url>/2024/03/27/%E6%B5%81%E7%A8%8B%E5%9B%BE/</url>
-    <content><![CDATA[<pre class="mermaid">flowchart LR
-   a --> b & c--> d</pre>
-
-]]></content>
-      <tags>
-        <tag>练习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2024/03/27/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E6%8A%95%E8%B5%84%E6%B5%81%E7%A8%8B/</url>
-    <content><![CDATA[<h1 id="工业园提供的产品和服务"><a href="#工业园提供的产品和服务" class="headerlink" title="工业园提供的产品和服务"></a>工业园提供的产品和服务</h1><ol>
-<li>工业用地：Modon在沙特全境提供工业用地，满足工业投资者的需求。</li>
-<li>现成工厂：Modon提供不同面积且服务完备的现成工厂，支持中小企业和男女企业家。</li>
-<li>融资方案：Modon提供多种融资方案，支持投资者的工业发展简化他们获取工业产品的流程。</li>
-</ol>
-<h1 id="申请前"><a href="#申请前" class="headerlink" title="申请前"></a>申请前</h1><h4 id="获得工业产品的条件"><a href="#获得工业产品的条件" class="headerlink" title="获得工业产品的条件"></a>获得工业产品的条件</h4><ol>
-<li>从工商局网站获得的工业活动注册证书。</li>
-<li>通过Shareek申请产品。</li>
-</ol>
-<h4 id="申请产品"><a href="#申请产品" class="headerlink" title="申请产品"></a>申请产品</h4><ol>
-<li>填写申请表格：在表格中附上所需文件。</li>
-<li>面谈：跟投资者进行面谈，讨论合作关系和工业项目的关键活动领域。</li>
-<li>产品预览：拜访工业园总部，预览产品并填写预览表。</li>
-<li>签署合同接受产品：在表格中附上所需文件。</li>
-</ol>
-<h1 id="建设阶段"><a href="#建设阶段" class="headerlink" title="建设阶段"></a>建设阶段</h1><ol>
-<li>建设咨询办公室的许可：通过Modon中的Shareek门户获取报价，研究建设咨询办公室的要求，认可报价后回去同意。可以通过网站获得咨询公司名单。</li>
-<li>图纸审批：通过Shareek门户上的电子服务平台，咨询办公室根据工业园指导和建设要求，认证主规划和安全规划。</li>
-<li>发出建设许可：通过Shareek门户上的电子服务平台，获得在工业园内进行建设作业的许可证书。</li>
-<li>申请用电：通过Shareek门户提交用电申请，沙特电力公司进行作业。</li>
-<li>现场跟进：Modon对在建工厂进行现场检查，确保建设符合Modon的标准和条件。</li>
-<li>发出竣工证明和运行许可：竣工证书旨在确保企业符合Modon的建设标准和条件，此为第一次发出。</li>
-<li>运行许可证：这是企业运行的许可，需要定期更新。</li>
-</ol>
-<h1 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h1><p>在发出竣工证明和运行许可，并且确保企业安全作业以后，工厂可以开始生产制造。</p>
-<h4 id="电子服务"><a href="#电子服务" class="headerlink" title="电子服务"></a>电子服务</h4><p>在开始运行以后，企业可以通过Shareek门户上通过电子服务使用工业园提供的服务：</p>
-<ul>
-<li>合同管理服务</li>
-<li>信件服务</li>
-<li>许可服务</li>
-<li>证书服务</li>
-<li>供应商服务</li>
-<li>工程咨询办公室服务</li>
-<li>票据和投诉</li>
-</ul>
-<h4 id="定期跟踪"><a href="#定期跟踪" class="headerlink" title="定期跟踪"></a>定期跟踪</h4><p>Modon对工厂进行定期检查，确保工厂符合安全规定，并且保护员工安全。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2024/03/27/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%B7%A5%E5%8E%82%E8%BF%90%E8%A1%8C%E8%AE%B8%E5%8F%AF%E8%AF%81%E7%9A%84%E8%A6%81%E6%B1%82%E5%92%8C%E8%A7%84%E5%AE%9A/</url>
-    <content><![CDATA[<h1 id="第一阶段：通过MODON账户提交申请"><a href="#第一阶段：通过MODON账户提交申请" class="headerlink" title="第一阶段：通过MODON账户提交申请"></a>第一阶段：通过MODON账户提交申请</h1><h2 id="申请建筑竣工和运行证书所需文件"><a href="#申请建筑竣工和运行证书所需文件" class="headerlink" title="申请建筑竣工和运行证书所需文件"></a>申请建筑竣工和运行证书所需文件</h2><ul>
-<li>经工业园（MODON）和民防（Civil Defense）认证的设施安全计划。</li>
-<li>消防和安全系统的周期性维护合同。</li>
-<li>由工业园认可的咨询办公室颁发的内部电气连接和接线的安全证书。</li>
-<li>由工业园认可的咨询办公室颁发的绝缘工作完工证书。</li>
-<li>提供消防系统的数量清单。</li>
-<li>环保作业证书。</li>
-<li>工业许可证。</li>
-</ul>
-<h2 id="作业许可证更新所需文件"><a href="#作业许可证更新所需文件" class="headerlink" title="作业许可证更新所需文件"></a>作业许可证更新所需文件</h2><ul>
-<li>经工业园（MODON）和民防（Civil Defense）认证的设施安全计划。</li>
-<li>消防和安全系统的周期性维护合同。</li>
-</ul>
-<h1 id="第二阶段：参观考察"><a href="#第二阶段：参观考察" class="headerlink" title="第二阶段：参观考察"></a>第二阶段：参观考察</h1><h2 id="批准颁发建筑竣工和运行证书或者作业许可证更新和安全标准需要检查的内容"><a href="#批准颁发建筑竣工和运行证书或者作业许可证更新和安全标准需要检查的内容" class="headerlink" title="批准颁发建筑竣工和运行证书或者作业许可证更新和安全标准需要检查的内容"></a>批准颁发建筑竣工和运行证书或者作业许可证更新和安全标准需要检查的内容</h2><ul>
-<li>任命安全员。</li>
-<li>确保消防和安全控制系统的有效性及其与总控制面板的连接。</li>
-<li>消防系统和批准的工厂规划的一致性。</li>
-<li>落实危险化学品和危险气体的储存和运输的安全要求。</li>
-<li>确保设施中生产线、系统和设备的安全。</li>
-<li>没有其他违规问题。</li>
-</ul>
-<h1 id="第三阶段：工厂运行期间的许可证书"><a href="#第三阶段：工厂运行期间的许可证书" class="headerlink" title="第三阶段：工厂运行期间的许可证书"></a>第三阶段：工厂运行期间的许可证书</h1><h2 id="颁发竣工和进场证书"><a href="#颁发竣工和进场证书" class="headerlink" title="颁发竣工和进场证书"></a>颁发竣工和进场证书</h2><p>没有任何问题的工厂发放建筑竣工和进场证书。所有的安全制度和标准已经实施，建筑工程完成证书视为作业许可证。完成建设并且符合要求的新工厂，本证书一次性颁发一年。</p>
-<h2 id="运行许可证更新"><a href="#运行许可证更新" class="headerlink" title="运行许可证更新"></a>运行许可证更新</h2><h3 id="短期：6个月"><a href="#短期：6个月" class="headerlink" title="短期：6个月"></a>短期：6个月</h3><p>本许可颁发给那些些存在大量问题和违规行为，需要较长时间跟其他政府部门和相关机构完成手续，并能够快速更正错误，承诺在规定时间纠正其他问题的企业</p>
-<h3 id="中期：1年"><a href="#中期：1年" class="headerlink" title="中期：1年"></a>中期：1年</h3><p>本许可颁发给那些存在中等风险的违规行为，需要较长时间与其他政府部门和相关机构对接完成相关手续。前提是尽快纠正错误，并承诺在规定时间能纠正问题的企业。</p>
-<h3 id="长期：3年"><a href="#长期：3年" class="headerlink" title="长期：3年"></a>长期：3年</h3><p>三年有效期的许可颁发给那些没有任何问题，已经遵守了所有安全规则和标准。</p>
-]]></content>
-  </entry>
+<search> 
+  
+  
+    
+    <entry>
+      <title></title>
+      <link href="/2024/03/27/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E6%8A%95%E8%B5%84%E6%B5%81%E7%A8%8B/"/>
+      <url>/2024/03/27/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E6%8A%95%E8%B5%84%E6%B5%81%E7%A8%8B/</url>
+      
+        <content type="html"><![CDATA[<h1 id="工业园提供的产品和服务"><a href="#工业园提供的产品和服务" class="headerlink" title="工业园提供的产品和服务"></a>工业园提供的产品和服务</h1><ol><li>工业用地：Modon在沙特全境提供工业用地，满足工业投资者的需求。</li><li>现成工厂：Modon提供不同面积且服务完备的现成工厂，支持中小企业和男女企业家。</li><li>融资方案：Modon提供多种融资方案，支持投资者的工业发展简化他们获取工业产品的流程。</li></ol><h1 id="申请前"><a href="#申请前" class="headerlink" title="申请前"></a>申请前</h1><h4 id="获得工业产品的条件"><a href="#获得工业产品的条件" class="headerlink" title="获得工业产品的条件"></a>获得工业产品的条件</h4><ol><li>从工商局网站获得的工业活动注册证书。</li><li>通过Shareek申请产品。</li></ol><h4 id="申请产品"><a href="#申请产品" class="headerlink" title="申请产品"></a>申请产品</h4><ol><li>填写申请表格：在表格中附上所需文件。</li><li>面谈：跟投资者进行面谈，讨论合作关系和工业项目的关键活动领域。</li><li>产品预览：拜访工业园总部，预览产品并填写预览表。</li><li>签署合同接受产品：在表格中附上所需文件。</li></ol><h1 id="建设阶段"><a href="#建设阶段" class="headerlink" title="建设阶段"></a>建设阶段</h1><ol><li>建设咨询办公室的许可：通过Modon中的Shareek门户获取报价，研究建设咨询办公室的要求，认可报价后回去同意。可以通过网站获得咨询公司名单。</li><li>图纸审批：通过Shareek门户上的电子服务平台，咨询办公室根据工业园指导和建设要求，认证主规划和安全规划。</li><li>发出建设许可：通过Shareek门户上的电子服务平台，获得在工业园内进行建设作业的许可证书。</li><li>申请用电：通过Shareek门户提交用电申请，沙特电力公司进行作业。</li><li>现场跟进：Modon对在建工厂进行现场检查，确保建设符合Modon的标准和条件。</li><li>发出竣工证明和运行许可：竣工证书旨在确保企业符合Modon的建设标准和条件，此为第一次发出。</li><li>运行许可证：这是企业运行的许可，需要定期更新。</li></ol><h1 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h1><p>在发出竣工证明和运行许可，并且确保企业安全作业以后，工厂可以开始生产制造。</p><h4 id="电子服务"><a href="#电子服务" class="headerlink" title="电子服务"></a>电子服务</h4><p>在开始运行以后，企业可以通过Shareek门户上通过电子服务使用工业园提供的服务：</p><ul><li>合同管理服务</li><li>信件服务</li><li>许可服务</li><li>证书服务</li><li>供应商服务</li><li>工程咨询办公室服务</li><li>票据和投诉</li></ul><h4 id="定期跟踪"><a href="#定期跟踪" class="headerlink" title="定期跟踪"></a>定期跟踪</h4><p>Modon对工厂进行定期检查，确保工厂符合安全规定，并且保护员工安全。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2024/03/27/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%B7%A5%E5%8E%82%E8%BF%90%E8%A1%8C%E8%AE%B8%E5%8F%AF%E8%AF%81%E7%9A%84%E8%A6%81%E6%B1%82%E5%92%8C%E8%A7%84%E5%AE%9A/"/>
+      <url>/2024/03/27/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%B7%A5%E5%8E%82%E8%BF%90%E8%A1%8C%E8%AE%B8%E5%8F%AF%E8%AF%81%E7%9A%84%E8%A6%81%E6%B1%82%E5%92%8C%E8%A7%84%E5%AE%9A/</url>
+      
+        <content type="html"><![CDATA[<h1 id="第一阶段：通过MODON账户提交申请"><a href="#第一阶段：通过MODON账户提交申请" class="headerlink" title="第一阶段：通过MODON账户提交申请"></a>第一阶段：通过MODON账户提交申请</h1><h2 id="申请建筑竣工和运行证书所需文件"><a href="#申请建筑竣工和运行证书所需文件" class="headerlink" title="申请建筑竣工和运行证书所需文件"></a>申请建筑竣工和运行证书所需文件</h2><ul><li>经工业园（MODON）和民防（Civil Defense）认证的设施安全计划。</li><li>消防和安全系统的周期性维护合同。</li><li>由工业园认可的咨询办公室颁发的内部电气连接和接线的安全证书。</li><li>由工业园认可的咨询办公室颁发的绝缘工作完工证书。</li><li>提供消防系统的数量清单。</li><li>环保作业证书。</li><li>工业许可证。</li></ul><h2 id="作业许可证更新所需文件"><a href="#作业许可证更新所需文件" class="headerlink" title="作业许可证更新所需文件"></a>作业许可证更新所需文件</h2><ul><li>经工业园（MODON）和民防（Civil Defense）认证的设施安全计划。</li><li>消防和安全系统的周期性维护合同。</li></ul><h1 id="第二阶段：参观考察"><a href="#第二阶段：参观考察" class="headerlink" title="第二阶段：参观考察"></a>第二阶段：参观考察</h1><h2 id="批准颁发建筑竣工和运行证书或者作业许可证更新和安全标准需要检查的内容"><a href="#批准颁发建筑竣工和运行证书或者作业许可证更新和安全标准需要检查的内容" class="headerlink" title="批准颁发建筑竣工和运行证书或者作业许可证更新和安全标准需要检查的内容"></a>批准颁发建筑竣工和运行证书或者作业许可证更新和安全标准需要检查的内容</h2><ul><li>任命安全员。</li><li>确保消防和安全控制系统的有效性及其与总控制面板的连接。</li><li>消防系统和批准的工厂规划的一致性。</li><li>落实危险化学品和危险气体的储存和运输的安全要求。</li><li>确保设施中生产线、系统和设备的安全。</li><li>没有其他违规问题。</li></ul><h1 id="第三阶段：工厂运行期间的许可证书"><a href="#第三阶段：工厂运行期间的许可证书" class="headerlink" title="第三阶段：工厂运行期间的许可证书"></a>第三阶段：工厂运行期间的许可证书</h1><h2 id="颁发竣工和进场证书"><a href="#颁发竣工和进场证书" class="headerlink" title="颁发竣工和进场证书"></a>颁发竣工和进场证书</h2><p>没有任何问题的工厂发放建筑竣工和进场证书。所有的安全制度和标准已经实施，建筑工程完成证书视为作业许可证。完成建设并且符合要求的新工厂，本证书一次性颁发一年。</p><h2 id="运行许可证更新"><a href="#运行许可证更新" class="headerlink" title="运行许可证更新"></a>运行许可证更新</h2><h3 id="短期：6个月"><a href="#短期：6个月" class="headerlink" title="短期：6个月"></a>短期：6个月</h3><p>本许可颁发给那些些存在大量问题和违规行为，需要较长时间跟其他政府部门和相关机构完成手续，并能够快速更正错误，承诺在规定时间纠正其他问题的企业</p><h3 id="中期：1年"><a href="#中期：1年" class="headerlink" title="中期：1年"></a>中期：1年</h3><p>本许可颁发给那些存在中等风险的违规行为，需要较长时间与其他政府部门和相关机构对接完成相关手续。前提是尽快纠正错误，并承诺在规定时间能纠正问题的企业。</p><h3 id="长期：3年"><a href="#长期：3年" class="headerlink" title="长期：3年"></a>长期：3年</h3><p>三年有效期的许可颁发给那些没有任何问题，已经遵守了所有安全规则和标准。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>mermaid 流程图练习</title>
+      <link href="/2024/03/27/%E6%B5%81%E7%A8%8B%E5%9B%BE/"/>
+      <url>/2024/03/27/%E6%B5%81%E7%A8%8B%E5%9B%BE/</url>
+      
+        <content type="html"><![CDATA[<pre class="mermaid">flowchart LR   a --> b & c--> d</pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 练习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2024/03/26/%E6%97%A0%E7%BA%BA%E5%B8%83%E4%B8%93%E4%B8%9A%E8%8B%B1%E8%AF%AD%E6%9C%AF%E8%AF%AD1/"/>
+      <url>/2024/03/26/%E6%97%A0%E7%BA%BA%E5%B8%83%E4%B8%93%E4%B8%9A%E8%8B%B1%E8%AF%AD%E6%9C%AF%E8%AF%AD1/</url>
+      
+        <content type="html"><![CDATA[<p>聚酯切片：</p><p>淀粉：</p><p>丙烯酸胶：</p><p>玻纤纱：</p><p>针刺机：</p><p>涤纶纺粘胎基布：</p><p>免税通过海关：free of duty through customs</p><p>钢结构：steel structure</p><p>钢筋：rebar /ˈriːˌbɑːr/</p><p>电缆：electrical cable</p><p>电子元器件：electron component /ɪˈlektrɑːn/</p><p>进口材料：imported material</p><p>外商独资项目：wholly foreign owned enterprise</p><p>全资子公司：subsidiary of solo investment</p><p>进口材料及设备占投资金额的比例限制是多少？<br>What is the <strong>limit</strong> <strong>on</strong> the proportion of imported materials and equipment <strong>in</strong> the investment amount？</p><p>型钢：structural steel</p><p>圆钢：round steel</p><p>角钢：angle steel</p><p>工型钢：universal beams</p><p>槽型钢：channel steel</p><p>六角钢：hexagonal steel</p><p>扁钢：flat steel</p><p>矩形：rectangle</p><p>无缝管：seamless tube</p><p>备案手续：recordation formalities of relevant documents</p><p>示范合同、标准合同：model contract /ˈmɑːd(ə)l/</p><p>特种作业人员：special appliance operator</p><p>电工：electrician</p><p>焊工：welder</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2024/03/24/hello-world/"/>
+      <url>/2024/03/24/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
 </search>
