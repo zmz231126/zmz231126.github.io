@@ -264,6 +264,7 @@ $$
     &quot;Magnesium&quot; : 10.01
     &quot;Iron&quot; :  5
   </pre></div>
+<p><a href='https://raw.githubusercontent.com/zmz231126/bolgpicture/main/202403282015711.pdf'>发票</a></p>
 ]]></content>
       <tags>
         <tag>练习</tag>
@@ -338,18 +339,48 @@ $$
       </tags>
   </entry>
   <entry>
-    <title>categories</title>
+    <title></title>
+    <url>/css/style.css</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/js/script.js</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>分类</title>
     <url>/categories/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>about</title>
+    <title>关于</title>
     <url>/about/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>tags</title>
+    <title>文档</title>
+    <url>/files/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>标签</title>
     <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>链接</title>
+    <url>/link/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>音乐</title>
+    <url>/music/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>电影</title>
+    <url>/movies/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>
