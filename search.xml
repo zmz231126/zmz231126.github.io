@@ -265,35 +265,6 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
       </tags>
   </entry>
   <entry>
-    <title>沙特工业园建厂要求</title>
-    <url>/2024/03/28/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%BB%BA%E5%8E%82%E8%A6%81%E6%B1%82/</url>
-    <content><![CDATA[<p>工厂需要遵循【建厂条件和标准指南】中的建厂要求，可以享受Modon在工业园中提供的服务。</p>
-<ul>
-<li>工厂建设的单元包括：生产车间、原材料仓库、产成品仓库、员工服务、电力供应、工业安全服务、内部道路、疏散区域、<br />
-管理建筑。</li>
-<li>生产车间的高度满足所有任务需求，其中包括根据不同生产类型的生产线所需要的机械作业任务。</li>
-<li>原材料仓库的面积限制在能满足工厂需要的30%-40%，随工厂规模（建筑面积）的增大而增大。</li>
-<li>产成品仓库的面积限制在满足工厂产品存储的30%-40%，随工厂规模（建筑面积）的增大而增大。</li>
-<li>工厂员工服务包括：卫生间、礼拜厅、急救、餐厅、换衣间。</li>
-<li>包括给工厂服务的管理办公室。</li>
-<li>供电工程包括中低压配电室和主断路器室。</li>
-<li>安全服务包括：备用消防箱、灭火系统和火灾警报系统。</li>
-<li>内部道路用来方便工厂不同单元的活动，并且连接工厂各个入口和主道路。</li>
-<li>生产建筑和围墙之间的间隔：前方与道路之间不低于13.5米，与两侧和后方之间不低于6米。</li>
-<li>申请、认证和颁发许可证的要求。</li>
-</ul>
-<p><a href='https://www.modon.gov.sa/ar/Systems/Pages/Requirements.aspx'></a></p>
-]]></content>
-      <categories>
-        <category>制度学习</category>
-        <category>沙特工业园制度</category>
-      </categories>
-      <tags>
-        <tag>沙特工业园</tag>
-        <tag>建厂</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>mermaid 流程图练习</title>
     <url>/2024/03/27/%E6%B5%81%E7%A8%8B%E5%9B%BE/</url>
     <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flowchart LR</span><br><span class="line">   a --&gt; b &amp; c--&gt; d</span><br></pre></td></tr></table></figure>
@@ -339,13 +310,37 @@ $$
       </tags>
   </entry>
   <entry>
-    <title>关于</title>
-    <url>/about/index.html</url>
-    <content><![CDATA[]]></content>
+    <title>沙特工业园建厂要求</title>
+    <url>/2024/03/28/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%BB%BA%E5%8E%82%E8%A6%81%E6%B1%82/</url>
+    <content><![CDATA[<p>工厂需要遵循【建厂条件和标准指南】中的建厂要求，可以享受Modon在工业园中提供的服务。</p>
+<ul>
+<li>工厂建设的单元包括：生产车间、原材料仓库、产成品仓库、员工服务、电力供应、工业安全服务、内部道路、疏散区域、<br />
+管理建筑。</li>
+<li>生产车间的高度满足所有任务需求，其中包括根据不同生产类型的生产线所需要的机械作业任务。</li>
+<li>原材料仓库的面积限制在能满足工厂需要的30%-40%，随工厂规模（建筑面积）的增大而增大。</li>
+<li>产成品仓库的面积限制在满足工厂产品存储的30%-40%，随工厂规模（建筑面积）的增大而增大。</li>
+<li>工厂员工服务包括：卫生间、礼拜厅、急救、餐厅、换衣间。</li>
+<li>包括给工厂服务的管理办公室。</li>
+<li>供电工程包括中低压配电室和主断路器室。</li>
+<li>安全服务包括：备用消防箱、灭火系统和火灾警报系统。</li>
+<li>内部道路用来方便工厂不同单元的活动，并且连接工厂各个入口和主道路。</li>
+<li>生产建筑和围墙之间的间隔：前方与道路之间不低于13.5米，与两侧和后方之间不低于6米。</li>
+<li>申请、认证和颁发许可证的要求。</li>
+</ul>
+<p><a href='https://www.modon.gov.sa/ar/Systems/Pages/Requirements.aspx'></a></p>
+]]></content>
+      <categories>
+        <category>制度学习</category>
+        <category>沙特工业园制度</category>
+      </categories>
+      <tags>
+        <tag>沙特工业园</tag>
+        <tag>建厂</tag>
+      </tags>
   </entry>
   <entry>
-    <title>分类</title>
-    <url>/categories/index.html</url>
+    <title>关于</title>
+    <url>/about/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -389,6 +384,16 @@ $$
 ]]></content>
   </entry>
   <entry>
+    <title>分类</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>文档</title>
+    <url>/files/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title></title>
     <url>/js/script.js</url>
     <content><![CDATA[]]></content>
@@ -399,23 +404,18 @@ $$
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>电影</title>
-    <url>/movies/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>音乐</title>
     <url>/music/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
+    <title>电影</title>
+    <url>/movies/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>文档</title>
-    <url>/files/index.html</url>
+    <title>标签</title>
+    <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>
