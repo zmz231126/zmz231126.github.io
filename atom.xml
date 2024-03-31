@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-03-31T03:39:54.813Z</updated>
+  <updated>2024-03-31T03:39:54.811Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,18 +17,19 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>python的基本语法</title>
-    <link href="http://example.com/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
-    <id>http://example.com/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</id>
+    <title>python交互模式</title>
+    <link href="http://example.com/2024/03/31/python%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://example.com/2024/03/31/python%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%BC%8F/</id>
     <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T03:39:54.813Z</updated>
+    <updated>2024-03-31T03:39:54.811Z</updated>
     
     
       
       
-    <summary type="html">&lt;p&gt;python严格区分大小写。比如&lt;code&gt;Print()&lt;/code&gt;不能被执行。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;语句&lt;/strong&gt;不建议过长。一条语句可以多行编写，语句以反斜线&lt;code&gt;&#92;&lt;/code&gt;换行。&lt;/p&gt;
-&lt;p&gt;不要随便写缩进，缩进严格，表示代码块。&lt;</summary>
+    <summary type="html">&lt;p&gt;交互界面：当我们通过命令行进入python，所进入的界面就是python的交互界面。&lt;/p&gt;
+&lt;p&gt;交互模式是输入一行执行一行，并不适合日常开发，仅可以做一些日常简单的测试。&lt;/p&gt;
+&lt;p&gt;我们可以编写&lt;code&gt;.py&lt;/code&gt;文档，利用【终端】执行。&lt;/p&gt;
+&lt;p&gt;</summary>
       
     
     
@@ -41,6 +42,8 @@
     
     
     <category term="python" scheme="http://example.com/tags/python/"/>
+    
+    <category term="Mac终端" scheme="http://example.com/tags/Mac%E7%BB%88%E7%AB%AF/"/>
     
   </entry>
   
@@ -73,19 +76,18 @@
   </entry>
   
   <entry>
-    <title>python交互模式</title>
-    <link href="http://example.com/2024/03/31/python%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://example.com/2024/03/31/python%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%BC%8F/</id>
+    <title>python的基本语法</title>
+    <link href="http://example.com/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
+    <id>http://example.com/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</id>
     <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T03:39:54.811Z</updated>
+    <updated>2024-03-31T03:39:54.813Z</updated>
     
     
       
       
-    <summary type="html">&lt;p&gt;交互界面：当我们通过命令行进入python，所进入的界面就是python的交互界面。&lt;/p&gt;
-&lt;p&gt;交互模式是输入一行执行一行，并不适合日常开发，仅可以做一些日常简单的测试。&lt;/p&gt;
-&lt;p&gt;我们可以编写&lt;code&gt;.py&lt;/code&gt;文档，利用【终端】执行。&lt;/p&gt;
-&lt;p&gt;</summary>
+    <summary type="html">&lt;p&gt;python严格区分大小写。比如&lt;code&gt;Print()&lt;/code&gt;不能被执行。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;语句&lt;/strong&gt;不建议过长。一条语句可以多行编写，语句以反斜线&lt;code&gt;&#92;&lt;/code&gt;换行。&lt;/p&gt;
+&lt;p&gt;不要随便写缩进，缩进严格，表示代码块。&lt;</summary>
       
     
     
@@ -98,8 +100,6 @@
     
     
     <category term="python" scheme="http://example.com/tags/python/"/>
-    
-    <category term="Mac终端" scheme="http://example.com/tags/Mac%E7%BB%88%E7%AB%AF/"/>
     
   </entry>
   
@@ -161,6 +161,38 @@
     <category term="python" scheme="http://example.com/tags/python/"/>
     
     <category term="计算机" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据类型</title>
+    <link href="http://example.com/2024/03/31/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+    <id>http://example.com/2024/03/31/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</id>
+    <published>2024-03-30T16:00:00.000Z</published>
+    <updated>2024-03-31T04:33:05.566Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;数据类型：就是给变量赋的值的类型。&lt;br&gt;
+编程语言是人创造的，学习的时候要关联现实生活，这样容易理解。&lt;/p&gt;
+&lt;p&gt;python 数据类型有三种：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;整数（int）&lt;br&gt;
+数大小没有限制，可以是任意大小。&lt;br&gt;
+如果数字过长，我们可以用&lt;co</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
+    
+    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
     
   </entry>
   
@@ -257,36 +289,6 @@
   </entry>
   
   <entry>
-    <title>计算机简介</title>
-    <link href="http://example.com/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%AE%80%E4%BB%8B/"/>
-    <id>http://example.com/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%AE%80%E4%BB%8B/</id>
-    <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T03:39:54.810Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;计算机是一个用来进行计算的&lt;strong&gt;机器&lt;/strong&gt;，跟生活中其他机器不同的点在于计算机是用来&lt;strong&gt;计算&lt;/strong&gt;的。&lt;/p&gt;
-&lt;p&gt;目前计算机只能根据人类的指令进行操作。我们所学计算机，就是学习如何去进行控制这台机器。&lt;/p&gt;
-&lt;p&gt;计算机包</summary>
-      
-    
-    
-    
-    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
-    
-    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
-    <category term="计算机简介" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%AE%80%E4%BB%8B/"/>
-    
-  </entry>
-  
-  <entry>
     <title>计算机语言</title>
     <link href="http://example.com/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E7%AE%80%E4%BB%8B/"/>
     <id>http://example.com/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E7%AE%80%E4%BB%8B/</id>
@@ -315,6 +317,36 @@
     <category term="python" scheme="http://example.com/tags/python/"/>
     
     <category term="计算机" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机简介</title>
+    <link href="http://example.com/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%AE%80%E4%BB%8B/"/>
+    <id>http://example.com/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%AE%80%E4%BB%8B/</id>
+    <published>2024-03-30T16:00:00.000Z</published>
+    <updated>2024-03-31T03:39:54.810Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;计算机是一个用来进行计算的&lt;strong&gt;机器&lt;/strong&gt;，跟生活中其他机器不同的点在于计算机是用来&lt;strong&gt;计算&lt;/strong&gt;的。&lt;/p&gt;
+&lt;p&gt;目前计算机只能根据人类的指令进行操作。我们所学计算机，就是学习如何去进行控制这台机器。&lt;/p&gt;
+&lt;p&gt;计算机包</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
+    
+    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+    <category term="计算机简介" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%AE%80%E4%BB%8B/"/>
     
   </entry>
   
@@ -365,12 +397,48 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;申请工业园动工许可&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#申请工业园动工许可&quot;&gt;&lt;/a&gt; 申请工业园动工许可&lt;/h1&gt;
-&lt;h2 id=&quot;第一步&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#第一步&quot;&gt;</summary>
+    <summary type="html">&lt;h1&gt;申请工业园动工许可&lt;/h1&gt;
+&lt;h2 id=&quot;第一步&quot;&gt;第一步&lt;/h2&gt;
+&lt;h3 id=&quot;注册shareek门户取得ID&quot;&gt;注册shareek门户取得ID&lt;/h3&gt;
+&lt;h3 id=&quot;获取调研阶段工业许可&quot;&gt;获取调研阶段工业许可&lt;/h3&gt;
+&lt;h2 id=&quot;第二步&quot;&gt;第二步&lt;</summary>
       
     
     
     
+    
+  </entry>
+  
+  <entry>
+    <title>一类项目获取环保许可的要求</title>
+    <link href="http://example.com/2024/03/29/%E4%B8%80%E7%B1%BB%E9%A1%B9%E7%9B%AE%E8%8E%B7%E5%8F%96%E7%8E%AF%E4%BF%9D%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/"/>
+    <id>http://example.com/2024/03/29/%E4%B8%80%E7%B1%BB%E9%A1%B9%E7%9B%AE%E8%8E%B7%E5%8F%96%E7%8E%AF%E4%BF%9D%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/</id>
+    <published>2024-03-28T16:00:00.000Z</published>
+    <updated>2024-03-29T12:21:38.879Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;一类项目对环境影响很小，且影响不回超过活动地点。需要提交电子申请、附上一般要求中提及的文件并且遵守相关条件。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一般要求&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;填写分类表格（&lt;a href=&quot;https://raw.githubuserco</summary>
+      
+    
+    
+    
+    <category term="制度学习" scheme="http://example.com/categories/%E5%88%B6%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="沙特环保制度" scheme="http://example.com/categories/%E5%88%B6%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E6%B2%99%E7%89%B9%E7%8E%AF%E4%BF%9D%E5%88%B6%E5%BA%A6/"/>
+    
+    
+    <category term="沙特" scheme="http://example.com/tags/%E6%B2%99%E7%89%B9/"/>
+    
+    <category term="沙特投资" scheme="http://example.com/tags/%E6%B2%99%E7%89%B9%E6%8A%95%E8%B5%84/"/>
+    
+    <category term="建厂" scheme="http://example.com/tags/%E5%BB%BA%E5%8E%82/"/>
+    
+    <category term="沙特环境监察中心" scheme="http://example.com/tags/%E6%B2%99%E7%89%B9%E7%8E%AF%E5%A2%83%E7%9B%91%E5%AF%9F%E4%B8%AD%E5%BF%83/"/>
     
   </entry>
   
@@ -409,39 +477,6 @@
   </entry>
   
   <entry>
-    <title>一类项目获取环保许可的要求</title>
-    <link href="http://example.com/2024/03/29/%E4%B8%80%E7%B1%BB%E9%A1%B9%E7%9B%AE%E8%8E%B7%E5%8F%96%E7%8E%AF%E4%BF%9D%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/"/>
-    <id>http://example.com/2024/03/29/%E4%B8%80%E7%B1%BB%E9%A1%B9%E7%9B%AE%E8%8E%B7%E5%8F%96%E7%8E%AF%E4%BF%9D%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/</id>
-    <published>2024-03-28T16:00:00.000Z</published>
-    <updated>2024-03-29T12:21:38.879Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;一类项目对环境影响很小，且影响不回超过活动地点。需要提交电子申请、附上一般要求中提及的文件并且遵守相关条件。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;一般要求&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;填写分类表格（&lt;a href=&quot;https://raw.githubuserco</summary>
-      
-    
-    
-    
-    <category term="制度学习" scheme="http://example.com/categories/%E5%88%B6%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="沙特环保制度" scheme="http://example.com/categories/%E5%88%B6%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E6%B2%99%E7%89%B9%E7%8E%AF%E4%BF%9D%E5%88%B6%E5%BA%A6/"/>
-    
-    
-    <category term="沙特" scheme="http://example.com/tags/%E6%B2%99%E7%89%B9/"/>
-    
-    <category term="沙特投资" scheme="http://example.com/tags/%E6%B2%99%E7%89%B9%E6%8A%95%E8%B5%84/"/>
-    
-    <category term="建厂" scheme="http://example.com/tags/%E5%BB%BA%E5%8E%82/"/>
-    
-    <category term="沙特环境监察中心" scheme="http://example.com/tags/%E6%B2%99%E7%89%B9%E7%8E%AF%E5%A2%83%E7%9B%91%E5%AF%9F%E4%B8%AD%E5%BF%83/"/>
-    
-  </entry>
-  
-  <entry>
     <title>沙特办理工业许可证的要求和流程</title>
     <link href="http://example.com/2024/03/28/%E5%8A%9E%E7%90%86%E5%B7%A5%E4%B8%9A%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/"/>
     <id>http://example.com/2024/03/28/%E5%8A%9E%E7%90%86%E5%B7%A5%E4%B8%9A%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/</id>
@@ -451,8 +486,10 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;定义&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#定义&quot;&gt;&lt;/a&gt; 定义&lt;/h1&gt;
-&lt;p&gt;沙特工业和矿产资源部提供工业许可证颁发服务，它是本部根据海湾国家合作委员会统一工业管理制度颁发的文件。允许根据特定的流程和机制从事工业项目，从投</summary>
+    <summary type="html">&lt;h1&gt;定义&lt;/h1&gt;
+&lt;p&gt;沙特工业和矿产资源部提供工业许可证颁发服务，它是本部根据海湾国家合作委员会统一工业管理制度颁发的文件。允许根据特定的流程和机制从事工业项目，从投资者基础建设，施工到生产提供便利。&lt;/p&gt;
+&lt;h1&gt;企业在申请工业许可证时的三个阶段&lt;/h1&gt;
+&lt;p&gt;工业</summary>
       
     
     
@@ -484,9 +521,9 @@
       
     <summary type="html">&lt;p&gt;工厂需要遵循【建厂条件和标准指南】中的建厂要求，可以享受Modon在工业园中提供的服务。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;工厂建设的单元包括：生产车间、原材料仓库、产成品仓库、员工服务、电力供应、工业安全服务、内部道路、疏散区域、&lt;br /&gt;
+&lt;li&gt;工厂建设的单元包括：生产车间、原材料仓库、产成品仓库、员工服务、电力供应、工业安全服务、内部道路、疏散区域、&lt;br&gt;
 管理建筑。&lt;/li&gt;
-&lt;li&gt;生产车</summary>
+&lt;li&gt;生产车间的</summary>
       
     
     
@@ -512,8 +549,12 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;第一阶段通过modon账户提交申请&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#第一阶段通过modon账户提交申请&quot;&gt;&lt;/a&gt; 第一阶段：通过MODON账户提交申请&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;申请建筑竣工和运行许可证所需文件&lt;/</summary>
+    <summary type="html">&lt;h1&gt;第一阶段：通过MODON账户提交申请&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;申请建筑竣工和运行许可证所需文件&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;经Modon认证的安全图。&lt;/li&gt;
+&lt;li&gt;绝缘工程完工证明。&lt;/li&gt;
+&lt;li&gt;测试安全系统的模型和消防警报器材的清单。</summary>
       
     
     
@@ -543,10 +584,11 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;工业园提供的产品和服务&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#工业园提供的产品和服务&quot;&gt;&lt;/a&gt; 工业园提供的产品和服务&lt;/h1&gt;
+    <summary type="html">&lt;h1&gt;工业园提供的产品和服务&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;工业用地：Modon在沙特全境提供工业用地，满足工业投资者的需求。&lt;/li&gt;
-</summary>
+&lt;li&gt;现成工厂：Modon提供不同面积且服务完备的现成工厂，支持中小企业和男女企业家。&lt;/li&gt;
+&lt;li&gt;融资方案：Modon提供多种融资方</summary>
       
     
     
@@ -581,31 +623,6 @@
     
     
     <category term="练习" scheme="http://example.com/tags/%E7%BB%83%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://example.com/2024/03/26/%E6%97%A0%E7%BA%BA%E5%B8%83%E4%B8%93%E4%B8%9A%E8%8B%B1%E8%AF%AD%E6%9C%AF%E8%AF%AD1/"/>
-    <id>http://example.com/2024/03/26/%E6%97%A0%E7%BA%BA%E5%B8%83%E4%B8%93%E4%B8%9A%E8%8B%B1%E8%AF%AD%E6%9C%AF%E8%AF%AD1/</id>
-    <published>2024-03-26T05:20:14.635Z</published>
-    <updated>2024-03-28T09:27:21.924Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;聚酯切片：&lt;/p&gt;
-&lt;p&gt;淀粉：&lt;/p&gt;
-&lt;p&gt;丙烯酸胶：&lt;/p&gt;
-&lt;p&gt;玻纤纱：&lt;/p&gt;
-&lt;p&gt;针刺机：&lt;/p&gt;
-&lt;p&gt;涤纶纺粘胎基布：&lt;/p&gt;
-&lt;p&gt;免税通过海关：free of duty through customs&lt;/p&gt;
-&lt;p&gt;钢结构：steel structu</summary>
-      
-    
-    
-    
     
   </entry>
   

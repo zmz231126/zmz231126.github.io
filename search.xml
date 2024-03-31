@@ -4,61 +4,20 @@
     <title>Hello World</title>
     <url>/2024/03/24/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
-<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Create-a-new-post">Create a new post</h3>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
+<h3 id="Run-server">Run server</h3>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
+<h3 id="Generate-static-files">Generate static files</h3>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3>
+<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>python的基本语法</title>
-    <url>/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<p>python严格区分大小写。比如<code>Print()</code>不能被执行。</p>
-<p><strong>语句</strong>不建议过长。一条语句可以多行编写，语句以反斜线<code>\</code>换行。</p>
-<p>不要随便写缩进，缩进严格，表示代码块。</p>
-<p><code>%</code>后加空格表示注释。</p>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python中的几个术语</title>
-    <url>/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
-    <content><![CDATA[<p>【表达式】类似于数学公式比如10 + 5；8 + 4.</p>
-<p>表达式仅仅用来计算一些结果，不会对程序产生实质影响。</p>
-<p>【语句】语句需要完成某种功能，比如打印信息、获取信息、为变量赋值等比如：<code>print()</code>, <code>a = 10</code>。</p>
-<p>语句的执行会对程序执行产生影响。语句在命令行中不一定会有执行结果。有返回值的语句，会有返回结果。</p>
-<p>【程序】是多个语句和表达式构成的。</p>
-<p>【函数（function）】函数是一个语句，用来完成特定的功能。函数的结构为<code>***()</code>.括号中的内容叫「参数」，可以没有参数也可以有多个参数，中间用逗号隔开。返回的结果叫做「返回值」，同样可以没有返回值。</p>
-<p>函数分为</p>
-<ol>
-<li>内置函数。python解释器提供的，可以在python中直接使用。</li>
-<li>自定义函数。由程序员自定义的函数。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
   </entry>
   <entry>
     <title>python交互模式</title>
@@ -90,13 +49,54 @@
       </tags>
   </entry>
   <entry>
+    <title>python中的几个术语</title>
+    <url>/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
+    <content><![CDATA[<p>【表达式】类似于数学公式比如10 + 5；8 + 4.</p>
+<p>表达式仅仅用来计算一些结果，不会对程序产生实质影响。</p>
+<p>【语句】语句需要完成某种功能，比如打印信息、获取信息、为变量赋值等比如：<code>print()</code>, <code>a = 10</code>。</p>
+<p>语句的执行会对程序执行产生影响。语句在命令行中不一定会有执行结果。有返回值的语句，会有返回结果。</p>
+<p>【程序】是多个语句和表达式构成的。</p>
+<p>【函数（function）】函数是一个语句，用来完成特定的功能。函数的结构为<code>***()</code>.括号中的内容叫「参数」，可以没有参数也可以有多个参数，中间用逗号隔开。返回的结果叫做「返回值」，同样可以没有返回值。</p>
+<p>函数分为</p>
+<ol>
+<li>内置函数。python解释器提供的，可以在python中直接使用。</li>
+<li>自定义函数。由程序员自定义的函数。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python的基本语法</title>
+    <url>/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<p>python严格区分大小写。比如<code>Print()</code>不能被执行。</p>
+<p><strong>语句</strong>不建议过长。一条语句可以多行编写，语句以反斜线<code>\</code>换行。</p>
+<p>不要随便写缩进，缩进严格，表示代码块。</p>
+<p><code>%</code>后加空格表示注释。</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>沙特办理工业许可证的要求和流程</title>
     <url>/2024/03/28/%E5%8A%9E%E7%90%86%E5%B7%A5%E4%B8%9A%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/</url>
-    <content><![CDATA[<h1 id="定义"><a class="markdownIt-Anchor" href="#定义"></a> 定义</h1>
+    <content><![CDATA[<h1>定义</h1>
 <p>沙特工业和矿产资源部提供工业许可证颁发服务，它是本部根据海湾国家合作委员会统一工业管理制度颁发的文件。允许根据特定的流程和机制从事工业项目，从投资者基础建设，施工到生产提供便利。</p>
-<h1 id="企业在申请工业许可证时的三个阶段"><a class="markdownIt-Anchor" href="#企业在申请工业许可证时的三个阶段"></a> 企业在申请工业许可证时的三个阶段</h1>
+<h1>企业在申请工业许可证时的三个阶段</h1>
 <p>工业企业在申请工业许可时有三个阶段，这三个阶段反映了工业项目的发展情况。每个阶段都需要从相关部门申请必要的工业许可。</p>
-<h2 id="基础阶段"><a class="markdownIt-Anchor" href="#基础阶段"></a> 基础阶段</h2>
+<h2 id="基础阶段">基础阶段</h2>
 <p><strong>要求</strong></p>
 <ul>
 <li>从事工业活动的商业注册证书</li>
@@ -111,7 +111,7 @@
 <li><span style='background-color: yellow;'>可以申请配电</span></li>
 </ul>
 <p>许可证的有效期为一年，可以申请更新。</p>
-<h2 id="建设阶段"><a class="markdownIt-Anchor" href="#建设阶段"></a> 建设阶段</h2>
+<h2 id="建设阶段">建设阶段</h2>
 <p><strong>要求</strong></p>
 <ul>
 <li>从事工业活动的商业注册证书</li>
@@ -129,7 +129,7 @@
 <li>根据法定要求，经该部批准或在合作委员会框架内商定的任何其他福利或豁免</li>
 </ul>
 <p>许可证的有效期为一年，可以申请更新。</p>
-<h2 id="生产阶段"><a class="markdownIt-Anchor" href="#生产阶段"></a> 生产阶段</h2>
+<h2 id="生产阶段">生产阶段</h2>
 <p><strong>要求</strong></p>
 <ul>
 <li>从事工业活动的商业注册证书</li>
@@ -148,7 +148,7 @@
 <li>根据法定要求，经该部批准或在合作委员会框架内商定的任何其他福利或豁免</li>
 </ul>
 <p>许可证的有效期为五年。</p>
-<h1 id="条件"><a class="markdownIt-Anchor" href="#条件"></a> 条件</h1>
+<h1>条件</h1>
 <p>申请人必须遵守：</p>
 <ul>
 <li>海湾国家合作委员会统一工业管理制度中提到了的条款和现行的法规。</li>
@@ -158,7 +158,7 @@
 <li>允许本部审查企业相关的所有数据并提交给所有政府机构。</li>
 <li>只允许在完成工业项目、获得了安全环保许可以及其他部门的要求后进行工业活动和实际生产，然后需要将工业许可证升级到“生产”。</li>
 </ul>
-<h1 id="颁发许可证所需时间"><a class="markdownIt-Anchor" href="#颁发许可证所需时间"></a> 颁发许可证所需时间</h1>
+<h1>颁发许可证所需时间</h1>
 <p>立即颁发（本部限制的活动除外）</p>
 <p><a href="https://mim.gov.sa/mim/services/31393/">本文翻译自工业部网站</a></p>
 ]]></content>
@@ -171,6 +171,43 @@
         <tag>沙特投资</tag>
         <tag>工业许可证</tag>
         <tag>沙特工业和矿产资源部</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一类项目获取环保许可的要求</title>
+    <url>/2024/03/29/%E4%B8%80%E7%B1%BB%E9%A1%B9%E7%9B%AE%E8%8E%B7%E5%8F%96%E7%8E%AF%E4%BF%9D%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/</url>
+    <content><![CDATA[<p>一类项目对环境影响很小，且影响不回超过活动地点。需要提交电子申请、附上一般要求中提及的文件并且遵守相关条件。</p>
+<p><strong>一般要求</strong></p>
+<ol>
+<li>填写分类表格（<a href="https://raw.githubusercontent.com/zmz231126/bolgpicture/main/202403291608962.pdf">点击此处下载</a>）</li>
+<li>项目简单的初始报告</li>
+<li>无害和已经许可的工业垃圾（液体和固体）的搬运和清理合同</li>
+<li>与认证机构签署的固体市政垃圾的搬运和清理合同</li>
+<li>商业登记证</li>
+<li>税务登记证</li>
+<li>身份证或者居住证</li>
+<li>产权契约或者租赁合同</li>
+</ol>
+<p><strong>相关条件</strong></p>
+<ul>
+<li>商会或者合法机构认证的项目所有人的授权书。</li>
+</ul>
+<p><strong>更新一类环保许可的要求</strong></p>
+<ol>
+<li>上一阶段环保登记证书</li>
+<li>上面要求中的3-8项。</li>
+</ol>
+<p><a href='https://ncec.gov.sa/%d9%85%d8%aa%d8%b7%d9%84%d8%a8%d8%a7%d8%aa-%d8%a7%d9%84%d8%ad%d8%b5%d9%88%d9%84-%d8%b9%d9%84%d9%89-%d9%85%d9%88%d8%a7%d9%81%d9%82%d8%a9-%d8%a8%d9%8a%d8%a6%d9%8a%d8%a9-%d9%84%d9%84%d9%81%d8%a6%d8%a9'>本文引用自nece网站</a></p>
+]]></content>
+      <categories>
+        <category>制度学习</category>
+        <category>沙特环保制度</category>
+      </categories>
+      <tags>
+        <tag>沙特</tag>
+        <tag>沙特投资</tag>
+        <tag>建厂</tag>
+        <tag>沙特环境监察中心</tag>
       </tags>
   </entry>
   <entry>
@@ -187,7 +224,7 @@
 <li>Tab/Shift + Tab	代码缩进/反缩进</li>
 <li>Ctrl ＋I	显示帮助</li>
 </ol>
-<hr />
+<hr>
 <p>标识符：html中是名值对，这里是标识符和值成对。</p>
 <p>python中所有可以自主命名的内容都是标识符。比如变量名、函数名、类名。</p>
 <ol>
@@ -210,6 +247,24 @@
       <tags>
         <tag>python</tag>
         <tag>spyder快捷键</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>字面变量和变量</title>
+    <url>/2024/03/31/%E5%AD%97%E9%9D%A2%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F/</url>
+    <content><![CDATA[<p>【字面量】一个一个的值，它的意思就是它字面的值。在程序中可以直接使用。</p>
+<p>【变量】与字面量相反。变量可以保存字面量，并且保存的字面量是不定的。</p>
+<p>变量本身无意义，会跟不同的字面量表示不同的意思。</p>
+<p>开发时，通常将字面量保存在变量中，通过变量来引用字面量。这样便于统一管理和引用。</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>计算机</tag>
       </tags>
   </entry>
   <entry>
@@ -304,12 +359,31 @@
       </tags>
   </entry>
   <entry>
-    <title>字面变量和变量</title>
-    <url>/2024/03/31/%E5%AD%97%E9%9D%A2%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F/</url>
-    <content><![CDATA[<p>【字面量】一个一个的值，它的意思就是它字面的值。在程序中可以直接使用。</p>
-<p>【变量】与字面量相反。变量可以保存字面量，并且保存的字面量是不定的。</p>
-<p>变量本身无意义，会跟不同的字面量表示不同的意思。</p>
-<p>开发时，通常将字面量保存在变量中，通过变量来引用字面量。这样便于统一管理和引用。</p>
+    <title>数据类型</title>
+    <url>/2024/03/31/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
+    <content><![CDATA[<p>数据类型：就是给变量赋的值的类型。<br>
+编程语言是人创造的，学习的时候要关联现实生活，这样容易理解。</p>
+<p>python 数据类型有三种：</p>
+<ul>
+<li>整数（int）<br>
+数大小没有限制，可以是任意大小。<br>
+如果数字过长，我们可以用<code>_</code>作为分隔符，比如<strong>千位分隔符</strong>。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">c = <span class="number">123_456_789</span></span><br><span class="line"><span class="built_in">print</span>(c)</span><br></pre></td></tr></table></figure>
+<p>返回值为:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">123456789</span><br></pre></td></tr></table></figure>
+<p>数字不能以<code>0</code>开头。<br>
+二进制数字用<code>0b</code>开头<br>
+八进制数字用<code>0o</code>开头<br>
+十六进制数字用<code>0x</code>开头<br>
+任何进制的数字返回的都是十进制的数字</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">e = <span class="number">0b10</span></span><br><span class="line"><span class="built_in">print</span>(e)</span><br></pre></td></tr></table></figure>
+<p>返回值为：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">2</span><br></pre></td></tr></table></figure>
+<ul>
+<li>浮点数（小数）</li>
+<li>复数</li>
+</ul>
 ]]></content>
       <categories>
         <category>编程</category>
@@ -318,73 +392,6 @@
       </categories>
       <tags>
         <tag>python</tag>
-        <tag>计算机</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一类项目获取环保许可的要求</title>
-    <url>/2024/03/29/%E4%B8%80%E7%B1%BB%E9%A1%B9%E7%9B%AE%E8%8E%B7%E5%8F%96%E7%8E%AF%E4%BF%9D%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/</url>
-    <content><![CDATA[<p>一类项目对环境影响很小，且影响不回超过活动地点。需要提交电子申请、附上一般要求中提及的文件并且遵守相关条件。</p>
-<p><strong>一般要求</strong></p>
-<ol>
-<li>填写分类表格（<a href="https://raw.githubusercontent.com/zmz231126/bolgpicture/main/202403291608962.pdf">点击此处下载</a>）</li>
-<li>项目简单的初始报告</li>
-<li>无害和已经许可的工业垃圾（液体和固体）的搬运和清理合同</li>
-<li>与认证机构签署的固体市政垃圾的搬运和清理合同</li>
-<li>商业登记证</li>
-<li>税务登记证</li>
-<li>身份证或者居住证</li>
-<li>产权契约或者租赁合同</li>
-</ol>
-<p><strong>相关条件</strong></p>
-<ul>
-<li>商会或者合法机构认证的项目所有人的授权书。</li>
-</ul>
-<p><strong>更新一类环保许可的要求</strong></p>
-<ol>
-<li>上一阶段环保登记证书</li>
-<li>上面要求中的3-8项。</li>
-</ol>
-<p><a href='https://ncec.gov.sa/%d9%85%d8%aa%d8%b7%d9%84%d8%a8%d8%a7%d8%aa-%d8%a7%d9%84%d8%ad%d8%b5%d9%88%d9%84-%d8%b9%d9%84%d9%89-%d9%85%d9%88%d8%a7%d9%81%d9%82%d8%a9-%d8%a8%d9%8a%d8%a6%d9%8a%d8%a9-%d9%84%d9%84%d9%81%d8%a6%d8%a9'>本文引用自nece网站</a></p>
-]]></content>
-      <categories>
-        <category>制度学习</category>
-        <category>沙特环保制度</category>
-      </categories>
-      <tags>
-        <tag>沙特</tag>
-        <tag>沙特投资</tag>
-        <tag>建厂</tag>
-        <tag>沙特环境监察中心</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>文本文件和字符集</title>
-    <url>/2024/03/31/%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%92%8C%E5%AD%97%E7%AC%A6%E9%9B%86/</url>
-    <content><![CDATA[<p>文本分为纯文本和富文本。</p>
-<p>纯文本在计算机底层也会转换为二进制保存。</p>
-<p>将字符转换为二进制码的过程叫做<strong>编码</strong>。</p>
-<p>将二进制码转换成字符的过程叫做<strong>解码</strong>。</p>
-<p>编码和解码时采用的规则叫做<strong>字符集</strong>。</p>
-<p>常用的字符集：</p>
-<ul>
-<li>ASCII 美国人编码，使用7位（7个1和7个0）来对美国常用的字符进行编码。7个1和7个0的不同组合产生128个字符。</li>
-<li>IS0-8859-1 欧洲的编号，使用8位进行编码，产生256个字符。</li>
-<li>GB2312 GBK中国人的编码</li>
-<li>Unicode 万国码。便携程序时，使用Unicode编码。Unicode有多种实现，UTF-32使用4个字节表示一个字符。UTF-16使用2到4个字节表示一个字符。UTF-8使用1-5个字节表示一个字符。</li>
-</ul>
-<hr />
-<p>乱码</p>
-<p>程序出现乱码，检查字符集是否正确。</p>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>计算机</tag>
       </tags>
   </entry>
   <entry>
@@ -404,7 +411,7 @@
 <p>进口材料：imported material</p>
 <p>外商独资项目：wholly foreign owned enterprise</p>
 <p>全资子公司：subsidiary of solo investment</p>
-<p>进口材料及设备占投资金额的比例限制是多少？<br />
+<p>进口材料及设备占投资金额的比例限制是多少？<br>
 What is the <strong>limit</strong> <strong>on</strong> the proportion of imported materials and equipment <strong>in</strong> the investment amount？</p>
 <p>型钢：structural steel</p>
 <p>圆钢：round steel</p>
@@ -425,7 +432,7 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
   <entry>
     <title>申请沙特工业园工厂运行许可证的要求</title>
     <url>/2024/03/27/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%B7%A5%E5%8E%82%E8%BF%90%E8%A1%8C%E8%AE%B8%E5%8F%AF%E8%AF%81%E7%9A%84%E8%A6%81%E6%B1%82%E5%92%8C%E8%A7%84%E5%AE%9A/</url>
-    <content><![CDATA[<h1 id="第一阶段通过modon账户提交申请"><a class="markdownIt-Anchor" href="#第一阶段通过modon账户提交申请"></a> 第一阶段：通过MODON账户提交申请</h1>
+    <content><![CDATA[<h1>第一阶段：通过MODON账户提交申请</h1>
 <p><strong>申请建筑竣工和运行许可证所需文件</strong></p>
 <ul>
 <li>经Modon认证的安全图。</li>
@@ -453,7 +460,7 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
 <li>企业内外安装可以存储两个月记录的摄像头。（军工单位适用）</li>
 <li>记录和保存出入数据（员工和拜访人员）的控制系统。（军工企业适用）</li>
 </ul>
-<h1 id="第二阶段参观考察"><a class="markdownIt-Anchor" href="#第二阶段参观考察"></a> 第二阶段：参观考察</h1>
+<h1>第二阶段：参观考察</h1>
 <p><strong>批准颁发建筑竣工和运行许可或者更新作业许可证和安全标准需要检查的内容</strong></p>
 <ul>
 <li>确保与许可证相符。</li>
@@ -466,9 +473,9 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
 <li>确保在处理、运输和储存化学材料和有害气体时，符合安全规定。</li>
 <li>确保不存在不安全或者违规存储，和不符合规定的退线。</li>
 </ul>
-<h1 id="第三阶段颁发竣工证书和运行许可证"><a class="markdownIt-Anchor" href="#第三阶段颁发竣工证书和运行许可证"></a> 第三阶段：颁发竣工证书和运行许可证</h1>
+<h1>第三阶段：颁发竣工证书和运行许可证</h1>
 <p>Modon致力于简化并加速与合作伙伴的合作，其中包括满足工厂需求，保护员工和工业园财产与基础。我们已经对运行许可和有效时限做了如下分类：</p>
-<p><strong>第一次发放期限一年</strong><br />
+<p><strong>第一次发放期限一年</strong><br>
 对那些完成建设，满足条件，符合安全标准的企业发放我竣工和运行许可证，它可以视为是运行许可证，此许可证有效期为一年。</p>
 <p><strong>更新</strong></p>
 <p>【短期】：6个月</p>
@@ -491,11 +498,40 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
       </tags>
   </entry>
   <entry>
+    <title>文本文件和字符集</title>
+    <url>/2024/03/31/%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%92%8C%E5%AD%97%E7%AC%A6%E9%9B%86/</url>
+    <content><![CDATA[<p>文本分为纯文本和富文本。</p>
+<p>纯文本在计算机底层也会转换为二进制保存。</p>
+<p>将字符转换为二进制码的过程叫做<strong>编码</strong>。</p>
+<p>将二进制码转换成字符的过程叫做<strong>解码</strong>。</p>
+<p>编码和解码时采用的规则叫做<strong>字符集</strong>。</p>
+<p>常用的字符集：</p>
+<ul>
+<li>ASCII 美国人编码，使用7位（7个1和7个0）来对美国常用的字符进行编码。7个1和7个0的不同组合产生128个字符。</li>
+<li>IS0-8859-1 欧洲的编号，使用8位进行编码，产生256个字符。</li>
+<li>GB2312 GBK中国人的编码</li>
+<li>Unicode 万国码。便携程序时，使用Unicode编码。Unicode有多种实现，UTF-32使用4个字节表示一个字符。UTF-16使用2到4个字节表示一个字符。UTF-8使用1-5个字节表示一个字符。</li>
+</ul>
+<hr>
+<p>乱码</p>
+<p>程序出现乱码，检查字符集是否正确。</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>计算机</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>沙特工业园建厂要求</title>
     <url>/2024/03/28/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%BB%BA%E5%8E%82%E8%A6%81%E6%B1%82/</url>
     <content><![CDATA[<p>工厂需要遵循【建厂条件和标准指南】中的建厂要求，可以享受Modon在工业园中提供的服务。</p>
 <ul>
-<li>工厂建设的单元包括：生产车间、原材料仓库、产成品仓库、员工服务、电力供应、工业安全服务、内部道路、疏散区域、<br />
+<li>工厂建设的单元包括：生产车间、原材料仓库、产成品仓库、员工服务、电力供应、工业安全服务、内部道路、疏散区域、<br>
 管理建筑。</li>
 <li>生产车间的高度满足所有任务需求，其中包括根据不同生产类型的生产线所需要的机械作业任务。</li>
 <li>原材料仓库的面积限制在能满足工厂需要的30%-40%，随工厂规模（建筑面积）的增大而增大。</li>
@@ -522,26 +558,26 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
   <entry>
     <title>沙特工业园投资流程</title>
     <url>/2024/03/27/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E6%8A%95%E8%B5%84%E6%B5%81%E7%A8%8B/</url>
-    <content><![CDATA[<h1 id="工业园提供的产品和服务"><a class="markdownIt-Anchor" href="#工业园提供的产品和服务"></a> 工业园提供的产品和服务</h1>
+    <content><![CDATA[<h1>工业园提供的产品和服务</h1>
 <ol>
 <li>工业用地：Modon在沙特全境提供工业用地，满足工业投资者的需求。</li>
 <li>现成工厂：Modon提供不同面积且服务完备的现成工厂，支持中小企业和男女企业家。</li>
 <li>融资方案：Modon提供多种融资方案，支持投资者的工业发展简化他们获取工业产品的流程。</li>
 </ol>
-<h1 id="申请前"><a class="markdownIt-Anchor" href="#申请前"></a> 申请前</h1>
-<h4 id="获得工业产品的条件"><a class="markdownIt-Anchor" href="#获得工业产品的条件"></a> 获得工业产品的条件</h4>
+<h1>申请前</h1>
+<h4 id="获得工业产品的条件">获得工业产品的条件</h4>
 <ol>
 <li>从工商局网站获得的工业活动注册证书。</li>
 <li>通过Shareek申请产品。</li>
 </ol>
-<h4 id="申请产品"><a class="markdownIt-Anchor" href="#申请产品"></a> 申请产品</h4>
+<h4 id="申请产品">申请产品</h4>
 <ol>
 <li>填写申请表格：在表格中附上所需文件。</li>
 <li>面谈：跟投资者进行面谈，讨论合作关系和工业项目的关键活动领域。</li>
 <li>产品预览：拜访工业园总部，预览产品并填写预览表。</li>
 <li>签署合同接受产品：在表格中附上所需文件。</li>
 </ol>
-<h1 id="建设阶段"><a class="markdownIt-Anchor" href="#建设阶段"></a> 建设阶段</h1>
+<h1>建设阶段</h1>
 <ol>
 <li>建设咨询办公室的许可：通过Modon中的Shareek门户获取报价，研究建设咨询办公室的要求，认可报价后回去同意。可以通过网站获得咨询公司名单。</li>
 <li>图纸审批：通过Shareek门户上的电子服务平台，咨询办公室根据工业园指导和建设要求，认证主规划和安全规划。</li>
@@ -551,9 +587,9 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
 <li>发出竣工证明和运行许可：竣工证书旨在确保企业符合Modon的建设标准和条件，此为第一次发出。</li>
 <li>运行许可证：这是企业运行的许可，需要定期更新。</li>
 </ol>
-<h1 id="运行"><a class="markdownIt-Anchor" href="#运行"></a> 运行</h1>
+<h1>运行</h1>
 <p>在发出竣工证明和运行许可，并且确保企业安全作业以后，工厂可以开始生产制造。</p>
-<h4 id="电子服务"><a class="markdownIt-Anchor" href="#电子服务"></a> 电子服务</h4>
+<h4 id="电子服务">电子服务</h4>
 <p>在开始运行以后，企业可以通过Shareek门户上通过电子服务使用工业园提供的服务：</p>
 <ul>
 <li>合同管理服务</li>
@@ -564,7 +600,7 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
 <li>工程咨询办公室服务</li>
 <li>票据和投诉</li>
 </ul>
-<h4 id="定期跟踪"><a class="markdownIt-Anchor" href="#定期跟踪"></a> 定期跟踪</h4>
+<h4 id="定期跟踪">定期跟踪</h4>
 <p>Modon对工厂进行定期检查，确保工厂符合安全规定，并且保护员工安全。</p>
 <p><a href='https://raw.githubusercontent.com/zmz231126/bolgpicture/main/202403291018552.pdf'>点击这里查看原文档</a></p>
 ]]></content>
@@ -582,14 +618,13 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
     <title>mermaid 流程图练习</title>
     <url>/2024/03/27/%E6%B5%81%E7%A8%8B%E5%9B%BE/</url>
     <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flowchart LR</span><br><span class="line">   a --&gt; b &amp; c--&gt; d</span><br></pre></td></tr></table></figure>
-<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲ \label{eq2}
-\b…'>\begin{equation} \label{eq2}
-\begin{aligned}
-a &amp;= b + c \\
-  &amp;= d + e + f + g \\
-  &amp;= h + i
-\end{aligned}
-\end{equation}</p>
+<p>$$\begin{equation} \label{eq2}<br>
+\begin{aligned}<br>
+a &amp;= b + c \<br>
+&amp;= d + e + f + g \<br>
+&amp;= h + i<br>
+\end{aligned}<br>
+\end{equation}$$</p>
 <span>
 $$
 \begin{pmatrix}  
@@ -599,16 +634,16 @@ $$
 \end{pmatrix} 
 $$
 </span>
-<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
-1 \ne b
-\end{e…'>\begin{equation}
-1 \ne b
-\end{equation}
-</p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>1</mn><mo mathvariant="normal">≠</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">1 \ne b
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mrel"><span class="mord vbox"><span class="thinbox"><span class="rlap"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="inner"><span class="mrel"></span></span><span class="fix"></span></span></span></span></span><span class="mrel">=</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">b</span></span></span></span></span></p>
-<p>$ 1 \ne b $<br />
-<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo mathvariant="normal">≠</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">1 \ne b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mrel"><span class="mord vbox"><span class="thinbox"><span class="rlap"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="inner"><span class="mrel"></span></span><span class="fix"></span></span></span></span></span><span class="mrel">=</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">b</span></span></span></span></p>
+<p>$$<br>
+\begin{equation}<br>
+1 \ne b<br>
+\end{equation}<br>
+$$</p>
+<p>$$<br>
+1 \ne b<br>
+$$</p>
+<p>$ 1 \ne b $<br>
+$1 \ne b$</p>
 <div class="mermaid-wrap"><pre class="mermaid-src" hidden>
   pie
     title Key elements in Product X
@@ -644,7 +679,7 @@ $$
 <p>删除环境变量</p>
 </li>
 </ol>
-<hr />
+<hr>
 <p>示例：打开终端。</p>
 <p>- 输入<code>pwd</code>回车，查看当前所处的文件夹路径。</p>
 <p>- 输入<code>ls</code>列出此文件夹下内所有的文件夹。</p>
@@ -653,7 +688,7 @@ $$
 <p>- 输入<code>rmdir 空格紧跟文件夹名称</code>删除文件夹。</p>
 <p>- 输入<code>cd ..</code>返回上一级目录。</p>
 <p>- 输入<code>open tmp.txt</code>打开当前所处文件夹下的tmp.txt文档。<em>同样不能越级打开。</em></p>
-<hr />
+<hr>
 <p>当我们在命令行输入一个命令（或者访问一个文件时）系统首先在当前目录寻找，如果没有找到，就会进入到path环境变量中寻找。都没有找到才会报错。</p>
 ]]></content>
       <categories>
@@ -670,15 +705,15 @@ $$
   <entry>
     <title></title>
     <url>/2024/03/30/%E7%94%B3%E8%AF%B7%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%8A%A8%E5%B7%A5%E8%AE%B8%E5%8F%AF/</url>
-    <content><![CDATA[<h1 id="申请工业园动工许可"><a class="markdownIt-Anchor" href="#申请工业园动工许可"></a> 申请工业园动工许可</h1>
-<h2 id="第一步"><a class="markdownIt-Anchor" href="#第一步"></a> 第一步</h2>
-<h3 id="注册shareek门户取得id"><a class="markdownIt-Anchor" href="#注册shareek门户取得id"></a> 注册shareek门户取得ID</h3>
-<h3 id="获取调研阶段工业许可"><a class="markdownIt-Anchor" href="#获取调研阶段工业许可"></a> 获取调研阶段工业许可</h3>
-<h2 id="第二步"><a class="markdownIt-Anchor" href="#第二步"></a> 第二步</h2>
-<h3 id="土地租赁"><a class="markdownIt-Anchor" href="#土地租赁"></a> 土地租赁</h3>
-<h3 id="申请分配能源"><a class="markdownIt-Anchor" href="#申请分配能源"></a> 申请分配能源</h3>
-<h2 id="第三步"><a class="markdownIt-Anchor" href="#第三步"></a> 第三步</h2>
-<h3 id="等待盈科完成公司注册流程"><a class="markdownIt-Anchor" href="#等待盈科完成公司注册流程"></a> 等待盈科完成公司注册流程</h3>
+    <content><![CDATA[<h1>申请工业园动工许可</h1>
+<h2 id="第一步">第一步</h2>
+<h3 id="注册shareek门户取得ID">注册shareek门户取得ID</h3>
+<h3 id="获取调研阶段工业许可">获取调研阶段工业许可</h3>
+<h2 id="第二步">第二步</h2>
+<h3 id="土地租赁">土地租赁</h3>
+<h3 id="申请分配能源">申请分配能源</h3>
+<h2 id="第三步">第三步</h2>
+<h3 id="等待盈科完成公司注册流程">等待盈科完成公司注册流程</h3>
 <ul>
 <li>
 <p>税务</p>
@@ -690,21 +725,21 @@ $$
 <p>总经理居住证</p>
 </li>
 </ul>
-<h3 id="工业园认证的consulting-engineer-office签合同"><a class="markdownIt-Anchor" href="#工业园认证的consulting-engineer-office签合同"></a> 工业园认证的consulting engineer office签合同</h3>
-<h3 id="完成主图纸和安全图纸设计认证"><a class="markdownIt-Anchor" href="#完成主图纸和安全图纸设计认证"></a> 完成主图纸和安全图纸设计认证</h3>
-<h2 id="第四步"><a class="markdownIt-Anchor" href="#第四步"></a> 第四步</h2>
-<h3 id="跟认证的垃圾搬运公司签合同"><a class="markdownIt-Anchor" href="#跟认证的垃圾搬运公司签合同"></a> 跟认证的垃圾搬运公司签合同</h3>
-<h3 id="申请环保动工许可"><a class="markdownIt-Anchor" href="#申请环保动工许可"></a> 申请环保动工许可</h3>
-<h2 id="第五步"><a class="markdownIt-Anchor" href="#第五步"></a> 第五步</h2>
-<h3 id="申请工业部动工许可"><a class="markdownIt-Anchor" href="#申请工业部动工许可"></a> 申请工业部动工许可</h3>
+<h3 id="工业园认证的consulting-engineer-office签合同">工业园认证的consulting engineer office签合同</h3>
+<h3 id="完成主图纸和安全图纸设计认证">完成主图纸和安全图纸设计认证</h3>
+<h2 id="第四步">第四步</h2>
+<h3 id="跟认证的垃圾搬运公司签合同">跟认证的垃圾搬运公司签合同</h3>
+<h3 id="申请环保动工许可">申请环保动工许可</h3>
+<h2 id="第五步">第五步</h2>
+<h3 id="申请工业部动工许可">申请工业部动工许可</h3>
 <ul>
 <li>设备进口免关税</li>
 </ul>
-<h3 id="申请工业园动工许可-2"><a class="markdownIt-Anchor" href="#申请工业园动工许可-2"></a> 申请工业园动工许可</h3>
-<h2 id="第六步"><a class="markdownIt-Anchor" href="#第六步"></a> 第六步</h2>
-<h3 id="安排安全员"><a class="markdownIt-Anchor" href="#安排安全员"></a> 安排安全员</h3>
-<h3 id="安排安保"><a class="markdownIt-Anchor" href="#安排安保"></a> 安排安保</h3>
-<h3 id="安排有资质的建筑公司动工"><a class="markdownIt-Anchor" href="#安排有资质的建筑公司动工"></a> 安排有资质的建筑公司动工</h3>
+<h3 id="申请工业园动工许可">申请工业园动工许可</h3>
+<h2 id="第六步">第六步</h2>
+<h3 id="安排安全员">安排安全员</h3>
+<h3 id="安排安保">安排安保</h3>
+<h3 id="安排有资质的建筑公司动工">安排有资质的建筑公司动工</h3>
 ]]></content>
   </entry>
   <entry>
@@ -723,6 +758,27 @@ $$
       </categories>
       <tags>
         <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机语言</title>
+    <url>/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<p>计算机语言其实和人类语言没有本质区别，知识交流主体不同。</p>
+<p>机器语言发展的三个阶段：</p>
+<ul>
+<li>机器语言：通过二进制编码来编写程序。编写麻烦，执行效率好。</li>
+<li>汇编语言：使用符号代替机器码。汇编与反汇编。汇编语言只适用于某些硬件，兼容性差。计算机底层一些硬件驱动现在还用汇编语言编写。</li>
+<li>高级语言：和英语语法类似，并且和硬件关系不紧密，通过高级语言编写的程序可以在不同的硬件系统中执行。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>计算机</tag>
       </tags>
   </entry>
   <entry>
@@ -759,27 +815,6 @@ $$
       </tags>
   </entry>
   <entry>
-    <title>计算机语言</title>
-    <url>/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<p>计算机语言其实和人类语言没有本质区别，知识交流主体不同。</p>
-<p>机器语言发展的三个阶段：</p>
-<ul>
-<li>机器语言：通过二进制编码来编写程序。编写麻烦，执行效率好。</li>
-<li>汇编语言：使用符号代替机器码。汇编与反汇编。汇编语言只适用于某些硬件，兼容性差。计算机底层一些硬件驱动现在还用汇编语言编写。</li>
-<li>高级语言：和英语语法类似，并且和硬件关系不紧密，通过高级语言编写的程序可以在不同的硬件系统中执行。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>计算机</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>进制</title>
     <url>/2024/03/31/%E8%BF%9B%E5%88%B6/</url>
     <content><![CDATA[<ul>
@@ -810,7 +845,7 @@ $$
 </ul>
 </li>
 </ul>
-<hr />
+<hr>
 <p>内存相当于一个个小格子，1个小格子存储一个0或者1 。内存中的一个小格子我们叫做bit（位），bit是计算机中的最小单位。</p>
 <p>8bit = 1byte。byte是我们最小的可操作单位。</p>
 <p>1024byte = 1kb（千字节）</p>
@@ -834,28 +869,13 @@ $$
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>分类</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>文档</title>
     <url>/files/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>链接</title>
-    <url>/link/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/js/script.js</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>电影</title>
-    <url>/movies/index.html</url>
+    <title>分类</title>
+    <url>/categories/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -897,6 +917,21 @@ $$
     -o-transition: none!important;
 }
 ]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/js/script.js</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>链接</title>
+    <url>/link/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>电影</title>
+    <url>/movies/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>音乐</title>
