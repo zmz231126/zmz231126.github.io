@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-03-30T12:11:43.506Z</updated>
+  <updated>2024-03-31T03:39:54.813Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,345 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python的基本语法</title>
+    <link href="http://example.com/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
+    <id>http://example.com/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</id>
+    <published>2024-03-30T16:00:00.000Z</published>
+    <updated>2024-03-31T03:39:54.813Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;python严格区分大小写。比如&lt;code&gt;Print()&lt;/code&gt;不能被执行。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;语句&lt;/strong&gt;不建议过长。一条语句可以多行编写，语句以反斜线&lt;code&gt;&#92;&lt;/code&gt;换行。&lt;/p&gt;
+&lt;p&gt;不要随便写缩进，缩进严格，表示代码块。&lt;</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
+    
+    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python交互模式</title>
+    <link href="http://example.com/2024/03/31/python%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://example.com/2024/03/31/python%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%BC%8F/</id>
+    <published>2024-03-30T16:00:00.000Z</published>
+    <updated>2024-03-31T03:39:54.811Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;交互界面：当我们通过命令行进入python，所进入的界面就是python的交互界面。&lt;/p&gt;
+&lt;p&gt;交互模式是输入一行执行一行，并不适合日常开发，仅可以做一些日常简单的测试。&lt;/p&gt;
+&lt;p&gt;我们可以编写&lt;code&gt;.py&lt;/code&gt;文档，利用【终端】执行。&lt;/p&gt;
+&lt;p&gt;</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
+    
+    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+    <category term="Mac终端" scheme="http://example.com/tags/Mac%E7%BB%88%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python中的几个术语</title>
+    <link href="http://example.com/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
+    <id>http://example.com/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</id>
+    <published>2024-03-30T16:00:00.000Z</published>
+    <updated>2024-03-31T03:39:54.812Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;【表达式】类似于数学公式比如10 + 5；8 + 4.&lt;/p&gt;
+&lt;p&gt;表达式仅仅用来计算一些结果，不会对程序产生实质影响。&lt;/p&gt;
+&lt;p&gt;【语句】语句需要完成某种功能，比如打印信息、获取信息、为变量赋值等比如：&lt;code&gt;print()&lt;/code&gt;, &lt;code&gt;a = </summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
+    
+    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>变量和标识符</title>
+    <link href="http://example.com/2024/03/31/%E5%8F%98%E9%87%8F%E5%92%8C%E6%A0%87%E8%AF%86%E7%AC%A6/"/>
+    <id>http://example.com/2024/03/31/%E5%8F%98%E9%87%8F%E5%92%8C%E6%A0%87%E8%AF%86%E7%AC%A6/</id>
+    <published>2024-03-30T16:00:00.000Z</published>
+    <updated>2024-03-31T03:39:54.806Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;使用变量不需要声明，直接为变量赋值，但是不能使用未被赋值的变量&lt;/p&gt;
+&lt;p&gt;python是一个动态类型的语言，可以给变量赋&lt;strong&gt;任意类型的值&lt;/strong&gt;。也可以任意修改变量的值。&lt;/p&gt;
+&lt;p&gt;通常变量的名要有意义，比如年龄18，那么我们可以写&lt;code&gt;</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
+    
+    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+    <category term="spyder快捷键" scheme="http://example.com/tags/spyder%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>字面变量和变量</title>
+    <link href="http://example.com/2024/03/31/%E5%AD%97%E9%9D%A2%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F/"/>
+    <id>http://example.com/2024/03/31/%E5%AD%97%E9%9D%A2%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F/</id>
+    <published>2024-03-30T16:00:00.000Z</published>
+    <updated>2024-03-31T03:39:54.817Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;【字面量】一个一个的值，它的意思就是它字面的值。在程序中可以直接使用。&lt;/p&gt;
+&lt;p&gt;【变量】与字面量相反。变量可以保存字面量，并且保存的字面量是不定的。&lt;/p&gt;
+&lt;p&gt;变量本身无意义，会跟不同的字面量表示不同的意思。&lt;/p&gt;
+&lt;p&gt;开发时，通常将字面量保存在变量中，通过变</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
+    
+    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+    <category term="计算机" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>文本文件和字符集</title>
+    <link href="http://example.com/2024/03/31/%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%92%8C%E5%AD%97%E7%AC%A6%E9%9B%86/"/>
+    <id>http://example.com/2024/03/31/%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%92%8C%E5%AD%97%E7%AC%A6%E9%9B%86/</id>
+    <published>2024-03-30T16:00:00.000Z</published>
+    <updated>2024-03-31T03:39:54.815Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;文本分为纯文本和富文本。&lt;/p&gt;
+&lt;p&gt;纯文本在计算机底层也会转换为二进制保存。&lt;/p&gt;
+&lt;p&gt;将字符转换为二进制码的过程叫做&lt;strong&gt;编码&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;将二进制码转换成字符的过程叫做&lt;strong&gt;解码&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;编码和</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
+    
+    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+    <category term="计算机" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>环境变量</title>
+    <link href="http://example.com/2024/03/31/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/"/>
+    <id>http://example.com/2024/03/31/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</id>
+    <published>2024-03-30T16:00:00.000Z</published>
+    <updated>2024-03-31T03:39:54.809Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;环境变量（enviroment variable）指的是操作系统当中的一些变量。&lt;em&gt;主要用来配置一些路径。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;比如操作系统允许我们把文件存在电脑上的任意盘符。 那么需要创建一个环境变量比如说abc，a用户把文件存储到了C盘，那么abc=C。b用户把</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
+    
+    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+    <category term="Mac终端命令" scheme="http://example.com/tags/Mac%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4/"/>
+    
+    <category term="环境变量" scheme="http://example.com/tags/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>编译型语言和解释型语言</title>
+    <link href="http://example.com/2024/03/31/%E7%BC%96%E8%AF%91%E5%9E%8B%E8%AF%AD%E8%A8%80%E5%92%8C%E8%A7%A3%E9%87%8A%E5%9E%8B%E8%AF%AD%E8%A8%80/"/>
+    <id>http://example.com/2024/03/31/%E7%BC%96%E8%AF%91%E5%9E%8B%E8%AF%AD%E8%A8%80%E5%92%8C%E8%A7%A3%E9%87%8A%E5%9E%8B%E8%AF%AD%E8%A8%80/</id>
+    <published>2024-03-30T16:00:00.000Z</published>
+    <updated>2024-03-31T03:19:16.142Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;任何语言在交给计算机执行时，必须转换为机器码。根据转换时机的不同，语言分为两大类：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;编译型语言：会在代码执行前将代码编译为机器码，然后交给计算机执行。执行速度快，跨平台型差。&lt;/li&gt;
+&lt;li&gt;解释性语言：不会在执行前对代码进行编译，而是在执行的同</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
+    
+    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机简介</title>
+    <link href="http://example.com/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%AE%80%E4%BB%8B/"/>
+    <id>http://example.com/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%AE%80%E4%BB%8B/</id>
+    <published>2024-03-30T16:00:00.000Z</published>
+    <updated>2024-03-31T03:39:54.810Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;计算机是一个用来进行计算的&lt;strong&gt;机器&lt;/strong&gt;，跟生活中其他机器不同的点在于计算机是用来&lt;strong&gt;计算&lt;/strong&gt;的。&lt;/p&gt;
+&lt;p&gt;目前计算机只能根据人类的指令进行操作。我们所学计算机，就是学习如何去进行控制这台机器。&lt;/p&gt;
+&lt;p&gt;计算机包</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
+    
+    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+    <category term="计算机简介" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%AE%80%E4%BB%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机语言</title>
+    <link href="http://example.com/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E7%AE%80%E4%BB%8B/"/>
+    <id>http://example.com/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E7%AE%80%E4%BB%8B/</id>
+    <published>2024-03-30T16:00:00.000Z</published>
+    <updated>2024-03-31T03:39:54.816Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;计算机语言其实和人类语言没有本质区别，知识交流主体不同。&lt;/p&gt;
+&lt;p&gt;机器语言发展的三个阶段：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;机器语言：通过二进制编码来编写程序。编写麻烦，执行效率好。&lt;/li&gt;
+&lt;li&gt;汇编语言：使用符号代替机器码。汇编与反汇编。汇编语言只适用于某些硬件，兼</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
+    
+    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+    <category term="计算机" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>进制</title>
+    <link href="http://example.com/2024/03/31/%E8%BF%9B%E5%88%B6/"/>
+    <id>http://example.com/2024/03/31/%E8%BF%9B%E5%88%B6/</id>
+    <published>2024-03-30T16:00:00.000Z</published>
+    <updated>2024-03-31T03:39:54.807Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;十进制
+&lt;ul&gt;
+&lt;li&gt;满十进一。十进制中有10个数字0 1 2 3 4 5 6 7 8 9. 10是由连个数字构成的，不属于10进制中的数字。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;二进制
+&lt;ul&gt;
+&lt;li&gt;满二进一&lt;/li&gt;
+&lt;li&gt;二进制中只有2个数</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
+    
+    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+    <category term="计算机" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+  </entry>
   
   <entry>
     <title></title>
@@ -263,24 +602,6 @@
 &lt;p&gt;涤纶纺粘胎基布：&lt;/p&gt;
 &lt;p&gt;免税通过海关：free of duty through customs&lt;/p&gt;
 &lt;p&gt;钢结构：steel structu</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2024/03/24/hello-world/"/>
-    <id>http://example.com/2024/03/24/hello-world/</id>
-    <published>2024-03-24T15:19:20.557Z</published>
-    <updated>2024-03-28T09:27:19.604Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
       
     
     
