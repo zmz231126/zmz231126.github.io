@@ -37,6 +37,30 @@
       </tags>
   </entry>
   <entry>
+    <title>python中的几个术语</title>
+    <url>/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
+    <content><![CDATA[<p>【表达式】类似于数学公式比如10 + 5；8 + 4.</p>
+<p>表达式仅仅用来计算一些结果，不会对程序产生实质影响。</p>
+<p>【语句】语句需要完成某种功能，比如打印信息、获取信息、为变量赋值等比如：<code>print()</code>, <code>a = 10</code>。</p>
+<p>语句的执行会对程序执行产生影响。语句在命令行中不一定会有执行结果。有返回值的语句，会有返回结果。</p>
+<p>【程序】是多个语句和表达式构成的。</p>
+<p>【函数（function）】函数是一个语句，用来完成特定的功能。函数的结构为<code>***()</code>.括号中的内容叫「参数」，可以没有参数也可以有多个参数，中间用逗号隔开。返回的结果叫做「返回值」，同样可以没有返回值。</p>
+<p>函数分为</p>
+<ol>
+<li>内置函数。python解释器提供的，可以在python中直接使用。</li>
+<li>自定义函数。由程序员自定义的函数。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>python交互模式</title>
     <url>/2024/03/31/python%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<p>交互界面：当我们通过命令行进入python，所进入的界面就是python的交互界面。</p>
@@ -63,67 +87,6 @@
       <tags>
         <tag>python</tag>
         <tag>Mac终端</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python中的几个术语</title>
-    <url>/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
-    <content><![CDATA[<p>【表达式】类似于数学公式比如10 + 5；8 + 4.</p>
-<p>表达式仅仅用来计算一些结果，不会对程序产生实质影响。</p>
-<p>【语句】语句需要完成某种功能，比如打印信息、获取信息、为变量赋值等比如：<code>print()</code>, <code>a = 10</code>。</p>
-<p>语句的执行会对程序执行产生影响。语句在命令行中不一定会有执行结果。有返回值的语句，会有返回结果。</p>
-<p>【程序】是多个语句和表达式构成的。</p>
-<p>【函数（function）】函数是一个语句，用来完成特定的功能。函数的结构为<code>***()</code>.括号中的内容叫「参数」，可以没有参数也可以有多个参数，中间用逗号隔开。返回的结果叫做「返回值」，同样可以没有返回值。</p>
-<p>函数分为</p>
-<ol>
-<li>内置函数。python解释器提供的，可以在python中直接使用。</li>
-<li>自定义函数。由程序员自定义的函数。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一类项目获取环保许可的要求</title>
-    <url>/2024/03/29/%E4%B8%80%E7%B1%BB%E9%A1%B9%E7%9B%AE%E8%8E%B7%E5%8F%96%E7%8E%AF%E4%BF%9D%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/</url>
-    <content><![CDATA[<p>一类项目对环境影响很小，且影响不回超过活动地点。需要提交电子申请、附上一般要求中提及的文件并且遵守相关条件。</p>
-<p><strong>一般要求</strong></p>
-<ol>
-<li>填写分类表格（<a href="https://raw.githubusercontent.com/zmz231126/bolgpicture/main/202403291608962.pdf">点击此处下载</a>）</li>
-<li>项目简单的初始报告</li>
-<li>无害和已经许可的工业垃圾（液体和固体）的搬运和清理合同</li>
-<li>与认证机构签署的固体市政垃圾的搬运和清理合同</li>
-<li>商业登记证</li>
-<li>税务登记证</li>
-<li>身份证或者居住证</li>
-<li>产权契约或者租赁合同</li>
-</ol>
-<p><strong>相关条件</strong></p>
-<ul>
-<li>商会或者合法机构认证的项目所有人的授权书。</li>
-</ul>
-<p><strong>更新一类环保许可的要求</strong></p>
-<ol>
-<li>上一阶段环保登记证书</li>
-<li>上面要求中的3-8项。</li>
-</ol>
-<p><a href='https://ncec.gov.sa/%d9%85%d8%aa%d8%b7%d9%84%d8%a8%d8%a7%d8%aa-%d8%a7%d9%84%d8%ad%d8%b5%d9%88%d9%84-%d8%b9%d9%84%d9%89-%d9%85%d9%88%d8%a7%d9%81%d9%82%d8%a9-%d8%a8%d9%8a%d8%a6%d9%8a%d8%a9-%d9%84%d9%84%d9%81%d8%a6%d8%a9'>本文引用自nece网站</a></p>
-]]></content>
-      <categories>
-        <category>制度学习</category>
-        <category>沙特环保制度</category>
-      </categories>
-      <tags>
-        <tag>建厂</tag>
-        <tag>沙特投资</tag>
-        <tag>沙特</tag>
-        <tag>沙特环境监察中心</tag>
       </tags>
   </entry>
   <entry>
@@ -204,8 +167,8 @@
         <category>沙特工业和矿产资源部制度</category>
       </categories>
       <tags>
-        <tag>沙特投资</tag>
         <tag>沙特</tag>
+        <tag>沙特投资</tag>
         <tag>工业许可证</tag>
         <tag>沙特工业和矿产资源部</tag>
       </tags>
@@ -247,24 +210,6 @@
       <tags>
         <tag>python</tag>
         <tag>spyder快捷键</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>字面变量和变量</title>
-    <url>/2024/03/31/%E5%AD%97%E9%9D%A2%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F/</url>
-    <content><![CDATA[<p>【字面量】一个一个的值，它的意思就是它字面的值。在程序中可以直接使用。</p>
-<p>【变量】与字面量相反。变量可以保存字面量，并且保存的字面量是不定的。</p>
-<p>变量本身无意义，会跟不同的字面量表示不同的意思。</p>
-<p>开发时，通常将字面量保存在变量中，通过变量来引用字面量。这样便于统一管理和引用。</p>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>计算机</tag>
       </tags>
   </entry>
   <entry>
@@ -352,10 +297,65 @@
         <category>沙特工业园制度</category>
       </categories>
       <tags>
-        <tag>建厂</tag>
-        <tag>沙特投资</tag>
         <tag>沙特</tag>
+        <tag>沙特投资</tag>
+        <tag>建厂</tag>
         <tag>沙特工业园</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>字面变量和变量</title>
+    <url>/2024/03/31/%E5%AD%97%E9%9D%A2%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F/</url>
+    <content><![CDATA[<p>【字面量】一个一个的值，它的意思就是它字面的值。在程序中可以直接使用。</p>
+<p>【变量】与字面量相反。变量可以保存字面量，并且保存的字面量是不定的。</p>
+<p>变量本身无意义，会跟不同的字面量表示不同的意思。</p>
+<p>开发时，通常将字面量保存在变量中，通过变量来引用字面量。这样便于统一管理和引用。</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>计算机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一类项目获取环保许可的要求</title>
+    <url>/2024/03/29/%E4%B8%80%E7%B1%BB%E9%A1%B9%E7%9B%AE%E8%8E%B7%E5%8F%96%E7%8E%AF%E4%BF%9D%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/</url>
+    <content><![CDATA[<p>一类项目对环境影响很小，且影响不回超过活动地点。需要提交电子申请、附上一般要求中提及的文件并且遵守相关条件。</p>
+<p><strong>一般要求</strong></p>
+<ol>
+<li>填写分类表格（<a href="https://raw.githubusercontent.com/zmz231126/bolgpicture/main/202403291608962.pdf">点击此处下载</a>）</li>
+<li>项目简单的初始报告</li>
+<li>无害和已经许可的工业垃圾（液体和固体）的搬运和清理合同</li>
+<li>与认证机构签署的固体市政垃圾的搬运和清理合同</li>
+<li>商业登记证</li>
+<li>税务登记证</li>
+<li>身份证或者居住证</li>
+<li>产权契约或者租赁合同</li>
+</ol>
+<p><strong>相关条件</strong></p>
+<ul>
+<li>商会或者合法机构认证的项目所有人的授权书。</li>
+</ul>
+<p><strong>更新一类环保许可的要求</strong></p>
+<ol>
+<li>上一阶段环保登记证书</li>
+<li>上面要求中的3-8项。</li>
+</ol>
+<p><a href='https://ncec.gov.sa/%d9%85%d8%aa%d8%b7%d9%84%d8%a8%d8%a7%d8%aa-%d8%a7%d9%84%d8%ad%d8%b5%d9%88%d9%84-%d8%b9%d9%84%d9%89-%d9%85%d9%88%d8%a7%d9%81%d9%82%d8%a9-%d8%a8%d9%8a%d8%a6%d9%8a%d8%a9-%d9%84%d9%84%d9%81%d8%a6%d8%a9'>本文引用自nece网站</a></p>
+]]></content>
+      <categories>
+        <category>制度学习</category>
+        <category>沙特环保制度</category>
+      </categories>
+      <tags>
+        <tag>沙特</tag>
+        <tag>沙特投资</tag>
+        <tag>建厂</tag>
+        <tag>沙特环境监察中心</tag>
       </tags>
   </entry>
   <entry>
@@ -484,10 +484,39 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
         <category>沙特工业园制度</category>
       </categories>
       <tags>
-        <tag>沙特投资</tag>
         <tag>沙特</tag>
+        <tag>沙特投资</tag>
         <tag>沙特工业园</tag>
         <tag>工厂运营许可</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>沙特工业园建厂要求</title>
+    <url>/2024/03/28/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%BB%BA%E5%8E%82%E8%A6%81%E6%B1%82/</url>
+    <content><![CDATA[<p>工厂需要遵循【建厂条件和标准指南】中的建厂要求，可以享受Modon在工业园中提供的服务。</p>
+<ul>
+<li>工厂建设的单元包括：生产车间、原材料仓库、产成品仓库、员工服务、电力供应、工业安全服务、内部道路、疏散区域、<br />
+管理建筑。</li>
+<li>生产车间的高度满足所有任务需求，其中包括根据不同生产类型的生产线所需要的机械作业任务。</li>
+<li>原材料仓库的面积限制在能满足工厂需要的30%-40%，随工厂规模（建筑面积）的增大而增大。</li>
+<li>产成品仓库的面积限制在满足工厂产品存储的30%-40%，随工厂规模（建筑面积）的增大而增大。</li>
+<li>工厂员工服务包括：卫生间、礼拜厅、急救、餐厅、换衣间。</li>
+<li>包括给工厂服务的管理办公室。</li>
+<li>供电工程包括中低压配电室和主断路器室。</li>
+<li>安全服务包括：备用消防箱、灭火系统和火灾警报系统。</li>
+<li>内部道路用来方便工厂不同单元的活动，并且连接工厂各个入口和主道路。</li>
+<li>生产建筑和围墙之间的间隔：前方与道路之间不低于13.5米，与两侧和后方之间不低于6米。</li>
+<li>申请、认证和颁发许可证的要求。</li>
+</ul>
+<p><a href='https://www.modon.gov.sa/ar/Systems/Pages/Requirements.aspx'>内容采集自工业园官网</a></p>
+]]></content>
+      <categories>
+        <category>制度学习</category>
+        <category>沙特工业园制度</category>
+      </categories>
+      <tags>
+        <tag>建厂</tag>
+        <tag>沙特工业园</tag>
       </tags>
   </entry>
   <entry>
@@ -544,36 +573,7 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
         <category>沙特工业园制度</category>
       </categories>
       <tags>
-        <tag>建厂</tag>
         <tag>沙特投资</tag>
-        <tag>沙特工业园</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>沙特工业园建厂要求</title>
-    <url>/2024/03/28/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%BB%BA%E5%8E%82%E8%A6%81%E6%B1%82/</url>
-    <content><![CDATA[<p>工厂需要遵循【建厂条件和标准指南】中的建厂要求，可以享受Modon在工业园中提供的服务。</p>
-<ul>
-<li>工厂建设的单元包括：生产车间、原材料仓库、产成品仓库、员工服务、电力供应、工业安全服务、内部道路、疏散区域、<br />
-管理建筑。</li>
-<li>生产车间的高度满足所有任务需求，其中包括根据不同生产类型的生产线所需要的机械作业任务。</li>
-<li>原材料仓库的面积限制在能满足工厂需要的30%-40%，随工厂规模（建筑面积）的增大而增大。</li>
-<li>产成品仓库的面积限制在满足工厂产品存储的30%-40%，随工厂规模（建筑面积）的增大而增大。</li>
-<li>工厂员工服务包括：卫生间、礼拜厅、急救、餐厅、换衣间。</li>
-<li>包括给工厂服务的管理办公室。</li>
-<li>供电工程包括中低压配电室和主断路器室。</li>
-<li>安全服务包括：备用消防箱、灭火系统和火灾警报系统。</li>
-<li>内部道路用来方便工厂不同单元的活动，并且连接工厂各个入口和主道路。</li>
-<li>生产建筑和围墙之间的间隔：前方与道路之间不低于13.5米，与两侧和后方之间不低于6米。</li>
-<li>申请、认证和颁发许可证的要求。</li>
-</ul>
-<p><a href='https://www.modon.gov.sa/ar/Systems/Pages/Requirements.aspx'>内容采集自工业园官网</a></p>
-]]></content>
-      <categories>
-        <category>制度学习</category>
-        <category>沙特工业园制度</category>
-      </categories>
-      <tags>
         <tag>建厂</tag>
         <tag>沙特工业园</tag>
       </tags>
@@ -844,6 +844,21 @@ $$
     <content><![CDATA[]]></content>
   </entry>
   <entry>
+    <title>链接</title>
+    <url>/link/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/js/script.js</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>电影</title>
+    <url>/movies/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title></title>
     <url>/css/header_style.css</url>
     <content><![CDATA[/* 导航栏做居中处理 */
@@ -882,21 +897,6 @@ $$
     -o-transition: none!important;
 }
 ]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/js/script.js</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>链接</title>
-    <url>/link/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>电影</title>
-    <url>/movies/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>音乐</title>
