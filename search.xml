@@ -4,20 +4,56 @@
     <title>Hello World</title>
     <url>/2024/03/24/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start">Quick Start</h2>
-<h3 id="Create-a-new-post">Create a new post</h3>
+<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
+<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server">Run server</h3>
+<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files">Generate static files</h3>
+<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
+<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>流程控制</title>
+    <url>/2024/04/01/if%E8%AF%AD%E5%8F%A5/</url>
+    <content><![CDATA[<p>Python代码是按照自上而下执行的. 但是通过流程控制语句可以改变流程控制顺序, 也可以让程序反复执行多次.<br />
+分为两大类:</p>
+<h1 id="条件判断语句"><a class="markdownIt-Anchor" href="#条件判断语句"></a> 条件判断语句</h1>
+<p>语法: if 条件表达式: 语句<br />
+执行流程:<br />
+1. 首先对条件表达式进行求值判断.<br />
+2. True执行语句<br />
+3. False不执行语句</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num = <span class="number">10</span></span><br><span class="line"><span class="keyword">if</span> num ==<span class="number">10</span>: <span class="built_in">print</span>(<span class="string">&quot;我会出来吗&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>执行后返回<code>我会出来吗</code></p>
+<p>默认情况下, if只会控制紧随其后的语句, 如果需要控制多条语句,需要使用代码块.</p>
+<h1 id="代码块python是缩紧严格的语言"><a class="markdownIt-Anchor" href="#代码块python是缩紧严格的语言"></a> 代码块(python是缩紧严格的语言)</h1>
+<p>可以让if控制多条语句. 语句在<code>:</code>下一行开始写. 下边等缩进的内容就是代码块. 这也是一般使用if语句的方式.<br />
+可以用Tab缩紧, 或者4个空格缩紧. 推荐使用空格缩紧, 而且整片代码使用方式要统一.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num = <span class="number">10</span></span><br><span class="line"><span class="keyword">if</span> num == <span class="number">10</span>: </span><br><span class="line">    <span class="built_in">print</span>(<span class="number">123</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="number">234</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="number">345</span>)</span><br></pre></td></tr></table></figure>
+<p>这里会全部返回</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">123</span><br><span class="line">234</span><br><span class="line">345</span><br></pre></td></tr></table></figure>
+<h1 id="input函数"><a class="markdownIt-Anchor" href="#input函数"></a> input()函数</h1>
+<p>调用input()后, 等待用户输入, 输入结束后, 继续执行.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;用户输入了<span class="subst">&#123;a&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>在命令行中输入’你好’,回车返回<code>用户输入了你好</code></p>
+<div class="tip warning"><p>不论用户输入的是什么数据, 返回值都是字符串. 如果要使用返回值, 需要对返回值进行类型转换.</p>
+</div>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
   </entry>
   <entry>
     <title>python交互模式</title>
@@ -90,90 +126,6 @@
       </tags>
   </entry>
   <entry>
-    <title>沙特办理工业许可证的要求和流程</title>
-    <url>/2024/03/28/%E5%8A%9E%E7%90%86%E5%B7%A5%E4%B8%9A%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/</url>
-    <content><![CDATA[<h1>定义</h1>
-<p>沙特工业和矿产资源部提供工业许可证颁发服务，它是本部根据海湾国家合作委员会统一工业管理制度颁发的文件。允许根据特定的流程和机制从事工业项目，从投资者基础建设，施工到生产提供便利。</p>
-<h1>企业在申请工业许可证时的三个阶段</h1>
-<p>工业企业在申请工业许可时有三个阶段，这三个阶段反映了工业项目的发展情况。每个阶段都需要从相关部门申请必要的工业许可。</p>
-<h2 id="基础阶段">基础阶段</h2>
-<p><strong>要求</strong></p>
-<ul>
-<li>从事工业活动的商业注册证书</li>
-<li>在工业平台提交颁发工业许可的服务</li>
-<li>立即颁发（不受本部限制的工业活动）</li>
-</ul>
-<p><strong>特点</strong></p>
-<ul>
-<li>在工业许可证中注册要生产的产品</li>
-<li>可以在负责场地分配的相关机构申请分配场地</li>
-<li>可以申请工业贷款</li>
-<li><span style='background-color: yellow;'>可以申请配电</span></li>
-</ul>
-<p>许可证的有效期为一年，可以申请更新。</p>
-<h2 id="建设阶段">建设阶段</h2>
-<p><strong>要求</strong></p>
-<ul>
-<li>从事工业活动的商业注册证书</li>
-<li>从能源部分配能源</li>
-<li>从分配场地的机构获得地点许可证/合同</li>
-<li>环保建设许可证</li>
-<li>在工业平台提交阶段升级申请</li>
-</ul>
-<p><strong>特点</strong></p>
-<ul>
-<li>在建设阶段提供劳工支持</li>
-<li>为机械设备免关税</li>
-<li>为零配件免关税</li>
-<li>化学品清理</li>
-<li>根据法定要求，经该部批准或在合作委员会框架内商定的任何其他福利或豁免</li>
-</ul>
-<p>许可证的有效期为一年，可以申请更新。</p>
-<h2 id="生产阶段">生产阶段</h2>
-<p><strong>要求</strong></p>
-<ul>
-<li>从事工业活动的商业注册证书</li>
-<li>从相关部门获取的安全环保运行证书</li>
-<li>在工业平台提交升级申请</li>
-<li>从其他相关部门获得的经营要求和许可证，包括经营军工、食品和药品活动。</li>
-</ul>
-<p><strong>特点</strong></p>
-<ul>
-<li>为生产阶段提供劳工支持</li>
-<li>生产投入品免关税</li>
-<li>机械设备免关税</li>
-<li>零配件免关税</li>
-<li>化学品清理</li>
-<li>原产地证书</li>
-<li>根据法定要求，经该部批准或在合作委员会框架内商定的任何其他福利或豁免</li>
-</ul>
-<p>许可证的有效期为五年。</p>
-<h1>条件</h1>
-<p>申请人必须遵守：</p>
-<ul>
-<li>海湾国家合作委员会统一工业管理制度中提到了的条款和现行的法规。</li>
-<li>每6个月在本部电子网站上更新工厂信息。</li>
-<li>允许本部员工进入工业场地审查相关文件和账户，监督生产活动等。</li>
-<li>未经本部同意不得扩大、发展、更换产品、工业项目合并或停止工业项目。</li>
-<li>允许本部审查企业相关的所有数据并提交给所有政府机构。</li>
-<li>只允许在完成工业项目、获得了安全环保许可以及其他部门的要求后进行工业活动和实际生产，然后需要将工业许可证升级到“生产”。</li>
-</ul>
-<h1>颁发许可证所需时间</h1>
-<p>立即颁发（本部限制的活动除外）</p>
-<p><a href="https://mim.gov.sa/mim/services/31393/">本文翻译自工业部网站</a></p>
-]]></content>
-      <categories>
-        <category>制度学习</category>
-        <category>沙特工业和矿产资源部制度</category>
-      </categories>
-      <tags>
-        <tag>沙特</tag>
-        <tag>沙特投资</tag>
-        <tag>工业许可证</tag>
-        <tag>沙特工业和矿产资源部</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>一类项目获取环保许可的要求</title>
     <url>/2024/03/29/%E4%B8%80%E7%B1%BB%E9%A1%B9%E7%9B%AE%E8%8E%B7%E5%8F%96%E7%8E%AF%E4%BF%9D%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/</url>
     <content><![CDATA[<p>一类项目对环境影响很小，且影响不回超过活动地点。需要提交电子申请、附上一般要求中提及的文件并且遵守相关条件。</p>
@@ -204,9 +156,9 @@
         <category>沙特环保制度</category>
       </categories>
       <tags>
-        <tag>沙特</tag>
-        <tag>沙特投资</tag>
         <tag>建厂</tag>
+        <tag>沙特投资</tag>
+        <tag>沙特</tag>
         <tag>沙特环境监察中心</tag>
       </tags>
   </entry>
@@ -224,7 +176,7 @@
 <li>Tab/Shift + Tab	代码缩进/反缩进</li>
 <li>Ctrl ＋I	显示帮助</li>
 </ol>
-<hr>
+<hr />
 <p>标识符：html中是名值对，这里是标识符和值成对。</p>
 <p>python中所有可以自主命名的内容都是标识符。比如变量名、函数名、类名。</p>
 <ol>
@@ -250,21 +202,87 @@
       </tags>
   </entry>
   <entry>
-    <title>字面变量和变量</title>
-    <url>/2024/03/31/%E5%AD%97%E9%9D%A2%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F/</url>
-    <content><![CDATA[<p>【字面量】一个一个的值，它的意思就是它字面的值。在程序中可以直接使用。</p>
-<p>【变量】与字面量相反。变量可以保存字面量，并且保存的字面量是不定的。</p>
-<p>变量本身无意义，会跟不同的字面量表示不同的意思。</p>
-<p>开发时，通常将字面量保存在变量中，通过变量来引用字面量。这样便于统一管理和引用。</p>
+    <title>沙特办理工业许可证的要求和流程</title>
+    <url>/2024/03/28/%E5%8A%9E%E7%90%86%E5%B7%A5%E4%B8%9A%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/</url>
+    <content><![CDATA[<h1 id="定义"><a class="markdownIt-Anchor" href="#定义"></a> 定义</h1>
+<p>沙特工业和矿产资源部提供工业许可证颁发服务，它是本部根据海湾国家合作委员会统一工业管理制度颁发的文件。允许根据特定的流程和机制从事工业项目，从投资者基础建设，施工到生产提供便利。</p>
+<h1 id="企业在申请工业许可证时的三个阶段"><a class="markdownIt-Anchor" href="#企业在申请工业许可证时的三个阶段"></a> 企业在申请工业许可证时的三个阶段</h1>
+<p>工业企业在申请工业许可时有三个阶段，这三个阶段反映了工业项目的发展情况。每个阶段都需要从相关部门申请必要的工业许可。</p>
+<h2 id="基础阶段"><a class="markdownIt-Anchor" href="#基础阶段"></a> 基础阶段</h2>
+<p><strong>要求</strong></p>
+<ul>
+<li>从事工业活动的商业注册证书</li>
+<li>在工业平台提交颁发工业许可的服务</li>
+<li>立即颁发（不受本部限制的工业活动）</li>
+</ul>
+<p><strong>特点</strong></p>
+<ul>
+<li>在工业许可证中注册要生产的产品</li>
+<li>可以在负责场地分配的相关机构申请分配场地</li>
+<li>可以申请工业贷款</li>
+<li><span style='background-color: yellow;'>可以申请配电</span></li>
+</ul>
+<p>许可证的有效期为一年，可以申请更新。</p>
+<h2 id="建设阶段"><a class="markdownIt-Anchor" href="#建设阶段"></a> 建设阶段</h2>
+<p><strong>要求</strong></p>
+<ul>
+<li>从事工业活动的商业注册证书</li>
+<li>从能源部分配能源</li>
+<li>从分配场地的机构获得地点许可证/合同</li>
+<li>环保建设许可证</li>
+<li>在工业平台提交阶段升级申请</li>
+</ul>
+<p><strong>特点</strong></p>
+<ul>
+<li>在建设阶段提供劳工支持</li>
+<li>为机械设备免关税</li>
+<li>为零配件免关税</li>
+<li>化学品清理</li>
+<li>根据法定要求，经该部批准或在合作委员会框架内商定的任何其他福利或豁免</li>
+</ul>
+<p>许可证的有效期为一年，可以申请更新。</p>
+<h2 id="生产阶段"><a class="markdownIt-Anchor" href="#生产阶段"></a> 生产阶段</h2>
+<p><strong>要求</strong></p>
+<ul>
+<li>从事工业活动的商业注册证书</li>
+<li>从相关部门获取的安全环保运行证书</li>
+<li>在工业平台提交升级申请</li>
+<li>从其他相关部门获得的经营要求和许可证，包括经营军工、食品和药品活动。</li>
+</ul>
+<p><strong>特点</strong></p>
+<ul>
+<li>为生产阶段提供劳工支持</li>
+<li>生产投入品免关税</li>
+<li>机械设备免关税</li>
+<li>零配件免关税</li>
+<li>化学品清理</li>
+<li>原产地证书</li>
+<li>根据法定要求，经该部批准或在合作委员会框架内商定的任何其他福利或豁免</li>
+</ul>
+<p>许可证的有效期为五年。</p>
+<h1 id="条件"><a class="markdownIt-Anchor" href="#条件"></a> 条件</h1>
+<p>申请人必须遵守：</p>
+<ul>
+<li>海湾国家合作委员会统一工业管理制度中提到了的条款和现行的法规。</li>
+<li>每6个月在本部电子网站上更新工厂信息。</li>
+<li>允许本部员工进入工业场地审查相关文件和账户，监督生产活动等。</li>
+<li>未经本部同意不得扩大、发展、更换产品、工业项目合并或停止工业项目。</li>
+<li>允许本部审查企业相关的所有数据并提交给所有政府机构。</li>
+<li>只允许在完成工业项目、获得了安全环保许可以及其他部门的要求后进行工业活动和实际生产，然后需要将工业许可证升级到“生产”。</li>
+</ul>
+<h1 id="颁发许可证所需时间"><a class="markdownIt-Anchor" href="#颁发许可证所需时间"></a> 颁发许可证所需时间</h1>
+<p>立即颁发（本部限制的活动除外）</p>
+<p><a href="https://mim.gov.sa/mim/services/31393/">本文翻译自工业部网站</a></p>
 ]]></content>
       <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
+        <category>制度学习</category>
+        <category>沙特工业和矿产资源部制度</category>
       </categories>
       <tags>
-        <tag>python</tag>
-        <tag>计算机</tag>
+        <tag>沙特投资</tag>
+        <tag>沙特</tag>
+        <tag>工业许可证</tag>
+        <tag>沙特工业和矿产资源部</tag>
       </tags>
   </entry>
   <entry>
@@ -352,36 +370,224 @@
         <category>沙特工业园制度</category>
       </categories>
       <tags>
-        <tag>沙特</tag>
-        <tag>沙特投资</tag>
         <tag>建厂</tag>
+        <tag>沙特投资</tag>
+        <tag>沙特</tag>
         <tag>沙特工业园</tag>
       </tags>
   </entry>
   <entry>
-    <title>数据类型</title>
-    <url>/2024/03/31/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
-    <content><![CDATA[<p>数据类型：就是给变量赋的值的类型。<br>
-编程语言是人创造的，学习的时候要关联现实生活，这样容易理解。</p>
-<p>python 数据类型有三种：</p>
+    <title>字符串的复制</title>
+    <url>/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%A4%8D%E5%88%B6/</url>
+    <content><![CDATA[<p>将字符串和数字相乘, 就是复制字符串</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="string">&#x27;你好&#x27;</span></span><br><span class="line"></span><br><span class="line">a = a * <span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(a)</span><br></pre></td></tr></table></figure>
+<p>返回值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">你好你好</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>字符串</title>
+    <url>/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
+    <content><![CDATA[<ul>
+<li>字符串用来表示文本信息, 是使用最多的数据类型. 必须用引号包围, 可以理解成某人说:“”.</li>
+<li>单引号双引号都可以, 但是不可以混合使用. 但是相同的引号不可以嵌套, 但是不同的引号可以嵌套. 下边就是不用引号的嵌套</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">c = <span class="string">&quot;子曰:&#x27;学而时习之, 不亦说乎&#x27;&quot;</span></span><br><span class="line"><span class="built_in">print</span>(c)</span><br></pre></td></tr></table></figure>
 <ul>
-<li>整数（int）<br>
-数大小没有限制，可以是任意大小。<br>
-如果数字过长，我们可以用<code>_</code>作为分隔符，比如<strong>千位分隔符</strong>。</li>
+<li>引号不可以跨行使用, 需要跨行使用<code>\</code>. 注意: 这里跟<code>\n</code>的区别. 单纯的<code>\</code>只是告诉解析器我代码要换行写了, 不影响字符格式.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;锄禾日当午, \</span></span><br><span class="line"><span class="string">汗滴禾下土, \</span></span><br><span class="line"><span class="string">谁知盘中餐, \</span></span><br><span class="line"><span class="string">粒粒皆辛苦.&#x27;</span> </span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(s)</span><br></pre></td></tr></table></figure>
+<p>此时返回</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">锄禾日当午, 汗滴禾下土, 谁知盘中餐, 粒粒皆辛苦.</span><br></pre></td></tr></table></figure>
+<ul>
+<li>如果要保留, 原字符串的格式, 可以使用三个引号, 三个引号可以直接跨行使用, 而且保留字符串的格式.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;&#x27;&#x27;锄禾日当午,</span></span><br><span class="line"><span class="string">行滴禾下土,</span></span><br><span class="line"><span class="string">谁知盘中餐,</span></span><br><span class="line"><span class="string">粒粒皆辛苦.&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s)</span><br></pre></td></tr></table></figure>
+<p>此时返回值为</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">锄禾日当午,</span><br><span class="line">行滴禾下土,</span><br><span class="line">谁知盘中餐,</span><br><span class="line">粒粒皆辛苦.</span><br></pre></td></tr></table></figure>
+<ul>
+<li>转义字符, 比如在字符串内嵌套相同的引号是不允许的, 但是可以使用转义字符,将没有语法意义的引号转义, 告诉解析器, 他就单纯是一个字符而已, 不是一个字面量.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">c = <span class="string">&quot;子曰:\&quot;学而时习之, 不亦说乎\&quot;&quot;</span></span><br><span class="line"><span class="built_in">print</span>(c)</span><br></pre></td></tr></table></figure>
+<p>返回值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">子曰:&quot;学而时习之, 不亦说乎&quot;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>\n</code>表示换行符</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;锄禾日当午,\n汗滴禾下土,\n谁知盘中餐,\n粒粒皆辛苦.&#x27;</span> </span><br><span class="line"><span class="built_in">print</span>(s)</span><br></pre></td></tr></table></figure>
+<p>返回值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">锄禾日当午,</span><br><span class="line">汗滴禾下土,</span><br><span class="line">谁知盘中餐,</span><br><span class="line">粒粒皆辛苦.</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>\t</code>表示制表符</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">w = <span class="string">&#x27;学而时习之,\t不亦说乎&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(w)</span><br></pre></td></tr></table></figure>
+<p>返回值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">学而时习之,	不亦说乎</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>\uxxx</code>表示Unicode编码. 通过这种方式可以打印一些特殊符号.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="string">&#x27;\u0040&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(a)</span><br></pre></td></tr></table></figure>
+<p>返回值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">@</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>字面变量和变量</title>
+    <url>/2024/03/31/%E5%AD%97%E9%9D%A2%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F/</url>
+    <content><![CDATA[<p>【字面量】一个一个的值，它的意思就是它字面的值。在程序中可以直接使用。</p>
+<p>【变量】与字面量相反。变量可以保存字面量，并且保存的字面量是不定的。</p>
+<p>变量本身无意义，会跟不同的字面量表示不同的意思。</p>
+<p>开发时，通常将字面量保存在变量中，通过变量来引用字面量。这样便于统一管理和引用。</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>计算机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>布尔值</title>
+    <url>/2024/03/31/%E5%B8%83%E5%B0%94%E5%80%BC/</url>
+    <content><![CDATA[<p>布尔值(bool)用来做逻辑判断. 一共有两个<code>True</code>和<code>False</code>. 注意Python是一个大小写敏感的语言.<br />
+也可以理解为一个整数, true 是 1 false 是 0</p>
+<p><code>None</code>空值,表示不存在.</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>对象(object)</title>
+    <url>/2024/03/31/%E5%AF%B9%E8%B1%A1(object)/</url>
+    <content><![CDATA[<h1 id="对象介绍"><a class="markdownIt-Anchor" href="#对象介绍"></a> 对象介绍</h1>
+<p>Python是一个面向对象的语言. 一切皆对象.<br />
+程序运行中, 所有的数据都是存储在内存中, 硬盘–&gt;内存–&gt;CPU.<br />
+对象就是内存中专门用来存储指定数据的区域. 对象实际上就是一个容器.<br />
+数值，字符串, None都是对象</p>
+<h1 id="对象结构"><a class="markdownIt-Anchor" href="#对象结构"></a> 对象结构</h1>
+<p>每个对象都有三个部分</p>
+<ul>
+<li>id<br />
+用来标识对象的唯一性, 相当于人的身份证号.<br />
+可以通过函数<code>id()</code>来查看对象的id<br />
+对象一经创建, id就是无法改变了.</li>
+<li>type<br />
+当前对象所属的类型, 类型决定了对象的功能. 比如自行车那它有什么功能, 牛有哪些功能.<br />
+<code>type()</code>查看类型<br />
+同样, 类型同样无法更改</li>
+<li>value<br />
+对象所存储的数据.<br />
+我们平时直接看到的就是对象的值. id和type要用函数才能看到.<br />
+值有些对象能改变, 有些不能改变.</li>
+</ul>
+<h1 id="变量和对象"><a class="markdownIt-Anchor" href="#变量和对象"></a> 变量和对象</h1>
+<p>a = 3<br />
+这里的’3’是一个对象, 它有上部分提到的三部分构成. 对象并不是存储在变量中, 变量更像是对象的一个别名.<br />
+变量中存储的是对象的id, 当我们使用变量时, 解析器根据id去寻找对象.</p>
+<h1 id="类型转换"><a class="markdownIt-Anchor" href="#类型转换"></a> 类型转换</h1>
+<p>类型转换不是改变对象本身的类型, 而是根据当前对象的值创建新的对象.<br />
+三个函数;</p>
+<ul>
+<li><code>int()</code>
+<ul>
+<li>浮点数会直接取整, 没有四舍五入;</li>
+<li>True --&gt; 1; False --&gt; 0;</li>
+<li>整数的数据直接转换成整数, 不是整数字符串(11.5, None, Hello)会报错.</li>
+</ul>
+</li>
+<li><code>float()</code>
+<ul>
+<li>跟<code>int()</code>类似, 但是会将数据转换成浮点数<br />
+<code>str()</code>,</li>
+<li>什么都可以, 只不过转换成了字符串<br />
+<code>bool()</code></li>
+<li>什么都可以, 转换成Ture或者Flase. 所有空性数据会转成Flase, 其他的会转成True</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数值</title>
+    <url>/2024/03/31/%E6%95%B0%E5%80%BC/</url>
+    <content><![CDATA[<p>数据类型：就是给变量赋的值的类型。</p>
+<ul>
+<li>数值
+<ul>
+<li>整数</li>
+<li>布尔值</li>
+<li>浮点数</li>
+<li>复数</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>字符串</li>
+<li>空值<br />
+编程语言是人创造的，学习的时候要关联现实生活，这样容易理解。</li>
+</ul>
+<p>python 数值有三种：</p>
+<ul>
+<li>整数（int）
+<ul>
+<li>数大小没有限制，可以是任意大小。</li>
+<li>如果数字过长，我们可以用<code>_</code>作为分隔符，比如<strong>千位分隔符</strong>。</li>
+</ul>
+</li>
 </ul>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">c = <span class="number">123_456_789</span></span><br><span class="line"><span class="built_in">print</span>(c)</span><br></pre></td></tr></table></figure>
 <p>返回值为:</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">123456789</span><br></pre></td></tr></table></figure>
-<p>数字不能以<code>0</code>开头。<br>
-二进制数字用<code>0b</code>开头<br>
-八进制数字用<code>0o</code>开头<br>
-十六进制数字用<code>0x</code>开头<br>
+<p>数字不能以<code>0</code>开头。<br />
+二进制数字用<code>0b</code>开头<br />
+八进制数字用<code>0o</code>开头<br />
+十六进制数字用<code>0x</code>开头<br />
 任何进制的数字返回的都是十进制的数字</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">e = <span class="number">0b10</span></span><br><span class="line"><span class="built_in">print</span>(e)</span><br></pre></td></tr></table></figure>
 <p>返回值为：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">2</span><br></pre></td></tr></table></figure>
 <ul>
-<li>浮点数（小数）</li>
+<li>浮点数（小数）<br />
+所有的小数都是浮点数, 对浮点数的计算可能不准确.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">c = <span class="number">0.1</span> + <span class="number">0.2</span></span><br><span class="line"><span class="built_in">print</span>(c)</span><br></pre></td></tr></table></figure>
+<p>返回值为:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">0.30000000000000004</span><br></pre></td></tr></table></figure>
+<p>所有不建议对浮点数进行直接运算.</p>
+<ul>
 <li>复数</li>
 </ul>
 ]]></content>
@@ -392,6 +598,35 @@
       </categories>
       <tags>
         <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>文本文件和字符集</title>
+    <url>/2024/03/31/%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%92%8C%E5%AD%97%E7%AC%A6%E9%9B%86/</url>
+    <content><![CDATA[<p>文本分为纯文本和富文本。</p>
+<p>纯文本在计算机底层也会转换为二进制保存。</p>
+<p>将字符转换为二进制码的过程叫做<strong>编码</strong>。</p>
+<p>将二进制码转换成字符的过程叫做<strong>解码</strong>。</p>
+<p>编码和解码时采用的规则叫做<strong>字符集</strong>。</p>
+<p>常用的字符集：</p>
+<ul>
+<li>ASCII 美国人编码，使用7位（7个1和7个0）来对美国常用的字符进行编码。7个1和7个0的不同组合产生128个字符。</li>
+<li>IS0-8859-1 欧洲的编号，使用8位进行编码，产生256个字符。</li>
+<li>GB2312 GBK中国人的编码</li>
+<li>Unicode 万国码。便携程序时，使用Unicode编码。Unicode有多种实现，UTF-32使用4个字节表示一个字符。UTF-16使用2到4个字节表示一个字符。UTF-8使用1-5个字节表示一个字符。</li>
+</ul>
+<hr />
+<p>乱码</p>
+<p>程序出现乱码，检查字符集是否正确。</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>计算机</tag>
       </tags>
   </entry>
   <entry>
@@ -411,7 +646,7 @@
 <p>进口材料：imported material</p>
 <p>外商独资项目：wholly foreign owned enterprise</p>
 <p>全资子公司：subsidiary of solo investment</p>
-<p>进口材料及设备占投资金额的比例限制是多少？<br>
+<p>进口材料及设备占投资金额的比例限制是多少？<br />
 What is the <strong>limit</strong> <strong>on</strong> the proportion of imported materials and equipment <strong>in</strong> the investment amount？</p>
 <p>型钢：structural steel</p>
 <p>圆钢：round steel</p>
@@ -430,9 +665,51 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
 ]]></content>
   </entry>
   <entry>
+    <title>格式化字符串</title>
+    <url>/2024/03/31/%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
+    <content><![CDATA[<h1 id="字符串之间可以进行加法运算-但是不能和其他数据进行加法运算"><a class="markdownIt-Anchor" href="#字符串之间可以进行加法运算-但是不能和其他数据进行加法运算"></a> 字符串之间可以进行加法运算, 但是不能和其他数据进行加法运算</h1>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="string">&#x27;Ken&#x27;</span></span><br><span class="line">b = <span class="string">&#x27; how are you&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(a + b)</span><br></pre></td></tr></table></figure>
+<p>返回值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Ken how are you</span><br></pre></td></tr></table></figure>
+<h1 id="在创建字符串时候-可以在字符串中制定占位符s"><a class="markdownIt-Anchor" href="#在创建字符串时候-可以在字符串中制定占位符s"></a> 在创建字符串时候, 可以在字符串中制定占位符<code>%s</code></h1>
+<p><code>%s&quot;%Ken&quot;</code>这里我们用Ken填充占位符<code>%s</code></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">b = <span class="string">&quot;Hello %s&quot;</span> %<span class="string">&#x27;Ken&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(b)</span><br></pre></td></tr></table></figure>
+<p>返回值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Hello Ken</span><br></pre></td></tr></table></figure>
+<p>这里注意: 在字符串外部对占位符进行填充, 填充的字符用引号包围.</p>
+<p>字符串中有多个占位符时候, 后边也要用多个字符进行依次填充.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">c = <span class="string">&quot;Hello %s,你好 %s&quot;</span> %(<span class="string">&#x27;Tom&#x27;</span>,<span class="string">&#x27;孙悟空&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(c)</span><br></pre></td></tr></table></figure>
+<p>返回值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Hello Tom,你好 孙悟空</span><br></pre></td></tr></table></figure>
+<p><code>%3s</code>表示, 要填充的字符串最少是3个字符, 少于3个字符用空格补齐. <code>%3.5</code>表示填充的字符必须是3到5个, 多余5个舍去, 少于3个用空格补齐.<br />
+要注意, 占位符可以用字符串填充, 也可以用数值填充, <b>也可以用变量填充</b>.</p>
+<h1 id="专业的浮点数占位符是f这个占位符可以对数值的小数进行精确控制"><a class="markdownIt-Anchor" href="#专业的浮点数占位符是f这个占位符可以对数值的小数进行精确控制"></a> 专业的浮点数占位符是<code>%f</code>,这个占位符可以对数值的小数进行精确控制.</h1>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="string">&quot;Hello, %.2f&quot;</span> %<span class="number">123.4</span></span><br><span class="line"><span class="built_in">print</span>(a)</span><br></pre></td></tr></table></figure>
+<p>返回值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Hello, 123.40</span><br></pre></td></tr></table></figure>
+<p>这里<code>.2f</code>就是保留两个小数, 而且会自动四舍五入.</p>
+<h1 id="整数占位符是d-它是没有四舍五入的"><a class="markdownIt-Anchor" href="#整数占位符是d-它是没有四舍五入的"></a> 整数占位符是<code>%d</code>, 它是没有四舍五入的.</h1>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">b = <span class="string">&quot;Hello, %d&quot;</span> %<span class="number">123.456</span></span><br><span class="line"><span class="built_in">print</span>(b)</span><br></pre></td></tr></table></figure>
+<p>返回值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">123</span><br></pre></td></tr></table></figure>
+<h1 id="格式化字符串-b格式化字符串中可以嵌入变量b-变量用包围-格式化字符串的方法是在字符串前加一个f"><a class="markdownIt-Anchor" href="#格式化字符串-b格式化字符串中可以嵌入变量b-变量用包围-格式化字符串的方法是在字符串前加一个f"></a> 格式化字符串, <b>格式化字符串中可以嵌入变量</b>, 变量用<code>&#123;&#125;</code>包围. 格式化字符串的方法是在字符串前加一个<code>f</code>.</h1>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="number">123</span></span><br><span class="line">b = <span class="string">&#x27;呵呵&#x27;</span></span><br><span class="line"></span><br><span class="line">c = <span class="string">f&quot;hello <span class="subst">&#123;a&#125;</span> <span class="subst">&#123;b&#125;</span>&quot;</span></span><br><span class="line"><span class="built_in">print</span>(c) </span><br></pre></td></tr></table></figure>
+<p>返回值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hello 123 呵呵</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>申请沙特工业园工厂运行许可证的要求</title>
     <url>/2024/03/27/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%B7%A5%E5%8E%82%E8%BF%90%E8%A1%8C%E8%AE%B8%E5%8F%AF%E8%AF%81%E7%9A%84%E8%A6%81%E6%B1%82%E5%92%8C%E8%A7%84%E5%AE%9A/</url>
-    <content><![CDATA[<h1>第一阶段：通过MODON账户提交申请</h1>
+    <content><![CDATA[<h1 id="第一阶段通过modon账户提交申请"><a class="markdownIt-Anchor" href="#第一阶段通过modon账户提交申请"></a> 第一阶段：通过MODON账户提交申请</h1>
 <p><strong>申请建筑竣工和运行许可证所需文件</strong></p>
 <ul>
 <li>经Modon认证的安全图。</li>
@@ -460,7 +737,7 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
 <li>企业内外安装可以存储两个月记录的摄像头。（军工单位适用）</li>
 <li>记录和保存出入数据（员工和拜访人员）的控制系统。（军工企业适用）</li>
 </ul>
-<h1>第二阶段：参观考察</h1>
+<h1 id="第二阶段参观考察"><a class="markdownIt-Anchor" href="#第二阶段参观考察"></a> 第二阶段：参观考察</h1>
 <p><strong>批准颁发建筑竣工和运行许可或者更新作业许可证和安全标准需要检查的内容</strong></p>
 <ul>
 <li>确保与许可证相符。</li>
@@ -473,9 +750,9 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
 <li>确保在处理、运输和储存化学材料和有害气体时，符合安全规定。</li>
 <li>确保不存在不安全或者违规存储，和不符合规定的退线。</li>
 </ul>
-<h1>第三阶段：颁发竣工证书和运行许可证</h1>
+<h1 id="第三阶段颁发竣工证书和运行许可证"><a class="markdownIt-Anchor" href="#第三阶段颁发竣工证书和运行许可证"></a> 第三阶段：颁发竣工证书和运行许可证</h1>
 <p>Modon致力于简化并加速与合作伙伴的合作，其中包括满足工厂需求，保护员工和工业园财产与基础。我们已经对运行许可和有效时限做了如下分类：</p>
-<p><strong>第一次发放期限一年</strong><br>
+<p><strong>第一次发放期限一年</strong><br />
 对那些完成建设，满足条件，符合安全标准的企业发放我竣工和运行许可证，它可以视为是运行许可证，此许可证有效期为一年。</p>
 <p><strong>更新</strong></p>
 <p>【短期】：6个月</p>
@@ -491,39 +768,10 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
         <category>沙特工业园制度</category>
       </categories>
       <tags>
-        <tag>沙特</tag>
         <tag>沙特投资</tag>
+        <tag>沙特</tag>
         <tag>沙特工业园</tag>
         <tag>工厂运营许可</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>文本文件和字符集</title>
-    <url>/2024/03/31/%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%92%8C%E5%AD%97%E7%AC%A6%E9%9B%86/</url>
-    <content><![CDATA[<p>文本分为纯文本和富文本。</p>
-<p>纯文本在计算机底层也会转换为二进制保存。</p>
-<p>将字符转换为二进制码的过程叫做<strong>编码</strong>。</p>
-<p>将二进制码转换成字符的过程叫做<strong>解码</strong>。</p>
-<p>编码和解码时采用的规则叫做<strong>字符集</strong>。</p>
-<p>常用的字符集：</p>
-<ul>
-<li>ASCII 美国人编码，使用7位（7个1和7个0）来对美国常用的字符进行编码。7个1和7个0的不同组合产生128个字符。</li>
-<li>IS0-8859-1 欧洲的编号，使用8位进行编码，产生256个字符。</li>
-<li>GB2312 GBK中国人的编码</li>
-<li>Unicode 万国码。便携程序时，使用Unicode编码。Unicode有多种实现，UTF-32使用4个字节表示一个字符。UTF-16使用2到4个字节表示一个字符。UTF-8使用1-5个字节表示一个字符。</li>
-</ul>
-<hr>
-<p>乱码</p>
-<p>程序出现乱码，检查字符集是否正确。</p>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>计算机</tag>
       </tags>
   </entry>
   <entry>
@@ -531,7 +779,7 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
     <url>/2024/03/28/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%BB%BA%E5%8E%82%E8%A6%81%E6%B1%82/</url>
     <content><![CDATA[<p>工厂需要遵循【建厂条件和标准指南】中的建厂要求，可以享受Modon在工业园中提供的服务。</p>
 <ul>
-<li>工厂建设的单元包括：生产车间、原材料仓库、产成品仓库、员工服务、电力供应、工业安全服务、内部道路、疏散区域、<br>
+<li>工厂建设的单元包括：生产车间、原材料仓库、产成品仓库、员工服务、电力供应、工业安全服务、内部道路、疏散区域、<br />
 管理建筑。</li>
 <li>生产车间的高度满足所有任务需求，其中包括根据不同生产类型的生产线所需要的机械作业任务。</li>
 <li>原材料仓库的面积限制在能满足工厂需要的30%-40%，随工厂规模（建筑面积）的增大而增大。</li>
@@ -558,26 +806,26 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
   <entry>
     <title>沙特工业园投资流程</title>
     <url>/2024/03/27/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E6%8A%95%E8%B5%84%E6%B5%81%E7%A8%8B/</url>
-    <content><![CDATA[<h1>工业园提供的产品和服务</h1>
+    <content><![CDATA[<h1 id="工业园提供的产品和服务"><a class="markdownIt-Anchor" href="#工业园提供的产品和服务"></a> 工业园提供的产品和服务</h1>
 <ol>
 <li>工业用地：Modon在沙特全境提供工业用地，满足工业投资者的需求。</li>
 <li>现成工厂：Modon提供不同面积且服务完备的现成工厂，支持中小企业和男女企业家。</li>
 <li>融资方案：Modon提供多种融资方案，支持投资者的工业发展简化他们获取工业产品的流程。</li>
 </ol>
-<h1>申请前</h1>
-<h4 id="获得工业产品的条件">获得工业产品的条件</h4>
+<h1 id="申请前"><a class="markdownIt-Anchor" href="#申请前"></a> 申请前</h1>
+<h4 id="获得工业产品的条件"><a class="markdownIt-Anchor" href="#获得工业产品的条件"></a> 获得工业产品的条件</h4>
 <ol>
 <li>从工商局网站获得的工业活动注册证书。</li>
 <li>通过Shareek申请产品。</li>
 </ol>
-<h4 id="申请产品">申请产品</h4>
+<h4 id="申请产品"><a class="markdownIt-Anchor" href="#申请产品"></a> 申请产品</h4>
 <ol>
 <li>填写申请表格：在表格中附上所需文件。</li>
 <li>面谈：跟投资者进行面谈，讨论合作关系和工业项目的关键活动领域。</li>
 <li>产品预览：拜访工业园总部，预览产品并填写预览表。</li>
 <li>签署合同接受产品：在表格中附上所需文件。</li>
 </ol>
-<h1>建设阶段</h1>
+<h1 id="建设阶段"><a class="markdownIt-Anchor" href="#建设阶段"></a> 建设阶段</h1>
 <ol>
 <li>建设咨询办公室的许可：通过Modon中的Shareek门户获取报价，研究建设咨询办公室的要求，认可报价后回去同意。可以通过网站获得咨询公司名单。</li>
 <li>图纸审批：通过Shareek门户上的电子服务平台，咨询办公室根据工业园指导和建设要求，认证主规划和安全规划。</li>
@@ -587,9 +835,9 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
 <li>发出竣工证明和运行许可：竣工证书旨在确保企业符合Modon的建设标准和条件，此为第一次发出。</li>
 <li>运行许可证：这是企业运行的许可，需要定期更新。</li>
 </ol>
-<h1>运行</h1>
+<h1 id="运行"><a class="markdownIt-Anchor" href="#运行"></a> 运行</h1>
 <p>在发出竣工证明和运行许可，并且确保企业安全作业以后，工厂可以开始生产制造。</p>
-<h4 id="电子服务">电子服务</h4>
+<h4 id="电子服务"><a class="markdownIt-Anchor" href="#电子服务"></a> 电子服务</h4>
 <p>在开始运行以后，企业可以通过Shareek门户上通过电子服务使用工业园提供的服务：</p>
 <ul>
 <li>合同管理服务</li>
@@ -600,7 +848,7 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
 <li>工程咨询办公室服务</li>
 <li>票据和投诉</li>
 </ul>
-<h4 id="定期跟踪">定期跟踪</h4>
+<h4 id="定期跟踪"><a class="markdownIt-Anchor" href="#定期跟踪"></a> 定期跟踪</h4>
 <p>Modon对工厂进行定期检查，确保工厂符合安全规定，并且保护员工安全。</p>
 <p><a href='https://raw.githubusercontent.com/zmz231126/bolgpicture/main/202403291018552.pdf'>点击这里查看原文档</a></p>
 ]]></content>
@@ -609,8 +857,8 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
         <category>沙特工业园制度</category>
       </categories>
       <tags>
-        <tag>沙特投资</tag>
         <tag>建厂</tag>
+        <tag>沙特投资</tag>
         <tag>沙特工业园</tag>
       </tags>
   </entry>
@@ -618,13 +866,14 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
     <title>mermaid 流程图练习</title>
     <url>/2024/03/27/%E6%B5%81%E7%A8%8B%E5%9B%BE/</url>
     <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flowchart LR</span><br><span class="line">   a --&gt; b &amp; c--&gt; d</span><br></pre></td></tr></table></figure>
-<p>$$\begin{equation} \label{eq2}<br>
-\begin{aligned}<br>
-a &amp;= b + c \<br>
-&amp;= d + e + f + g \<br>
-&amp;= h + i<br>
-\end{aligned}<br>
-\end{equation}$$</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲ \label{eq2}
+\b…'>\begin{equation} \label{eq2}
+\begin{aligned}
+a &amp;= b + c \\
+  &amp;= d + e + f + g \\
+  &amp;= h + i
+\end{aligned}
+\end{equation}</p>
 <span>
 $$
 \begin{pmatrix}  
@@ -634,16 +883,16 @@ $$
 \end{pmatrix} 
 $$
 </span>
-<p>$$<br>
-\begin{equation}<br>
-1 \ne b<br>
-\end{equation}<br>
-$$</p>
-<p>$$<br>
-1 \ne b<br>
-$$</p>
-<p>$ 1 \ne b $<br>
-$1 \ne b$</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
+1 \ne b
+\end{e…'>\begin{equation}
+1 \ne b
+\end{equation}
+</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>1</mn><mo mathvariant="normal">≠</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">1 \ne b
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mrel"><span class="mord vbox"><span class="thinbox"><span class="rlap"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="inner"><span class="mrel"></span></span><span class="fix"></span></span></span></span></span><span class="mrel">=</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">b</span></span></span></span></span></p>
+<p>$ 1 \ne b $<br />
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo mathvariant="normal">≠</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">1 \ne b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mrel"><span class="mord vbox"><span class="thinbox"><span class="rlap"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="inner"><span class="mrel"></span></span><span class="fix"></span></span></span></span></span><span class="mrel">=</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">b</span></span></span></span></p>
 <div class="mermaid-wrap"><pre class="mermaid-src" hidden>
   pie
     title Key elements in Product X
@@ -679,7 +928,7 @@ $1 \ne b$</p>
 <p>删除环境变量</p>
 </li>
 </ol>
-<hr>
+<hr />
 <p>示例：打开终端。</p>
 <p>- 输入<code>pwd</code>回车，查看当前所处的文件夹路径。</p>
 <p>- 输入<code>ls</code>列出此文件夹下内所有的文件夹。</p>
@@ -688,7 +937,7 @@ $1 \ne b$</p>
 <p>- 输入<code>rmdir 空格紧跟文件夹名称</code>删除文件夹。</p>
 <p>- 输入<code>cd ..</code>返回上一级目录。</p>
 <p>- 输入<code>open tmp.txt</code>打开当前所处文件夹下的tmp.txt文档。<em>同样不能越级打开。</em></p>
-<hr>
+<hr />
 <p>当我们在命令行输入一个命令（或者访问一个文件时）系统首先在当前目录寻找，如果没有找到，就会进入到path环境变量中寻找。都没有找到才会报错。</p>
 ]]></content>
       <categories>
@@ -705,15 +954,15 @@ $1 \ne b$</p>
   <entry>
     <title></title>
     <url>/2024/03/30/%E7%94%B3%E8%AF%B7%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%8A%A8%E5%B7%A5%E8%AE%B8%E5%8F%AF/</url>
-    <content><![CDATA[<h1>申请工业园动工许可</h1>
-<h2 id="第一步">第一步</h2>
-<h3 id="注册shareek门户取得ID">注册shareek门户取得ID</h3>
-<h3 id="获取调研阶段工业许可">获取调研阶段工业许可</h3>
-<h2 id="第二步">第二步</h2>
-<h3 id="土地租赁">土地租赁</h3>
-<h3 id="申请分配能源">申请分配能源</h3>
-<h2 id="第三步">第三步</h2>
-<h3 id="等待盈科完成公司注册流程">等待盈科完成公司注册流程</h3>
+    <content><![CDATA[<h1 id="申请工业园动工许可"><a class="markdownIt-Anchor" href="#申请工业园动工许可"></a> 申请工业园动工许可</h1>
+<h2 id="第一步"><a class="markdownIt-Anchor" href="#第一步"></a> 第一步</h2>
+<h3 id="注册shareek门户取得id"><a class="markdownIt-Anchor" href="#注册shareek门户取得id"></a> 注册shareek门户取得ID</h3>
+<h3 id="获取调研阶段工业许可"><a class="markdownIt-Anchor" href="#获取调研阶段工业许可"></a> 获取调研阶段工业许可</h3>
+<h2 id="第二步"><a class="markdownIt-Anchor" href="#第二步"></a> 第二步</h2>
+<h3 id="土地租赁"><a class="markdownIt-Anchor" href="#土地租赁"></a> 土地租赁</h3>
+<h3 id="申请分配能源"><a class="markdownIt-Anchor" href="#申请分配能源"></a> 申请分配能源</h3>
+<h2 id="第三步"><a class="markdownIt-Anchor" href="#第三步"></a> 第三步</h2>
+<h3 id="等待盈科完成公司注册流程"><a class="markdownIt-Anchor" href="#等待盈科完成公司注册流程"></a> 等待盈科完成公司注册流程</h3>
 <ul>
 <li>
 <p>税务</p>
@@ -725,22 +974,52 @@ $1 \ne b$</p>
 <p>总经理居住证</p>
 </li>
 </ul>
-<h3 id="工业园认证的consulting-engineer-office签合同">工业园认证的consulting engineer office签合同</h3>
-<h3 id="完成主图纸和安全图纸设计认证">完成主图纸和安全图纸设计认证</h3>
-<h2 id="第四步">第四步</h2>
-<h3 id="跟认证的垃圾搬运公司签合同">跟认证的垃圾搬运公司签合同</h3>
-<h3 id="申请环保动工许可">申请环保动工许可</h3>
-<h2 id="第五步">第五步</h2>
-<h3 id="申请工业部动工许可">申请工业部动工许可</h3>
+<h3 id="工业园认证的consulting-engineer-office签合同"><a class="markdownIt-Anchor" href="#工业园认证的consulting-engineer-office签合同"></a> 工业园认证的consulting engineer office签合同</h3>
+<h3 id="完成主图纸和安全图纸设计认证"><a class="markdownIt-Anchor" href="#完成主图纸和安全图纸设计认证"></a> 完成主图纸和安全图纸设计认证</h3>
+<h2 id="第四步"><a class="markdownIt-Anchor" href="#第四步"></a> 第四步</h2>
+<h3 id="跟认证的垃圾搬运公司签合同"><a class="markdownIt-Anchor" href="#跟认证的垃圾搬运公司签合同"></a> 跟认证的垃圾搬运公司签合同</h3>
+<h3 id="申请环保动工许可"><a class="markdownIt-Anchor" href="#申请环保动工许可"></a> 申请环保动工许可</h3>
+<h2 id="第五步"><a class="markdownIt-Anchor" href="#第五步"></a> 第五步</h2>
+<h3 id="申请工业部动工许可"><a class="markdownIt-Anchor" href="#申请工业部动工许可"></a> 申请工业部动工许可</h3>
 <ul>
 <li>设备进口免关税</li>
 </ul>
-<h3 id="申请工业园动工许可">申请工业园动工许可</h3>
-<h2 id="第六步">第六步</h2>
-<h3 id="安排安全员">安排安全员</h3>
-<h3 id="安排安保">安排安保</h3>
-<h3 id="安排有资质的建筑公司动工">安排有资质的建筑公司动工</h3>
+<h3 id="申请工业园动工许可-2"><a class="markdownIt-Anchor" href="#申请工业园动工许可-2"></a> 申请工业园动工许可</h3>
+<h2 id="第六步"><a class="markdownIt-Anchor" href="#第六步"></a> 第六步</h2>
+<h3 id="安排安全员"><a class="markdownIt-Anchor" href="#安排安全员"></a> 安排安全员</h3>
+<h3 id="安排安保"><a class="markdownIt-Anchor" href="#安排安保"></a> 安排安保</h3>
+<h3 id="安排有资质的建筑公司动工"><a class="markdownIt-Anchor" href="#安排有资质的建筑公司动工"></a> 安排有资质的建筑公司动工</h3>
 ]]></content>
+  </entry>
+  <entry>
+    <title>类型检查</title>
+    <url>/2024/03/31/%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5/</url>
+    <content><![CDATA[<h1 id="数据类型有"><a class="markdownIt-Anchor" href="#数据类型有"></a> 数据类型有</h1>
+<ul>
+<li>数值
+<ul>
+<li>整数</li>
+<li>布尔值</li>
+<li>浮点数</li>
+<li>复数</li>
+</ul>
+</li>
+<li>字符串</li>
+<li>空值</li>
+</ul>
+<h1 id="我们通过type函数来检查值的类型-但是注意-该函数会讲返回的结果作为返回值返回-可以通过变量来接受返回值"><a class="markdownIt-Anchor" href="#我们通过type函数来检查值的类型-但是注意-该函数会讲返回的结果作为返回值返回-可以通过变量来接受返回值"></a> 我们通过<code>type()</code>函数来检查值的类型, 但是注意, 该函数会讲返回的结果作为返回值返回, 可以通过变量来接受返回值.</h1>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="string">&#x27;你好&#x27;</span></span><br><span class="line">b = <span class="built_in">type</span>(a)</span><br><span class="line"><span class="comment"># 或者print(type(a))</span></span><br><span class="line"><span class="comment"># 或者print(type(&#x27;你好&#x27;))</span></span><br><span class="line"><span class="built_in">print</span>(b)</span><br></pre></td></tr></table></figure>
+<p>返回值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;class &#x27;str&#x27;&gt;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
   </entry>
   <entry>
     <title>编译型语言和解释型语言</title>
@@ -758,27 +1037,6 @@ $1 \ne b$</p>
       </categories>
       <tags>
         <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算机语言</title>
-    <url>/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<p>计算机语言其实和人类语言没有本质区别，知识交流主体不同。</p>
-<p>机器语言发展的三个阶段：</p>
-<ul>
-<li>机器语言：通过二进制编码来编写程序。编写麻烦，执行效率好。</li>
-<li>汇编语言：使用符号代替机器码。汇编与反汇编。汇编语言只适用于某些硬件，兼容性差。计算机底层一些硬件驱动现在还用汇编语言编写。</li>
-<li>高级语言：和英语语法类似，并且和硬件关系不紧密，通过高级语言编写的程序可以在不同的硬件系统中执行。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>计算机</tag>
       </tags>
   </entry>
   <entry>
@@ -815,6 +1073,117 @@ $1 \ne b$</p>
       </tags>
   </entry>
   <entry>
+    <title>计算机语言</title>
+    <url>/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<p>计算机语言其实和人类语言没有本质区别，知识交流主体不同。</p>
+<p>机器语言发展的三个阶段：</p>
+<ul>
+<li>机器语言：通过二进制编码来编写程序。编写麻烦，执行效率好。</li>
+<li>汇编语言：使用符号代替机器码。汇编与反汇编。汇编语言只适用于某些硬件，兼容性差。计算机底层一些硬件驱动现在还用汇编语言编写。</li>
+<li>高级语言：和英语语法类似，并且和硬件关系不紧密，通过高级语言编写的程序可以在不同的硬件系统中执行。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>计算机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>运算符(操作符)</title>
+    <url>/2024/03/31/%E8%BF%90%E7%AE%97%E7%AC%A6/</url>
+    <content><![CDATA[<h1 id="算数运算符"><a class="markdownIt-Anchor" href="#算数运算符"></a> 算数运算符</h1>
+<p><code>+</code>可以计算和拼串<br />
+<code>-</code>计算<br />
+<code>*</code>可以计算和复制字符串<br />
+<code>/</code>计算结果总是浮点型<br />
+<code>//</code>相除后只会保留整数位, 取整. 注意, 如果被除数是浮点符, 那么仍会返回浮点数.<br />
+<code>**</code>幂运算<br />
+<code>** 0.5</code> 开方运算<br />
+<code>%</code> 相除取余数</p>
+<h1 id="赋值运算符"><a class="markdownIt-Anchor" href="#赋值运算符"></a> 赋值运算符</h1>
+<p>将右边的值赋给左边的变量.<br />
+<code>=</code><br />
+<code>+=</code></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="number">10</span></span><br><span class="line">a += <span class="number">5</span></span><br><span class="line"><span class="built_in">print</span>(a)</span><br></pre></td></tr></table></figure>
+<p>返回</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a = 15</span><br></pre></td></tr></table></figure>
+<p><code>-=</code><br />
+<code>*=</code><br />
+<code>/=</code><br />
+<code>//=</code><br />
+<code>**=</code><br />
+<code>%=</code></p>
+<h1 id="关系运算符"><a class="markdownIt-Anchor" href="#关系运算符"></a> 关系运算符</h1>
+<p>关系运算符用来比较两个值之间的关系, 只会返回bool值<br />
+<code>&gt;</code><br />
+<code>&gt;=</code><br />
+<code>&lt;</code><br />
+<code>&lt;=</code><br />
+<code>==</code>比较两个值是否相等(注意这里跟上边赋值运算符中<code>=</code>的区别)<br />
+<code>!=</code>两个值是否不想等<br />
+两个字符串可以比较大小, 它实际比的是Unicode编码. 但是字符串不能跟数值进行比较大小.<br />
+<code>True</code>和<code>1</code>是两个不同的对象, 但是它们的值是相同的. 判断两个对象是否是同一个对象用<code>is</code>和<code>is not</code>, 它们两个比较的是对象的id.<br />
+只有id相同的对象才是同一个对象.</p>
+<h1 id="逻辑运算符"><a class="markdownIt-Anchor" href="#逻辑运算符"></a> 逻辑运算符</h1>
+<ul>
+<li><code>not</code>逻辑非<br />
+对符号右侧的值进行<code>非</code>运算. 对bool进行取反操作, 对非bool值先转换成bool值再取反.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="literal">True</span></span><br><span class="line">a = <span class="keyword">not</span> a</span><br><span class="line"><span class="built_in">print</span>(a)</span><br></pre></td></tr></table></figure>
+<p>返回Flase</p>
+<ul>
+<li>
+<p><code>and</code>逻辑与</p>
+<ul>
+<li>对符号两侧的进行与运算.</li>
+<li>符号两侧的值都为True时,才返回True. 否则返回False.</li>
+<li>只有多个条件同时满足, 才执行某个语句时候, 我们用逻辑与.</li>
+<li>Python中的与是短路的与, 它是在语句中找Flase, 如果第一个值为False, 那么后边的它就不看了, 直接返回Flase.<br />
+比如这里  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="literal">True</span> <span class="keyword">and</span> <span class="built_in">print</span>(<span class="string">&quot;你猜我出来吗&quot;</span>)</span><br></pre></td></tr></table></figure>
+此时返回<code>你猜我出来吗</code>. 因为第一个值为True, 所以print()会执行.  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="literal">False</span> <span class="keyword">and</span> <span class="built_in">print</span>(<span class="string">&quot;你猜我出来吗&quot;</span>)</span><br></pre></td></tr></table></figure>
+此时返回<code> </code>什么结果也不会返回</li>
+</ul>
+</li>
+<li>
+<p><code>or</code>逻辑或<br />
+两端只要有一个True就会返回True<br />
+同理这里的or是在找True. 找到True以后, 不在执行后边的语句, 没有找到, 就继续执行后边的语句.</p>
+</li>
+</ul>
+<div class="tip warning"><p>当我们对非布尔值进行与或运算时, Python会将它当作布尔值进行运算, 并返回原值.</p>
+</div>
+<p>比如</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">result = <span class="number">1</span> <span class="keyword">and</span> <span class="number">2</span></span><br><span class="line"><span class="built_in">print</span>(result)</span><br></pre></td></tr></table></figure>
+<p>此时, 会返回2, 首先可以确定它返回原值, 第二与运算是找false, 第一个1肯定是True, 它会继续走到第2步, 第2个值不管是True还是False都会将其返回.<br />
+同理or运算</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">result = <span class="number">1</span> <span class="keyword">or</span> <span class="number">2</span></span><br><span class="line"><span class="built_in">print</span>(result)</span><br></pre></td></tr></table></figure>
+<p>此时, 肯定返回1, 因为or运算是找True的.</p>
+<h1 id="条件运算符又叫三元运算符"><a class="markdownIt-Anchor" href="#条件运算符又叫三元运算符"></a> 条件运算符(又叫三元运算符)</h1>
+<p>语法: 语句1 if 条件表达式 else 语句2<br />
+执行流程:</p>
+<ol>
+<li>首先执行条件表达式, 进行求值判断</li>
+<li>如果为True, 执行语句1</li>
+<li>如果为False, 执行语句2</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你好&quot;</span>) <span class="keyword">if</span> <span class="literal">False</span> <span class="keyword">else</span> <span class="built_in">print</span>(<span class="string">&quot;Hello&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>返回Hello</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>进制</title>
     <url>/2024/03/31/%E8%BF%9B%E5%88%B6/</url>
     <content><![CDATA[<ul>
@@ -845,7 +1214,7 @@ $1 \ne b$</p>
 </ul>
 </li>
 </ul>
-<hr>
+<hr />
 <p>内存相当于一个个小格子，1个小格子存储一个0或者1 。内存中的一个小格子我们叫做bit（位），bit是计算机中的最小单位。</p>
 <p>8bit = 1byte。byte是我们最小的可操作单位。</p>
 <p>1024byte = 1kb（千字节）</p>
@@ -869,13 +1238,18 @@ $1 \ne b$</p>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>文档</title>
-    <url>/files/index.html</url>
+    <title></title>
+    <url>/js/script.js</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>分类</title>
     <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/css/postpage_style.css</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -916,11 +1290,24 @@ $1 \ne b$</p>
     -ms-transition: none!important;
     -o-transition: none!important;
 }
-]]></content>
+/* 2024-3-31 增加文章页现实宽度*/
+.layout{
+  max-width:1400px;
+}
+@media screen and (min-width: 900px) {
+    html.hide-aside .layout>div:first-child {
+        width: 80%
+    }
+}]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/js/script.js</url>
+    <title>文档</title>
+    <url>/files/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>标签</title>
+    <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -929,18 +1316,13 @@ $1 \ne b$</p>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>电影</title>
-    <url>/movies/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>音乐</title>
     <url>/music/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
+    <title>电影</title>
+    <url>/movies/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>

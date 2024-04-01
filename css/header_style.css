@@ -33,3 +33,12 @@
     -ms-transition: none!important;
     -o-transition: none!important;
 }
+/* 2024-3-31 增加文章页现实宽度*/
+.layout{
+  max-width:1400px;
+}
+@media screen and (min-width: 900px) {
+    html.hide-aside .layout>div:first-child {
+        width: 80%
+    }
+}
