@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-04-01T11:32:56.436Z</updated>
+  <updated>2024-04-01T14:06:43.486Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2024/04/01/if%E8%AF%AD%E5%8F%A5/"/>
     <id>http://example.com/2024/04/01/if%E8%AF%AD%E5%8F%A5/</id>
     <published>2024-03-31T16:00:00.000Z</published>
-    <updated>2024-04-01T11:32:56.436Z</updated>
+    <updated>2024-04-01T14:06:43.486Z</updated>
     
     
       
@@ -162,17 +162,20 @@
   </entry>
   
   <entry>
-    <title>字符串的复制</title>
-    <link href="http://example.com/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%A4%8D%E5%88%B6/"/>
-    <id>http://example.com/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%A4%8D%E5%88%B6/</id>
+    <title>字符串</title>
+    <link href="http://example.com/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    <id>http://example.com/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
     <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T08:58:55.818Z</updated>
+    <updated>2024-03-31T09:45:21.301Z</updated>
     
     
       
       
-    <summary type="html">&lt;p&gt;将字符串和数字相乘, 就是复制字符串&lt;/p&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;li</summary>
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;字符串用来表示文本信息, 是使用最多的数据类型. 必须用引号包围, 可以理解成某人说:“”.&lt;/li&gt;
+&lt;li&gt;单引号双引号都可以, 但是不可以混合使用. 但是相同的引号不可以嵌套, 但是不同的引号可以嵌套. 下边就是不用引号的嵌套&lt;/li&gt;
+&lt;/ul&gt;
+&lt;fi</summary>
       
     
     
@@ -189,20 +192,17 @@
   </entry>
   
   <entry>
-    <title>字符串</title>
-    <link href="http://example.com/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    <id>http://example.com/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
+    <title>字符串的复制</title>
+    <link href="http://example.com/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%A4%8D%E5%88%B6/"/>
+    <id>http://example.com/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%A4%8D%E5%88%B6/</id>
     <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T09:45:21.301Z</updated>
+    <updated>2024-03-31T08:58:55.818Z</updated>
     
     
       
       
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;字符串用来表示文本信息, 是使用最多的数据类型. 必须用引号包围, 可以理解成某人说:“”.&lt;/li&gt;
-&lt;li&gt;单引号双引号都可以, 但是不可以混合使用. 但是相同的引号不可以嵌套, 但是不同的引号可以嵌套. 下边就是不用引号的嵌套&lt;/li&gt;
-&lt;/ul&gt;
-&lt;fi</summary>
+    <summary type="html">&lt;p&gt;将字符串和数字相乘, 就是复制字符串&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;li</summary>
       
     
     
@@ -250,18 +250,18 @@
   </entry>
   
   <entry>
-    <title>布尔值</title>
-    <link href="http://example.com/2024/03/31/%E5%B8%83%E5%B0%94%E5%80%BC/"/>
-    <id>http://example.com/2024/03/31/%E5%B8%83%E5%B0%94%E5%80%BC/</id>
+    <title>对象(object)</title>
+    <link href="http://example.com/2024/03/31/%E5%AF%B9%E8%B1%A1(object)/"/>
+    <id>http://example.com/2024/03/31/%E5%AF%B9%E8%B1%A1(object)/</id>
     <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T09:13:07.276Z</updated>
+    <updated>2024-03-31T11:06:25.078Z</updated>
     
     
       
       
-    <summary type="html">&lt;p&gt;布尔值(bool)用来做逻辑判断. 一共有两个&lt;code&gt;True&lt;/code&gt;和&lt;code&gt;False&lt;/code&gt;. 注意Python是一个大小写敏感的语言.&lt;br /&gt;
-也可以理解为一个整数, true 是 1 false 是 0&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;None&lt;</summary>
+    <summary type="html">&lt;h1 id=&quot;对象介绍&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#对象介绍&quot;&gt;&lt;/a&gt; 对象介绍&lt;/h1&gt;
+&lt;p&gt;Python是一个面向对象的语言. 一切皆对象.&lt;br /&gt;
+程序运行中, 所有的数据都是存储在内存中, 硬盘–&amp;gt;内存–&amp;gt</summary>
       
     
     
@@ -278,18 +278,18 @@
   </entry>
   
   <entry>
-    <title>对象(object)</title>
-    <link href="http://example.com/2024/03/31/%E5%AF%B9%E8%B1%A1(object)/"/>
-    <id>http://example.com/2024/03/31/%E5%AF%B9%E8%B1%A1(object)/</id>
+    <title>布尔值</title>
+    <link href="http://example.com/2024/03/31/%E5%B8%83%E5%B0%94%E5%80%BC/"/>
+    <id>http://example.com/2024/03/31/%E5%B8%83%E5%B0%94%E5%80%BC/</id>
     <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T11:06:25.078Z</updated>
+    <updated>2024-03-31T09:13:07.276Z</updated>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;对象介绍&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#对象介绍&quot;&gt;&lt;/a&gt; 对象介绍&lt;/h1&gt;
-&lt;p&gt;Python是一个面向对象的语言. 一切皆对象.&lt;br /&gt;
-程序运行中, 所有的数据都是存储在内存中, 硬盘–&amp;gt;内存–&amp;gt</summary>
+    <summary type="html">&lt;p&gt;布尔值(bool)用来做逻辑判断. 一共有两个&lt;code&gt;True&lt;/code&gt;和&lt;code&gt;False&lt;/code&gt;. 注意Python是一个大小写敏感的语言.&lt;br /&gt;
+也可以理解为一个整数, true 是 1 false 是 0&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;None&lt;</summary>
       
     
     

@@ -45,6 +45,40 @@
 <p>在命令行中输入’你好’,回车返回<code>用户输入了你好</code></p>
 <div class="tip warning"><p>不论用户输入的是什么数据, 返回值都是字符串. 如果要使用返回值, 需要对返回值进行类型转换.</p>
 </div>
+<p>input()函数可以输入一个字符串作为参数, 作为输入内容的提示文字.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">username = <span class="built_in">input</span>(<span class="string">&quot;请输入一个用户名&quot;</span>)</span><br><span class="line"><span class="keyword">if</span> username == <span class="string">&quot;admin&quot;</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;欢迎管理员光临&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>返回</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">欢迎管理员光临</span><br></pre></td></tr></table></figure>
+<p>input()可以暂时阻止程序结束</p>
+<h1 id="if-else语句"><a class="markdownIt-Anchor" href="#if-else语句"></a> if else语句</h1>
+<p>单纯的if语句, 如果条件判断语句为True, 则执行代码块, 但是如果是False, 则返回空值. if else语句则提供了另一个选择.<br />
+语法:<br />
+if 条件表达式:<br />
+代码块<br />
+else 条件表达式:<br />
+代码块<br />
+执行流程：<br />
+先对条件表达式进行求职, 若为True, 执行if代码块; 若为False执行else代码块</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">age = <span class="built_in">input</span>(<span class="string">&quot;请输入你的年龄&quot;</span>)<span class="keyword">if</span> <span class="built_in">int</span>(age) &gt;= <span class="number">18</span>:    <span class="built_in">print</span>(<span class="string">&quot;您一经成年了&quot;</span>)<span class="keyword">else</span>:    <span class="built_in">print</span>(<span class="string">&quot;你还未成年&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>返回值为</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">请输入你的年龄17</span><br><span class="line">你还未成年</span><br></pre></td></tr></table></figure>
+<h1 id="if-elif-else"><a class="markdownIt-Anchor" href="#if-elif-else"></a> if-elif-else</h1>
+<p>语法:<br />
+if 条件表达式:<br />
+代码块<br />
+elif 条件表达式:<br />
+代码块<br />
+elif 条件表达式:<br />
+代码块<br />
+elif 条件表达式:<br />
+代码块<br />
+else:<br />
+代码块<br />
+执行流程:</p>
+<ul>
+<li>自上而上依次执行, 当发现表达式为True时, 执行相应的代码块, 并停止程序执行.</li>
+<li>如果都为False, 执行else代码块.</li>
+</ul>
 ]]></content>
       <categories>
         <category>编程</category>
@@ -163,45 +197,6 @@
       </tags>
   </entry>
   <entry>
-    <title>变量和标识符</title>
-    <url>/2024/03/31/%E5%8F%98%E9%87%8F%E5%92%8C%E6%A0%87%E8%AF%86%E7%AC%A6/</url>
-    <content><![CDATA[<p>使用变量不需要声明，直接为变量赋值，但是不能使用未被赋值的变量</p>
-<p>python是一个动态类型的语言，可以给变量赋<strong>任意类型的值</strong>。也可以任意修改变量的值。</p>
-<p>通常变量的名要有意义，比如年龄18，那么我们可以写<code>age = 18</code></p>
-<p>sypder快捷键注释</p>
-<ol>
-<li>Ctrl + 1	注释/反注释</li>
-<li>Ctrl + 4/5	块注释/块反注释</li>
-<li>Ctrl + L	跳转到行号</li>
-<li>Tab/Shift + Tab	代码缩进/反缩进</li>
-<li>Ctrl ＋I	显示帮助</li>
-</ol>
-<hr />
-<p>标识符：html中是名值对，这里是标识符和值成对。</p>
-<p>python中所有可以自主命名的内容都是标识符。比如变量名、函数名、类名。</p>
-<ol>
-<li>标识符只能含有字母、数字、下划线。但是不能用数字开头，一般都是用字母开头。</li>
-<li>标识符不能是python关键字和保留字。不建议使用函数名作为标识符。会导致函数被覆盖。</li>
-<li>规范：
-<ol>
-<li>下划线命名法，比如<code>max_length</code>, <code>hello_world</code>（用得最多）</li>
-<li>帕斯卡命名法，每个单词开头字母大写，其余小写，比如<code>MaxLength</code>, <code>HelloWorld</code>（类名，使用此类）</li>
-<li></li>
-</ol>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>spyder快捷键</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>沙特办理工业许可证的要求和流程</title>
     <url>/2024/03/28/%E5%8A%9E%E7%90%86%E5%B7%A5%E4%B8%9A%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/</url>
     <content><![CDATA[<h1 id="定义"><a class="markdownIt-Anchor" href="#定义"></a> 定义</h1>
@@ -283,6 +278,45 @@
         <tag>沙特</tag>
         <tag>工业许可证</tag>
         <tag>沙特工业和矿产资源部</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>变量和标识符</title>
+    <url>/2024/03/31/%E5%8F%98%E9%87%8F%E5%92%8C%E6%A0%87%E8%AF%86%E7%AC%A6/</url>
+    <content><![CDATA[<p>使用变量不需要声明，直接为变量赋值，但是不能使用未被赋值的变量</p>
+<p>python是一个动态类型的语言，可以给变量赋<strong>任意类型的值</strong>。也可以任意修改变量的值。</p>
+<p>通常变量的名要有意义，比如年龄18，那么我们可以写<code>age = 18</code></p>
+<p>sypder快捷键注释</p>
+<ol>
+<li>Ctrl + 1	注释/反注释</li>
+<li>Ctrl + 4/5	块注释/块反注释</li>
+<li>Ctrl + L	跳转到行号</li>
+<li>Tab/Shift + Tab	代码缩进/反缩进</li>
+<li>Ctrl ＋I	显示帮助</li>
+</ol>
+<hr />
+<p>标识符：html中是名值对，这里是标识符和值成对。</p>
+<p>python中所有可以自主命名的内容都是标识符。比如变量名、函数名、类名。</p>
+<ol>
+<li>标识符只能含有字母、数字、下划线。但是不能用数字开头，一般都是用字母开头。</li>
+<li>标识符不能是python关键字和保留字。不建议使用函数名作为标识符。会导致函数被覆盖。</li>
+<li>规范：
+<ol>
+<li>下划线命名法，比如<code>max_length</code>, <code>hello_world</code>（用得最多）</li>
+<li>帕斯卡命名法，每个单词开头字母大写，其余小写，比如<code>MaxLength</code>, <code>HelloWorld</code>（类名，使用此类）</li>
+<li></li>
+</ol>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>spyder快捷键</tag>
       </tags>
   </entry>
   <entry>
@@ -377,23 +411,6 @@
       </tags>
   </entry>
   <entry>
-    <title>字符串的复制</title>
-    <url>/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%A4%8D%E5%88%B6/</url>
-    <content><![CDATA[<p>将字符串和数字相乘, 就是复制字符串</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="string">&#x27;你好&#x27;</span></span><br><span class="line"></span><br><span class="line">a = a * <span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(a)</span><br></pre></td></tr></table></figure>
-<p>返回值</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">你好你好</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>字符串</title>
     <url>/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
     <content><![CDATA[<ul>
@@ -448,6 +465,23 @@
       </tags>
   </entry>
   <entry>
+    <title>字符串的复制</title>
+    <url>/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%A4%8D%E5%88%B6/</url>
+    <content><![CDATA[<p>将字符串和数字相乘, 就是复制字符串</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="string">&#x27;你好&#x27;</span></span><br><span class="line"></span><br><span class="line">a = a * <span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(a)</span><br></pre></td></tr></table></figure>
+<p>返回值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">你好你好</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>字面变量和变量</title>
     <url>/2024/03/31/%E5%AD%97%E9%9D%A2%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F/</url>
     <content><![CDATA[<p>【字面量】一个一个的值，它的意思就是它字面的值。在程序中可以直接使用。</p>
@@ -463,22 +497,6 @@
       <tags>
         <tag>python</tag>
         <tag>计算机</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>布尔值</title>
-    <url>/2024/03/31/%E5%B8%83%E5%B0%94%E5%80%BC/</url>
-    <content><![CDATA[<p>布尔值(bool)用来做逻辑判断. 一共有两个<code>True</code>和<code>False</code>. 注意Python是一个大小写敏感的语言.<br />
-也可以理解为一个整数, true 是 1 false 是 0</p>
-<p><code>None</code>空值,表示不存在.</p>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -530,6 +548,22 @@
 </ul>
 </li>
 </ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>布尔值</title>
+    <url>/2024/03/31/%E5%B8%83%E5%B0%94%E5%80%BC/</url>
+    <content><![CDATA[<p>布尔值(bool)用来做逻辑判断. 一共有两个<code>True</code>和<code>False</code>. 注意Python是一个大小写敏感的语言.<br />
+也可以理解为一个整数, true 是 1 false 是 0</p>
+<p><code>None</code>空值,表示不存在.</p>
 ]]></content>
       <categories>
         <category>编程</category>
@@ -1233,23 +1267,8 @@ $$
       </tags>
   </entry>
   <entry>
-    <title>关于</title>
-    <url>/about/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/js/script.js</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>分类</title>
     <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/css/postpage_style.css</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -1301,6 +1320,21 @@ $$
 }]]></content>
   </entry>
   <entry>
+    <title>关于</title>
+    <url>/about/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/css/postpage_style.css</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/js/script.js</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>文档</title>
     <url>/files/index.html</url>
     <content><![CDATA[]]></content>
@@ -1311,6 +1345,11 @@ $$
     <content><![CDATA[]]></content>
   </entry>
   <entry>
+    <title>电影</title>
+    <url>/movies/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>链接</title>
     <url>/link/index.html</url>
     <content><![CDATA[]]></content>
@@ -1318,11 +1357,6 @@ $$
   <entry>
     <title>音乐</title>
     <url>/music/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>电影</title>
-    <url>/movies/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>
