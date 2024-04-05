@@ -197,6 +197,36 @@ else:<br />
       </tags>
   </entry>
   <entry>
+    <title>列表</title>
+    <url>/2024/04/05/%E5%88%97%E8%A1%A8/</url>
+    <content><![CDATA[<p>#序列</p>
+<h2 id="列表list"><a class="markdownIt-Anchor" href="#列表list"></a> 列表（list）</h2>
+<p>列表是一个对象. 以前我们学习的对象比如数值，只能保存一个数据， 而列表可以存储多个数据。</p>
+<h3 id="如何创建列表"><a class="markdownIt-Anchor" href="#如何创建列表"></a> 如何创建列表</h3>
+<p>通过<code>[]</code>创建一个列表比如<code>my_list = []</code>. 列表中存储的数据我们叫做元素.</p>
+<ul>
+<li>列表中的元素可以是一个或者多个, 元素之间用<code>,</code>隔开. </br></li>
+<li>列表可以保存任意对象比如数值, 字符串, 布尔值, 逻辑值.</li>
+<li>各个元素是按照<strong>顺序</strong>存到列表中的.</li>
+</ul>
+<h3 id="索引"><a class="markdownIt-Anchor" href="#索引"></a> 索引</h3>
+<ul>
+<li>索引表示的是元素在列表中的位置. 索引是从<code>0</code>开始的整数,</li>
+<li><code>0</code>对应的是列表中的第一个元素 </br></li>
+<li>可以通过索引来调用列表中的元素, 语法规则为<code>listname[indexnumber]</code></li>
+<li>可以通过<code>len()</code>获取列表的长度. 列表长度是最大索引+1.</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>沙特办理工业许可证的要求和流程</title>
     <url>/2024/03/28/%E5%8A%9E%E7%90%86%E5%B7%A5%E4%B8%9A%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/</url>
     <content><![CDATA[<h1 id="定义"><a class="markdownIt-Anchor" href="#定义"></a> 定义</h1>
@@ -482,6 +512,24 @@ else:<br />
       </tags>
   </entry>
   <entry>
+    <title>字面变量和变量</title>
+    <url>/2024/03/31/%E5%AD%97%E9%9D%A2%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F/</url>
+    <content><![CDATA[<p>【字面量】一个一个的值，它的意思就是它字面的值。在程序中可以直接使用。</p>
+<p>【变量】与字面量相反。变量可以保存字面量，并且保存的字面量是不定的。</p>
+<p>变量本身无意义，会跟不同的字面量表示不同的意思。</p>
+<p>开发时，通常将字面量保存在变量中，通过变量来引用字面量。这样便于统一管理和引用。</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>计算机</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>对象(object)</title>
     <url>/2024/03/31/%E5%AF%B9%E8%B1%A1(object)/</url>
     <content><![CDATA[<h1 id="对象介绍"><a class="markdownIt-Anchor" href="#对象介绍"></a> 对象介绍</h1>
@@ -541,12 +589,11 @@ else:<br />
       </tags>
   </entry>
   <entry>
-    <title>字面变量和变量</title>
-    <url>/2024/03/31/%E5%AD%97%E9%9D%A2%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F/</url>
-    <content><![CDATA[<p>【字面量】一个一个的值，它的意思就是它字面的值。在程序中可以直接使用。</p>
-<p>【变量】与字面量相反。变量可以保存字面量，并且保存的字面量是不定的。</p>
-<p>变量本身无意义，会跟不同的字面量表示不同的意思。</p>
-<p>开发时，通常将字面量保存在变量中，通过变量来引用字面量。这样便于统一管理和引用。</p>
+    <title>布尔值</title>
+    <url>/2024/03/31/%E5%B8%83%E5%B0%94%E5%80%BC/</url>
+    <content><![CDATA[<p>布尔值(bool)用来做逻辑判断. 一共有两个<code>True</code>和<code>False</code>. 注意Python是一个大小写敏感的语言.<br />
+也可以理解为一个整数, true 是 1 false 是 0</p>
+<p><code>None</code>空值,表示不存在.</p>
 ]]></content>
       <categories>
         <category>编程</category>
@@ -555,15 +602,19 @@ else:<br />
       </categories>
       <tags>
         <tag>python</tag>
-        <tag>计算机</tag>
       </tags>
   </entry>
   <entry>
-    <title>布尔值</title>
-    <url>/2024/03/31/%E5%B8%83%E5%B0%94%E5%80%BC/</url>
-    <content><![CDATA[<p>布尔值(bool)用来做逻辑判断. 一共有两个<code>True</code>和<code>False</code>. 注意Python是一个大小写敏感的语言.<br />
-也可以理解为一个整数, true 是 1 false 是 0</p>
-<p><code>None</code>空值,表示不存在.</p>
+    <title>循环语句</title>
+    <url>/2024/04/05/%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/</url>
+    <content><![CDATA[<p>循环语句，可以使指定的代码块重复指定的次数，有两种while循环和for循环。</p>
+<h1 id="while循环"><a class="markdownIt-Anchor" href="#while循环"></a> while循环</h1>
+<p>【语法】：<br />
+while 条件表达式：<br />
+代码块<br />
+else：</p>
+<p>【执行流程】：<br />
+先对条件表达式进行求值判断。如果结果为真，执行代码块，后继续对条件表达式进行判断，如此循环。直到判断条件表达式的结果为假时，停止循环。执行else。</p>
 ]]></content>
       <categories>
         <category>编程</category>
@@ -635,6 +686,35 @@ else:<br />
       </tags>
   </entry>
   <entry>
+    <title>文本文件和字符集</title>
+    <url>/2024/03/31/%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%92%8C%E5%AD%97%E7%AC%A6%E9%9B%86/</url>
+    <content><![CDATA[<p>文本分为纯文本和富文本。</p>
+<p>纯文本在计算机底层也会转换为二进制保存。</p>
+<p>将字符转换为二进制码的过程叫做<strong>编码</strong>。</p>
+<p>将二进制码转换成字符的过程叫做<strong>解码</strong>。</p>
+<p>编码和解码时采用的规则叫做<strong>字符集</strong>。</p>
+<p>常用的字符集：</p>
+<ul>
+<li>ASCII 美国人编码，使用7位（7个1和7个0）来对美国常用的字符进行编码。7个1和7个0的不同组合产生128个字符。</li>
+<li>IS0-8859-1 欧洲的编号，使用8位进行编码，产生256个字符。</li>
+<li>GB2312 GBK中国人的编码</li>
+<li>Unicode 万国码。便携程序时，使用Unicode编码。Unicode有多种实现，UTF-32使用4个字节表示一个字符。UTF-16使用2到4个字节表示一个字符。UTF-8使用1-5个字节表示一个字符。</li>
+</ul>
+<hr />
+<p>乱码</p>
+<p>程序出现乱码，检查字符集是否正确。</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>计算机</tag>
+      </tags>
+  </entry>
+  <entry>
     <title></title>
     <url>/2024/03/26/%E6%97%A0%E7%BA%BA%E5%B8%83%E4%B8%93%E4%B8%9A%E8%8B%B1%E8%AF%AD%E6%9C%AF%E8%AF%AD1/</url>
     <content><![CDATA[<p>聚酯切片：</p>
@@ -668,35 +748,6 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
 <p>电工：electrician</p>
 <p>焊工：welder</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>文本文件和字符集</title>
-    <url>/2024/03/31/%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%92%8C%E5%AD%97%E7%AC%A6%E9%9B%86/</url>
-    <content><![CDATA[<p>文本分为纯文本和富文本。</p>
-<p>纯文本在计算机底层也会转换为二进制保存。</p>
-<p>将字符转换为二进制码的过程叫做<strong>编码</strong>。</p>
-<p>将二进制码转换成字符的过程叫做<strong>解码</strong>。</p>
-<p>编码和解码时采用的规则叫做<strong>字符集</strong>。</p>
-<p>常用的字符集：</p>
-<ul>
-<li>ASCII 美国人编码，使用7位（7个1和7个0）来对美国常用的字符进行编码。7个1和7个0的不同组合产生128个字符。</li>
-<li>IS0-8859-1 欧洲的编号，使用8位进行编码，产生256个字符。</li>
-<li>GB2312 GBK中国人的编码</li>
-<li>Unicode 万国码。便携程序时，使用Unicode编码。Unicode有多种实现，UTF-32使用4个字节表示一个字符。UTF-16使用2到4个字节表示一个字符。UTF-8使用1-5个字节表示一个字符。</li>
-</ul>
-<hr />
-<p>乱码</p>
-<p>程序出现乱码，检查字符集是否正确。</p>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>计算机</tag>
-      </tags>
   </entry>
   <entry>
     <title>格式化字符串</title>
@@ -738,6 +789,74 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
       </categories>
       <tags>
         <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>申请沙特工业园工厂运行许可证的要求</title>
+    <url>/2024/03/27/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%B7%A5%E5%8E%82%E8%BF%90%E8%A1%8C%E8%AE%B8%E5%8F%AF%E8%AF%81%E7%9A%84%E8%A6%81%E6%B1%82%E5%92%8C%E8%A7%84%E5%AE%9A/</url>
+    <content><![CDATA[<h1 id="第一阶段通过modon账户提交申请"><a class="markdownIt-Anchor" href="#第一阶段通过modon账户提交申请"></a> 第一阶段：通过MODON账户提交申请</h1>
+<p><strong>申请建筑竣工和运行许可证所需文件</strong></p>
+<ul>
+<li>经Modon认证的安全图。</li>
+<li>绝缘工程完工证明。</li>
+<li>测试安全系统的模型和消防警报器材的清单。</li>
+<li>电路铺设和连接安全证书。</li>
+<li>跟分包商签署的消防警报系统维护的合同，分包商需要经过民防的认证。</li>
+<li>环保证书。</li>
+<li>工业许可证（从工业与矿产资源部网站申请）</li>
+<li>军工单位建设许可和安全等级（军工企业适用）</li>
+</ul>
+<p><strong>运行许可证更新所需文件</strong></p>
+<ul>
+<li>经工业园（MODON）和民防（Civil Defense）认证的设施安全图纸。</li>
+<li>跟分包商签署的消防警报系统维护的合同，分包商需要经过民防的认证。</li>
+<li>测试安全系统的模型和消防警报器材的清单。</li>
+<li>合格且有级别的安全员。</li>
+</ul>
+<p><strong>其他条件</strong></p>
+<ul>
+<li>跟由Modon认证的工程办公室签订合同，由工程办公室根据认证的模版检查消防和安全系统。</li>
+<li>通过Shareek系统申报危险材料，说明在企业内危险品的存储、种类和危害性。</li>
+<li>职业健康和安全领域内合格的安全员。</li>
+<li>企业安保人员：有安保（沙特籍）</li>
+<li>企业内外安装可以存储两个月记录的摄像头。（军工单位适用）</li>
+<li>记录和保存出入数据（员工和拜访人员）的控制系统。（军工企业适用）</li>
+</ul>
+<h1 id="第二阶段参观考察"><a class="markdownIt-Anchor" href="#第二阶段参观考察"></a> 第二阶段：参观考察</h1>
+<p><strong>批准颁发建筑竣工和运行许可或者更新作业许可证和安全标准需要检查的内容</strong></p>
+<ul>
+<li>确保与许可证相符。</li>
+<li>确保消防和疏散系统运行良好且与主控制面板连接。</li>
+<li>确保消防和疏散系统与认证的安全图纸相符，与认证的规格相符。</li>
+<li>确保有安全员进行与安全管理相关的工作。</li>
+<li>检查员工办公地点和基础设施。</li>
+<li>确保企业内部的生产线、电力系统和设备和其他设备的安全。</li>
+<li>确保地板、通风系统和噪声安全。</li>
+<li>确保在处理、运输和储存化学材料和有害气体时，符合安全规定。</li>
+<li>确保不存在不安全或者违规存储，和不符合规定的退线。</li>
+</ul>
+<h1 id="第三阶段颁发竣工证书和运行许可证"><a class="markdownIt-Anchor" href="#第三阶段颁发竣工证书和运行许可证"></a> 第三阶段：颁发竣工证书和运行许可证</h1>
+<p>Modon致力于简化并加速与合作伙伴的合作，其中包括满足工厂需求，保护员工和工业园财产与基础。我们已经对运行许可和有效时限做了如下分类：</p>
+<p><strong>第一次发放期限一年</strong><br />
+对那些完成建设，满足条件，符合安全标准的企业发放我竣工和运行许可证，它可以视为是运行许可证，此许可证有效期为一年。</p>
+<p><strong>更新</strong></p>
+<p>【短期】：6个月</p>
+<p>本许可颁发给那些些存在大量问题和违规行为，需要较长时间跟其他政府部门和相关机构完成手续，并能够快速更正错误，承诺在规定时间纠正其他问题的企业</p>
+<p>【中期】：1年</p>
+<p>本许可颁发给那些存在中等风险的违规行为，需要较长时间与其他政府部门和相关机构对接完成相关手续。前提是尽快纠正错误，并承诺在规定时间能纠正问题的企业。</p>
+<p>【长期】：3年</p>
+<p>三年有效期的许可颁发给那些没有任何问题，已经遵守了所有安全规则和标准。</p>
+<p><a href='https://www.modon.gov.sa/ar/Systems/Pages/Conditions.aspx'>本文翻译自Modon网站</a></p>
+]]></content>
+      <categories>
+        <category>制度学习</category>
+        <category>沙特工业园制度</category>
+      </categories>
+      <tags>
+        <tag>沙特投资</tag>
+        <tag>沙特</tag>
+        <tag>沙特工业园</tag>
+        <tag>工厂运营许可</tag>
       </tags>
   </entry>
   <entry>
@@ -826,74 +945,6 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
         <tag>建厂</tag>
         <tag>沙特投资</tag>
         <tag>沙特工业园</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>申请沙特工业园工厂运行许可证的要求</title>
-    <url>/2024/03/27/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%B7%A5%E5%8E%82%E8%BF%90%E8%A1%8C%E8%AE%B8%E5%8F%AF%E8%AF%81%E7%9A%84%E8%A6%81%E6%B1%82%E5%92%8C%E8%A7%84%E5%AE%9A/</url>
-    <content><![CDATA[<h1 id="第一阶段通过modon账户提交申请"><a class="markdownIt-Anchor" href="#第一阶段通过modon账户提交申请"></a> 第一阶段：通过MODON账户提交申请</h1>
-<p><strong>申请建筑竣工和运行许可证所需文件</strong></p>
-<ul>
-<li>经Modon认证的安全图。</li>
-<li>绝缘工程完工证明。</li>
-<li>测试安全系统的模型和消防警报器材的清单。</li>
-<li>电路铺设和连接安全证书。</li>
-<li>跟分包商签署的消防警报系统维护的合同，分包商需要经过民防的认证。</li>
-<li>环保证书。</li>
-<li>工业许可证（从工业与矿产资源部网站申请）</li>
-<li>军工单位建设许可和安全等级（军工企业适用）</li>
-</ul>
-<p><strong>运行许可证更新所需文件</strong></p>
-<ul>
-<li>经工业园（MODON）和民防（Civil Defense）认证的设施安全图纸。</li>
-<li>跟分包商签署的消防警报系统维护的合同，分包商需要经过民防的认证。</li>
-<li>测试安全系统的模型和消防警报器材的清单。</li>
-<li>合格且有级别的安全员。</li>
-</ul>
-<p><strong>其他条件</strong></p>
-<ul>
-<li>跟由Modon认证的工程办公室签订合同，由工程办公室根据认证的模版检查消防和安全系统。</li>
-<li>通过Shareek系统申报危险材料，说明在企业内危险品的存储、种类和危害性。</li>
-<li>职业健康和安全领域内合格的安全员。</li>
-<li>企业安保人员：有安保（沙特籍）</li>
-<li>企业内外安装可以存储两个月记录的摄像头。（军工单位适用）</li>
-<li>记录和保存出入数据（员工和拜访人员）的控制系统。（军工企业适用）</li>
-</ul>
-<h1 id="第二阶段参观考察"><a class="markdownIt-Anchor" href="#第二阶段参观考察"></a> 第二阶段：参观考察</h1>
-<p><strong>批准颁发建筑竣工和运行许可或者更新作业许可证和安全标准需要检查的内容</strong></p>
-<ul>
-<li>确保与许可证相符。</li>
-<li>确保消防和疏散系统运行良好且与主控制面板连接。</li>
-<li>确保消防和疏散系统与认证的安全图纸相符，与认证的规格相符。</li>
-<li>确保有安全员进行与安全管理相关的工作。</li>
-<li>检查员工办公地点和基础设施。</li>
-<li>确保企业内部的生产线、电力系统和设备和其他设备的安全。</li>
-<li>确保地板、通风系统和噪声安全。</li>
-<li>确保在处理、运输和储存化学材料和有害气体时，符合安全规定。</li>
-<li>确保不存在不安全或者违规存储，和不符合规定的退线。</li>
-</ul>
-<h1 id="第三阶段颁发竣工证书和运行许可证"><a class="markdownIt-Anchor" href="#第三阶段颁发竣工证书和运行许可证"></a> 第三阶段：颁发竣工证书和运行许可证</h1>
-<p>Modon致力于简化并加速与合作伙伴的合作，其中包括满足工厂需求，保护员工和工业园财产与基础。我们已经对运行许可和有效时限做了如下分类：</p>
-<p><strong>第一次发放期限一年</strong><br />
-对那些完成建设，满足条件，符合安全标准的企业发放我竣工和运行许可证，它可以视为是运行许可证，此许可证有效期为一年。</p>
-<p><strong>更新</strong></p>
-<p>【短期】：6个月</p>
-<p>本许可颁发给那些些存在大量问题和违规行为，需要较长时间跟其他政府部门和相关机构完成手续，并能够快速更正错误，承诺在规定时间纠正其他问题的企业</p>
-<p>【中期】：1年</p>
-<p>本许可颁发给那些存在中等风险的违规行为，需要较长时间与其他政府部门和相关机构对接完成相关手续。前提是尽快纠正错误，并承诺在规定时间能纠正问题的企业。</p>
-<p>【长期】：3年</p>
-<p>三年有效期的许可颁发给那些没有任何问题，已经遵守了所有安全规则和标准。</p>
-<p><a href='https://www.modon.gov.sa/ar/Systems/Pages/Conditions.aspx'>本文翻译自Modon网站</a></p>
-]]></content>
-      <categories>
-        <category>制度学习</category>
-        <category>沙特工业园制度</category>
-      </categories>
-      <tags>
-        <tag>沙特投资</tag>
-        <tag>沙特</tag>
-        <tag>沙特工业园</tag>
-        <tag>工厂运营许可</tag>
       </tags>
   </entry>
   <entry>
@@ -1024,6 +1075,88 @@ $$
 <h3 id="安排安保"><a class="markdownIt-Anchor" href="#安排安保"></a> 安排安保</h3>
 <h3 id="安排有资质的建筑公司动工"><a class="markdownIt-Anchor" href="#安排有资质的建筑公司动工"></a> 安排有资质的建筑公司动工</h3>
 ]]></content>
+  </entry>
+  <entry>
+    <title>LaTeX中的几个基本概念</title>
+    <url>/2024/03/12/%E7%AC%AC%E4%B8%80%E7%AB%A0LaTex%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
+    <content><![CDATA[<h1 id="latex的基本概念"><a class="markdownIt-Anchor" href="#latex的基本概念"></a> LaTex的基本概念</h1>
+<h2 id="概述"><a class="markdownIt-Anchor" href="#概述"></a> 概述</h2>
+<ul>
+<li>Donald E. Knuth 1982年发布Tex引擎，1989年位更好的支出8-bit字符和多语言排版而予以改进。</li>
+<li>LaTex是一种使用Tex程序作为排版引擎的格式（format）。可以错略的理解为是对Tex的一层封装。起初有Leslie Lamport博士开发，目前又LaTex工作组进行维护。</li>
+</ul>
+<h2 id="latex命令和代码结构"><a class="markdownIt-Anchor" href="#latex命令和代码结构"></a> LaTex命令和代码结构</h2>
+<p>命令两种形式：</p>
+<ol>
+<li><code>\</code>和后面的一串字母，如<code>\LaTex</code>。以任意非字母符号为界限。</li>
+<li><code>\</code>反斜线和后面单个非字母符号，比如<code>\$</code>.</li>
+</ol>
+<p>注意⚠️</p>
+<ol>
+<li>字母形式的LaTex忽略其后的所有连续空格，如果要引入空格，应该写成<code>\LaTex&#123;&#125;</code>。</li>
+<li>LaTex大小写敏感。</li>
+</ol>
+<p>【参数】一些命令可以接受参数，参数影响命令的效果。参数有：</p>
+<ol>
+<li>mandatory arguments，用<code>&#123;&#125;</code>包裹。</li>
+<li>optional arguments，用<code>[]</code>包裹。</li>
+<li><code>*</code>带一个星号和不带星号的命令效果有差异。可以把星号看作一种特殊的可选参数。</li>
+</ol>
+<p>【环境】环境成对出现，环境有时会携带参数，环境名保持一致。部分环境允许嵌套。比如</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;enviroment name&#125;[optional arguments]&#123;mandatory arguments&#125;</span><br><span class="line">……</span><br><span class="line"></span><br><span class="line"><span class="keyword">\end</span>&#123;enviroment name&#125; <span class="comment">% 这里不在需要写参数</span></span><br></pre></td></tr></table></figure>
+<p>【分组】LaTex使用<code>&#123;&#125;</code>作为分组。分组中效果命令被限制在分组内。修改字体字号的命令即属此类。</p>
+<hr />
+<p>LaTex 源码结构：</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>&#123;&#125; <span class="comment">% 指定文档的文档类</span></span><br><span class="line"><span class="comment">%  导言区。一般会在这里调用宏包和对文档进行全局设置。</span></span><br><span class="line"><span class="keyword">\begin</span>&#123;document&#125;</span><br><span class="line"><span class="comment">% 正文内容</span></span><br><span class="line"><span class="keyword">\end</span>&#123;document&#125;</span><br></pre></td></tr></table></figure>
+<hr />
+<h2 id="文档类和宏包"><a class="markdownIt-Anchor" href="#文档类和宏包"></a> 文档类和宏包</h2>
+<p>文档类：</p>
+<p>LaTex中的三个表中文档类：article, report, book. 在此基础上派生的一类文档如中文排版的ctexart, ctexrep, ctexbook.</p>
+<p>可选参数：</p>
+<p>为文档类指定选项，全局规定一些排版参数，如字号、纸张大小、单双面。</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>[11pt,twoside,a4paper]&#123;article&#125;</span><br></pre></td></tr></table></figure>
+<p>三个标准文档类的可指定选项包括：</p>
+<ol>
+<li>字号：10pt, 11pt, 12pt。默认10pt。</li>
+<li>纸张大小：a4paper, letter paper, 等等。</li>
+<li>单双面：twoside, oneside. 双面排版时，奇偶页的页眉页脚、页边距不同。article和report默认为单面。book默认为双面。</li>
+<li>单栏双栏：onecolumn, twocolume. 默认是 onecolumn.</li>
+<li>新一章在起始位置：<code>openright</code>, <code>openany</code>. 指定新一章是否必须从奇数页开始（右侧）。默认article无效；report为<code>openany</code>；book为<code>openright</code>。</li>
+<li>横向排版还是纵向排版：landscape. 默认为纵向。</li>
+<li>标题是否单独成页：titleapge, notitlepage. article默认为不单独成页。report和book默认为单独成页。</li>
+<li>草稿/终稿：draft, final.草稿模式小，不良断行会在行尾条件一个黑色方块。默认为final.</li>
+<li>行间公式左对齐： fleqn，行间公式左对齐。默认居中对齐。</li>
+<li>公式编号放左边：leqno，公式编号放左边，默认放右边。</li>
+</ol>
+<hr />
+<p>宏包：调用宏包的命令<code>usepackage[options]&#123;package name&#125;</code></p>
+<p>可以一次调用多个宏包，中间用逗号隔开。此时一般不指定选项。</p>
+<hr />
+<h2 id="文件的组织方式"><a class="markdownIt-Anchor" href="#文件的组织方式"></a> 文件的组织方式</h2>
+<p>将源文件分割成若干个文件，比如每章的目录放在单独的文件中，会大大缩短修改和校对时间。</p>
+<p>LaTex中向源代码中插入文件的命令：</p>
+<ol>
+<li><code>\include&#123;filename&#125;</code>，filename不带扩展名。如果和要编译的主文件不在同一个目录，要加上相对或者绝对路径。通过include引入的文件，在读入后会另起一页。如果不要另起一页可以用input命令。</li>
+<li><code>\input&#123;filename&#125;</code>。当导言区内容较多时，可以单独放置在一个<code>.tex</code>文档，在用<code>\input&#123;&#125;</code>插入。</li>
+</ol>
+<hr />
+<h2 id="相关术语"><a class="markdownIt-Anchor" href="#相关术语"></a> 相关术语</h2>
+<p>【引擎】又称为编译器，是编译源码并生成文档的程序。如pdftex, xetex等。</p>
+<p>【格式】是定义了一组命令的代码集。LaTex是最广泛应用的一个格式。比如plain Tex格式，没有定义诸如<code>\documentclass</code>和<code>\section</code>等等命令。</p>
+<p>【编译命令】是实际调用的、结合了引擎和格式的命令。xelatex命令是结合了xetex引擎和latex格式的一个编译命令。</p>
+<blockquote>
+<p>调用syntaxonly 可以只编译文档而不生成PDF文档，我们如果只是想检查错误可以使用</p>
+<p><code>\usepackage&#123;syntaxonly&#125;</code></p>
+<p><code>\syntaxonly</code></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>Latex</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
+      </tags>
   </entry>
   <entry>
     <title>第二章 LaTeX中几个常用的基本语法</title>
@@ -1251,88 +1384,6 @@ $$
       </tags>
   </entry>
   <entry>
-    <title>LaTeX中的几个基本概念</title>
-    <url>/2024/03/12/%E7%AC%AC%E4%B8%80%E7%AB%A0LaTex%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
-    <content><![CDATA[<h1 id="latex的基本概念"><a class="markdownIt-Anchor" href="#latex的基本概念"></a> LaTex的基本概念</h1>
-<h2 id="概述"><a class="markdownIt-Anchor" href="#概述"></a> 概述</h2>
-<ul>
-<li>Donald E. Knuth 1982年发布Tex引擎，1989年位更好的支出8-bit字符和多语言排版而予以改进。</li>
-<li>LaTex是一种使用Tex程序作为排版引擎的格式（format）。可以错略的理解为是对Tex的一层封装。起初有Leslie Lamport博士开发，目前又LaTex工作组进行维护。</li>
-</ul>
-<h2 id="latex命令和代码结构"><a class="markdownIt-Anchor" href="#latex命令和代码结构"></a> LaTex命令和代码结构</h2>
-<p>命令两种形式：</p>
-<ol>
-<li><code>\</code>和后面的一串字母，如<code>\LaTex</code>。以任意非字母符号为界限。</li>
-<li><code>\</code>反斜线和后面单个非字母符号，比如<code>\$</code>.</li>
-</ol>
-<p>注意⚠️</p>
-<ol>
-<li>字母形式的LaTex忽略其后的所有连续空格，如果要引入空格，应该写成<code>\LaTex&#123;&#125;</code>。</li>
-<li>LaTex大小写敏感。</li>
-</ol>
-<p>【参数】一些命令可以接受参数，参数影响命令的效果。参数有：</p>
-<ol>
-<li>mandatory arguments，用<code>&#123;&#125;</code>包裹。</li>
-<li>optional arguments，用<code>[]</code>包裹。</li>
-<li><code>*</code>带一个星号和不带星号的命令效果有差异。可以把星号看作一种特殊的可选参数。</li>
-</ol>
-<p>【环境】环境成对出现，环境有时会携带参数，环境名保持一致。部分环境允许嵌套。比如</p>
-<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;enviroment name&#125;[optional arguments]&#123;mandatory arguments&#125;</span><br><span class="line">……</span><br><span class="line"></span><br><span class="line"><span class="keyword">\end</span>&#123;enviroment name&#125; <span class="comment">% 这里不在需要写参数</span></span><br></pre></td></tr></table></figure>
-<p>【分组】LaTex使用<code>&#123;&#125;</code>作为分组。分组中效果命令被限制在分组内。修改字体字号的命令即属此类。</p>
-<hr />
-<p>LaTex 源码结构：</p>
-<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>&#123;&#125; <span class="comment">% 指定文档的文档类</span></span><br><span class="line"><span class="comment">%  导言区。一般会在这里调用宏包和对文档进行全局设置。</span></span><br><span class="line"><span class="keyword">\begin</span>&#123;document&#125;</span><br><span class="line"><span class="comment">% 正文内容</span></span><br><span class="line"><span class="keyword">\end</span>&#123;document&#125;</span><br></pre></td></tr></table></figure>
-<hr />
-<h2 id="文档类和宏包"><a class="markdownIt-Anchor" href="#文档类和宏包"></a> 文档类和宏包</h2>
-<p>文档类：</p>
-<p>LaTex中的三个表中文档类：article, report, book. 在此基础上派生的一类文档如中文排版的ctexart, ctexrep, ctexbook.</p>
-<p>可选参数：</p>
-<p>为文档类指定选项，全局规定一些排版参数，如字号、纸张大小、单双面。</p>
-<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>[11pt,twoside,a4paper]&#123;article&#125;</span><br></pre></td></tr></table></figure>
-<p>三个标准文档类的可指定选项包括：</p>
-<ol>
-<li>字号：10pt, 11pt, 12pt。默认10pt。</li>
-<li>纸张大小：a4paper, letter paper, 等等。</li>
-<li>单双面：twoside, oneside. 双面排版时，奇偶页的页眉页脚、页边距不同。article和report默认为单面。book默认为双面。</li>
-<li>单栏双栏：onecolumn, twocolume. 默认是 onecolumn.</li>
-<li>新一章在起始位置：<code>openright</code>, <code>openany</code>. 指定新一章是否必须从奇数页开始（右侧）。默认article无效；report为<code>openany</code>；book为<code>openright</code>。</li>
-<li>横向排版还是纵向排版：landscape. 默认为纵向。</li>
-<li>标题是否单独成页：titleapge, notitlepage. article默认为不单独成页。report和book默认为单独成页。</li>
-<li>草稿/终稿：draft, final.草稿模式小，不良断行会在行尾条件一个黑色方块。默认为final.</li>
-<li>行间公式左对齐： fleqn，行间公式左对齐。默认居中对齐。</li>
-<li>公式编号放左边：leqno，公式编号放左边，默认放右边。</li>
-</ol>
-<hr />
-<p>宏包：调用宏包的命令<code>usepackage[options]&#123;package name&#125;</code></p>
-<p>可以一次调用多个宏包，中间用逗号隔开。此时一般不指定选项。</p>
-<hr />
-<h2 id="文件的组织方式"><a class="markdownIt-Anchor" href="#文件的组织方式"></a> 文件的组织方式</h2>
-<p>将源文件分割成若干个文件，比如每章的目录放在单独的文件中，会大大缩短修改和校对时间。</p>
-<p>LaTex中向源代码中插入文件的命令：</p>
-<ol>
-<li><code>\include&#123;filename&#125;</code>，filename不带扩展名。如果和要编译的主文件不在同一个目录，要加上相对或者绝对路径。通过include引入的文件，在读入后会另起一页。如果不要另起一页可以用input命令。</li>
-<li><code>\input&#123;filename&#125;</code>。当导言区内容较多时，可以单独放置在一个<code>.tex</code>文档，在用<code>\input&#123;&#125;</code>插入。</li>
-</ol>
-<hr />
-<h2 id="相关术语"><a class="markdownIt-Anchor" href="#相关术语"></a> 相关术语</h2>
-<p>【引擎】又称为编译器，是编译源码并生成文档的程序。如pdftex, xetex等。</p>
-<p>【格式】是定义了一组命令的代码集。LaTex是最广泛应用的一个格式。比如plain Tex格式，没有定义诸如<code>\documentclass</code>和<code>\section</code>等等命令。</p>
-<p>【编译命令】是实际调用的、结合了引擎和格式的命令。xelatex命令是结合了xetex引擎和latex格式的一个编译命令。</p>
-<blockquote>
-<p>调用syntaxonly 可以只编译文档而不生成PDF文档，我们如果只是想检查错误可以使用</p>
-<p><code>\usepackage&#123;syntaxonly&#125;</code></p>
-<p><code>\syntaxonly</code></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>Latex</category>
-      </categories>
-      <tags>
-        <tag>LaTeX</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>类型检查</title>
     <url>/2024/03/31/%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5/</url>
     <content><![CDATA[<h1 id="数据类型有"><a class="markdownIt-Anchor" href="#数据类型有"></a> 数据类型有</h1>
@@ -1411,6 +1462,27 @@ $$
       <tags>
         <tag>python</tag>
         <tag>计算机简介</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机语言</title>
+    <url>/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<p>计算机语言其实和人类语言没有本质区别，知识交流主体不同。</p>
+<p>机器语言发展的三个阶段：</p>
+<ul>
+<li>机器语言：通过二进制编码来编写程序。编写麻烦，执行效率好。</li>
+<li>汇编语言：使用符号代替机器码。汇编与反汇编。汇编语言只适用于某些硬件，兼容性差。计算机底层一些硬件驱动现在还用汇编语言编写。</li>
+<li>高级语言：和英语语法类似，并且和硬件关系不紧密，通过高级语言编写的程序可以在不同的硬件系统中执行。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>计算机</tag>
       </tags>
   </entry>
   <entry>
@@ -1553,25 +1625,19 @@ $$
       </tags>
   </entry>
   <entry>
-    <title>计算机语言</title>
-    <url>/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<p>计算机语言其实和人类语言没有本质区别，知识交流主体不同。</p>
-<p>机器语言发展的三个阶段：</p>
-<ul>
-<li>机器语言：通过二进制编码来编写程序。编写麻烦，执行效率好。</li>
-<li>汇编语言：使用符号代替机器码。汇编与反汇编。汇编语言只适用于某些硬件，兼容性差。计算机底层一些硬件驱动现在还用汇编语言编写。</li>
-<li>高级语言：和英语语法类似，并且和硬件关系不紧密，通过高级语言编写的程序可以在不同的硬件系统中执行。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>计算机</tag>
-      </tags>
+    <title>分类</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>关于</title>
+    <url>/about/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/js/script.js</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title></title>
@@ -1632,13 +1698,8 @@ $$
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/js/script.js</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>链接</title>
-    <url>/link/index.html</url>
+    <title>标签</title>
+    <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -1647,23 +1708,13 @@ $$
     <content><![CDATA[]]></content>
   </entry>
   <entry>
+    <title>链接</title>
+    <url>/link/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>电影</title>
     <url>/movies/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>分类</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>关于</title>
-    <url>/about/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>

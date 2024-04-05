@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-04-05T00:19:03.214Z</updated>
+  <updated>2024-04-05T15:37:42.560Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,67 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>列表</title>
+    <link href="http://example.com/2024/04/05/%E5%88%97%E8%A1%A8/"/>
+    <id>http://example.com/2024/04/05/%E5%88%97%E8%A1%A8/</id>
+    <published>2024-04-05T15:24:00.000Z</published>
+    <updated>2024-04-05T15:37:42.560Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;#序列&lt;/p&gt;
+&lt;h2 id=&quot;列表list&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#列表list&quot;&gt;&lt;/a&gt; 列表（list）&lt;/h2&gt;
+&lt;p&gt;列表是一个对象. 以前我们学习的对象比如数值，只能保存一个数据， 而列表可以存储多个数据。&lt;/</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
+    
+    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>循环语句</title>
+    <link href="http://example.com/2024/04/05/%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/"/>
+    <id>http://example.com/2024/04/05/%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/</id>
+    <published>2024-04-05T00:56:21.887Z</published>
+    <updated>2024-04-05T01:19:23.532Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;循环语句，可以使指定的代码块重复指定的次数，有两种while循环和for循环。&lt;/p&gt;
+&lt;h1 id=&quot;while循环&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#while循环&quot;&gt;&lt;/a&gt; while循环&lt;/h1&gt;
+&lt;p&gt;【语法】：&lt;br /</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
+    
+    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>第二章 LaTeX中几个常用的基本语法</title>
     <link href="http://example.com/2024/04/04/%E7%AC%AC%E4%BA%8C%E7%AB%A0%20LaTeX%E4%B8%AD%E5%87%A0%E4%B8%AA%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
     <id>http://example.com/2024/04/04/%E7%AC%AC%E4%BA%8C%E7%AB%A0%20LaTeX%E4%B8%AD%E5%87%A0%E4%B8%AA%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</id>
     <published>2024-04-04T11:30:05.899Z</published>
-    <updated>2024-04-05T00:19:03.214Z</updated>
+    <updated>2024-04-05T00:19:56.692Z</updated>
     
     
       
@@ -50,7 +106,7 @@
     <link href="http://example.com/2024/04/01/if%E8%AF%AD%E5%8F%A5/"/>
     <id>http://example.com/2024/04/01/if%E8%AF%AD%E5%8F%A5/</id>
     <published>2024-03-31T16:00:00.000Z</published>
-    <updated>2024-04-04T11:38:10.281Z</updated>
+    <updated>2024-04-05T00:54:48.249Z</updated>
     
     
       
@@ -248,34 +304,6 @@
   </entry>
   
   <entry>
-    <title>对象(object)</title>
-    <link href="http://example.com/2024/03/31/%E5%AF%B9%E8%B1%A1(object)/"/>
-    <id>http://example.com/2024/03/31/%E5%AF%B9%E8%B1%A1(object)/</id>
-    <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T11:06:25.078Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;对象介绍&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#对象介绍&quot;&gt;&lt;/a&gt; 对象介绍&lt;/h1&gt;
-&lt;p&gt;Python是一个面向对象的语言. 一切皆对象.&lt;br /&gt;
-程序运行中, 所有的数据都是存储在内存中, 硬盘–&amp;gt;内存–&amp;gt</summary>
-      
-    
-    
-    
-    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
-    
-    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
     <title>字面变量和变量</title>
     <link href="http://example.com/2024/03/31/%E5%AD%97%E9%9D%A2%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F/"/>
     <id>http://example.com/2024/03/31/%E5%AD%97%E9%9D%A2%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F/</id>
@@ -303,6 +331,34 @@
     <category term="python" scheme="http://example.com/tags/python/"/>
     
     <category term="计算机" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>对象(object)</title>
+    <link href="http://example.com/2024/03/31/%E5%AF%B9%E8%B1%A1(object)/"/>
+    <id>http://example.com/2024/03/31/%E5%AF%B9%E8%B1%A1(object)/</id>
+    <published>2024-03-30T16:00:00.000Z</published>
+    <updated>2024-03-31T11:06:25.078Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;对象介绍&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#对象介绍&quot;&gt;&lt;/a&gt; 对象介绍&lt;/h1&gt;
+&lt;p&gt;Python是一个面向对象的语言. 一切皆对象.&lt;br /&gt;
+程序运行中, 所有的数据都是存储在内存中, 硬盘–&amp;gt;内存–&amp;gt</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
+    
+    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
     
   </entry>
   
@@ -551,72 +607,6 @@
     <category term="python" scheme="http://example.com/tags/python/"/>
     
     <category term="计算机简介" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%AE%80%E4%BB%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>运算符(操作符)</title>
-    <link href="http://example.com/2024/03/31/%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
-    <id>http://example.com/2024/03/31/%E8%BF%90%E7%AE%97%E7%AC%A6/</id>
-    <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-04-01T00:09:29.694Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;算数运算符&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#算数运算符&quot;&gt;&lt;/a&gt; 算数运算符&lt;/h1&gt;
-&lt;p&gt;&lt;code&gt;+&lt;/code&gt;可以计算和拼串&lt;br /&gt;
-&lt;code&gt;-&lt;/code&gt;计算&lt;br /&gt;
-&lt;code&gt;*&lt;/cod</summary>
-      
-    
-    
-    
-    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
-    
-    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>进制</title>
-    <link href="http://example.com/2024/03/31/%E8%BF%9B%E5%88%B6/"/>
-    <id>http://example.com/2024/03/31/%E8%BF%9B%E5%88%B6/</id>
-    <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T03:39:54.807Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;十进制
-&lt;ul&gt;
-&lt;li&gt;满十进一。十进制中有10个数字0 1 2 3 4 5 6 7 8 9. 10是由连个数字构成的，不属于10进制中的数字。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;二进制
-&lt;ul&gt;
-&lt;li&gt;满二进一&lt;/li&gt;
-&lt;li&gt;二进制中只有2个数</summary>
-      
-    
-    
-    
-    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
-    
-    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
-    <category term="计算机" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
   </entry>
   
