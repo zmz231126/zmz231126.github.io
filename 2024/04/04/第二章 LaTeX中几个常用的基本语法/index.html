@@ -1,0 +1,527 @@
+<!DOCTYPE html><html lang="zh-Hans" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>第二章 LaTeX中几个常用的基本语法 | 茗泽爸爸的博客</title><meta name="author" content="Ken"><meta name="copyright" content="Ken"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="latex中，多个空格视为一个空格，连个回车键视为分段，也可以使用\par命令分段。   连字：西文字体很多会出现连字现象，可以在字母间加上&#123;&#125;阻止这种情况   it’s dif{ }f{ }cult to f{ }ind \ldots  西文中使用-组成复合词，使用--连接数字，使用---连接单词。 \&#x3D;a \&#39;a \v a \a&#96; \newline只能在文本段落中断行.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第二章 LaTeX中几个常用的基本语法">
+<meta property="og:url" content="http://example.com/2024/04/04/%E7%AC%AC%E4%BA%8C%E7%AB%A0%20LaTeX%E4%B8%AD%E5%87%A0%E4%B8%AA%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/index.html">
+<meta property="og:site_name" content="茗泽爸爸的博客">
+<meta property="og:description" content="latex中，多个空格视为一个空格，连个回车键视为分段，也可以使用\par命令分段。   连字：西文字体很多会出现连字现象，可以在字母间加上&#123;&#125;阻止这种情况   it’s dif{ }f{ }cult to f{ }ind \ldots  西文中使用-组成复合词，使用--连接数字，使用---连接单词。 \&#x3D;a \&#39;a \v a \a&#96; \newline只能在文本段落中断行.">
+<meta property="og:locale">
+<meta property="og:image" content="https://raw.githubusercontent.com/zmz231126/bolgpicture/main/202403281818456.png">
+<meta property="article:published_time" content="2024-04-04T11:30:05.899Z">
+<meta property="article:modified_time" content="2024-04-05T00:19:03.214Z">
+<meta property="article:author" content="Ken">
+<meta property="article:tag" content="LaTeX">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/zmz231126/bolgpicture/main/202403281818456.png"><link rel="shortcut icon" href="https://raw.githubusercontent.com/zmz231126/bolgpicture/main/202403281818595.png"><link rel="canonical" href="http://example.com/2024/04/04/%E7%AC%AC%E4%BA%8C%E7%AB%A0%20LaTeX%E4%B8%AD%E5%87%A0%E4%B8%AA%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '第二章 LaTeX中几个常用的基本语法',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-04-05 08:19:03'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/header_style.css?v1"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.1.1"><link rel="alternate" href="/atom.xml" title="茗泽爸爸的博客" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">Loading...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load',() => { preloader.endLoading() })
+
+  if (false) {
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+  }
+})()</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://raw.githubusercontent.com/zmz231126/bolgpicture/main/202403281818456.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">32</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">17</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">8</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/files/"><i class="fa-fw fa-solid fa-file"></i><span> 文档</span></a></div><div class="menus_item"><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></div><div class="menus_item"><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: transparent"><nav id="nav"><span id="blog-info"><a href="/" title="茗泽爸爸的博客"><span class="site-name">茗泽爸爸的博客</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/files/"><i class="fa-fw fa-solid fa-file"></i><span> 文档</span></a></div><div class="menus_item"><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></div><div class="menus_item"><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">第二章 LaTeX中几个常用的基本语法</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-04-04T11:30:05.899Z" title="Created 2024-04-04 19:30:05">2024-04-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-04-05T00:19:03.214Z" title="Updated 2024-04-05 08:19:03">2024-04-05</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BC%96%E7%A8%8B/">编程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BC%96%E7%A8%8B/Latex/">Latex</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="第二章 LaTeX中几个常用的基本语法"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><ul>
+<li>
+<p>latex中，多个空格视为一个空格，连个回车键视为分段，也可以使用<code>\par</code>命令分段。</p>
+</li>
+<li>
+<p>连字：西文字体很多会出现连字现象，可以在字母间加上<code>&#123;&#125;</code>阻止这种情况</p>
+</li>
+</ul>
+<p>it’s dif{ }f{ }cult to f{ }ind \ldots</p>
+<ul>
+<li>西文中使用<code>-</code>组成复合词，使用<code>--</code>连接数字，使用<code>---</code>连接单词。</li>
+<li><code>\=a \'a \v a \</code>a`</li>
+<li><code>\newline</code>只能在文本段落中断行. <code>\\</code>可以在任何格式中断行，而且带一个可选参数，指定向下增加的垂直间距，<code>\\\*</code>表示禁止在断行处分页。</li>
+<li>在latex中输入latex命令使用<code>\verb|命令|</code>来表示</li>
+<li>断页的命令为<code>\newpage</code>和<code>\clearpage</code>.两者的不同在于双栏排版中，<code>\newpage</code>为另起一栏的作用。</li>
+<li>告诉latex哪里适合断行断页，哪里不允许断行断页，可以使用命令<code>\linebreak[]``\nolinebreak[]</code></li>
+</ul>
+<p><code>\pagebreak[]</code>和<code>nopagebreak[]</code>后边的参数填写1-4，表示适合或者不适合的程度。</p>
+<ul>
+<li>
+<p>在西文排版实践中，断行的位置优先选取在两个单词之间，也就是在源代码中输入的“空格”。 文字在单词间的“空格”处断行时，“空格”生成的间距随之舍去。 <strong>可以使用字符~ 输入一个不会断行的空格</strong>比如<code>Donald~E</code>.</p>
+</li>
+<li>
+<p>很长的英文单词，会考虑从单词中间自动换行，我们可以给latex参考建议，在哪里换行比较合适，命令为<code>\-</code></p>
+</li>
+<li>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\section</span>[目录中显示的标题]&#123;页眉中显示的标题&#125;</span><br></pre></td></tr></table></figure>
+<p>在这个示例中，方括号内的文本是可选参数，用于指定在目录中显示的标题，而花括号内的文本是实际章节标题。这样可以使目录中显示的标题与页眉中显示的标题不同。</p>
+</li>
+<li>
+<p>在需要进行引用的位置比如：章节标题、行间公式、有序列表、图表标题和定理环境中使用<code>\label</code>命令，在需要引用过的位置<code>\ref&#123;labelname&#125;~\pageref&#123;labelname&#125;</code>引用就可以了。</p>
+</li>
+<li>
+<p>在需要插入脚注的地方写<code>\footnote&#123;脚注内容&#125;</code>就可以了。在各种盒子内，比如表格，可能不能生成正确的脚注，可以在插入脚注地方写<code>\footnotemark&#123;脚注内容&#125;</code>,然后在合适的位置用<code>\footnotetext</code>生成就可以了。</p>
+</li>
+<li>
+<p><code>\marginpar[左边注]&#123;右边注&#125;</code>可以进行边注。不设置左边注，则奇偶页文字相同，设置了左边注，则偶数页就使用左边注。</p>
+</li>
+<li>
+<p>列表环境有两个<code>\begin&#123;enumerate&#125;</code> and <code>\begin&#123;itemize&#125;</code>两个都用<code>\item</code>表明列表相，<code>\item[]</code>可选参数，可以自定义符号。</p>
+</li>
+<li>
+<p>无需列表的符号可以由<code>\labelitemi</code> and <code>\labelitemv</code>定义<code>\labelitemi, labelitemii, labelitemiii, labelitemv</code>共四级列表。</p>
+</li>
+<li>
+<p>有序列表的符号由<code>\labelenumi到\labelenumv</code>定义。</p>
+</li>
+<li>
+<p>对齐由三个环境<code>center, flushleft, flushright</code></p>
+</li>
+<li>
+<p><code>\verb| |</code>可以显示原始文本，而不受解释器的影响。分界线一般使用<code>|</code>但不是必须的，出了星号、空格和字母外的任何字符。</p>
+</li>
+<li>
+<p>另外三个命令也可以实现对齐<code>\centering, \raggedleft, \raggedright</code>通常，对齐环境使用在文本中，而对齐命令使用在浮动体环境中。</p>
+</li>
+<li>
+<p>引用环境较一般文字有额外的左右缩进。<code>quote</code>环境首行不缩进，<code>quotation</code>首行缩进。<code>verse</code>环境会使首行悬挂伸出。</p>
+</li>
+<li>
+<p>代码环境使用<code>\verbatim</code>其中<code>\verbatim*</code>可以是代码中的空格显示为<code>ㄩ</code>更加直观。</p>
+</li>
+<li>
+<p>简短的代码或者关键字可以用<code>\verb</code>命令。</p>
+</li>
+<li>
+<p>另外更常见的写代码是使用<code>\lstlisting</code>命令，在导言区域加入<code>usepackage&#123;listings&#125;</code>宏包，并设置代码格式比如</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\lstset</span>&#123;</span><br><span class="line">    language=Python,</span><br><span class="line">    basicstyle=<span class="keyword">\ttfamily</span>,</span><br><span class="line">    keywordstyle=<span class="keyword">\color</span>&#123;blue&#125;,</span><br><span class="line">    commentstyle=<span class="keyword">\color</span>&#123;green&#125;,</span><br><span class="line">    numbers=left,</span><br><span class="line">    numberstyle=<span class="keyword">\tiny</span>,</span><br><span class="line">    numbersep=5pt,</span><br><span class="line">    breaklines=true</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>表格列格式，arry宏包。</p>
+</li>
+<li>
+<p>在LaTeX中，&gt;{}和&lt;{}这样的语法用于对表格中的列进行格式化。在这个例子中，&gt;{\itshape}表示对该列中的内容应用斜体格式，而&lt;{*}表示该列的内容采用默认的格式。</p>
+<p>具体来说：</p>
+<p>- &gt;{\itshape}将该列中的文本内容应用斜体格式。</p>
+<p>- &lt;{*}表示该列的内容采用默认的格式。</p>
+</li>
+<li>
+<p>插入图片使用<code>graphicx</code>宏包，然后在导言去插入命令指定位置<code>\graphicspath&#123;同文件下专门设立图片文件夹路径为img/</code>}。在插入地方输入命令<code>\includegraphics&#123;图片名称.后缀&#125;</code>注意图片名为英文。</p>
+</li>
+<li>
+<p>如果在同目录中设立了两个多个子文件夹，可以使用<code>\graphicspath&#123;&#123;img/&#125;&#123;logo/&#125;&#125;</code>指定。同是这里可以使用绝对路径指定任意位置的文件夹，比如图片在桌面，可以使用<code>\graphicspath&#123;&#123;/Users/ken/Desktop/&#125;&#125;</code>表示。</p>
+</li>
+<li>
+<p>\includegraphics可以带一个参数width, height, scale, angle.比如设定宽度为0.8倍该行文字宽，<code>\includegraphics[width=0.8\linewidth]&#123;ThisPic&#125;</code></p>
+</li>
+<li>
+<p><code>\mbox</code>可以设定一个文本框，<code>makebox</code>等同但是可以带两个参数指定盒子的宽度和里边文本的对齐方式，比如<code>\makebox[10em][l/r/c/s]&#123;文本内容&#125;</code>其中s表示分散对齐。</p>
+</li>
+<li>
+<p><code>\fbox and \framebox</code>会为文本框加上边框，可以使用<code>\setlength</code>设定边框的宽度，比如<code>\setlength&#123;fboxrule&#125;&#123;1pt&#125;</code>和<code>\setlength&#123;\fboxsep&#125;&#123;1em&#125;</code></p>
+</li>
+<li>
+<p>以上两种文本款内的文本不能换行，如果要换行使用另一种盒子，<code>\parbox</code>这种盒子跟<code>\makebox</code>不同，<code>\parbox[和周围环境的对齐方式tbc][高度][文本对齐方式tbcs]&#123;盒子宽度&#125;&#123;文本&#125;</code></p>
+</li>
+<li>
+<p><code>\parbox</code>内部只能使用<code>footnotemark</code>+<code>footnotetext&#123;&#125;</code>命令</p>
+</li>
+<li>
+<p><code>\minipage</code>环境与<code>\parbox</code>命令作用一样，可以使用<code>\footnote</code>脚注,但是是单独成块。</p>
+</li>
+<li>
+<p><code>\rule</code>命令可以用来画一个实心矩形<code>\rule[上浮或下浮]&#123;width&#125;&#123;height&#125;</code>.还可以用它来画线</p>
+<p><code>\rule[-.4pt]&#123;3em&#125;&#123;.4pt&#125;</code></p>
+</li>
+<li>
+<p>浮动体有两种table and figure.两者设置同理，参数为h(当前位置)t顶部b底部p单独成页！在决定位置时忽视限制。</p>
+</li>
+<li>
+<p>双栏排版时，浮动题命令为\table*和\figure*。但是参数只能有tb两个位置。</p>
+</li>
+<li>
+<p>在浮动环境中加上<code>\caption[目录中的标题]&#123;标题&#125;</code>生成图表标题并自动编号，如果不要编号，同<code>\section*</code>生成不带编号的浮动体。紧跟<code>\caption</code>命令后，可以<code>\label&#123;&#125;</code>方便引用。</p>
+</li>
+<li>
+<p>使<code>\renewcommand&#123;\figurename&#125;&#123;标题&#125;</code>更改默认的标题前缀。</p>
+</li>
+<li>
+<p>使用<code>\listoftables</code>生成类似目录页的单独的浮动体目录。</p>
+</li>
+<li>
+<p>行内公式使用<code>$ $</code>包裹，行间公式使用equation环境，不带编号的行间公式使用<code>equation*</code>包裹。</p>
+</li>
+<li>
+<p>使用<code>\label&#123;&#125;</code>和<code>\eqref&#123;&#125;</code>引用公式</p>
+</li>
+<li>
+<p><code>\tag&#123;&#125;</code>命令修改编号，<code>\notag</code>命令取消编号</p>
+</li>
+<li>
+<p>公式环境中需要空格使用<code>\quad and \qquad</code></p>
+</li>
+<li>
+<p>公式中使用文本需要引入<code>\text&#123;&#125;</code>命令。</p>
+</li>
+<li>
+<p>省略号使用<code>\ldots</code> <code>\vdots</code> <code>\ddots</code></p>
+</li>
+<li>
+<p>上标使用<code>^</code>下标使用<code>_</code>上下标中的子公式使用<code>&#123;&#125;</code>包围。</p>
+</li>
+<li>
+<p>分数使用<code>\frac&#123;分子&#125;&#123;分母&#125;</code>行内公式使用<code>\tfrac&#123;&#125;&#123;&#125;</code>.</p>
+</li>
+<li>
+<p>根式使用<code>\sqrt[次]&#123;根数&#125;</code>。</p>
+</li>
+<li>
+<p><code>\ne, \ge, \le, \approx, \sim, \equiv, \propto</code></p>
+</li>
+<li>
+<p><code>\times, \div, \cdot, \pm, \mp</code></p>
+</li>
+<li>
+<p><code>\dot&#123;&#125;</code> <code>\ddot&#123;&#125;</code> <code>\vec&#123;&#125;</code> <code>\hat&#123;&#125;</code> <code>\overline&#123;&#125;</code> <code>\underline&#123;&#125;</code> <code>\overrightarrow&#123;&#125;</code></p>
+</li>
+<li>
+<p><code>\overbrace&#123;&#125; and \underbrace&#123;&#125;</code>生成上下大括号，可以带一个上下标公式。</p>
+</li>
+<li>
+<p><code>\xleftarrow&#123;&#125; and \xrightarrow&#123;&#125;</code>可以伸缩的箭头，并且可以增加上下标。</p>
+</li>
+<li>
+<p>字体加粗<code>\textbf&#123;&#125;</code>。数学公式中使用<code>\mathbf&#123;&#125;</code>.</p>
+</li>
+<li>
+<p>字体命令<code>\textrm&#123;&#125;</code>, <code>\textsf&#123;&#125;</code>,<code>\textit&#123;&#125;</code>,<code>\textsl&#123;&#125;</code>, <code>textup&#123;&#125;</code>, <code>\texttt&#123;&#125;</code>, <code>\emph&#123;&#125;</code></p>
+</li>
+<li>
+<p>字号命令, <code>&#123;\tiny&#125;</code>, <code>&#123;\scriptsize&#125;</code>, <code>&#123;\footnotesize&#125;</code>, <code>&#123;\samll&#125;</code>, <code>&#123;\normalsize&#125;</code>,<code>&#123;\large&#125;</code>, <code>&#123;\Large&#125;</code>,<code>&#123;\LARGE&#125;</code>,<code>&#123;\huge&#125;</code></p>
+</li>
+<li>
+<p>另外精确指定字号大小的命令是<code>&#123;\footsize&#123;字号&#125;&#123;行距&#125;\selectfont 文本&#125;</code>。放在导言区，可以不用<code>\selectfont</code></p>
+</li>
+<li>
+<p>xelatex支持调用调用fontspec宏包，可以在导言区设置全局字体：<code>\setmainfont&#123;font name&#125;&#123;font features&#125;</code>; <code>\setsansfont&#123;&#125;&#123;&#125;</code>;<code>\setmonofont&#123;&#125;&#123;&#125;</code></p>
+</li>
+<li>
+<p>ctex<code>宏包中中文字体使用\setCJKmainfont&#123;&#125;&#123;&#125;</code>。ctex自动调用fontspec宏包</p>
+</li>
+<li>
+<p>使用fontspec宏包会覆盖数学字体。需要数学字体时使用，在fontspec宏包中指定no-math. 或者在\documentclass命令里指定no-math.</p>
+</li>
+<li>
+<p><code>\underline&#123;&#125;</code>生成下划线.调用ulem宏包，启用 <code>\uline</code>生成下划线。</p>
+</li>
+<li>
+<p>长度变量可以被赋值使用 <code>\setlength&#123;\length command&#125;&#123;length&#125;</code>进行赋值。</p>
+</li>
+<li>
+<p>设置行距我们一般不用 <code>\fontsize</code>, 更多使用 <code>\linespread&#123;&#125;</code>,基础行距时字号的1.2倍。如果设置成 <code>\linespread&#123;1.5&#125;</code>那就是说行距设置成了1.8倍字号大小。</p>
+</li>
+<li>
+<p>如果不是在导言区， 可以跟上 <code>\selectfont</code>来改变后边文本的行距。</p>
+</li>
+<li>
+<p>行距设置是在分段时才生效的，字号是立即生效的，段落缩进分段时生效的。</p>
+</li>
+<li>
+<p>段落首行缩进使用 <code>\setlength&#123;\parindent&#125;&#123;length&#125;</code>. 段落间距使用 <code>\setlength&#123;\parskip&#125;&#123;length&#125;</code></p>
+</li>
+<li>
+<p><code>\hspace&#123;&#125;</code>在单词后边生成一段空白，但是会随着断行而被舍弃，<code>\hspace*&#123;&#125;</code>水平间距不随断行舍弃。参数里边可以写 <code>\stretch&#123;n&#125;</code>里边的n为权重，同一行出现多个 <code>\stretch&#123;&#125;</code>时n就有作用了, 参数填写\fill相当于 <code>\stretch&#123;1&#125;</code></p>
+</li>
+<li>
+<p>增加垂直间距使用 <code>\vspace</code>他的用法和 <code>\hspace</code> 相同。</p>
+</li>
+<li>
+<p>另外可以使用 <code>\bigskip, \medskip, smallskip</code>紧跟在 <code>\par</code>之后用来增加段落间距。</p>
+</li>
+<li></li>
+</ul>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/LaTeX/">LaTeX</a></div><div class="post_share"><div class="social-share" data-image="https://raw.githubusercontent.com/zmz231126/bolgpicture/main/202403281818456.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>用爱发电</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/img/wechat.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2024/04/01/if%E8%AF%AD%E5%8F%A5/" title="流程控制"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next</div><div class="next_info">流程控制</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2024/03/12/%E7%AC%AC%E4%B8%80%E7%AB%A0LaTex%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" title="LaTeX中的几个基本概念"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-03-12</div><div class="title">LaTeX中的几个基本概念</div></div></a></div></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://raw.githubusercontent.com/zmz231126/bolgpicture/main/202403281818456.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Ken</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">32</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">17</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">8</div></a></div><a id="card-info-btn" href="mailto:zk8499@outlook.com"><i class="fas fa-envelope"></i><span>欢迎邮件联系</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">知行合一</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/04/%E7%AC%AC%E4%BA%8C%E7%AB%A0%20LaTeX%E4%B8%AD%E5%87%A0%E4%B8%AA%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" title="第二章 LaTeX中几个常用的基本语法">第二章 LaTeX中几个常用的基本语法</a><time datetime="2024-04-04T11:30:05.899Z" title="Created 2024-04-04 19:30:05">2024-04-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/01/if%E8%AF%AD%E5%8F%A5/" title="流程控制">流程控制</a><time datetime="2024-03-31T16:00:00.000Z" title="Created 2024-04-01 00:00:00">2024-04-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/03/31/python%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%BC%8F/" title="python交互模式">python交互模式</a><time datetime="2024-03-30T16:00:00.000Z" title="Created 2024-03-31 00:00:00">2024-03-31</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" title="python中的几个术语">python中的几个术语</a><time datetime="2024-03-30T16:00:00.000Z" title="Created 2024-03-31 00:00:00">2024-03-31</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" title="python的基本语法">python的基本语法</a><time datetime="2024-03-30T16:00:00.000Z" title="Created 2024-03-31 00:00:00">2024-03-31</time></div></div></div></div></div></div></main><footer id="footer" style="background: transparent"><div id="footer-wrap"><div class="copyright">&copy;2024 By Ken</div><div class="footer_custom_text">知行合一</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"></div><div id="rightside-config-show"><button id="chat-btn" type="button" title="Chat"><i class="fas fa-sms"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/copy-tex.min.js"></script><script>(() => {
+  document.querySelectorAll('#article-container span.katex-display').forEach(item => {
+    btf.wrap(item, 'div', { class: 'katex-wrap'})
+  })
+})()</script><script>(() => {
+  const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaid.length === 0) return
+  const runMermaid = () => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    Array.from($mermaid).forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+      const mermaidID = 'mermaid-' + index
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+
+      const renderV10 = () => {
+        renderFn.then(({svg}) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svg)
+        })
+      }
+
+      const renderV9 = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      typeof renderFn === 'string' ? renderV9(renderFn) : renderV10()
+    })
+  }
+
+  const loadMermaid = () => {
+    window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid@10.8.0/dist/mermaid.min.js').then(runMermaid)
+  }
+
+  btf.addGlobalFn('themeChange', runMermaid, 'mermaid')
+
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script><script>(()=>{
+  const getGiscusTheme = theme => {
+    return theme === 'dark' ? 'dark' : 'light'
+  }
+
+  const loadGiscus = () => {
+    const config = Object.assign({
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'zmz231126/blogcomments.github.io',
+      'data-repo-id': 'R_kgDOLloxcw',
+      'data-category-id': 'DIC_kwDOLloxc84CeRa0',
+      'data-mapping': 'pathname',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true
+    },null)
+
+    const ele = document.createElement('script')
+    for (let key in config) {
+      ele.setAttribute(key, config[key])
+    }
+    document.getElementById('giscus-wrap').appendChild(ele)
+  }
+
+  const changeGiscusTheme = theme => {
+    const sendMessage = message => {
+      const iframe = document.querySelector('iframe.giscus-frame')
+      if (!iframe) return
+      iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app')
+    }
+
+    sendMessage({
+      setConfig: {
+        theme: getGiscusTheme(theme)
+      }
+    });
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment= loadGiscus
+  }
+})()</script></div><script src="/js/script.js?v1"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script>(() => {
+  const isChatBtn = true
+  const isChatHideShow = false
+
+  if (isChatBtn) {
+    const close = () => {
+      Chatra('minimizeWidget')
+      Chatra('hide')
+    }
+
+    const open = () => {
+      Chatra('openChat', true)
+      Chatra('show')
+    }
+
+    window.ChatraSetup = {
+      startHidden: true
+    }
+  
+    window.chatBtnFn = () => {
+      const isShow = document.getElementById('chatra').classList.contains('chatra--expanded')
+      isShow ? close() : open()
+    }
+  } else if (isChatHideShow) {
+    window.chatBtn = {
+      hide: () => {
+        Chatra('hide')
+      },
+      show: () => {
+        Chatra('show')
+      }
+    }
+  }
+
+  (function(d, w, c) {
+    w.ChatraID = 'JDZKhJHxzeLm8aoDd'
+    var s = d.createElement('script')
+    w[c] = w[c] || function() {
+        (w[c].q = w[c].q || []).push(arguments)
+    }
+    s.async = true
+    s.src = 'https://call.chatra.io/chatra.js'
+    if (d.head) d.head.appendChild(s)
+  })(document, window, 'Chatra')
+
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div><!-- hexo injector body_end start --><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body></html>

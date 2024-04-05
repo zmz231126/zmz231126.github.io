@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-04-01T14:06:43.486Z</updated>
+  <updated>2024-04-05T00:19:03.214Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>第二章 LaTeX中几个常用的基本语法</title>
+    <link href="http://example.com/2024/04/04/%E7%AC%AC%E4%BA%8C%E7%AB%A0%20LaTeX%E4%B8%AD%E5%87%A0%E4%B8%AA%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
+    <id>http://example.com/2024/04/04/%E7%AC%AC%E4%BA%8C%E7%AB%A0%20LaTeX%E4%B8%AD%E5%87%A0%E4%B8%AA%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</id>
+    <published>2024-04-04T11:30:05.899Z</published>
+    <updated>2024-04-05T00:19:03.214Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;latex中，多个空格视为一个空格，连个回车键视为分段，也可以使用&lt;code&gt;&#92;par&lt;/code&gt;命令分段。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;连字：西文字体很多会出现连字现象，可以在字母间加上&lt;code&gt;&amp;#123;&amp;#125;&lt;/code&gt;阻止这</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="Latex" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Latex/"/>
+    
+    
+    <category term="LaTeX" scheme="http://example.com/tags/LaTeX/"/>
+    
+  </entry>
+  
+  <entry>
     <title>流程控制</title>
     <link href="http://example.com/2024/04/01/if%E8%AF%AD%E5%8F%A5/"/>
     <id>http://example.com/2024/04/01/if%E8%AF%AD%E5%8F%A5/</id>
     <published>2024-03-31T16:00:00.000Z</published>
-    <updated>2024-04-01T14:06:43.486Z</updated>
+    <updated>2024-04-04T11:38:10.281Z</updated>
     
     
       
@@ -219,6 +248,34 @@
   </entry>
   
   <entry>
+    <title>对象(object)</title>
+    <link href="http://example.com/2024/03/31/%E5%AF%B9%E8%B1%A1(object)/"/>
+    <id>http://example.com/2024/03/31/%E5%AF%B9%E8%B1%A1(object)/</id>
+    <published>2024-03-30T16:00:00.000Z</published>
+    <updated>2024-03-31T11:06:25.078Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;对象介绍&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#对象介绍&quot;&gt;&lt;/a&gt; 对象介绍&lt;/h1&gt;
+&lt;p&gt;Python是一个面向对象的语言. 一切皆对象.&lt;br /&gt;
+程序运行中, 所有的数据都是存储在内存中, 硬盘–&amp;gt;内存–&amp;gt</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
+    
+    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>字面变量和变量</title>
     <link href="http://example.com/2024/03/31/%E5%AD%97%E9%9D%A2%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F/"/>
     <id>http://example.com/2024/03/31/%E5%AD%97%E9%9D%A2%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F/</id>
@@ -246,34 +303,6 @@
     <category term="python" scheme="http://example.com/tags/python/"/>
     
     <category term="计算机" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>对象(object)</title>
-    <link href="http://example.com/2024/03/31/%E5%AF%B9%E8%B1%A1(object)/"/>
-    <id>http://example.com/2024/03/31/%E5%AF%B9%E8%B1%A1(object)/</id>
-    <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T11:06:25.078Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;对象介绍&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#对象介绍&quot;&gt;&lt;/a&gt; 对象介绍&lt;/h1&gt;
-&lt;p&gt;Python是一个面向对象的语言. 一切皆对象.&lt;br /&gt;
-程序运行中, 所有的数据都是存储在内存中, 硬盘–&amp;gt;内存–&amp;gt</summary>
-      
-    
-    
-    
-    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
-    
-    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="python" scheme="http://example.com/tags/python/"/>
     
   </entry>
   
@@ -522,38 +551,6 @@
     <category term="python" scheme="http://example.com/tags/python/"/>
     
     <category term="计算机简介" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%AE%80%E4%BB%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>计算机语言</title>
-    <link href="http://example.com/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E7%AE%80%E4%BB%8B/"/>
-    <id>http://example.com/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E7%AE%80%E4%BB%8B/</id>
-    <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T03:39:54.816Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;计算机语言其实和人类语言没有本质区别，知识交流主体不同。&lt;/p&gt;
-&lt;p&gt;机器语言发展的三个阶段：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;机器语言：通过二进制编码来编写程序。编写麻烦，执行效率好。&lt;/li&gt;
-&lt;li&gt;汇编语言：使用符号代替机器码。汇编与反汇编。汇编语言只适用于某些硬件，兼</summary>
-      
-    
-    
-    
-    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
-    
-    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
-    <category term="计算机" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
   </entry>
   
