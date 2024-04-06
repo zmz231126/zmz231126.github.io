@@ -119,6 +119,154 @@ else:<br />
       </tags>
   </entry>
   <entry>
+    <title>python中的几个术语</title>
+    <url>/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
+    <content><![CDATA[<p>【表达式】类似于数学公式比如10 + 5；8 + 4.</p>
+<p>表达式仅仅用来计算一些结果，不会对程序产生实质影响。</p>
+<p>【语句】语句需要完成某种功能，比如打印信息、获取信息、为变量赋值等比如：<code>print()</code>, <code>a = 10</code>。</p>
+<p>语句的执行会对程序执行产生影响。语句在命令行中不一定会有执行结果。有返回值的语句，会有返回结果。</p>
+<p>【程序】是多个语句和表达式构成的。</p>
+<p>【函数（function）】函数是一个语句，用来完成特定的功能。函数的结构为<code>***()</code>.括号中的内容叫「参数」，可以没有参数也可以有多个参数，中间用逗号隔开。返回的结果叫做「返回值」，同样可以没有返回值。</p>
+<p>函数分为</p>
+<ol>
+<li>内置函数。python解释器提供的，可以在python中直接使用。</li>
+<li>自定义函数。由程序员自定义的函数。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python的基本语法</title>
+    <url>/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<p>python严格区分大小写。比如<code>Print()</code>不能被执行。</p>
+<p><strong>语句</strong>不建议过长。一条语句可以多行编写，语句以反斜线<code>\</code>换行。</p>
+<p>不要随便写缩进，缩进严格，表示代码块。</p>
+<p><code>%</code>后加空格表示注释。</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>range()函数</title>
+    <url>/2024/04/06/range()%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<p>range()函数是一个可以生成一个自然数的序列<br />
+<code>r = range(5)</code> 生成的序列为[0,1,2,3,4]<br />
+该函数可以生成三个参数:</p>
+<ol>
+<li>起始位置<br />
+可以省略, 默认为0</li>
+<li>结束位置</li>
+<li>步长<br />
+可以省略步长, 默认为1. 比如</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">r = <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">10</span>,<span class="number">2</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(r))</span><br></pre></td></tr></table></figure>
+<p>output为<code>[0, 2, 4, 6, 8]</code><br />
+步长还可以是负数</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">r = <span class="built_in">range</span>(<span class="number">10</span>,<span class="number">0</span>,-<span class="number">2</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(r))</span><br></pre></td></tr></table></figure>
+<p>output<code>[10, 8, 6, 4, 2]</code><br />
+通过rang()可以创建一个指定次数的for循环</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">30</span>):</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure>
+<p>生成一组0到29的数.<br />
+for循环出了创建方式外, 其余跟while是一样的用法.</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一类项目获取环保许可的要求</title>
+    <url>/2024/03/29/%E4%B8%80%E7%B1%BB%E9%A1%B9%E7%9B%AE%E8%8E%B7%E5%8F%96%E7%8E%AF%E4%BF%9D%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/</url>
+    <content><![CDATA[<p>一类项目对环境影响很小，且影响不回超过活动地点。需要提交电子申请、附上一般要求中提及的文件并且遵守相关条件。</p>
+<p><strong>一般要求</strong></p>
+<ol>
+<li>填写分类表格（<a href="https://raw.githubusercontent.com/zmz231126/bolgpicture/main/202403291608962.pdf">点击此处下载</a>）</li>
+<li>项目简单的初始报告</li>
+<li>无害和已经许可的工业垃圾（液体和固体）的搬运和清理合同</li>
+<li>与认证机构签署的固体市政垃圾的搬运和清理合同</li>
+<li>商业登记证</li>
+<li>税务登记证</li>
+<li>身份证或者居住证</li>
+<li>产权契约或者租赁合同</li>
+</ol>
+<p><strong>相关条件</strong></p>
+<ul>
+<li>商会或者合法机构认证的项目所有人的授权书。</li>
+</ul>
+<p><strong>更新一类环保许可的要求</strong></p>
+<ol>
+<li>上一阶段环保登记证书</li>
+<li>上面要求中的3-8项。</li>
+</ol>
+<p><a href='https://ncec.gov.sa/%d9%85%d8%aa%d8%b7%d9%84%d8%a8%d8%a7%d8%aa-%d8%a7%d9%84%d8%ad%d8%b5%d9%88%d9%84-%d8%b9%d9%84%d9%89-%d9%85%d9%88%d8%a7%d9%81%d9%82%d8%a9-%d8%a8%d9%8a%d8%a6%d9%8a%d8%a9-%d9%84%d9%84%d9%81%d8%a6%d8%a9'>本文引用自nece网站</a></p>
+]]></content>
+      <categories>
+        <category>制度学习</category>
+        <category>沙特环保制度</category>
+      </categories>
+      <tags>
+        <tag>建厂</tag>
+        <tag>沙特投资</tag>
+        <tag>沙特</tag>
+        <tag>沙特环境监察中心</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>元组</title>
+    <url>/2024/04/06/%E5%85%83%E7%BB%84/</url>
+    <content><![CDATA[<p>元组(tuple)</p>
+<ul>
+<li>是不可变的序列, 其他的操作方法跟list是一样的. 当我们希望数据不被改变时, 就可以用元组.</li>
+<li>元组使用小括号()创建, 而且是可以省略的, 列表使用[]创建.</li>
+<li>元组不为空, 即时只有一个元素, 也要有一个逗号比如<br />
+<code>my_tuple = 40,</code></li>
+<li>元组的解构, 就是将元组中的每一个元组分别赋值给一个变量, 比如:</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">my_tuple = <span class="number">10</span>,<span class="number">20</span>,<span class="number">30</span>,<span class="number">40</span></span><br><span class="line">a,b,c,d = my_tuple</span><br><span class="line"><span class="built_in">print</span>(a)</span><br><span class="line"><span class="built_in">print</span>((b))</span><br><span class="line"><span class="built_in">print</span>(c)</span><br><span class="line"><span class="built_in">print</span>(d)</span><br></pre></td></tr></table></figure>
+<p>output 为: 10,20,30,40<br />
+在进行交换值时, 我们可以用到, 比如<br />
+a = 10<br />
+b = 20<br />
+交换a和b的值, 只需要. a,b = b, a<br />
+这个道理是相同的</p>
+<ul>
+<li>对一个元组进行解构时, 变量数量必须和元组中的数量一致.<br />
+我们也可以在变量前加<code>*</code>, 这样此变量将会获取元组中所剩余的元素.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">my_tuple = <span class="number">10</span>,<span class="number">20</span>,<span class="number">30</span>,<span class="number">40</span></span><br><span class="line">a,b,*c = my_tuple</span><br></pre></td></tr></table></figure>
+<p>此时a = 10, b = 20, c = [30,40]<br />
+如果中间变量带星号, 最后一个两端分别取各自的变量, 中间<br />
+变量全部给带<em>的变量. 同理第一个变量带</em>, 后边的变量从末尾给自分配,<br />
+前边的都给第一个带<em>的变量.</br><br />
+但是不能出现多个</em>变量.</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>序列</title>
     <url>/2024/04/05/%E5%88%97%E8%A1%A8/</url>
     <content><![CDATA[<h1 id="序列"><a class="markdownIt-Anchor" href="#序列"></a> 序列</h1>
@@ -326,47 +474,73 @@ code block<br />
         <category>沙特工业和矿产资源部制度</category>
       </categories>
       <tags>
-        <tag>沙特</tag>
         <tag>沙特投资</tag>
+        <tag>沙特</tag>
         <tag>工业许可证</tag>
         <tag>沙特工业和矿产资源部</tag>
       </tags>
   </entry>
   <entry>
-    <title>一类项目获取环保许可的要求</title>
-    <url>/2024/03/29/%E4%B8%80%E7%B1%BB%E9%A1%B9%E7%9B%AE%E8%8E%B7%E5%8F%96%E7%8E%AF%E4%BF%9D%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/</url>
-    <content><![CDATA[<p>一类项目对环境影响很小，且影响不回超过活动地点。需要提交电子申请、附上一般要求中提及的文件并且遵守相关条件。</p>
-<p><strong>一般要求</strong></p>
+    <title>变量和标识符</title>
+    <url>/2024/03/31/%E5%8F%98%E9%87%8F%E5%92%8C%E6%A0%87%E8%AF%86%E7%AC%A6/</url>
+    <content><![CDATA[<p>使用变量不需要声明，直接为变量赋值，但是不能使用未被赋值的变量</p>
+<p>python是一个动态类型的语言，可以给变量赋<strong>任意类型的值</strong>。也可以任意修改变量的值。</p>
+<p>通常变量的名要有意义，比如年龄18，那么我们可以写<code>age = 18</code></p>
+<p>sypder快捷键注释</p>
 <ol>
-<li>填写分类表格（<a href="https://raw.githubusercontent.com/zmz231126/bolgpicture/main/202403291608962.pdf">点击此处下载</a>）</li>
-<li>项目简单的初始报告</li>
-<li>无害和已经许可的工业垃圾（液体和固体）的搬运和清理合同</li>
-<li>与认证机构签署的固体市政垃圾的搬运和清理合同</li>
-<li>商业登记证</li>
-<li>税务登记证</li>
-<li>身份证或者居住证</li>
-<li>产权契约或者租赁合同</li>
+<li>Ctrl + 1	注释/反注释</li>
+<li>Ctrl + 4/5	块注释/块反注释</li>
+<li>Ctrl + L	跳转到行号</li>
+<li>Tab/Shift + Tab	代码缩进/反缩进</li>
+<li>Ctrl ＋I	显示帮助</li>
 </ol>
-<p><strong>相关条件</strong></p>
-<ul>
-<li>商会或者合法机构认证的项目所有人的授权书。</li>
-</ul>
-<p><strong>更新一类环保许可的要求</strong></p>
+<hr />
+<p>标识符：html中是名值对，这里是标识符和值成对。</p>
+<p>python中所有可以自主命名的内容都是标识符。比如变量名、函数名、类名。</p>
 <ol>
-<li>上一阶段环保登记证书</li>
-<li>上面要求中的3-8项。</li>
+<li>标识符只能含有字母、数字、下划线。但是不能用数字开头，一般都是用字母开头。</li>
+<li>标识符不能是python关键字和保留字。不建议使用函数名作为标识符。会导致函数被覆盖。</li>
+<li>规范：
+<ol>
+<li>下划线命名法，比如<code>max_length</code>, <code>hello_world</code>（用得最多）</li>
+<li>帕斯卡命名法，每个单词开头字母大写，其余小写，比如<code>MaxLength</code>, <code>HelloWorld</code>（类名，使用此类）</li>
+<li></li>
 </ol>
-<p><a href='https://ncec.gov.sa/%d9%85%d8%aa%d8%b7%d9%84%d8%a8%d8%a7%d8%aa-%d8%a7%d9%84%d8%ad%d8%b5%d9%88%d9%84-%d8%b9%d9%84%d9%89-%d9%85%d9%88%d8%a7%d9%81%d9%82%d8%a9-%d8%a8%d9%8a%d8%a6%d9%8a%d8%a9-%d9%84%d9%84%d9%81%d8%a6%d8%a9'>本文引用自nece网站</a></p>
+</li>
+</ol>
 ]]></content>
       <categories>
-        <category>制度学习</category>
-        <category>沙特环保制度</category>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
       </categories>
       <tags>
-        <tag>沙特</tag>
-        <tag>沙特投资</tag>
-        <tag>建厂</tag>
-        <tag>沙特环境监察中心</tag>
+        <tag>python</tag>
+        <tag>spyder快捷键</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>可变对象</title>
+    <url>/2024/04/06/%E5%8F%AF%E5%8F%98%E5%AF%B9%E8%B1%A1/</url>
+    <content><![CDATA[<p>对象的三个属性:</p>
+<ul>
+<li>id</li>
+<li>类型</li>
+<li>值<br />
+可变是指的<strong>值</strong>可变.<br />
+我们修改对象时, 如果有其他变量也指向了该对象, 那么这几个变量也会改变. 注意, 它们的id都没有改变. 因为修改<br />
+对象是修改对象的值.<br />
+给变量重新赋值时, 不影响其他变量.<br />
+<code>==</code>比较的是对象的值是否相等, <code>is/is not</code>是比较对象的id是否相等.</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -454,10 +628,54 @@ code block<br />
         <category>沙特工业园制度</category>
       </categories>
       <tags>
-        <tag>沙特</tag>
-        <tag>沙特投资</tag>
         <tag>建厂</tag>
+        <tag>沙特投资</tag>
+        <tag>沙特</tag>
         <tag>沙特工业园</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>字典</title>
+    <url>/2024/04/06/%E5%AD%97%E5%85%B8/</url>
+    <content><![CDATA[<ul>
+<li>
+<p>字典是一种新的数据结构, 称为映射(mapping)</p>
+</li>
+<li>
+<p>字典的作用和列表类似, 都是存储对象的容器</p>
+</li>
+<li>
+<p>列表存储数据的性能良好, 但是查询数据的性能很差.</p>
+</li>
+<li>
+<p>字典中, 每一个元素都有一个唯一的名字, 通过这个名字可以快速查到指定的元素,<br />
+它相当于列表的索引, 但是这个名字更好记忆.</p>
+</li>
+<li>
+<p>在查询元素时, 字典的效率很快</p>
+</li>
+<li>
+<p>字典中可以存储多个对象, 每个对象都有一个唯一的名字<code>key</code>. 这个对象称为<code>value</code><br />
+字典又称为<code>key-value</code>结构. 一个<code>key-value</code>称为一个<code>item</code></p>
+</li>
+<li>
+<p>使用<code>&#123;&#125;</code>创建字典,  my_dict = {key:value,key:value}.<br />
+<code>value</code>可以是任意类型数据, <code>key</code>可以使任意的不可变对象, 一般会使用<code>str</code>. 字典的<code>key</code>是<br />
+不能重复的, 如果重复, 后边的项(item)会替换前边的项.<br />
+我们可以多行编写字典, 这样看起来更加清晰.</p>
+</li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -532,30 +750,6 @@ code block<br />
       </tags>
   </entry>
   <entry>
-    <title>python中的几个术语</title>
-    <url>/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
-    <content><![CDATA[<p>【表达式】类似于数学公式比如10 + 5；8 + 4.</p>
-<p>表达式仅仅用来计算一些结果，不会对程序产生实质影响。</p>
-<p>【语句】语句需要完成某种功能，比如打印信息、获取信息、为变量赋值等比如：<code>print()</code>, <code>a = 10</code>。</p>
-<p>语句的执行会对程序执行产生影响。语句在命令行中不一定会有执行结果。有返回值的语句，会有返回结果。</p>
-<p>【程序】是多个语句和表达式构成的。</p>
-<p>【函数（function）】函数是一个语句，用来完成特定的功能。函数的结构为<code>***()</code>.括号中的内容叫「参数」，可以没有参数也可以有多个参数，中间用逗号隔开。返回的结果叫做「返回值」，同样可以没有返回值。</p>
-<p>函数分为</p>
-<ol>
-<li>内置函数。python解释器提供的，可以在python中直接使用。</li>
-<li>自定义函数。由程序员自定义的函数。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>对象(object)</title>
     <url>/2024/03/31/%E5%AF%B9%E8%B1%A1(object)/</url>
     <content><![CDATA[<h1 id="对象介绍"><a class="markdownIt-Anchor" href="#对象介绍"></a> 对象介绍</h1>
@@ -612,6 +806,24 @@ code block<br />
       </categories>
       <tags>
         <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>字面变量和变量</title>
+    <url>/2024/03/31/%E5%AD%97%E9%9D%A2%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F/</url>
+    <content><![CDATA[<p>【字面量】一个一个的值，它的意思就是它字面的值。在程序中可以直接使用。</p>
+<p>【变量】与字面量相反。变量可以保存字面量，并且保存的字面量是不定的。</p>
+<p>变量本身无意义，会跟不同的字面量表示不同的意思。</p>
+<p>开发时，通常将字面量保存在变量中，通过变量来引用字面量。这样便于统一管理和引用。</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>计算机</tag>
       </tags>
   </entry>
   <entry>
@@ -712,24 +924,6 @@ else：</p>
       </tags>
   </entry>
   <entry>
-    <title>字面变量和变量</title>
-    <url>/2024/03/31/%E5%AD%97%E9%9D%A2%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F/</url>
-    <content><![CDATA[<p>【字面量】一个一个的值，它的意思就是它字面的值。在程序中可以直接使用。</p>
-<p>【变量】与字面量相反。变量可以保存字面量，并且保存的字面量是不定的。</p>
-<p>变量本身无意义，会跟不同的字面量表示不同的意思。</p>
-<p>开发时，通常将字面量保存在变量中，通过变量来引用字面量。这样便于统一管理和引用。</p>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>计算机</tag>
-      </tags>
-  </entry>
-  <entry>
     <title></title>
     <url>/2024/03/26/%E6%97%A0%E7%BA%BA%E5%B8%83%E4%B8%93%E4%B8%9A%E8%8B%B1%E8%AF%AD%E6%9C%AF%E8%AF%AD1/</url>
     <content><![CDATA[<p>聚酯切片：</p>
@@ -765,6 +959,35 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
 ]]></content>
   </entry>
   <entry>
+    <title>文本文件和字符集</title>
+    <url>/2024/03/31/%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%92%8C%E5%AD%97%E7%AC%A6%E9%9B%86/</url>
+    <content><![CDATA[<p>文本分为纯文本和富文本。</p>
+<p>纯文本在计算机底层也会转换为二进制保存。</p>
+<p>将字符转换为二进制码的过程叫做<strong>编码</strong>。</p>
+<p>将二进制码转换成字符的过程叫做<strong>解码</strong>。</p>
+<p>编码和解码时采用的规则叫做<strong>字符集</strong>。</p>
+<p>常用的字符集：</p>
+<ul>
+<li>ASCII 美国人编码，使用7位（7个1和7个0）来对美国常用的字符进行编码。7个1和7个0的不同组合产生128个字符。</li>
+<li>IS0-8859-1 欧洲的编号，使用8位进行编码，产生256个字符。</li>
+<li>GB2312 GBK中国人的编码</li>
+<li>Unicode 万国码。便携程序时，使用Unicode编码。Unicode有多种实现，UTF-32使用4个字节表示一个字符。UTF-16使用2到4个字节表示一个字符。UTF-8使用1-5个字节表示一个字符。</li>
+</ul>
+<hr />
+<p>乱码</p>
+<p>程序出现乱码，检查字符集是否正确。</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>计算机</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>格式化字符串</title>
     <url>/2024/03/31/%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
     <content><![CDATA[<h1 id="字符串之间可以进行加法运算-但是不能和其他数据进行加法运算"><a class="markdownIt-Anchor" href="#字符串之间可以进行加法运算-但是不能和其他数据进行加法运算"></a> 字符串之间可以进行加法运算, 但是不能和其他数据进行加法运算</h1>
@@ -796,23 +1019,6 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="number">123</span></span><br><span class="line">b = <span class="string">&#x27;呵呵&#x27;</span></span><br><span class="line"></span><br><span class="line">c = <span class="string">f&quot;hello <span class="subst">&#123;a&#125;</span> <span class="subst">&#123;b&#125;</span>&quot;</span></span><br><span class="line"><span class="built_in">print</span>(c) </span><br></pre></td></tr></table></figure>
 <p>返回值</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hello 123 呵呵</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python的基本语法</title>
-    <url>/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<p>python严格区分大小写。比如<code>Print()</code>不能被执行。</p>
-<p><strong>语句</strong>不建议过长。一条语句可以多行编写，语句以反斜线<code>\</code>换行。</p>
-<p>不要随便写缩进，缩进严格，表示代码块。</p>
-<p><code>%</code>后加空格表示注释。</p>
 ]]></content>
       <categories>
         <category>编程</category>
@@ -906,9 +1112,77 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
         <category>沙特工业园制度</category>
       </categories>
       <tags>
-        <tag>沙特投资</tag>
         <tag>建厂</tag>
+        <tag>沙特投资</tag>
         <tag>沙特工业园</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>申请沙特工业园工厂运行许可证的要求</title>
+    <url>/2024/03/27/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%B7%A5%E5%8E%82%E8%BF%90%E8%A1%8C%E8%AE%B8%E5%8F%AF%E8%AF%81%E7%9A%84%E8%A6%81%E6%B1%82%E5%92%8C%E8%A7%84%E5%AE%9A/</url>
+    <content><![CDATA[<h1 id="第一阶段通过modon账户提交申请"><a class="markdownIt-Anchor" href="#第一阶段通过modon账户提交申请"></a> 第一阶段：通过MODON账户提交申请</h1>
+<p><strong>申请建筑竣工和运行许可证所需文件</strong></p>
+<ul>
+<li>经Modon认证的安全图。</li>
+<li>绝缘工程完工证明。</li>
+<li>测试安全系统的模型和消防警报器材的清单。</li>
+<li>电路铺设和连接安全证书。</li>
+<li>跟分包商签署的消防警报系统维护的合同，分包商需要经过民防的认证。</li>
+<li>环保证书。</li>
+<li>工业许可证（从工业与矿产资源部网站申请）</li>
+<li>军工单位建设许可和安全等级（军工企业适用）</li>
+</ul>
+<p><strong>运行许可证更新所需文件</strong></p>
+<ul>
+<li>经工业园（MODON）和民防（Civil Defense）认证的设施安全图纸。</li>
+<li>跟分包商签署的消防警报系统维护的合同，分包商需要经过民防的认证。</li>
+<li>测试安全系统的模型和消防警报器材的清单。</li>
+<li>合格且有级别的安全员。</li>
+</ul>
+<p><strong>其他条件</strong></p>
+<ul>
+<li>跟由Modon认证的工程办公室签订合同，由工程办公室根据认证的模版检查消防和安全系统。</li>
+<li>通过Shareek系统申报危险材料，说明在企业内危险品的存储、种类和危害性。</li>
+<li>职业健康和安全领域内合格的安全员。</li>
+<li>企业安保人员：有安保（沙特籍）</li>
+<li>企业内外安装可以存储两个月记录的摄像头。（军工单位适用）</li>
+<li>记录和保存出入数据（员工和拜访人员）的控制系统。（军工企业适用）</li>
+</ul>
+<h1 id="第二阶段参观考察"><a class="markdownIt-Anchor" href="#第二阶段参观考察"></a> 第二阶段：参观考察</h1>
+<p><strong>批准颁发建筑竣工和运行许可或者更新作业许可证和安全标准需要检查的内容</strong></p>
+<ul>
+<li>确保与许可证相符。</li>
+<li>确保消防和疏散系统运行良好且与主控制面板连接。</li>
+<li>确保消防和疏散系统与认证的安全图纸相符，与认证的规格相符。</li>
+<li>确保有安全员进行与安全管理相关的工作。</li>
+<li>检查员工办公地点和基础设施。</li>
+<li>确保企业内部的生产线、电力系统和设备和其他设备的安全。</li>
+<li>确保地板、通风系统和噪声安全。</li>
+<li>确保在处理、运输和储存化学材料和有害气体时，符合安全规定。</li>
+<li>确保不存在不安全或者违规存储，和不符合规定的退线。</li>
+</ul>
+<h1 id="第三阶段颁发竣工证书和运行许可证"><a class="markdownIt-Anchor" href="#第三阶段颁发竣工证书和运行许可证"></a> 第三阶段：颁发竣工证书和运行许可证</h1>
+<p>Modon致力于简化并加速与合作伙伴的合作，其中包括满足工厂需求，保护员工和工业园财产与基础。我们已经对运行许可和有效时限做了如下分类：</p>
+<p><strong>第一次发放期限一年</strong><br />
+对那些完成建设，满足条件，符合安全标准的企业发放我竣工和运行许可证，它可以视为是运行许可证，此许可证有效期为一年。</p>
+<p><strong>更新</strong></p>
+<p>【短期】：6个月</p>
+<p>本许可颁发给那些些存在大量问题和违规行为，需要较长时间跟其他政府部门和相关机构完成手续，并能够快速更正错误，承诺在规定时间纠正其他问题的企业</p>
+<p>【中期】：1年</p>
+<p>本许可颁发给那些存在中等风险的违规行为，需要较长时间与其他政府部门和相关机构对接完成相关手续。前提是尽快纠正错误，并承诺在规定时间能纠正问题的企业。</p>
+<p>【长期】：3年</p>
+<p>三年有效期的许可颁发给那些没有任何问题，已经遵守了所有安全规则和标准。</p>
+<p><a href='https://www.modon.gov.sa/ar/Systems/Pages/Conditions.aspx'>本文翻译自Modon网站</a></p>
+]]></content>
+      <categories>
+        <category>制度学习</category>
+        <category>沙特工业园制度</category>
+      </categories>
+      <tags>
+        <tag>沙特投资</tag>
+        <tag>沙特</tag>
+        <tag>沙特工业园</tag>
+        <tag>工厂运营许可</tag>
       </tags>
   </entry>
   <entry>
@@ -1039,45 +1313,6 @@ $$
 <h3 id="安排安保"><a class="markdownIt-Anchor" href="#安排安保"></a> 安排安保</h3>
 <h3 id="安排有资质的建筑公司动工"><a class="markdownIt-Anchor" href="#安排有资质的建筑公司动工"></a> 安排有资质的建筑公司动工</h3>
 ]]></content>
-  </entry>
-  <entry>
-    <title>变量和标识符</title>
-    <url>/2024/03/31/%E5%8F%98%E9%87%8F%E5%92%8C%E6%A0%87%E8%AF%86%E7%AC%A6/</url>
-    <content><![CDATA[<p>使用变量不需要声明，直接为变量赋值，但是不能使用未被赋值的变量</p>
-<p>python是一个动态类型的语言，可以给变量赋<strong>任意类型的值</strong>。也可以任意修改变量的值。</p>
-<p>通常变量的名要有意义，比如年龄18，那么我们可以写<code>age = 18</code></p>
-<p>sypder快捷键注释</p>
-<ol>
-<li>Ctrl + 1	注释/反注释</li>
-<li>Ctrl + 4/5	块注释/块反注释</li>
-<li>Ctrl + L	跳转到行号</li>
-<li>Tab/Shift + Tab	代码缩进/反缩进</li>
-<li>Ctrl ＋I	显示帮助</li>
-</ol>
-<hr />
-<p>标识符：html中是名值对，这里是标识符和值成对。</p>
-<p>python中所有可以自主命名的内容都是标识符。比如变量名、函数名、类名。</p>
-<ol>
-<li>标识符只能含有字母、数字、下划线。但是不能用数字开头，一般都是用字母开头。</li>
-<li>标识符不能是python关键字和保留字。不建议使用函数名作为标识符。会导致函数被覆盖。</li>
-<li>规范：
-<ol>
-<li>下划线命名法，比如<code>max_length</code>, <code>hello_world</code>（用得最多）</li>
-<li>帕斯卡命名法，每个单词开头字母大写，其余小写，比如<code>MaxLength</code>, <code>HelloWorld</code>（类名，使用此类）</li>
-<li></li>
-</ol>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>spyder快捷键</tag>
-      </tags>
   </entry>
   <entry>
     <title>第二章 LaTeX中几个常用的基本语法</title>
@@ -1305,65 +1540,6 @@ $$
       </tags>
   </entry>
   <entry>
-    <title>类型检查</title>
-    <url>/2024/03/31/%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5/</url>
-    <content><![CDATA[<h1 id="数据类型有"><a class="markdownIt-Anchor" href="#数据类型有"></a> 数据类型有</h1>
-<ul>
-<li>数值
-<ul>
-<li>整数</li>
-<li>布尔值</li>
-<li>浮点数</li>
-<li>复数</li>
-</ul>
-</li>
-<li>字符串</li>
-<li>空值</li>
-</ul>
-<h1 id="我们通过type函数来检查值的类型-但是注意-该函数会讲返回的结果作为返回值返回-可以通过变量来接受返回值"><a class="markdownIt-Anchor" href="#我们通过type函数来检查值的类型-但是注意-该函数会讲返回的结果作为返回值返回-可以通过变量来接受返回值"></a> 我们通过<code>type()</code>函数来检查值的类型, 但是注意, 该函数会讲返回的结果作为返回值返回, 可以通过变量来接受返回值.</h1>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="string">&#x27;你好&#x27;</span></span><br><span class="line">b = <span class="built_in">type</span>(a)</span><br><span class="line"><span class="comment"># 或者print(type(a))</span></span><br><span class="line"><span class="comment"># 或者print(type(&#x27;你好&#x27;))</span></span><br><span class="line"><span class="built_in">print</span>(b)</span><br></pre></td></tr></table></figure>
-<p>返回值</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;class &#x27;str&#x27;&gt;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>文本文件和字符集</title>
-    <url>/2024/03/31/%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%92%8C%E5%AD%97%E7%AC%A6%E9%9B%86/</url>
-    <content><![CDATA[<p>文本分为纯文本和富文本。</p>
-<p>纯文本在计算机底层也会转换为二进制保存。</p>
-<p>将字符转换为二进制码的过程叫做<strong>编码</strong>。</p>
-<p>将二进制码转换成字符的过程叫做<strong>解码</strong>。</p>
-<p>编码和解码时采用的规则叫做<strong>字符集</strong>。</p>
-<p>常用的字符集：</p>
-<ul>
-<li>ASCII 美国人编码，使用7位（7个1和7个0）来对美国常用的字符进行编码。7个1和7个0的不同组合产生128个字符。</li>
-<li>IS0-8859-1 欧洲的编号，使用8位进行编码，产生256个字符。</li>
-<li>GB2312 GBK中国人的编码</li>
-<li>Unicode 万国码。便携程序时，使用Unicode编码。Unicode有多种实现，UTF-32使用4个字节表示一个字符。UTF-16使用2到4个字节表示一个字符。UTF-8使用1-5个字节表示一个字符。</li>
-</ul>
-<hr />
-<p>乱码</p>
-<p>程序出现乱码，检查字符集是否正确。</p>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>计算机</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>LaTeX中的几个基本概念</title>
     <url>/2024/03/12/%E7%AC%AC%E4%B8%80%E7%AB%A0LaTex%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
     <content><![CDATA[<h1 id="latex的基本概念"><a class="markdownIt-Anchor" href="#latex的基本概念"></a> LaTex的基本概念</h1>
@@ -1446,6 +1622,36 @@ $$
       </tags>
   </entry>
   <entry>
+    <title>类型检查</title>
+    <url>/2024/03/31/%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5/</url>
+    <content><![CDATA[<h1 id="数据类型有"><a class="markdownIt-Anchor" href="#数据类型有"></a> 数据类型有</h1>
+<ul>
+<li>数值
+<ul>
+<li>整数</li>
+<li>布尔值</li>
+<li>浮点数</li>
+<li>复数</li>
+</ul>
+</li>
+<li>字符串</li>
+<li>空值</li>
+</ul>
+<h1 id="我们通过type函数来检查值的类型-但是注意-该函数会讲返回的结果作为返回值返回-可以通过变量来接受返回值"><a class="markdownIt-Anchor" href="#我们通过type函数来检查值的类型-但是注意-该函数会讲返回的结果作为返回值返回-可以通过变量来接受返回值"></a> 我们通过<code>type()</code>函数来检查值的类型, 但是注意, 该函数会讲返回的结果作为返回值返回, 可以通过变量来接受返回值.</h1>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="string">&#x27;你好&#x27;</span></span><br><span class="line">b = <span class="built_in">type</span>(a)</span><br><span class="line"><span class="comment"># 或者print(type(a))</span></span><br><span class="line"><span class="comment"># 或者print(type(&#x27;你好&#x27;))</span></span><br><span class="line"><span class="built_in">print</span>(b)</span><br></pre></td></tr></table></figure>
+<p>返回值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;class &#x27;str&#x27;&gt;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>编译型语言和解释型语言</title>
     <url>/2024/03/31/%E7%BC%96%E8%AF%91%E5%9E%8B%E8%AF%AD%E8%A8%80%E5%92%8C%E8%A7%A3%E9%87%8A%E5%9E%8B%E8%AF%AD%E8%A8%80/</url>
     <content><![CDATA[<p>任何语言在交给计算机执行时，必须转换为机器码。根据转换时机的不同，语言分为两大类：</p>
@@ -1461,6 +1667,60 @@ $$
       </categories>
       <tags>
         <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机语言</title>
+    <url>/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<p>计算机语言其实和人类语言没有本质区别，知识交流主体不同。</p>
+<p>机器语言发展的三个阶段：</p>
+<ul>
+<li>机器语言：通过二进制编码来编写程序。编写麻烦，执行效率好。</li>
+<li>汇编语言：使用符号代替机器码。汇编与反汇编。汇编语言只适用于某些硬件，兼容性差。计算机底层一些硬件驱动现在还用汇编语言编写。</li>
+<li>高级语言：和英语语法类似，并且和硬件关系不紧密，通过高级语言编写的程序可以在不同的硬件系统中执行。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>计算机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机简介</title>
+    <url>/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<p>计算机是一个用来进行计算的<strong>机器</strong>，跟生活中其他机器不同的点在于计算机是用来<strong>计算</strong>的。</p>
+<p>目前计算机只能根据人类的指令进行操作。我们所学计算机，就是学习如何去进行控制这台机器。</p>
+<p>计算机包含硬件和软件两部分：</p>
+<ul>
+<li>
+<p>硬件：看得见摸得着的鼠标键盘、主板、内存、硬盘。它相当于人的身体器官。</p>
+</li>
+<li>
+<p>软件：看的见摸不着的。软件包含：</p>
+<ul>
+<li>系统软件：Windows，Linux，macOS等。</li>
+<li>应用软件：Office，QQ，王者荣耀等。</li>
+</ul>
+<p>负责计算机的运行。人器官完好也有可能是个死人。</p>
+</li>
+</ul>
+<p>我们需要通过<strong>软件</strong>操作计算机。但是软件中不是所有的功能都会对用户开放，用户需要调取软件的接口/交互界面（interface）来操作计算机。有允许用户调取的接口（用户界面），有不允许用户调取的接口。</p>
+<p>用户界面包括：TUI（文本交互界面）比如Mac的Terminal，GUI（图形交互界面）正常操作的界面。</p>
+<p>我们学习编程就要学习通过TUI操作软件进行控制计算机。</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>计算机简介</tag>
       </tags>
   </entry>
   <entry>
@@ -1603,153 +1863,6 @@ $$
       </tags>
   </entry>
   <entry>
-    <title>申请沙特工业园工厂运行许可证的要求</title>
-    <url>/2024/03/27/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%B7%A5%E5%8E%82%E8%BF%90%E8%A1%8C%E8%AE%B8%E5%8F%AF%E8%AF%81%E7%9A%84%E8%A6%81%E6%B1%82%E5%92%8C%E8%A7%84%E5%AE%9A/</url>
-    <content><![CDATA[<h1 id="第一阶段通过modon账户提交申请"><a class="markdownIt-Anchor" href="#第一阶段通过modon账户提交申请"></a> 第一阶段：通过MODON账户提交申请</h1>
-<p><strong>申请建筑竣工和运行许可证所需文件</strong></p>
-<ul>
-<li>经Modon认证的安全图。</li>
-<li>绝缘工程完工证明。</li>
-<li>测试安全系统的模型和消防警报器材的清单。</li>
-<li>电路铺设和连接安全证书。</li>
-<li>跟分包商签署的消防警报系统维护的合同，分包商需要经过民防的认证。</li>
-<li>环保证书。</li>
-<li>工业许可证（从工业与矿产资源部网站申请）</li>
-<li>军工单位建设许可和安全等级（军工企业适用）</li>
-</ul>
-<p><strong>运行许可证更新所需文件</strong></p>
-<ul>
-<li>经工业园（MODON）和民防（Civil Defense）认证的设施安全图纸。</li>
-<li>跟分包商签署的消防警报系统维护的合同，分包商需要经过民防的认证。</li>
-<li>测试安全系统的模型和消防警报器材的清单。</li>
-<li>合格且有级别的安全员。</li>
-</ul>
-<p><strong>其他条件</strong></p>
-<ul>
-<li>跟由Modon认证的工程办公室签订合同，由工程办公室根据认证的模版检查消防和安全系统。</li>
-<li>通过Shareek系统申报危险材料，说明在企业内危险品的存储、种类和危害性。</li>
-<li>职业健康和安全领域内合格的安全员。</li>
-<li>企业安保人员：有安保（沙特籍）</li>
-<li>企业内外安装可以存储两个月记录的摄像头。（军工单位适用）</li>
-<li>记录和保存出入数据（员工和拜访人员）的控制系统。（军工企业适用）</li>
-</ul>
-<h1 id="第二阶段参观考察"><a class="markdownIt-Anchor" href="#第二阶段参观考察"></a> 第二阶段：参观考察</h1>
-<p><strong>批准颁发建筑竣工和运行许可或者更新作业许可证和安全标准需要检查的内容</strong></p>
-<ul>
-<li>确保与许可证相符。</li>
-<li>确保消防和疏散系统运行良好且与主控制面板连接。</li>
-<li>确保消防和疏散系统与认证的安全图纸相符，与认证的规格相符。</li>
-<li>确保有安全员进行与安全管理相关的工作。</li>
-<li>检查员工办公地点和基础设施。</li>
-<li>确保企业内部的生产线、电力系统和设备和其他设备的安全。</li>
-<li>确保地板、通风系统和噪声安全。</li>
-<li>确保在处理、运输和储存化学材料和有害气体时，符合安全规定。</li>
-<li>确保不存在不安全或者违规存储，和不符合规定的退线。</li>
-</ul>
-<h1 id="第三阶段颁发竣工证书和运行许可证"><a class="markdownIt-Anchor" href="#第三阶段颁发竣工证书和运行许可证"></a> 第三阶段：颁发竣工证书和运行许可证</h1>
-<p>Modon致力于简化并加速与合作伙伴的合作，其中包括满足工厂需求，保护员工和工业园财产与基础。我们已经对运行许可和有效时限做了如下分类：</p>
-<p><strong>第一次发放期限一年</strong><br />
-对那些完成建设，满足条件，符合安全标准的企业发放我竣工和运行许可证，它可以视为是运行许可证，此许可证有效期为一年。</p>
-<p><strong>更新</strong></p>
-<p>【短期】：6个月</p>
-<p>本许可颁发给那些些存在大量问题和违规行为，需要较长时间跟其他政府部门和相关机构完成手续，并能够快速更正错误，承诺在规定时间纠正其他问题的企业</p>
-<p>【中期】：1年</p>
-<p>本许可颁发给那些存在中等风险的违规行为，需要较长时间与其他政府部门和相关机构对接完成相关手续。前提是尽快纠正错误，并承诺在规定时间能纠正问题的企业。</p>
-<p>【长期】：3年</p>
-<p>三年有效期的许可颁发给那些没有任何问题，已经遵守了所有安全规则和标准。</p>
-<p><a href='https://www.modon.gov.sa/ar/Systems/Pages/Conditions.aspx'>本文翻译自Modon网站</a></p>
-]]></content>
-      <categories>
-        <category>制度学习</category>
-        <category>沙特工业园制度</category>
-      </categories>
-      <tags>
-        <tag>沙特</tag>
-        <tag>沙特投资</tag>
-        <tag>沙特工业园</tag>
-        <tag>工厂运营许可</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算机语言</title>
-    <url>/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<p>计算机语言其实和人类语言没有本质区别，知识交流主体不同。</p>
-<p>机器语言发展的三个阶段：</p>
-<ul>
-<li>机器语言：通过二进制编码来编写程序。编写麻烦，执行效率好。</li>
-<li>汇编语言：使用符号代替机器码。汇编与反汇编。汇编语言只适用于某些硬件，兼容性差。计算机底层一些硬件驱动现在还用汇编语言编写。</li>
-<li>高级语言：和英语语法类似，并且和硬件关系不紧密，通过高级语言编写的程序可以在不同的硬件系统中执行。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>计算机</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算机简介</title>
-    <url>/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<p>计算机是一个用来进行计算的<strong>机器</strong>，跟生活中其他机器不同的点在于计算机是用来<strong>计算</strong>的。</p>
-<p>目前计算机只能根据人类的指令进行操作。我们所学计算机，就是学习如何去进行控制这台机器。</p>
-<p>计算机包含硬件和软件两部分：</p>
-<ul>
-<li>
-<p>硬件：看得见摸得着的鼠标键盘、主板、内存、硬盘。它相当于人的身体器官。</p>
-</li>
-<li>
-<p>软件：看的见摸不着的。软件包含：</p>
-<ul>
-<li>系统软件：Windows，Linux，macOS等。</li>
-<li>应用软件：Office，QQ，王者荣耀等。</li>
-</ul>
-<p>负责计算机的运行。人器官完好也有可能是个死人。</p>
-</li>
-</ul>
-<p>我们需要通过<strong>软件</strong>操作计算机。但是软件中不是所有的功能都会对用户开放，用户需要调取软件的接口/交互界面（interface）来操作计算机。有允许用户调取的接口（用户界面），有不允许用户调取的接口。</p>
-<p>用户界面包括：TUI（文本交互界面）比如Mac的Terminal，GUI（图形交互界面）正常操作的界面。</p>
-<p>我们学习编程就要学习通过TUI操作软件进行控制计算机。</p>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>计算机简介</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于</title>
-    <url>/about/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>分类</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/css/postpage_style.css</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/js/script.js</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>文档</title>
-    <url>/files/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title></title>
     <url>/css/header_style.css</url>
     <content><![CDATA[/* 导航栏做居中处理 */
@@ -1798,6 +1911,16 @@ $$
 }]]></content>
   </entry>
   <entry>
+    <title></title>
+    <url>/css/postpage_style.css</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/js/script.js</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>链接</title>
     <url>/link/index.html</url>
     <content><![CDATA[]]></content>
@@ -1810,6 +1933,21 @@ $$
   <entry>
     <title>音乐</title>
     <url>/music/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>文档</title>
+    <url>/files/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>分类</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>关于</title>
+    <url>/about/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
