@@ -448,6 +448,34 @@
   </entry>
   
   <entry>
+    <title>python中的几个术语</title>
+    <link href="http://example.com/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
+    <id>http://example.com/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</id>
+    <published>2024-03-30T16:00:00.000Z</published>
+    <updated>2024-03-31T03:39:54.812Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;【表达式】类似于数学公式比如10 + 5；8 + 4.&lt;/p&gt;
+&lt;p&gt;表达式仅仅用来计算一些结果，不会对程序产生实质影响。&lt;/p&gt;
+&lt;p&gt;【语句】语句需要完成某种功能，比如打印信息、获取信息、为变量赋值等比如：&lt;code&gt;print()&lt;/code&gt;, &lt;code&gt;a = </summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
+    
+    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>python交互模式</title>
     <link href="http://example.com/2024/03/31/python%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%BC%8F/"/>
     <id>http://example.com/2024/03/31/python%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%BC%8F/</id>
@@ -479,46 +507,20 @@
   </entry>
   
   <entry>
-    <title>python中的几个术语</title>
-    <link href="http://example.com/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
-    <id>http://example.com/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</id>
+    <title>字符串</title>
+    <link href="http://example.com/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    <id>http://example.com/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
     <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T03:39:54.812Z</updated>
+    <updated>2024-03-31T09:45:21.301Z</updated>
     
     
       
       
-    <summary type="html">&lt;p&gt;【表达式】类似于数学公式比如10 + 5；8 + 4.&lt;/p&gt;
-&lt;p&gt;表达式仅仅用来计算一些结果，不会对程序产生实质影响。&lt;/p&gt;
-&lt;p&gt;【语句】语句需要完成某种功能，比如打印信息、获取信息、为变量赋值等比如：&lt;code&gt;print()&lt;/code&gt;, &lt;code&gt;a = </summary>
-      
-    
-    
-    
-    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
-    
-    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python的基本语法</title>
-    <link href="http://example.com/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
-    <id>http://example.com/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</id>
-    <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T03:39:54.813Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;python严格区分大小写。比如&lt;code&gt;Print()&lt;/code&gt;不能被执行。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;语句&lt;/strong&gt;不建议过长。一条语句可以多行编写，语句以反斜线&lt;code&gt;&#92;&lt;/code&gt;换行。&lt;/p&gt;
-&lt;p&gt;不要随便写缩进，缩进严格，表示代码块。&lt;</summary>
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;字符串用来表示文本信息, 是使用最多的数据类型. 必须用引号包围, 可以理解成某人说:“”.&lt;/li&gt;
+&lt;li&gt;单引号双引号都可以, 但是不可以混合使用. 但是相同的引号不可以嵌套, 但是不同的引号可以嵌套. 下边就是不用引号的嵌套&lt;/li&gt;
+&lt;/ul&gt;
+&lt;fi</summary>
       
     
     
@@ -565,20 +567,17 @@
   </entry>
   
   <entry>
-    <title>字符串</title>
-    <link href="http://example.com/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    <id>http://example.com/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
+    <title>字符串的复制</title>
+    <link href="http://example.com/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%A4%8D%E5%88%B6/"/>
+    <id>http://example.com/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%A4%8D%E5%88%B6/</id>
     <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T09:45:21.301Z</updated>
+    <updated>2024-03-31T08:58:55.818Z</updated>
     
     
       
       
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;字符串用来表示文本信息, 是使用最多的数据类型. 必须用引号包围, 可以理解成某人说:“”.&lt;/li&gt;
-&lt;li&gt;单引号双引号都可以, 但是不可以混合使用. 但是相同的引号不可以嵌套, 但是不同的引号可以嵌套. 下边就是不用引号的嵌套&lt;/li&gt;
-&lt;/ul&gt;
-&lt;fi</summary>
+    <summary type="html">&lt;p&gt;将字符串和数字相乘, 就是复制字符串&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;li</summary>
       
     
     
