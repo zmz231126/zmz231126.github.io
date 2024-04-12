@@ -26,8 +26,8 @@
     
       
       
-    <summary type="html">&lt;h1&gt;Ranges&lt;/h1&gt;
-&lt;p&gt;For most Vim commands, the default range is the current line. However we can control ranges, and in that way execute comm</summary>
+    <summary type="html">&lt;h1 id=&quot;ranges&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#ranges&quot;&gt;&lt;/a&gt; Ranges&lt;/h1&gt;
+&lt;p&gt;For most Vim commands, the default range is the current line</summary>
       
     
     
@@ -51,13 +51,12 @@
     
       
       
-    <summary type="html">&lt;h1&gt;Verbs&lt;/h1&gt;
+    <summary type="html">&lt;h1 id=&quot;verbs&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#verbs&quot;&gt;&lt;/a&gt; Verbs&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;Powerless verbs&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;x&lt;/code&gt; delete character under the cursor to the right&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;X&lt;/</summary>
+&lt;li&gt;&lt;code&gt;x&lt;/code&gt; delete</summary>
       
     
     
@@ -106,9 +105,8 @@
     
       
       
-    <summary type="html">&lt;h1&gt;help()&lt;/h1&gt;
-&lt;p&gt;help() 是python中的内置函数, 使用它可以可以查询函数的用法.但是当我们使用help()来查询自定义函数的时候，它无法显示函数的说明，只能显示函数的结构，比如：&lt;/p&gt;
-&lt;figure class=&quot;highlight pytho</summary>
+    <summary type="html">&lt;h1 id=&quot;help&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#help&quot;&gt;&lt;/a&gt; help()&lt;/h1&gt;
+&lt;p&gt;help() 是python中的内置函数, 使用它可以可以查询函数的用法.但是当我们使用help()来查询自定义函数的时候，它无</summary>
       
     
     
@@ -164,11 +162,11 @@
     
       
       
-    <summary type="html">&lt;p&gt;函数也是一个对象. 比如有三行代码是一个完整的功能, 这个功能在不同的地方反复调用, 那么函数就可以用来保存一些&lt;br&gt;
-可以执行的代码, 并且可以在需要时多次调用.&lt;br&gt;
-创建函数&lt;br&gt;
+    <summary type="html">&lt;p&gt;函数也是一个对象. 比如有三行代码是一个完整的功能, 这个功能在不同的地方反复调用, 那么函数就可以用来保存一些&lt;br /&gt;
+可以执行的代码, 并且可以在需要时多次调用.&lt;br /&gt;
+创建函数&lt;br /&gt;
 函数名符合标识符的命名规范&lt;/p&gt;
-&lt;figure class=&quot;highlig</summary>
+&lt;figure class=&quot;h</summary>
       
     
     
@@ -256,9 +254,9 @@
 &lt;ul&gt;
 &lt;li&gt;id&lt;/li&gt;
 &lt;li&gt;类型&lt;/li&gt;
-&lt;li&gt;值&lt;br&gt;
-可变是指的&lt;strong&gt;值&lt;/strong&gt;可变.&lt;br&gt;
-我们修改对象时, 如果有其他变量也指向了该对象, 那么这几个变量也会改变. 注意, 它们的id都没有改变. </summary>
+&lt;li&gt;值&lt;br /&gt;
+可变是指的&lt;strong&gt;值&lt;/strong&gt;可变.&lt;br /&gt;
+我们修改对象时, 如果有其他变量也指向了该对象, 那么这几个变量也会改变. 注意, 它们的id都没有</summary>
       
     
     
@@ -314,13 +312,13 @@
     
       
       
-    <summary type="html">&lt;p&gt;range()函数是一个可以生成一个自然数的序列&lt;br&gt;
-&lt;code&gt;r = range(5)&lt;/code&gt; 生成的序列为[0,1,2,3,4]&lt;br&gt;
+    <summary type="html">&lt;p&gt;range()函数是一个可以生成一个自然数的序列&lt;br /&gt;
+&lt;code&gt;r = range(5)&lt;/code&gt; 生成的序列为[0,1,2,3,4]&lt;br /&gt;
 该函数可以生成三个参数:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;起始位置&lt;br&gt;
+&lt;li&gt;起始位置&lt;br /&gt;
 可以省略, 默认为0&lt;/li&gt;
-&lt;li&gt;结束位置&lt;</summary>
+&lt;li</summary>
       
     
     
@@ -346,12 +344,9 @@
     
       
       
-    <summary type="html">&lt;h1&gt;序列&lt;/h1&gt;
-&lt;p&gt;序列是Python中最基本的一种数据结构, 数据结构是计算机中数据存储的方式. 序列拥抱保存一种&lt;br&gt;
-&lt;strong&gt;有序&lt;/strong&gt;的数据, 所以我们可以理解索引的概念.&lt;/br&gt;&lt;br&gt;
-序列分为两类:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;可变序</summary>
+    <summary type="html">&lt;h1 id=&quot;序列&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#序列&quot;&gt;&lt;/a&gt; 序列&lt;/h1&gt;
+&lt;p&gt;序列是Python中最基本的一种数据结构, 数据结构是计算机中数据存储的方式. 序列拥抱保存一种&lt;br /&gt;
+&lt;strong&gt;有序&lt;/stron</summary>
       
     
     
@@ -378,13 +373,8 @@
       
       
     <summary type="html">&lt;p&gt;循环语句，可以使指定的代码块重复指定的次数，有两种while循环和for循环。&lt;/p&gt;
-&lt;h1&gt;while循环&lt;/h1&gt;
-&lt;p&gt;【语法】：&lt;br&gt;
-while 条件表达式：&lt;br&gt;
-代码块&lt;br&gt;
-else：&lt;/p&gt;
-&lt;p&gt;【执行流程】：&lt;br&gt;
-先对条件表达式进行求值判断</summary>
+&lt;h1 id=&quot;while循环&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#while循环&quot;&gt;&lt;/a&gt; while循环&lt;/h1&gt;
+&lt;p&gt;【语法】：&lt;br /</summary>
       
     
     
@@ -439,12 +429,9 @@ else：&lt;/p&gt;
     
       
       
-    <summary type="html">&lt;p&gt;Python代码是按照自上而下执行的. 但是通过流程控制语句可以改变流程控制顺序, 也可以让程序反复执行多次.&lt;br&gt;
+    <summary type="html">&lt;p&gt;Python代码是按照自上而下执行的. 但是通过流程控制语句可以改变流程控制顺序, 也可以让程序反复执行多次.&lt;br /&gt;
 分为两大类:&lt;/p&gt;
-&lt;h1&gt;条件判断语句&lt;/h1&gt;
-&lt;p&gt;语法: if 条件表达式: 语句&lt;br&gt;
-执行流程:&lt;br&gt;
-1. 首先对条件表达式进行求值判</summary>
+&lt;h1 id=&quot;条件判断语句&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#条件判断语句&quot;&gt;&lt;/a&gt;</summary>
       
     
     
@@ -492,18 +479,18 @@ else：&lt;/p&gt;
   </entry>
   
   <entry>
-    <title>python中的几个术语</title>
-    <link href="http://example.com/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
-    <id>http://example.com/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</id>
+    <title>python的基本语法</title>
+    <link href="http://example.com/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
+    <id>http://example.com/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</id>
     <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T03:39:54.812Z</updated>
+    <updated>2024-03-31T03:39:54.813Z</updated>
     
     
       
       
-    <summary type="html">&lt;p&gt;【表达式】类似于数学公式比如10 + 5；8 + 4.&lt;/p&gt;
-&lt;p&gt;表达式仅仅用来计算一些结果，不会对程序产生实质影响。&lt;/p&gt;
-&lt;p&gt;【语句】语句需要完成某种功能，比如打印信息、获取信息、为变量赋值等比如：&lt;code&gt;print()&lt;/code&gt;, &lt;code&gt;a = </summary>
+    <summary type="html">&lt;p&gt;python严格区分大小写。比如&lt;code&gt;Print()&lt;/code&gt;不能被执行。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;语句&lt;/strong&gt;不建议过长。一条语句可以多行编写，语句以反斜线&lt;code&gt;&#92;&lt;/code&gt;换行。&lt;/p&gt;
+&lt;p&gt;不要随便写缩进，缩进严格，表示代码块。&lt;</summary>
       
     
     
@@ -520,18 +507,18 @@ else：&lt;/p&gt;
   </entry>
   
   <entry>
-    <title>python的基本语法</title>
-    <link href="http://example.com/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
-    <id>http://example.com/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</id>
+    <title>python中的几个术语</title>
+    <link href="http://example.com/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
+    <id>http://example.com/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</id>
     <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T03:39:54.813Z</updated>
+    <updated>2024-03-31T03:39:54.812Z</updated>
     
     
       
       
-    <summary type="html">&lt;p&gt;python严格区分大小写。比如&lt;code&gt;Print()&lt;/code&gt;不能被执行。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;语句&lt;/strong&gt;不建议过长。一条语句可以多行编写，语句以反斜线&lt;code&gt;&#92;&lt;/code&gt;换行。&lt;/p&gt;
-&lt;p&gt;不要随便写缩进，缩进严格，表示代码块。&lt;</summary>
+    <summary type="html">&lt;p&gt;【表达式】类似于数学公式比如10 + 5；8 + 4.&lt;/p&gt;
+&lt;p&gt;表达式仅仅用来计算一些结果，不会对程序产生实质影响。&lt;/p&gt;
+&lt;p&gt;【语句】语句需要完成某种功能，比如打印信息、获取信息、为变量赋值等比如：&lt;code&gt;print()&lt;/code&gt;, &lt;code&gt;a = </summary>
       
     
     
