@@ -531,44 +531,6 @@ When you hit <code>Enter</code> to open a file, it will be opened in the same wi
       </tags>
   </entry>
   <entry>
-    <title>元组</title>
-    <url>/2024/04/06/%E5%85%83%E7%BB%84/</url>
-    <content><![CDATA[<p>元组(tuple)</p>
-<ul>
-<li>是不可变的序列, 其他的操作方法跟list是一样的. 当我们希望数据不被改变时, 就可以用元组.</li>
-<li>元组使用小括号()创建, 而且是可以省略的, 列表使用[]创建.</li>
-<li>元组不为空, 即时只有一个元素, 也要有一个逗号比如<br />
-<code>my_tuple = 40,</code></li>
-<li>元组的解构, 就是将元组中的每一个元组分别赋值给一个变量, 比如:</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">my_tuple = <span class="number">10</span>,<span class="number">20</span>,<span class="number">30</span>,<span class="number">40</span></span><br><span class="line">a,b,c,d = my_tuple</span><br><span class="line"><span class="built_in">print</span>(a)</span><br><span class="line"><span class="built_in">print</span>((b))</span><br><span class="line"><span class="built_in">print</span>(c)</span><br><span class="line"><span class="built_in">print</span>(d)</span><br></pre></td></tr></table></figure>
-<p>output 为: 10,20,30,40<br />
-在进行交换值时, 我们可以用到, 比如<br />
-a = 10<br />
-b = 20<br />
-交换a和b的值, 只需要. a,b = b, a<br />
-这个道理是相同的</p>
-<ul>
-<li>对一个元组进行解构时, 变量数量必须和元组中的数量一致.<br />
-我们也可以在变量前加<code>*</code>, 这样此变量将会获取元组中所剩余的元素.</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">my_tuple = <span class="number">10</span>,<span class="number">20</span>,<span class="number">30</span>,<span class="number">40</span></span><br><span class="line">a,b,*c = my_tuple</span><br></pre></td></tr></table></figure>
-<p>此时a = 10, b = 20, c = [30,40]<br />
-如果中间变量带星号, 最后一个两端分别取各自的变量, 中间<br />
-变量全部给带<em>的变量. 同理第一个变量带</em>, 后边的变量从末尾给自分配,<br />
-前边的都给第一个带<em>的变量.</br><br />
-但是不能出现多个</em>变量.</p>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>字典</title>
     <url>/2024/04/06/%E5%87%BD%E6%95%B0%E7%AE%80%E4%BB%8B/</url>
     <content><![CDATA[<p>函数也是一个对象. 比如有三行代码是一个完整的功能, 这个功能在不同的地方反复调用, 那么函数就可以用来保存一些<br />
@@ -603,6 +565,44 @@ b = 20<br />
 <p>返回值, 返回值就是函数执行的结果. return 后边跟的就是函数的返回值, 可以直接使用函数的返回值, 也可以用一个变量来接受函数的返回值.</p>
 <p>不写return, 或者只写return相当与返回None.<br />
 return后的代码都不会执行</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>元组</title>
+    <url>/2024/04/06/%E5%85%83%E7%BB%84/</url>
+    <content><![CDATA[<p>元组(tuple)</p>
+<ul>
+<li>是不可变的序列, 其他的操作方法跟list是一样的. 当我们希望数据不被改变时, 就可以用元组.</li>
+<li>元组使用小括号()创建, 而且是可以省略的, 列表使用[]创建.</li>
+<li>元组不为空, 即时只有一个元素, 也要有一个逗号比如<br />
+<code>my_tuple = 40,</code></li>
+<li>元组的解构, 就是将元组中的每一个元组分别赋值给一个变量, 比如:</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">my_tuple = <span class="number">10</span>,<span class="number">20</span>,<span class="number">30</span>,<span class="number">40</span></span><br><span class="line">a,b,c,d = my_tuple</span><br><span class="line"><span class="built_in">print</span>(a)</span><br><span class="line"><span class="built_in">print</span>((b))</span><br><span class="line"><span class="built_in">print</span>(c)</span><br><span class="line"><span class="built_in">print</span>(d)</span><br></pre></td></tr></table></figure>
+<p>output 为: 10,20,30,40<br />
+在进行交换值时, 我们可以用到, 比如<br />
+a = 10<br />
+b = 20<br />
+交换a和b的值, 只需要. a,b = b, a<br />
+这个道理是相同的</p>
+<ul>
+<li>对一个元组进行解构时, 变量数量必须和元组中的数量一致.<br />
+我们也可以在变量前加<code>*</code>, 这样此变量将会获取元组中所剩余的元素.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">my_tuple = <span class="number">10</span>,<span class="number">20</span>,<span class="number">30</span>,<span class="number">40</span></span><br><span class="line">a,b,*c = my_tuple</span><br></pre></td></tr></table></figure>
+<p>此时a = 10, b = 20, c = [30,40]<br />
+如果中间变量带星号, 最后一个两端分别取各自的变量, 中间<br />
+变量全部给带<em>的变量. 同理第一个变量带</em>, 后边的变量从末尾给自分配,<br />
+前边的都给第一个带<em>的变量.</br><br />
+但是不能出现多个</em>变量.</p>
 ]]></content>
       <categories>
         <category>编程</category>
@@ -744,6 +744,69 @@ code block<br />
       </tags>
   </entry>
   <entry>
+    <title>可变对象</title>
+    <url>/2024/04/06/%E5%8F%AF%E5%8F%98%E5%AF%B9%E8%B1%A1/</url>
+    <content><![CDATA[<p>对象的三个属性:</p>
+<ul>
+<li>id</li>
+<li>类型</li>
+<li>值<br />
+可变是指的<strong>值</strong>可变.<br />
+我们修改对象时, 如果有其他变量也指向了该对象, 那么这几个变量也会改变. 注意, 它们的id都没有改变. 因为修改<br />
+对象是修改对象的值.<br />
+给变量重新赋值时, 不影响其他变量.<br />
+<code>==</code>比较的是对象的值是否相等, <code>is/is not</code>是比较对象的id是否相等.</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>变量和标识符</title>
+    <url>/2024/03/31/%E5%8F%98%E9%87%8F%E5%92%8C%E6%A0%87%E8%AF%86%E7%AC%A6/</url>
+    <content><![CDATA[<p>使用变量不需要声明，直接为变量赋值，但是不能使用未被赋值的变量</p>
+<p>python是一个动态类型的语言，可以给变量赋<strong>任意类型的值</strong>。也可以任意修改变量的值。</p>
+<p>通常变量的名要有意义，比如年龄18，那么我们可以写<code>age = 18</code></p>
+<p>sypder快捷键注释</p>
+<ol>
+<li>Ctrl + 1	注释/反注释</li>
+<li>Ctrl + 4/5	块注释/块反注释</li>
+<li>Ctrl + L	跳转到行号</li>
+<li>Tab/Shift + Tab	代码缩进/反缩进</li>
+<li>Ctrl ＋I	显示帮助</li>
+</ol>
+<hr />
+<p>标识符：html中是名值对，这里是标识符和值成对。</p>
+<p>python中所有可以自主命名的内容都是标识符。比如变量名、函数名、类名。</p>
+<ol>
+<li>标识符只能含有字母、数字、下划线。但是不能用数字开头，一般都是用字母开头。</li>
+<li>标识符不能是python关键字和保留字。不建议使用函数名作为标识符。会导致函数被覆盖。</li>
+<li>规范：
+<ol>
+<li>下划线命名法，比如<code>max_length</code>, <code>hello_world</code>（用得最多）</li>
+<li>帕斯卡命名法，每个单词开头字母大写，其余小写，比如<code>MaxLength</code>, <code>HelloWorld</code>（类名，使用此类）</li>
+<li></li>
+</ol>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>spyder快捷键</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>沙特办理工业许可证的要求和流程</title>
     <url>/2024/03/28/%E5%8A%9E%E7%90%86%E5%B7%A5%E4%B8%9A%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/</url>
     <content><![CDATA[<h1 id="定义"><a class="markdownIt-Anchor" href="#定义"></a> 定义</h1>
@@ -825,69 +888,6 @@ code block<br />
         <tag>沙特</tag>
         <tag>工业许可证</tag>
         <tag>沙特工业和矿产资源部</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>变量和标识符</title>
-    <url>/2024/03/31/%E5%8F%98%E9%87%8F%E5%92%8C%E6%A0%87%E8%AF%86%E7%AC%A6/</url>
-    <content><![CDATA[<p>使用变量不需要声明，直接为变量赋值，但是不能使用未被赋值的变量</p>
-<p>python是一个动态类型的语言，可以给变量赋<strong>任意类型的值</strong>。也可以任意修改变量的值。</p>
-<p>通常变量的名要有意义，比如年龄18，那么我们可以写<code>age = 18</code></p>
-<p>sypder快捷键注释</p>
-<ol>
-<li>Ctrl + 1	注释/反注释</li>
-<li>Ctrl + 4/5	块注释/块反注释</li>
-<li>Ctrl + L	跳转到行号</li>
-<li>Tab/Shift + Tab	代码缩进/反缩进</li>
-<li>Ctrl ＋I	显示帮助</li>
-</ol>
-<hr />
-<p>标识符：html中是名值对，这里是标识符和值成对。</p>
-<p>python中所有可以自主命名的内容都是标识符。比如变量名、函数名、类名。</p>
-<ol>
-<li>标识符只能含有字母、数字、下划线。但是不能用数字开头，一般都是用字母开头。</li>
-<li>标识符不能是python关键字和保留字。不建议使用函数名作为标识符。会导致函数被覆盖。</li>
-<li>规范：
-<ol>
-<li>下划线命名法，比如<code>max_length</code>, <code>hello_world</code>（用得最多）</li>
-<li>帕斯卡命名法，每个单词开头字母大写，其余小写，比如<code>MaxLength</code>, <code>HelloWorld</code>（类名，使用此类）</li>
-<li></li>
-</ol>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>spyder快捷键</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>可变对象</title>
-    <url>/2024/04/06/%E5%8F%AF%E5%8F%98%E5%AF%B9%E8%B1%A1/</url>
-    <content><![CDATA[<p>对象的三个属性:</p>
-<ul>
-<li>id</li>
-<li>类型</li>
-<li>值<br />
-可变是指的<strong>值</strong>可变.<br />
-我们修改对象时, 如果有其他变量也指向了该对象, 那么这几个变量也会改变. 注意, 它们的id都没有改变. 因为修改<br />
-对象是修改对象的值.<br />
-给变量重新赋值时, 不影响其他变量.<br />
-<code>==</code>比较的是对象的值是否相等, <code>is/is not</code>是比较对象的id是否相等.</li>
-</ul>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -979,75 +979,6 @@ code block<br />
         <tag>沙特投资</tag>
         <tag>沙特</tag>
         <tag>沙特工业园</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>字典</title>
-    <url>/2024/04/06/%E5%AD%97%E5%85%B8/</url>
-    <content><![CDATA[<ul>
-<li>字典是一种新的数据结构, 称为映射(mapping)</li>
-<li>字典的作用和列表类似, 都是存储对象的容器</li>
-<li>列表存储数据的性能良好, 但是查询数据的性能很差.</li>
-<li>字典中, 每一个元素都有一个唯一的名字, 通过这个名字可以快速查到指定的元素,<br />
-它相当于列表的索引, 但是这个名字更好记忆.</li>
-<li>在查询元素时, 字典的效率很快</li>
-<li>字典中可以存储多个对象, 每个对象都有一个唯一的名字<code>key</code>. 这个对象称为<code>value</code><br />
-字典又称为<code>key-value</code>结构. 一个<code>key-value</code>称为一个<code>item</code></li>
-<li>使用<code>&#123;&#125;</code>创建字典,  my_dict = {key:value,key:value}.<br />
-<code>value</code>可以是任意类型数据, <code>key</code>可以使任意的不可变对象, 一般会使用<code>str</code>. 字典的<code>key</code>是<br />
-不能重复的, 如果重复, 后边的项(item)会替换前边的项.<br />
-我们可以多行编写字典, 这样看起来更加清晰.</li>
-</ul>
-<h2 id="字典的使用"><a class="markdownIt-Anchor" href="#字典的使用"></a> 字典的使用</h2>
-<p>我们还可以使用<code>dict()</code>函数来创建字典: 比如：<br />
-d = dict(name=‘孙悟空’,age=18,gender=‘男’)<br />
-output 为:<code>&#123;'name': '孙悟空', 'age': 18, 'gender': '男'&#125;,这里可以看到，自动为age 加上了引号。 </code><br />
-这种方式创建的字典，它的<code>key</code>都是字符串。</p>
-<ul>
-<li>双值序列，序列中只有两个值，比如[1,2],(‘a’,3),‘ab’.</li>
-<li>子序列，如果序列中的元素也是序列，我们称这个元素为子序列。比如：[(1,2),(2,5)]&gt;这里，我们在列表里放了两个元组，那么这两个元组就是双值子序列。</li>
-<li>双值子序列，就是子序列中只有两个值。</li>
-<li>dict()函数可以将双值子序列转换为字典。比如：<br />
-d = dict([(‘name’,‘孙悟空’),(‘age’,18)])。output为：<code>&#123;'name':'孙悟空','age':18&#125;</code></li>
-<li>len()函数获取字典中item的个数。</li>
-<li><code>in/not</code>检查字典中是否包含指定的<code>key</code>，</li>
-<li>根据key获取值，语法为：d[key].</li>
-<li>另一种为<code>get()方法</code>。d.get(‘key’,‘默认值’)，当获取不到值时，返回默认值。</li>
-</ul>
-<h2 id="修改字典"><a class="markdownIt-Anchor" href="#修改字典"></a> 修改字典</h2>
-<p>如果存在</p>
-<ul>
-<li>my_dict[key] = newvalue 修改<br />
-如果不存在, 则会添加.</li>
-<li>my_dict.setdefault(“key”,“value”)如果字典中存在对应的key, 则没有影响, 如果没有, 就添加默认item</li>
-<li><code>update()方法</code>,my_dict.update(my_dict2),将my_dict2中的item加到my_dict里边. 如果发现重复<code>key</code><br />
-my_dict2会替换my_dict1</li>
-<li>popitem()方法. 随机删除一个键值对(一般是最后一个). 删除后, 有返回值(两个元素的元组).</li>
-<li>pop(key,optional default value)method. delete the item according to the key arguments. it will return a<br />
-value. if you set a default value, it will return default value if there is no present value.</li>
-<li>clear() remove all from the dict.</li>
-<li>copy(). return a shallow copy for the dict. if we want to create independent copy<br />
-of the established dict, you should call this method. they are different from each other<br />
-in terms of object id. but it is a shallow copy, if an item value is a dict as wel,</li>
-</ul>
-<h2 id="遍历字典"><a class="markdownIt-Anchor" href="#遍历字典"></a> 遍历字典</h2>
-<p>keys()method.  it will return all keys in dict. this method will return a sequence.<br />
-通过遍历keys来获取所有的键.<br />
-values()like keys(), it will return all values in dict.<br />
-items(), this method will return all items in dict, it will generate a sequence,<br />
-this sequence include a double value subsequence. like others, you can iterate the<br />
-items by using for loop.</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> k, v <span class="keyword">in</span> my_dict.items():</span><br><span class="line">    <span class="built_in">print</span>(k,v)</span><br></pre></td></tr></table></figure>
-<p>到此结束<br />
-This is-a line, with special/separated/words (and some more).</p>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -1188,6 +1119,75 @@ This is-a line, with special/separated/words (and some more).</p>
 </ul>
 </li>
 </ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>字典</title>
+    <url>/2024/04/06/%E5%AD%97%E5%85%B8/</url>
+    <content><![CDATA[<ul>
+<li>字典是一种新的数据结构, 称为映射(mapping)</li>
+<li>字典的作用和列表类似, 都是存储对象的容器</li>
+<li>列表存储数据的性能良好, 但是查询数据的性能很差.</li>
+<li>字典中, 每一个元素都有一个唯一的名字, 通过这个名字可以快速查到指定的元素,<br />
+它相当于列表的索引, 但是这个名字更好记忆.</li>
+<li>在查询元素时, 字典的效率很快</li>
+<li>字典中可以存储多个对象, 每个对象都有一个唯一的名字<code>key</code>. 这个对象称为<code>value</code><br />
+字典又称为<code>key-value</code>结构. 一个<code>key-value</code>称为一个<code>item</code></li>
+<li>使用<code>&#123;&#125;</code>创建字典,  my_dict = {key:value,key:value}.<br />
+<code>value</code>可以是任意类型数据, <code>key</code>可以使任意的不可变对象, 一般会使用<code>str</code>. 字典的<code>key</code>是<br />
+不能重复的, 如果重复, 后边的项(item)会替换前边的项.<br />
+我们可以多行编写字典, 这样看起来更加清晰.</li>
+</ul>
+<h2 id="字典的使用"><a class="markdownIt-Anchor" href="#字典的使用"></a> 字典的使用</h2>
+<p>我们还可以使用<code>dict()</code>函数来创建字典: 比如：<br />
+d = dict(name=‘孙悟空’,age=18,gender=‘男’)<br />
+output 为:<code>&#123;'name': '孙悟空', 'age': 18, 'gender': '男'&#125;,这里可以看到，自动为age 加上了引号。 </code><br />
+这种方式创建的字典，它的<code>key</code>都是字符串。</p>
+<ul>
+<li>双值序列，序列中只有两个值，比如[1,2],(‘a’,3),‘ab’.</li>
+<li>子序列，如果序列中的元素也是序列，我们称这个元素为子序列。比如：[(1,2),(2,5)]&gt;这里，我们在列表里放了两个元组，那么这两个元组就是双值子序列。</li>
+<li>双值子序列，就是子序列中只有两个值。</li>
+<li>dict()函数可以将双值子序列转换为字典。比如：<br />
+d = dict([(‘name’,‘孙悟空’),(‘age’,18)])。output为：<code>&#123;'name':'孙悟空','age':18&#125;</code></li>
+<li>len()函数获取字典中item的个数。</li>
+<li><code>in/not</code>检查字典中是否包含指定的<code>key</code>，</li>
+<li>根据key获取值，语法为：d[key].</li>
+<li>另一种为<code>get()方法</code>。d.get(‘key’,‘默认值’)，当获取不到值时，返回默认值。</li>
+</ul>
+<h2 id="修改字典"><a class="markdownIt-Anchor" href="#修改字典"></a> 修改字典</h2>
+<p>如果存在</p>
+<ul>
+<li>my_dict[key] = newvalue 修改<br />
+如果不存在, 则会添加.</li>
+<li>my_dict.setdefault(“key”,“value”)如果字典中存在对应的key, 则没有影响, 如果没有, 就添加默认item</li>
+<li><code>update()方法</code>,my_dict.update(my_dict2),将my_dict2中的item加到my_dict里边. 如果发现重复<code>key</code><br />
+my_dict2会替换my_dict1</li>
+<li>popitem()方法. 随机删除一个键值对(一般是最后一个). 删除后, 有返回值(两个元素的元组).</li>
+<li>pop(key,optional default value)method. delete the item according to the key arguments. it will return a<br />
+value. if you set a default value, it will return default value if there is no present value.</li>
+<li>clear() remove all from the dict.</li>
+<li>copy(). return a shallow copy for the dict. if we want to create independent copy<br />
+of the established dict, you should call this method. they are different from each other<br />
+in terms of object id. but it is a shallow copy, if an item value is a dict as wel,</li>
+</ul>
+<h2 id="遍历字典"><a class="markdownIt-Anchor" href="#遍历字典"></a> 遍历字典</h2>
+<p>keys()method.  it will return all keys in dict. this method will return a sequence.<br />
+通过遍历keys来获取所有的键.<br />
+values()like keys(), it will return all values in dict.<br />
+items(), this method will return all items in dict, it will generate a sequence,<br />
+this sequence include a double value subsequence. like others, you can iterate the<br />
+items by using for loop.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> k, v <span class="keyword">in</span> my_dict.items():</span><br><span class="line">    <span class="built_in">print</span>(k,v)</span><br></pre></td></tr></table></figure>
+<p>到此结束<br />
+This is-a line, with special/separated/words (and some more).</p>
 ]]></content>
       <categories>
         <category>编程</category>
@@ -1470,35 +1470,6 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
       </tags>
   </entry>
   <entry>
-    <title>沙特工业园建厂要求</title>
-    <url>/2024/03/28/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%BB%BA%E5%8E%82%E8%A6%81%E6%B1%82/</url>
-    <content><![CDATA[<p>工厂需要遵循【建厂条件和标准指南】中的建厂要求，可以享受Modon在工业园中提供的服务。</p>
-<ul>
-<li>工厂建设的单元包括：生产车间、原材料仓库、产成品仓库、员工服务、电力供应、工业安全服务、内部道路、疏散区域、<br />
-管理建筑。</li>
-<li>生产车间的高度满足所有任务需求，其中包括根据不同生产类型的生产线所需要的机械作业任务。</li>
-<li>原材料仓库的面积限制在能满足工厂需要的30%-40%，随工厂规模（建筑面积）的增大而增大。</li>
-<li>产成品仓库的面积限制在满足工厂产品存储的30%-40%，随工厂规模（建筑面积）的增大而增大。</li>
-<li>工厂员工服务包括：卫生间、礼拜厅、急救、餐厅、换衣间。</li>
-<li>包括给工厂服务的管理办公室。</li>
-<li>供电工程包括中低压配电室和主断路器室。</li>
-<li>安全服务包括：备用消防箱、灭火系统和火灾警报系统。</li>
-<li>内部道路用来方便工厂不同单元的活动，并且连接工厂各个入口和主道路。</li>
-<li>生产建筑和围墙之间的间隔：前方与道路之间不低于13.5米，与两侧和后方之间不低于6米。</li>
-<li>申请、认证和颁发许可证的要求。</li>
-</ul>
-<p><a href='https://www.modon.gov.sa/ar/Systems/Pages/Requirements.aspx'>内容采集自工业园官网</a></p>
-]]></content>
-      <categories>
-        <category>制度学习</category>
-        <category>沙特工业园制度</category>
-      </categories>
-      <tags>
-        <tag>建厂</tag>
-        <tag>沙特工业园</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>沙特工业园投资流程</title>
     <url>/2024/03/27/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E6%8A%95%E8%B5%84%E6%B5%81%E7%A8%8B/</url>
     <content><![CDATA[<h1 id="工业园提供的产品和服务"><a class="markdownIt-Anchor" href="#工业园提供的产品和服务"></a> 工业园提供的产品和服务</h1>
@@ -1554,6 +1525,35 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
       <tags>
         <tag>建厂</tag>
         <tag>沙特投资</tag>
+        <tag>沙特工业园</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>沙特工业园建厂要求</title>
+    <url>/2024/03/28/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%BB%BA%E5%8E%82%E8%A6%81%E6%B1%82/</url>
+    <content><![CDATA[<p>工厂需要遵循【建厂条件和标准指南】中的建厂要求，可以享受Modon在工业园中提供的服务。</p>
+<ul>
+<li>工厂建设的单元包括：生产车间、原材料仓库、产成品仓库、员工服务、电力供应、工业安全服务、内部道路、疏散区域、<br />
+管理建筑。</li>
+<li>生产车间的高度满足所有任务需求，其中包括根据不同生产类型的生产线所需要的机械作业任务。</li>
+<li>原材料仓库的面积限制在能满足工厂需要的30%-40%，随工厂规模（建筑面积）的增大而增大。</li>
+<li>产成品仓库的面积限制在满足工厂产品存储的30%-40%，随工厂规模（建筑面积）的增大而增大。</li>
+<li>工厂员工服务包括：卫生间、礼拜厅、急救、餐厅、换衣间。</li>
+<li>包括给工厂服务的管理办公室。</li>
+<li>供电工程包括中低压配电室和主断路器室。</li>
+<li>安全服务包括：备用消防箱、灭火系统和火灾警报系统。</li>
+<li>内部道路用来方便工厂不同单元的活动，并且连接工厂各个入口和主道路。</li>
+<li>生产建筑和围墙之间的间隔：前方与道路之间不低于13.5米，与两侧和后方之间不低于6米。</li>
+<li>申请、认证和颁发许可证的要求。</li>
+</ul>
+<p><a href='https://www.modon.gov.sa/ar/Systems/Pages/Requirements.aspx'>内容采集自工业园官网</a></p>
+]]></content>
+      <categories>
+        <category>制度学习</category>
+        <category>沙特工业园制度</category>
+      </categories>
+      <tags>
+        <tag>建厂</tag>
         <tag>沙特工业园</tag>
       </tags>
   </entry>
@@ -1766,6 +1766,36 @@ $$
       </categories>
       <tags>
         <tag>LaTeX</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>类型检查</title>
+    <url>/2024/03/31/%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5/</url>
+    <content><![CDATA[<h1 id="数据类型有"><a class="markdownIt-Anchor" href="#数据类型有"></a> 数据类型有</h1>
+<ul>
+<li>数值
+<ul>
+<li>整数</li>
+<li>布尔值</li>
+<li>浮点数</li>
+<li>复数</li>
+</ul>
+</li>
+<li>字符串</li>
+<li>空值</li>
+</ul>
+<h1 id="我们通过type函数来检查值的类型-但是注意-该函数会讲返回的结果作为返回值返回-可以通过变量来接受返回值"><a class="markdownIt-Anchor" href="#我们通过type函数来检查值的类型-但是注意-该函数会讲返回的结果作为返回值返回-可以通过变量来接受返回值"></a> 我们通过<code>type()</code>函数来检查值的类型, 但是注意, 该函数会讲返回的结果作为返回值返回, 可以通过变量来接受返回值.</h1>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="string">&#x27;你好&#x27;</span></span><br><span class="line">b = <span class="built_in">type</span>(a)</span><br><span class="line"><span class="comment"># 或者print(type(a))</span></span><br><span class="line"><span class="comment"># 或者print(type(&#x27;你好&#x27;))</span></span><br><span class="line"><span class="built_in">print</span>(b)</span><br></pre></td></tr></table></figure>
+<p>返回值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;class &#x27;str&#x27;&gt;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -1991,36 +2021,6 @@ $$
       </categories>
       <tags>
         <tag>LaTeX</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>类型检查</title>
-    <url>/2024/03/31/%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5/</url>
-    <content><![CDATA[<h1 id="数据类型有"><a class="markdownIt-Anchor" href="#数据类型有"></a> 数据类型有</h1>
-<ul>
-<li>数值
-<ul>
-<li>整数</li>
-<li>布尔值</li>
-<li>浮点数</li>
-<li>复数</li>
-</ul>
-</li>
-<li>字符串</li>
-<li>空值</li>
-</ul>
-<h1 id="我们通过type函数来检查值的类型-但是注意-该函数会讲返回的结果作为返回值返回-可以通过变量来接受返回值"><a class="markdownIt-Anchor" href="#我们通过type函数来检查值的类型-但是注意-该函数会讲返回的结果作为返回值返回-可以通过变量来接受返回值"></a> 我们通过<code>type()</code>函数来检查值的类型, 但是注意, 该函数会讲返回的结果作为返回值返回, 可以通过变量来接受返回值.</h1>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="string">&#x27;你好&#x27;</span></span><br><span class="line">b = <span class="built_in">type</span>(a)</span><br><span class="line"><span class="comment"># 或者print(type(a))</span></span><br><span class="line"><span class="comment"># 或者print(type(&#x27;你好&#x27;))</span></span><br><span class="line"><span class="built_in">print</span>(b)</span><br></pre></td></tr></table></figure>
-<p>返回值</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;class &#x27;str&#x27;&gt;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -2263,13 +2263,18 @@ dict can also insert to sets in this way.</li>
       </tags>
   </entry>
   <entry>
+    <title>关于</title>
+    <url>/about/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>分类</title>
     <url>/categories/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/css/postpage_style.css</url>
+    <title>文档</title>
+    <url>/files/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -2322,22 +2327,12 @@ dict can also insert to sets in this way.</li>
   </entry>
   <entry>
     <title></title>
+    <url>/css/postpage_style.css</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title></title>
     <url>/js/script.js</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>关于</title>
-    <url>/about/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>文档</title>
-    <url>/files/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -2346,13 +2341,18 @@ dict can also insert to sets in this way.</li>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
+    <title>电影</title>
+    <url>/movies/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>音乐</title>
     <url>/music/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>电影</title>
-    <url>/movies/index.html</url>
+    <title>标签</title>
+    <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>
