@@ -136,30 +136,6 @@ else:<br />
       </tags>
   </entry>
   <entry>
-    <title>python中的几个术语</title>
-    <url>/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
-    <content><![CDATA[<p>【表达式】类似于数学公式比如10 + 5；8 + 4.</p>
-<p>表达式仅仅用来计算一些结果，不会对程序产生实质影响。</p>
-<p>【语句】语句需要完成某种功能，比如打印信息、获取信息、为变量赋值等比如：<code>print()</code>, <code>a = 10</code>。</p>
-<p>语句的执行会对程序执行产生影响。语句在命令行中不一定会有执行结果。有返回值的语句，会有返回结果。</p>
-<p>【程序】是多个语句和表达式构成的。</p>
-<p>【函数（function）】函数是一个语句，用来完成特定的功能。函数的结构为<code>***()</code>.括号中的内容叫「参数」，可以没有参数也可以有多个参数，中间用逗号隔开。返回的结果叫做「返回值」，同样可以没有返回值。</p>
-<p>函数分为</p>
-<ol>
-<li>内置函数。python解释器提供的，可以在python中直接使用。</li>
-<li>自定义函数。由程序员自定义的函数。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>range()函数</title>
     <url>/2024/04/06/range()%E5%87%BD%E6%95%B0/</url>
     <content><![CDATA[<p>range()函数是一个可以生成一个自然数的序列<br />
@@ -227,6 +203,30 @@ $ last line<br />
       </categories>
       <tags>
         <tag>Vim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python中的几个术语</title>
+    <url>/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
+    <content><![CDATA[<p>【表达式】类似于数学公式比如10 + 5；8 + 4.</p>
+<p>表达式仅仅用来计算一些结果，不会对程序产生实质影响。</p>
+<p>【语句】语句需要完成某种功能，比如打印信息、获取信息、为变量赋值等比如：<code>print()</code>, <code>a = 10</code>。</p>
+<p>语句的执行会对程序执行产生影响。语句在命令行中不一定会有执行结果。有返回值的语句，会有返回结果。</p>
+<p>【程序】是多个语句和表达式构成的。</p>
+<p>【函数（function）】函数是一个语句，用来完成特定的功能。函数的结构为<code>***()</code>.括号中的内容叫「参数」，可以没有参数也可以有多个参数，中间用逗号隔开。返回的结果叫做「返回值」，同样可以没有返回值。</p>
+<p>函数分为</p>
+<ol>
+<li>内置函数。python解释器提供的，可以在python中直接使用。</li>
+<li>自定义函数。由程序员自定义的函数。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -494,43 +494,6 @@ When you hit <code>Enter</code> to open a file, it will be opened in the same wi
       </tags>
   </entry>
   <entry>
-    <title>一类项目获取环保许可的要求</title>
-    <url>/2024/03/29/%E4%B8%80%E7%B1%BB%E9%A1%B9%E7%9B%AE%E8%8E%B7%E5%8F%96%E7%8E%AF%E4%BF%9D%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/</url>
-    <content><![CDATA[<p>一类项目对环境影响很小，且影响不回超过活动地点。需要提交电子申请、附上一般要求中提及的文件并且遵守相关条件。</p>
-<p><strong>一般要求</strong></p>
-<ol>
-<li>填写分类表格（<a href="https://raw.githubusercontent.com/zmz231126/bolgpicture/main/202403291608962.pdf">点击此处下载</a>）</li>
-<li>项目简单的初始报告</li>
-<li>无害和已经许可的工业垃圾（液体和固体）的搬运和清理合同</li>
-<li>与认证机构签署的固体市政垃圾的搬运和清理合同</li>
-<li>商业登记证</li>
-<li>税务登记证</li>
-<li>身份证或者居住证</li>
-<li>产权契约或者租赁合同</li>
-</ol>
-<p><strong>相关条件</strong></p>
-<ul>
-<li>商会或者合法机构认证的项目所有人的授权书。</li>
-</ul>
-<p><strong>更新一类环保许可的要求</strong></p>
-<ol>
-<li>上一阶段环保登记证书</li>
-<li>上面要求中的3-8项。</li>
-</ol>
-<p><a href='https://ncec.gov.sa/%d9%85%d8%aa%d8%b7%d9%84%d8%a8%d8%a7%d8%aa-%d8%a7%d9%84%d8%ad%d8%b5%d9%88%d9%84-%d8%b9%d9%84%d9%89-%d9%85%d9%88%d8%a7%d9%81%d9%82%d8%a9-%d8%a8%d9%8a%d8%a6%d9%8a%d8%a9-%d9%84%d9%84%d9%81%d8%a6%d8%a9'>本文引用自nece网站</a></p>
-]]></content>
-      <categories>
-        <category>制度学习</category>
-        <category>沙特环保制度</category>
-      </categories>
-      <tags>
-        <tag>建厂</tag>
-        <tag>沙特投资</tag>
-        <tag>沙特</tag>
-        <tag>沙特环境监察中心</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>元组</title>
     <url>/2024/04/06/%E5%85%83%E7%BB%84/</url>
     <content><![CDATA[<p>元组(tuple)</p>
@@ -611,6 +574,43 @@ return后的代码都不会执行</p>
       </categories>
       <tags>
         <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一类项目获取环保许可的要求</title>
+    <url>/2024/03/29/%E4%B8%80%E7%B1%BB%E9%A1%B9%E7%9B%AE%E8%8E%B7%E5%8F%96%E7%8E%AF%E4%BF%9D%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/</url>
+    <content><![CDATA[<p>一类项目对环境影响很小，且影响不回超过活动地点。需要提交电子申请、附上一般要求中提及的文件并且遵守相关条件。</p>
+<p><strong>一般要求</strong></p>
+<ol>
+<li>填写分类表格（<a href="https://raw.githubusercontent.com/zmz231126/bolgpicture/main/202403291608962.pdf">点击此处下载</a>）</li>
+<li>项目简单的初始报告</li>
+<li>无害和已经许可的工业垃圾（液体和固体）的搬运和清理合同</li>
+<li>与认证机构签署的固体市政垃圾的搬运和清理合同</li>
+<li>商业登记证</li>
+<li>税务登记证</li>
+<li>身份证或者居住证</li>
+<li>产权契约或者租赁合同</li>
+</ol>
+<p><strong>相关条件</strong></p>
+<ul>
+<li>商会或者合法机构认证的项目所有人的授权书。</li>
+</ul>
+<p><strong>更新一类环保许可的要求</strong></p>
+<ol>
+<li>上一阶段环保登记证书</li>
+<li>上面要求中的3-8项。</li>
+</ol>
+<p><a href='https://ncec.gov.sa/%d9%85%d8%aa%d8%b7%d9%84%d8%a8%d8%a7%d8%aa-%d8%a7%d9%84%d8%ad%d8%b5%d9%88%d9%84-%d8%b9%d9%84%d9%89-%d9%85%d9%88%d8%a7%d9%81%d9%82%d8%a9-%d8%a8%d9%8a%d8%a6%d9%8a%d8%a9-%d9%84%d9%84%d9%81%d8%a6%d8%a9'>本文引用自nece网站</a></p>
+]]></content>
+      <categories>
+        <category>制度学习</category>
+        <category>沙特环保制度</category>
+      </categories>
+      <tags>
+        <tag>建厂</tag>
+        <tag>沙特投资</tag>
+        <tag>沙特</tag>
+        <tag>沙特环境监察中心</tag>
       </tags>
   </entry>
   <entry>
@@ -891,97 +891,6 @@ code block<br />
       </tags>
   </entry>
   <entry>
-    <title>土地占用和建筑元素之间的分布比率</title>
-    <url>/2024/03/29/%E5%9C%9F%E5%9C%B0%E5%8D%A0%E7%94%A8%E5%92%8C%E5%BB%BA%E7%AD%91%E5%85%83%E7%B4%A0%E4%B9%8B%E9%97%B4%E7%9A%84%E5%88%86%E5%B8%83%E6%AF%94%E7%8E%87/</url>
-    <content><![CDATA[<p>土地占用和建筑元素之间的分布比率：</p>
-<ol>
-<li>最大建设面积和土地面积的比率在50-60%之间波动，最小不低于45%。</li>
-<li>交通线、车辆跑道、退线、停车区域、景观区域和装卸区域占占地面地的40-50%。</li>
-<li>根据下面的表格，空隙分配在工业建筑之间。</li>
-<li>各个单元和仓库的比例可能根据工厂的要求进行修订，使的工业使用率不低于建筑面积的43%<sup>8</sup></li>
-<li>容积率（floor area ratio)也就是建筑物和土地面积的比率，不高于1.5.</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>表4：</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>场地内建设比率</td>
-<td></td>
-</tr>
-<tr>
-<td>土地使用率</td>
-<td>比率</td>
-</tr>
-<tr>
-<td>50%</td>
-<td>建设比率</td>
-</tr>
-<tr>
-<td>45%≤</td>
-<td>最小建设比率</td>
-</tr>
-<tr>
-<td>60%≥</td>
-<td>最大建设比率</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>表5:</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>工厂各个面积的分配比率</td>
-<td>比率</td>
-</tr>
-<tr>
-<td>工业建筑元素</td>
-<td></td>
-</tr>
-<tr>
-<td>生产</td>
-<td>40-60%（随工厂规模的增大而减小）</td>
-</tr>
-<tr>
-<td>仓库</td>
-<td>30-40%（随工厂规模的扩大而增大）</td>
-</tr>
-<tr>
-<td>管理（可选）</td>
-<td>7-15%（随工厂规模的扩大而增大）</td>
-</tr>
-<tr>
-<td>员工服务</td>
-<td>3-5%（随工厂规模的扩大而增大）</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>[!CAUTION]</p>
-<p>这个比率是土地允许使用的面积，不是土地的总面积。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>制度学习</category>
-        <category>沙特工业园制度</category>
-      </categories>
-      <tags>
-        <tag>建厂</tag>
-        <tag>沙特投资</tag>
-        <tag>沙特</tag>
-        <tag>沙特工业园</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>字典</title>
     <url>/2024/04/06/%E5%AD%97%E5%85%B8/</url>
     <content><![CDATA[<ul>
@@ -1137,6 +1046,97 @@ This is-a line, with special/separated/words (and some more).</p>
       <tags>
         <tag>python</tag>
         <tag>计算机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>土地占用和建筑元素之间的分布比率</title>
+    <url>/2024/03/29/%E5%9C%9F%E5%9C%B0%E5%8D%A0%E7%94%A8%E5%92%8C%E5%BB%BA%E7%AD%91%E5%85%83%E7%B4%A0%E4%B9%8B%E9%97%B4%E7%9A%84%E5%88%86%E5%B8%83%E6%AF%94%E7%8E%87/</url>
+    <content><![CDATA[<p>土地占用和建筑元素之间的分布比率：</p>
+<ol>
+<li>最大建设面积和土地面积的比率在50-60%之间波动，最小不低于45%。</li>
+<li>交通线、车辆跑道、退线、停车区域、景观区域和装卸区域占占地面地的40-50%。</li>
+<li>根据下面的表格，空隙分配在工业建筑之间。</li>
+<li>各个单元和仓库的比例可能根据工厂的要求进行修订，使的工业使用率不低于建筑面积的43%<sup>8</sup></li>
+<li>容积率（floor area ratio)也就是建筑物和土地面积的比率，不高于1.5.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>表4：</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>场地内建设比率</td>
+<td></td>
+</tr>
+<tr>
+<td>土地使用率</td>
+<td>比率</td>
+</tr>
+<tr>
+<td>50%</td>
+<td>建设比率</td>
+</tr>
+<tr>
+<td>45%≤</td>
+<td>最小建设比率</td>
+</tr>
+<tr>
+<td>60%≥</td>
+<td>最大建设比率</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>表5:</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>工厂各个面积的分配比率</td>
+<td>比率</td>
+</tr>
+<tr>
+<td>工业建筑元素</td>
+<td></td>
+</tr>
+<tr>
+<td>生产</td>
+<td>40-60%（随工厂规模的增大而减小）</td>
+</tr>
+<tr>
+<td>仓库</td>
+<td>30-40%（随工厂规模的扩大而增大）</td>
+</tr>
+<tr>
+<td>管理（可选）</td>
+<td>7-15%（随工厂规模的扩大而增大）</td>
+</tr>
+<tr>
+<td>员工服务</td>
+<td>3-5%（随工厂规模的扩大而增大）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>[!CAUTION]</p>
+<p>这个比率是土地允许使用的面积，不是土地的总面积。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>制度学习</category>
+        <category>沙特工业园制度</category>
+      </categories>
+      <tags>
+        <tag>建厂</tag>
+        <tag>沙特投资</tag>
+        <tag>沙特</tag>
+        <tag>沙特工业园</tag>
       </tags>
   </entry>
   <entry>
@@ -1687,88 +1687,6 @@ $$
 ]]></content>
   </entry>
   <entry>
-    <title>LaTeX中的几个基本概念</title>
-    <url>/2024/03/12/%E7%AC%AC%E4%B8%80%E7%AB%A0LaTex%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
-    <content><![CDATA[<h1 id="latex的基本概念"><a class="markdownIt-Anchor" href="#latex的基本概念"></a> LaTex的基本概念</h1>
-<h2 id="概述"><a class="markdownIt-Anchor" href="#概述"></a> 概述</h2>
-<ul>
-<li>Donald E. Knuth 1982年发布Tex引擎，1989年位更好的支出8-bit字符和多语言排版而予以改进。</li>
-<li>LaTex是一种使用Tex程序作为排版引擎的格式（format）。可以错略的理解为是对Tex的一层封装。起初有Leslie Lamport博士开发，目前又LaTex工作组进行维护。</li>
-</ul>
-<h2 id="latex命令和代码结构"><a class="markdownIt-Anchor" href="#latex命令和代码结构"></a> LaTex命令和代码结构</h2>
-<p>命令两种形式：</p>
-<ol>
-<li><code>\</code>和后面的一串字母，如<code>\LaTex</code>。以任意非字母符号为界限。</li>
-<li><code>\</code>反斜线和后面单个非字母符号，比如<code>\$</code>.</li>
-</ol>
-<p>注意⚠️</p>
-<ol>
-<li>字母形式的LaTex忽略其后的所有连续空格，如果要引入空格，应该写成<code>\LaTex&#123;&#125;</code>。</li>
-<li>LaTex大小写敏感。</li>
-</ol>
-<p>【参数】一些命令可以接受参数，参数影响命令的效果。参数有：</p>
-<ol>
-<li>mandatory arguments，用<code>&#123;&#125;</code>包裹。</li>
-<li>optional arguments，用<code>[]</code>包裹。</li>
-<li><code>*</code>带一个星号和不带星号的命令效果有差异。可以把星号看作一种特殊的可选参数。</li>
-</ol>
-<p>【环境】环境成对出现，环境有时会携带参数，环境名保持一致。部分环境允许嵌套。比如</p>
-<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;enviroment name&#125;[optional arguments]&#123;mandatory arguments&#125;</span><br><span class="line">……</span><br><span class="line"></span><br><span class="line"><span class="keyword">\end</span>&#123;enviroment name&#125; <span class="comment">% 这里不在需要写参数</span></span><br></pre></td></tr></table></figure>
-<p>【分组】LaTex使用<code>&#123;&#125;</code>作为分组。分组中效果命令被限制在分组内。修改字体字号的命令即属此类。</p>
-<hr />
-<p>LaTex 源码结构：</p>
-<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>&#123;&#125; <span class="comment">% 指定文档的文档类</span></span><br><span class="line"><span class="comment">%  导言区。一般会在这里调用宏包和对文档进行全局设置。</span></span><br><span class="line"><span class="keyword">\begin</span>&#123;document&#125;</span><br><span class="line"><span class="comment">% 正文内容</span></span><br><span class="line"><span class="keyword">\end</span>&#123;document&#125;</span><br></pre></td></tr></table></figure>
-<hr />
-<h2 id="文档类和宏包"><a class="markdownIt-Anchor" href="#文档类和宏包"></a> 文档类和宏包</h2>
-<p>文档类：</p>
-<p>LaTex中的三个表中文档类：article, report, book. 在此基础上派生的一类文档如中文排版的ctexart, ctexrep, ctexbook.</p>
-<p>可选参数：</p>
-<p>为文档类指定选项，全局规定一些排版参数，如字号、纸张大小、单双面。</p>
-<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>[11pt,twoside,a4paper]&#123;article&#125;</span><br></pre></td></tr></table></figure>
-<p>三个标准文档类的可指定选项包括：</p>
-<ol>
-<li>字号：10pt, 11pt, 12pt。默认10pt。</li>
-<li>纸张大小：a4paper, letter paper, 等等。</li>
-<li>单双面：twoside, oneside. 双面排版时，奇偶页的页眉页脚、页边距不同。article和report默认为单面。book默认为双面。</li>
-<li>单栏双栏：onecolumn, twocolume. 默认是 onecolumn.</li>
-<li>新一章在起始位置：<code>openright</code>, <code>openany</code>. 指定新一章是否必须从奇数页开始（右侧）。默认article无效；report为<code>openany</code>；book为<code>openright</code>。</li>
-<li>横向排版还是纵向排版：landscape. 默认为纵向。</li>
-<li>标题是否单独成页：titleapge, notitlepage. article默认为不单独成页。report和book默认为单独成页。</li>
-<li>草稿/终稿：draft, final.草稿模式小，不良断行会在行尾条件一个黑色方块。默认为final.</li>
-<li>行间公式左对齐： fleqn，行间公式左对齐。默认居中对齐。</li>
-<li>公式编号放左边：leqno，公式编号放左边，默认放右边。</li>
-</ol>
-<hr />
-<p>宏包：调用宏包的命令<code>usepackage[options]&#123;package name&#125;</code></p>
-<p>可以一次调用多个宏包，中间用逗号隔开。此时一般不指定选项。</p>
-<hr />
-<h2 id="文件的组织方式"><a class="markdownIt-Anchor" href="#文件的组织方式"></a> 文件的组织方式</h2>
-<p>将源文件分割成若干个文件，比如每章的目录放在单独的文件中，会大大缩短修改和校对时间。</p>
-<p>LaTex中向源代码中插入文件的命令：</p>
-<ol>
-<li><code>\include&#123;filename&#125;</code>，filename不带扩展名。如果和要编译的主文件不在同一个目录，要加上相对或者绝对路径。通过include引入的文件，在读入后会另起一页。如果不要另起一页可以用input命令。</li>
-<li><code>\input&#123;filename&#125;</code>。当导言区内容较多时，可以单独放置在一个<code>.tex</code>文档，在用<code>\input&#123;&#125;</code>插入。</li>
-</ol>
-<hr />
-<h2 id="相关术语"><a class="markdownIt-Anchor" href="#相关术语"></a> 相关术语</h2>
-<p>【引擎】又称为编译器，是编译源码并生成文档的程序。如pdftex, xetex等。</p>
-<p>【格式】是定义了一组命令的代码集。LaTex是最广泛应用的一个格式。比如plain Tex格式，没有定义诸如<code>\documentclass</code>和<code>\section</code>等等命令。</p>
-<p>【编译命令】是实际调用的、结合了引擎和格式的命令。xelatex命令是结合了xetex引擎和latex格式的一个编译命令。</p>
-<blockquote>
-<p>调用syntaxonly 可以只编译文档而不生成PDF文档，我们如果只是想检查错误可以使用</p>
-<p><code>\usepackage&#123;syntaxonly&#125;</code></p>
-<p><code>\syntaxonly</code></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>Latex</category>
-      </categories>
-      <tags>
-        <tag>LaTeX</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第二章 LaTeX中几个常用的基本语法</title>
     <url>/2024/04/04/%E7%AC%AC%E4%BA%8C%E7%AB%A0%20LaTeX%E4%B8%AD%E5%87%A0%E4%B8%AA%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<ul>
@@ -2024,6 +1942,88 @@ $$
       </tags>
   </entry>
   <entry>
+    <title>LaTeX中的几个基本概念</title>
+    <url>/2024/03/12/%E7%AC%AC%E4%B8%80%E7%AB%A0LaTex%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
+    <content><![CDATA[<h1 id="latex的基本概念"><a class="markdownIt-Anchor" href="#latex的基本概念"></a> LaTex的基本概念</h1>
+<h2 id="概述"><a class="markdownIt-Anchor" href="#概述"></a> 概述</h2>
+<ul>
+<li>Donald E. Knuth 1982年发布Tex引擎，1989年位更好的支出8-bit字符和多语言排版而予以改进。</li>
+<li>LaTex是一种使用Tex程序作为排版引擎的格式（format）。可以错略的理解为是对Tex的一层封装。起初有Leslie Lamport博士开发，目前又LaTex工作组进行维护。</li>
+</ul>
+<h2 id="latex命令和代码结构"><a class="markdownIt-Anchor" href="#latex命令和代码结构"></a> LaTex命令和代码结构</h2>
+<p>命令两种形式：</p>
+<ol>
+<li><code>\</code>和后面的一串字母，如<code>\LaTex</code>。以任意非字母符号为界限。</li>
+<li><code>\</code>反斜线和后面单个非字母符号，比如<code>\$</code>.</li>
+</ol>
+<p>注意⚠️</p>
+<ol>
+<li>字母形式的LaTex忽略其后的所有连续空格，如果要引入空格，应该写成<code>\LaTex&#123;&#125;</code>。</li>
+<li>LaTex大小写敏感。</li>
+</ol>
+<p>【参数】一些命令可以接受参数，参数影响命令的效果。参数有：</p>
+<ol>
+<li>mandatory arguments，用<code>&#123;&#125;</code>包裹。</li>
+<li>optional arguments，用<code>[]</code>包裹。</li>
+<li><code>*</code>带一个星号和不带星号的命令效果有差异。可以把星号看作一种特殊的可选参数。</li>
+</ol>
+<p>【环境】环境成对出现，环境有时会携带参数，环境名保持一致。部分环境允许嵌套。比如</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;enviroment name&#125;[optional arguments]&#123;mandatory arguments&#125;</span><br><span class="line">……</span><br><span class="line"></span><br><span class="line"><span class="keyword">\end</span>&#123;enviroment name&#125; <span class="comment">% 这里不在需要写参数</span></span><br></pre></td></tr></table></figure>
+<p>【分组】LaTex使用<code>&#123;&#125;</code>作为分组。分组中效果命令被限制在分组内。修改字体字号的命令即属此类。</p>
+<hr />
+<p>LaTex 源码结构：</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>&#123;&#125; <span class="comment">% 指定文档的文档类</span></span><br><span class="line"><span class="comment">%  导言区。一般会在这里调用宏包和对文档进行全局设置。</span></span><br><span class="line"><span class="keyword">\begin</span>&#123;document&#125;</span><br><span class="line"><span class="comment">% 正文内容</span></span><br><span class="line"><span class="keyword">\end</span>&#123;document&#125;</span><br></pre></td></tr></table></figure>
+<hr />
+<h2 id="文档类和宏包"><a class="markdownIt-Anchor" href="#文档类和宏包"></a> 文档类和宏包</h2>
+<p>文档类：</p>
+<p>LaTex中的三个表中文档类：article, report, book. 在此基础上派生的一类文档如中文排版的ctexart, ctexrep, ctexbook.</p>
+<p>可选参数：</p>
+<p>为文档类指定选项，全局规定一些排版参数，如字号、纸张大小、单双面。</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>[11pt,twoside,a4paper]&#123;article&#125;</span><br></pre></td></tr></table></figure>
+<p>三个标准文档类的可指定选项包括：</p>
+<ol>
+<li>字号：10pt, 11pt, 12pt。默认10pt。</li>
+<li>纸张大小：a4paper, letter paper, 等等。</li>
+<li>单双面：twoside, oneside. 双面排版时，奇偶页的页眉页脚、页边距不同。article和report默认为单面。book默认为双面。</li>
+<li>单栏双栏：onecolumn, twocolume. 默认是 onecolumn.</li>
+<li>新一章在起始位置：<code>openright</code>, <code>openany</code>. 指定新一章是否必须从奇数页开始（右侧）。默认article无效；report为<code>openany</code>；book为<code>openright</code>。</li>
+<li>横向排版还是纵向排版：landscape. 默认为纵向。</li>
+<li>标题是否单独成页：titleapge, notitlepage. article默认为不单独成页。report和book默认为单独成页。</li>
+<li>草稿/终稿：draft, final.草稿模式小，不良断行会在行尾条件一个黑色方块。默认为final.</li>
+<li>行间公式左对齐： fleqn，行间公式左对齐。默认居中对齐。</li>
+<li>公式编号放左边：leqno，公式编号放左边，默认放右边。</li>
+</ol>
+<hr />
+<p>宏包：调用宏包的命令<code>usepackage[options]&#123;package name&#125;</code></p>
+<p>可以一次调用多个宏包，中间用逗号隔开。此时一般不指定选项。</p>
+<hr />
+<h2 id="文件的组织方式"><a class="markdownIt-Anchor" href="#文件的组织方式"></a> 文件的组织方式</h2>
+<p>将源文件分割成若干个文件，比如每章的目录放在单独的文件中，会大大缩短修改和校对时间。</p>
+<p>LaTex中向源代码中插入文件的命令：</p>
+<ol>
+<li><code>\include&#123;filename&#125;</code>，filename不带扩展名。如果和要编译的主文件不在同一个目录，要加上相对或者绝对路径。通过include引入的文件，在读入后会另起一页。如果不要另起一页可以用input命令。</li>
+<li><code>\input&#123;filename&#125;</code>。当导言区内容较多时，可以单独放置在一个<code>.tex</code>文档，在用<code>\input&#123;&#125;</code>插入。</li>
+</ol>
+<hr />
+<h2 id="相关术语"><a class="markdownIt-Anchor" href="#相关术语"></a> 相关术语</h2>
+<p>【引擎】又称为编译器，是编译源码并生成文档的程序。如pdftex, xetex等。</p>
+<p>【格式】是定义了一组命令的代码集。LaTex是最广泛应用的一个格式。比如plain Tex格式，没有定义诸如<code>\documentclass</code>和<code>\section</code>等等命令。</p>
+<p>【编译命令】是实际调用的、结合了引擎和格式的命令。xelatex命令是结合了xetex引擎和latex格式的一个编译命令。</p>
+<blockquote>
+<p>调用syntaxonly 可以只编译文档而不生成PDF文档，我们如果只是想检查错误可以使用</p>
+<p><code>\usepackage&#123;syntaxonly&#125;</code></p>
+<p><code>\syntaxonly</code></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>Latex</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>编译型语言和解释型语言</title>
     <url>/2024/03/31/%E7%BC%96%E8%AF%91%E5%9E%8B%E8%AF%AD%E8%A8%80%E5%92%8C%E8%A7%A3%E9%87%8A%E5%9E%8B%E8%AF%AD%E8%A8%80/</url>
     <content><![CDATA[<p>任何语言在交给计算机执行时，必须转换为机器码。根据转换时机的不同，语言分为两大类：</p>
@@ -2273,6 +2273,11 @@ dict can also insert to sets in this way.</li>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
+    <title>文档</title>
+    <url>/files/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title></title>
     <url>/css/header_style.css</url>
     <content><![CDATA[/* 导航栏做居中处理 */
@@ -2326,23 +2331,18 @@ dict can also insert to sets in this way.</li>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>文档</title>
-    <url>/files/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title></title>
     <url>/js/script.js</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>电影</title>
-    <url>/movies/index.html</url>
+    <title>链接</title>
+    <url>/link/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>链接</title>
-    <url>/link/index.html</url>
+    <title>电影</title>
+    <url>/movies/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
