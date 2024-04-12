@@ -479,18 +479,18 @@
   </entry>
   
   <entry>
-    <title>python中的几个术语</title>
-    <link href="http://example.com/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
-    <id>http://example.com/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</id>
+    <title>python的基本语法</title>
+    <link href="http://example.com/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
+    <id>http://example.com/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</id>
     <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T03:39:54.812Z</updated>
+    <updated>2024-03-31T03:39:54.813Z</updated>
     
     
       
       
-    <summary type="html">&lt;p&gt;【表达式】类似于数学公式比如10 + 5；8 + 4.&lt;/p&gt;
-&lt;p&gt;表达式仅仅用来计算一些结果，不会对程序产生实质影响。&lt;/p&gt;
-&lt;p&gt;【语句】语句需要完成某种功能，比如打印信息、获取信息、为变量赋值等比如：&lt;code&gt;print()&lt;/code&gt;, &lt;code&gt;a = </summary>
+    <summary type="html">&lt;p&gt;python严格区分大小写。比如&lt;code&gt;Print()&lt;/code&gt;不能被执行。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;语句&lt;/strong&gt;不建议过长。一条语句可以多行编写，语句以反斜线&lt;code&gt;&#92;&lt;/code&gt;换行。&lt;/p&gt;
+&lt;p&gt;不要随便写缩进，缩进严格，表示代码块。&lt;</summary>
       
     
     
@@ -507,18 +507,18 @@
   </entry>
   
   <entry>
-    <title>python的基本语法</title>
-    <link href="http://example.com/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
-    <id>http://example.com/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</id>
+    <title>python中的几个术语</title>
+    <link href="http://example.com/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
+    <id>http://example.com/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</id>
     <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T03:39:54.813Z</updated>
+    <updated>2024-03-31T03:39:54.812Z</updated>
     
     
       
       
-    <summary type="html">&lt;p&gt;python严格区分大小写。比如&lt;code&gt;Print()&lt;/code&gt;不能被执行。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;语句&lt;/strong&gt;不建议过长。一条语句可以多行编写，语句以反斜线&lt;code&gt;&#92;&lt;/code&gt;换行。&lt;/p&gt;
-&lt;p&gt;不要随便写缩进，缩进严格，表示代码块。&lt;</summary>
+    <summary type="html">&lt;p&gt;【表达式】类似于数学公式比如10 + 5；8 + 4.&lt;/p&gt;
+&lt;p&gt;表达式仅仅用来计算一些结果，不会对程序产生实质影响。&lt;/p&gt;
+&lt;p&gt;【语句】语句需要完成某种功能，比如打印信息、获取信息、为变量赋值等比如：&lt;code&gt;print()&lt;/code&gt;, &lt;code&gt;a = </summary>
       
     
     
