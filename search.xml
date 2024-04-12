@@ -119,27 +119,19 @@ else:<br />
       </tags>
   </entry>
   <entry>
-    <title>range()函数</title>
-    <url>/2024/04/06/range()%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<p>range()函数是一个可以生成一个自然数的序列<br />
-<code>r = range(5)</code> 生成的序列为[0,1,2,3,4]<br />
-该函数可以生成三个参数:</p>
+    <title>python中的几个术语</title>
+    <url>/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
+    <content><![CDATA[<p>【表达式】类似于数学公式比如10 + 5；8 + 4.</p>
+<p>表达式仅仅用来计算一些结果，不会对程序产生实质影响。</p>
+<p>【语句】语句需要完成某种功能，比如打印信息、获取信息、为变量赋值等比如：<code>print()</code>, <code>a = 10</code>。</p>
+<p>语句的执行会对程序执行产生影响。语句在命令行中不一定会有执行结果。有返回值的语句，会有返回结果。</p>
+<p>【程序】是多个语句和表达式构成的。</p>
+<p>【函数（function）】函数是一个语句，用来完成特定的功能。函数的结构为<code>***()</code>.括号中的内容叫「参数」，可以没有参数也可以有多个参数，中间用逗号隔开。返回的结果叫做「返回值」，同样可以没有返回值。</p>
+<p>函数分为</p>
 <ol>
-<li>起始位置<br />
-可以省略, 默认为0</li>
-<li>结束位置</li>
-<li>步长<br />
-可以省略步长, 默认为1. 比如</li>
+<li>内置函数。python解释器提供的，可以在python中直接使用。</li>
+<li>自定义函数。由程序员自定义的函数。</li>
 </ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">r = <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">10</span>,<span class="number">2</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(r))</span><br></pre></td></tr></table></figure>
-<p>output为<code>[0, 2, 4, 6, 8]</code><br />
-步长还可以是负数</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">r = <span class="built_in">range</span>(<span class="number">10</span>,<span class="number">0</span>,-<span class="number">2</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(r))</span><br></pre></td></tr></table></figure>
-<p>output<code>[10, 8, 6, 4, 2]</code><br />
-通过rang()可以创建一个指定次数的for循环</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">30</span>):</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure>
-<p>生成一组0到29的数.<br />
-for循环出了创建方式外, 其余跟while是一样的用法.</p>
 ]]></content>
       <categories>
         <category>编程</category>
@@ -168,19 +160,27 @@ for循环出了创建方式外, 其余跟while是一样的用法.</p>
       </tags>
   </entry>
   <entry>
-    <title>python中的几个术语</title>
-    <url>/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
-    <content><![CDATA[<p>【表达式】类似于数学公式比如10 + 5；8 + 4.</p>
-<p>表达式仅仅用来计算一些结果，不会对程序产生实质影响。</p>
-<p>【语句】语句需要完成某种功能，比如打印信息、获取信息、为变量赋值等比如：<code>print()</code>, <code>a = 10</code>。</p>
-<p>语句的执行会对程序执行产生影响。语句在命令行中不一定会有执行结果。有返回值的语句，会有返回结果。</p>
-<p>【程序】是多个语句和表达式构成的。</p>
-<p>【函数（function）】函数是一个语句，用来完成特定的功能。函数的结构为<code>***()</code>.括号中的内容叫「参数」，可以没有参数也可以有多个参数，中间用逗号隔开。返回的结果叫做「返回值」，同样可以没有返回值。</p>
-<p>函数分为</p>
+    <title>range()函数</title>
+    <url>/2024/04/06/range()%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<p>range()函数是一个可以生成一个自然数的序列<br />
+<code>r = range(5)</code> 生成的序列为[0,1,2,3,4]<br />
+该函数可以生成三个参数:</p>
 <ol>
-<li>内置函数。python解释器提供的，可以在python中直接使用。</li>
-<li>自定义函数。由程序员自定义的函数。</li>
+<li>起始位置<br />
+可以省略, 默认为0</li>
+<li>结束位置</li>
+<li>步长<br />
+可以省略步长, 默认为1. 比如</li>
 </ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">r = <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">10</span>,<span class="number">2</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(r))</span><br></pre></td></tr></table></figure>
+<p>output为<code>[0, 2, 4, 6, 8]</code><br />
+步长还可以是负数</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">r = <span class="built_in">range</span>(<span class="number">10</span>,<span class="number">0</span>,-<span class="number">2</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(r))</span><br></pre></td></tr></table></figure>
+<p>output<code>[10, 8, 6, 4, 2]</code><br />
+通过rang()可以创建一个指定次数的for循环</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">30</span>):</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure>
+<p>生成一组0到29的数.<br />
+for循环出了创建方式外, 其余跟while是一样的用法.</p>
 ]]></content>
       <categories>
         <category>编程</category>
@@ -494,6 +494,43 @@ When you hit <code>Enter</code> to open a file, it will be opened in the same wi
       </tags>
   </entry>
   <entry>
+    <title>一类项目获取环保许可的要求</title>
+    <url>/2024/03/29/%E4%B8%80%E7%B1%BB%E9%A1%B9%E7%9B%AE%E8%8E%B7%E5%8F%96%E7%8E%AF%E4%BF%9D%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/</url>
+    <content><![CDATA[<p>一类项目对环境影响很小，且影响不回超过活动地点。需要提交电子申请、附上一般要求中提及的文件并且遵守相关条件。</p>
+<p><strong>一般要求</strong></p>
+<ol>
+<li>填写分类表格（<a href="https://raw.githubusercontent.com/zmz231126/bolgpicture/main/202403291608962.pdf">点击此处下载</a>）</li>
+<li>项目简单的初始报告</li>
+<li>无害和已经许可的工业垃圾（液体和固体）的搬运和清理合同</li>
+<li>与认证机构签署的固体市政垃圾的搬运和清理合同</li>
+<li>商业登记证</li>
+<li>税务登记证</li>
+<li>身份证或者居住证</li>
+<li>产权契约或者租赁合同</li>
+</ol>
+<p><strong>相关条件</strong></p>
+<ul>
+<li>商会或者合法机构认证的项目所有人的授权书。</li>
+</ul>
+<p><strong>更新一类环保许可的要求</strong></p>
+<ol>
+<li>上一阶段环保登记证书</li>
+<li>上面要求中的3-8项。</li>
+</ol>
+<p><a href='https://ncec.gov.sa/%d9%85%d8%aa%d8%b7%d9%84%d8%a8%d8%a7%d8%aa-%d8%a7%d9%84%d8%ad%d8%b5%d9%88%d9%84-%d8%b9%d9%84%d9%89-%d9%85%d9%88%d8%a7%d9%81%d9%82%d8%a9-%d8%a8%d9%8a%d8%a6%d9%8a%d8%a9-%d9%84%d9%84%d9%81%d8%a6%d8%a9'>本文引用自nece网站</a></p>
+]]></content>
+      <categories>
+        <category>制度学习</category>
+        <category>沙特环保制度</category>
+      </categories>
+      <tags>
+        <tag>建厂</tag>
+        <tag>沙特投资</tag>
+        <tag>沙特</tag>
+        <tag>沙特环境监察中心</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>元组</title>
     <url>/2024/04/06/%E5%85%83%E7%BB%84/</url>
     <content><![CDATA[<p>元组(tuple)</p>
@@ -529,43 +566,6 @@ b = 20<br />
       </categories>
       <tags>
         <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一类项目获取环保许可的要求</title>
-    <url>/2024/03/29/%E4%B8%80%E7%B1%BB%E9%A1%B9%E7%9B%AE%E8%8E%B7%E5%8F%96%E7%8E%AF%E4%BF%9D%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/</url>
-    <content><![CDATA[<p>一类项目对环境影响很小，且影响不回超过活动地点。需要提交电子申请、附上一般要求中提及的文件并且遵守相关条件。</p>
-<p><strong>一般要求</strong></p>
-<ol>
-<li>填写分类表格（<a href="https://raw.githubusercontent.com/zmz231126/bolgpicture/main/202403291608962.pdf">点击此处下载</a>）</li>
-<li>项目简单的初始报告</li>
-<li>无害和已经许可的工业垃圾（液体和固体）的搬运和清理合同</li>
-<li>与认证机构签署的固体市政垃圾的搬运和清理合同</li>
-<li>商业登记证</li>
-<li>税务登记证</li>
-<li>身份证或者居住证</li>
-<li>产权契约或者租赁合同</li>
-</ol>
-<p><strong>相关条件</strong></p>
-<ul>
-<li>商会或者合法机构认证的项目所有人的授权书。</li>
-</ul>
-<p><strong>更新一类环保许可的要求</strong></p>
-<ol>
-<li>上一阶段环保登记证书</li>
-<li>上面要求中的3-8项。</li>
-</ol>
-<p><a href='https://ncec.gov.sa/%d9%85%d8%aa%d8%b7%d9%84%d8%a8%d8%a7%d8%aa-%d8%a7%d9%84%d8%ad%d8%b5%d9%88%d9%84-%d8%b9%d9%84%d9%89-%d9%85%d9%88%d8%a7%d9%81%d9%82%d8%a9-%d8%a8%d9%8a%d8%a6%d9%8a%d8%a9-%d9%84%d9%84%d9%81%d8%a6%d8%a9'>本文引用自nece网站</a></p>
-]]></content>
-      <categories>
-        <category>制度学习</category>
-        <category>沙特环保制度</category>
-      </categories>
-      <tags>
-        <tag>建厂</tag>
-        <tag>沙特投资</tag>
-        <tag>沙特</tag>
-        <tag>沙特环境监察中心</tag>
       </tags>
   </entry>
   <entry>
@@ -828,30 +828,6 @@ code block<br />
       </tags>
   </entry>
   <entry>
-    <title>可变对象</title>
-    <url>/2024/04/06/%E5%8F%AF%E5%8F%98%E5%AF%B9%E8%B1%A1/</url>
-    <content><![CDATA[<p>对象的三个属性:</p>
-<ul>
-<li>id</li>
-<li>类型</li>
-<li>值<br />
-可变是指的<strong>值</strong>可变.<br />
-我们修改对象时, 如果有其他变量也指向了该对象, 那么这几个变量也会改变. 注意, 它们的id都没有改变. 因为修改<br />
-对象是修改对象的值.<br />
-给变量重新赋值时, 不影响其他变量.<br />
-<code>==</code>比较的是对象的值是否相等, <code>is/is not</code>是比较对象的id是否相等.</li>
-</ul>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>变量和标识符</title>
     <url>/2024/03/31/%E5%8F%98%E9%87%8F%E5%92%8C%E6%A0%87%E8%AF%86%E7%AC%A6/</url>
     <content><![CDATA[<p>使用变量不需要声明，直接为变量赋值，但是不能使用未被赋值的变量</p>
@@ -888,6 +864,30 @@ code block<br />
       <tags>
         <tag>python</tag>
         <tag>spyder快捷键</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>可变对象</title>
+    <url>/2024/04/06/%E5%8F%AF%E5%8F%98%E5%AF%B9%E8%B1%A1/</url>
+    <content><![CDATA[<p>对象的三个属性:</p>
+<ul>
+<li>id</li>
+<li>类型</li>
+<li>值<br />
+可变是指的<strong>值</strong>可变.<br />
+我们修改对象时, 如果有其他变量也指向了该对象, 那么这几个变量也会改变. 注意, 它们的id都没有改变. 因为修改<br />
+对象是修改对象的值.<br />
+给变量重新赋值时, 不影响其他变量.<br />
+<code>==</code>比较的是对象的值是否相等, <code>is/is not</code>是比较对象的id是否相等.</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -2186,34 +2186,6 @@ $$
       </tags>
   </entry>
   <entry>
-    <title>字典</title>
-    <url>/2024/04/06/%E9%9B%86%E5%90%88/</url>
-    <content><![CDATA[<ul>
-<li>sets can be builded by <code>&#123;&#125;</code>or <code>set() function</code></li>
-<li>sets only accepts immutable objects, list for example is not acceptable.</li>
-<li>objects in sets is disorder.</li>
-<li>every object in sets must be unique</li>
-<li><code>set()</code>can change a sequence or dict into a sets. it only accepts the <code>key</code> if you want<br />
-change dict.</li>
-<li>you can not mnipulate sets by index, but you can change it into list firstly</li>
-<li>add() method and add factor to sets.</li>
-<li>update() method, insert a sets into the current sets. it doesn’t have to be sets, sequence and<br />
-dict can also insert to sets in this way.</li>
-<li>pop() method will remove factor randomly and return the deleted factor</li>
-<li>remove(factor). remove the factor you put in argument place.</li>
-<li></li>
-</ul>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>进制</title>
     <url>/2024/03/31/%E8%BF%9B%E5%88%B6/</url>
     <content><![CDATA[<ul>
@@ -2263,9 +2235,32 @@ dict can also insert to sets in this way.</li>
       </tags>
   </entry>
   <entry>
-    <title>关于</title>
-    <url>/about/index.html</url>
-    <content><![CDATA[]]></content>
+    <title>字典</title>
+    <url>/2024/04/06/%E9%9B%86%E5%90%88/</url>
+    <content><![CDATA[<ul>
+<li>sets can be builded by <code>&#123;&#125;</code>or <code>set() function</code></li>
+<li>sets only accepts immutable objects, list for example is not acceptable.</li>
+<li>objects in sets is disorder.</li>
+<li>every object in sets must be unique</li>
+<li><code>set()</code>can change a sequence or dict into a sets. it only accepts the <code>key</code> if you want<br />
+change dict.</li>
+<li>you can not mnipulate sets by index, but you can change it into list firstly</li>
+<li>add() method and add factor to sets.</li>
+<li>update() method, insert a sets into the current sets. it doesn’t have to be sets, sequence and<br />
+dict can also insert to sets in this way.</li>
+<li>pop() method will remove factor randomly and return the deleted factor</li>
+<li>remove(factor). remove the factor you put in argument place.</li>
+<li></li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
   </entry>
   <entry>
     <title>分类</title>
@@ -2273,8 +2268,8 @@ dict can also insert to sets in this way.</li>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>文档</title>
-    <url>/files/index.html</url>
+    <title></title>
+    <url>/css/postpage_style.css</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -2327,12 +2322,22 @@ dict can also insert to sets in this way.</li>
   </entry>
   <entry>
     <title></title>
-    <url>/css/postpage_style.css</url>
+    <url>/js/script.js</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/js/script.js</url>
+    <title>关于</title>
+    <url>/about/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>文档</title>
+    <url>/files/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>标签</title>
+    <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -2341,18 +2346,13 @@ dict can also insert to sets in this way.</li>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>电影</title>
-    <url>/movies/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>音乐</title>
     <url>/music/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
+    <title>电影</title>
+    <url>/movies/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>
