@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-04-06T07:48:51.376Z</updated>
+  <updated>2024-04-11T16:00:19.248Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,27 +17,208 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title></title>
+    <link href="http://example.com/2024/04/11/substitution%20in%20vim/"/>
+    <id>http://example.com/2024/04/11/substitution%20in%20vim/</id>
+    <published>2024-04-11T11:15:56.137Z</published>
+    <updated>2024-04-11T16:00:19.248Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;ranges&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#ranges&quot;&gt;&lt;/a&gt; Ranges&lt;/h1&gt;
+&lt;p&gt;For most Vim commands, the default range is the current line</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>vim语言</title>
+    <link href="http://example.com/2024/04/11/vim%20%E8%AF%AD%E8%A8%80/"/>
+    <id>http://example.com/2024/04/11/vim%20%E8%AF%AD%E8%A8%80/</id>
+    <published>2024-04-11T11:04:00.000Z</published>
+    <updated>2024-04-11T16:00:06.644Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;verbs&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#verbs&quot;&gt;&lt;/a&gt; Verbs&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Powerless verbs&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;x&lt;/code&gt; delete</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="Vim" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim/"/>
+    
+    
+    <category term="Vim" scheme="http://example.com/tags/Vim/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vim 运算符汇总</title>
+    <link href="http://example.com/2024/04/10/vim_operators_post/"/>
+    <id>http://example.com/2024/04/10/vim_operators_post/</id>
+    <published>2024-04-10T00:46:00.000Z</published>
+    <updated>2024-04-11T08:37:52.315Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;code&gt;+&amp;lt;linenumber&amp;gt;&lt;/code&gt; the cursor will be positioned on the specified line for the first file you open.&lt;/p&gt;
+ &lt;figure class=&quot;hig</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="Vim" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim/"/>
+    
+    
+    <category term="Vim" scheme="http://example.com/tags/Vim/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>函数介绍2</title>
+    <link href="http://example.com/2024/04/09/text_string_post/"/>
+    <id>http://example.com/2024/04/09/text_string_post/</id>
+    <published>2024-04-09T10:22:00.000Z</published>
+    <updated>2024-04-10T00:44:57.223Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;help&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#help&quot;&gt;&lt;/a&gt; help()&lt;/h1&gt;
+&lt;p&gt;help() 是python中的内置函数, 使用它可以可以查询函数的用法.但是当我们使用help()来查询自定义函数的时候，它无</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vim shortcuts</title>
+    <link href="http://example.com/2024/04/09/vim%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86post/"/>
+    <id>http://example.com/2024/04/09/vim%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86post/</id>
+    <published>2024-04-08T16:00:00.000Z</published>
+    <updated>2024-04-09T10:19:01.441Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;jump to the top of the file &lt;code&gt;gg&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;jump to the end of the file &lt;code&gt;G&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;cod</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="Vim快捷键" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
+    
+    <category term="Vim" scheme="http://example.com/tags/Vim/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>字典</title>
+    <link href="http://example.com/2024/04/06/%E5%87%BD%E6%95%B0%E7%AE%80%E4%BB%8B/"/>
+    <id>http://example.com/2024/04/06/%E5%87%BD%E6%95%B0%E7%AE%80%E4%BB%8B/</id>
+    <published>2024-04-06T11:59:00.000Z</published>
+    <updated>2024-04-06T13:55:44.067Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;函数也是一个对象. 比如有三行代码是一个完整的功能, 这个功能在不同的地方反复调用, 那么函数就可以用来保存一些&lt;br /&gt;
+可以执行的代码, 并且可以在需要时多次调用.&lt;br /&gt;
+创建函数&lt;br /&gt;
+函数名符合标识符的命名规范&lt;/p&gt;
+&lt;figure class=&quot;h</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
+    
+    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>字典</title>
     <link href="http://example.com/2024/04/06/%E5%AD%97%E5%85%B8/"/>
     <id>http://example.com/2024/04/06/%E5%AD%97%E5%85%B8/</id>
     <published>2024-04-06T07:33:00.000Z</published>
-    <updated>2024-04-06T07:48:51.376Z</updated>
+    <updated>2024-04-09T06:54:27.919Z</updated>
     
     
       
       
     <summary type="html">&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;字典是一种新的数据结构, 称为映射(mapping)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;字典的作用和列表类似, 都是存储对象的容器&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;列表存储数据的性能良好, 但是查询数据的性能很差.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;</summary>
+&lt;li&gt;字典是一种新的数据结构, 称为映射(mapping)&lt;/li&gt;
+&lt;li&gt;字典的作用和列表类似, 都是存储对象的容器&lt;/li&gt;
+&lt;li&gt;列表存储数据的性能良好, 但是查询数据的性能很差.&lt;/li&gt;
+&lt;li&gt;字典中, 每一个元素都有一个唯一的名字, 通过这个名字可以</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
+    
+    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>字典</title>
+    <link href="http://example.com/2024/04/06/%E9%9B%86%E5%90%88/"/>
+    <id>http://example.com/2024/04/06/%E9%9B%86%E5%90%88/</id>
+    <published>2024-04-06T07:33:00.000Z</published>
+    <updated>2024-04-06T09:37:51.700Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;sets can be builded by &lt;code&gt;&amp;#123;&amp;#125;&lt;/code&gt;or &lt;code&gt;set() function&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;sets only accepts immutable objects, list f</summary>
       
     
     
@@ -58,7 +239,7 @@
     <link href="http://example.com/2024/04/06/%E5%8F%AF%E5%8F%98%E5%AF%B9%E8%B1%A1/"/>
     <id>http://example.com/2024/04/06/%E5%8F%AF%E5%8F%98%E5%AF%B9%E8%B1%A1/</id>
     <published>2024-04-06T07:11:00.000Z</published>
-    <updated>2024-04-06T07:32:50.166Z</updated>
+    <updated>2024-04-06T07:49:24.080Z</updated>
     
     
       
@@ -90,7 +271,7 @@
     <link href="http://example.com/2024/04/06/%E5%85%83%E7%BB%84/"/>
     <id>http://example.com/2024/04/06/%E5%85%83%E7%BB%84/</id>
     <published>2024-04-06T06:46:00.000Z</published>
-    <updated>2024-04-06T07:09:09.827Z</updated>
+    <updated>2024-04-06T07:49:24.079Z</updated>
     
     
       
@@ -120,7 +301,7 @@
     <link href="http://example.com/2024/04/06/range()%E5%87%BD%E6%95%B0/"/>
     <id>http://example.com/2024/04/06/range()%E5%87%BD%E6%95%B0/</id>
     <published>2024-04-06T06:45:00.000Z</published>
-    <updated>2024-04-06T06:47:53.277Z</updated>
+    <updated>2024-04-06T07:49:24.078Z</updated>
     
     
       
@@ -392,217 +573,6 @@
 &lt;li&gt;单引号双引号都可以, 但是不可以混合使用. 但是相同的引号不可以嵌套, 但是不同的引号可以嵌套. 下边就是不用引号的嵌套&lt;/li&gt;
 &lt;/ul&gt;
 &lt;fi</summary>
-      
-    
-    
-    
-    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
-    
-    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>字符串的复制</title>
-    <link href="http://example.com/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%A4%8D%E5%88%B6/"/>
-    <id>http://example.com/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%A4%8D%E5%88%B6/</id>
-    <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T08:58:55.818Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;将字符串和数字相乘, 就是复制字符串&lt;/p&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;li</summary>
-      
-    
-    
-    
-    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
-    
-    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>对象(object)</title>
-    <link href="http://example.com/2024/03/31/%E5%AF%B9%E8%B1%A1(object)/"/>
-    <id>http://example.com/2024/03/31/%E5%AF%B9%E8%B1%A1(object)/</id>
-    <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T11:06:25.078Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;对象介绍&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#对象介绍&quot;&gt;&lt;/a&gt; 对象介绍&lt;/h1&gt;
-&lt;p&gt;Python是一个面向对象的语言. 一切皆对象.&lt;br /&gt;
-程序运行中, 所有的数据都是存储在内存中, 硬盘–&amp;gt;内存–&amp;gt</summary>
-      
-    
-    
-    
-    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
-    
-    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>字面变量和变量</title>
-    <link href="http://example.com/2024/03/31/%E5%AD%97%E9%9D%A2%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F/"/>
-    <id>http://example.com/2024/03/31/%E5%AD%97%E9%9D%A2%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F/</id>
-    <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T03:39:54.817Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;【字面量】一个一个的值，它的意思就是它字面的值。在程序中可以直接使用。&lt;/p&gt;
-&lt;p&gt;【变量】与字面量相反。变量可以保存字面量，并且保存的字面量是不定的。&lt;/p&gt;
-&lt;p&gt;变量本身无意义，会跟不同的字面量表示不同的意思。&lt;/p&gt;
-&lt;p&gt;开发时，通常将字面量保存在变量中，通过变</summary>
-      
-    
-    
-    
-    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
-    
-    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
-    <category term="计算机" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>布尔值</title>
-    <link href="http://example.com/2024/03/31/%E5%B8%83%E5%B0%94%E5%80%BC/"/>
-    <id>http://example.com/2024/03/31/%E5%B8%83%E5%B0%94%E5%80%BC/</id>
-    <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T09:13:07.276Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;布尔值(bool)用来做逻辑判断. 一共有两个&lt;code&gt;True&lt;/code&gt;和&lt;code&gt;False&lt;/code&gt;. 注意Python是一个大小写敏感的语言.&lt;br /&gt;
-也可以理解为一个整数, true 是 1 false 是 0&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;None&lt;</summary>
-      
-    
-    
-    
-    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
-    
-    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数值</title>
-    <link href="http://example.com/2024/03/31/%E6%95%B0%E5%80%BC/"/>
-    <id>http://example.com/2024/03/31/%E6%95%B0%E5%80%BC/</id>
-    <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T09:22:37.762Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;数据类型：就是给变量赋的值的类型。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;数值
-&lt;ul&gt;
-&lt;li&gt;整数&lt;/li&gt;
-&lt;li&gt;布尔值&lt;/li&gt;
-&lt;li&gt;浮点数&lt;/li&gt;
-&lt;li&gt;复数&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;字符串&lt;/li&gt;
-&lt;li&gt;空值&lt;br /&gt;</summary>
-      
-    
-    
-    
-    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
-    
-    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>文本文件和字符集</title>
-    <link href="http://example.com/2024/03/31/%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%92%8C%E5%AD%97%E7%AC%A6%E9%9B%86/"/>
-    <id>http://example.com/2024/03/31/%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%92%8C%E5%AD%97%E7%AC%A6%E9%9B%86/</id>
-    <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T03:39:54.815Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;文本分为纯文本和富文本。&lt;/p&gt;
-&lt;p&gt;纯文本在计算机底层也会转换为二进制保存。&lt;/p&gt;
-&lt;p&gt;将字符转换为二进制码的过程叫做&lt;strong&gt;编码&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;将二进制码转换成字符的过程叫做&lt;strong&gt;解码&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;编码和</summary>
-      
-    
-    
-    
-    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
-    
-    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
-    <category term="计算机" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>格式化字符串</title>
-    <link href="http://example.com/2024/03/31/%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    <id>http://example.com/2024/03/31/%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
-    <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T08:58:51.684Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;字符串之间可以进行加法运算-但是不能和其他数据进行加法运算&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#字符串之间可以进行加法运算-但是不能和其他数据进行加法运算&quot;&gt;&lt;/a&gt; 字符串之间可以进行加法运算, 但是不能和其他数据进行加法运</summary>
       
     
     
