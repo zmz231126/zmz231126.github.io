@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-04-11T16:00:19.248Z</updated>
+  <updated>2024-04-12T03:53:20.131Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>Vim中的搜索和替换</title>
     <link href="http://example.com/2024/04/11/substitution%20in%20vim/"/>
     <id>http://example.com/2024/04/11/substitution%20in%20vim/</id>
     <published>2024-04-11T11:15:56.137Z</published>
-    <updated>2024-04-11T16:00:19.248Z</updated>
+    <updated>2024-04-12T03:53:20.131Z</updated>
     
     
       
@@ -32,6 +32,12 @@
     
     
     
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="Vim" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim/"/>
+    
+    
+    <category term="Vim" scheme="http://example.com/tags/Vim/"/>
     
   </entry>
   
@@ -40,7 +46,7 @@
     <link href="http://example.com/2024/04/11/vim%20%E8%AF%AD%E8%A8%80/"/>
     <id>http://example.com/2024/04/11/vim%20%E8%AF%AD%E8%A8%80/</id>
     <published>2024-04-11T11:04:00.000Z</published>
-    <updated>2024-04-11T16:00:06.644Z</updated>
+    <updated>2024-04-12T03:37:44.378Z</updated>
     
     
       
@@ -69,7 +75,7 @@
     <link href="http://example.com/2024/04/10/vim_operators_post/"/>
     <id>http://example.com/2024/04/10/vim_operators_post/</id>
     <published>2024-04-10T00:46:00.000Z</published>
-    <updated>2024-04-11T08:37:52.315Z</updated>
+    <updated>2024-04-12T03:37:44.379Z</updated>
     
     
       
@@ -94,7 +100,7 @@
     <link href="http://example.com/2024/04/09/text_string_post/"/>
     <id>http://example.com/2024/04/09/text_string_post/</id>
     <published>2024-04-09T10:22:00.000Z</published>
-    <updated>2024-04-10T00:44:57.223Z</updated>
+    <updated>2024-04-12T03:37:44.380Z</updated>
     
     
       
@@ -119,7 +125,7 @@
     <link href="http://example.com/2024/04/09/vim%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86post/"/>
     <id>http://example.com/2024/04/09/vim%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86post/</id>
     <published>2024-04-08T16:00:00.000Z</published>
-    <updated>2024-04-09T10:19:01.441Z</updated>
+    <updated>2024-04-12T03:37:44.381Z</updated>
     
     
       
@@ -151,7 +157,7 @@
     <link href="http://example.com/2024/04/06/%E5%87%BD%E6%95%B0%E7%AE%80%E4%BB%8B/"/>
     <id>http://example.com/2024/04/06/%E5%87%BD%E6%95%B0%E7%AE%80%E4%BB%8B/</id>
     <published>2024-04-06T11:59:00.000Z</published>
-    <updated>2024-04-06T13:55:44.067Z</updated>
+    <updated>2024-04-12T03:37:44.381Z</updated>
     
     
       
@@ -211,7 +217,7 @@
     <link href="http://example.com/2024/04/06/%E9%9B%86%E5%90%88/"/>
     <id>http://example.com/2024/04/06/%E9%9B%86%E5%90%88/</id>
     <published>2024-04-06T07:33:00.000Z</published>
-    <updated>2024-04-06T09:37:51.700Z</updated>
+    <updated>2024-04-12T03:37:44.382Z</updated>
     
     
       

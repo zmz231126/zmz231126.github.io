@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/2024/03/24/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
+<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>流程控制</title>
     <url>/2024/04/01/if%E8%AF%AD%E5%8F%A5/</url>
     <content><![CDATA[<p>Python代码是按照自上而下执行的. 但是通过流程控制语句可以改变流程控制顺序, 也可以让程序反复执行多次.<br />
@@ -71,25 +90,6 @@ else:<br />
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2024/03/24/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
-<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>python交互模式</title>
     <url>/2024/03/31/python%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<p>交互界面：当我们通过命令行进入python，所进入的界面就是python的交互界面。</p>
@@ -143,7 +143,56 @@ else:<br />
       </tags>
   </entry>
   <entry>
-    <title></title>
+    <title>range()函数</title>
+    <url>/2024/04/06/range()%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<p>range()函数是一个可以生成一个自然数的序列<br />
+<code>r = range(5)</code> 生成的序列为[0,1,2,3,4]<br />
+该函数可以生成三个参数:</p>
+<ol>
+<li>起始位置<br />
+可以省略, 默认为0</li>
+<li>结束位置</li>
+<li>步长<br />
+可以省略步长, 默认为1. 比如</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">r = <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">10</span>,<span class="number">2</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(r))</span><br></pre></td></tr></table></figure>
+<p>output为<code>[0, 2, 4, 6, 8]</code><br />
+步长还可以是负数</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">r = <span class="built_in">range</span>(<span class="number">10</span>,<span class="number">0</span>,-<span class="number">2</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(r))</span><br></pre></td></tr></table></figure>
+<p>output<code>[10, 8, 6, 4, 2]</code><br />
+通过rang()可以创建一个指定次数的for循环</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">30</span>):</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure>
+<p>生成一组0到29的数.<br />
+for循环出了创建方式外, 其余跟while是一样的用法.</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python的基本语法</title>
+    <url>/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<p>python严格区分大小写。比如<code>Print()</code>不能被执行。</p>
+<p><strong>语句</strong>不建议过长。一条语句可以多行编写，语句以反斜线<code>\</code>换行。</p>
+<p>不要随便写缩进，缩进严格，表示代码块。</p>
+<p><code>%</code>后加空格表示注释。</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vim中的搜索和替换</title>
     <url>/2024/04/11/substitution%20in%20vim/</url>
     <content><![CDATA[<h1 id="ranges"><a class="markdownIt-Anchor" href="#ranges"></a> Ranges</h1>
 <p>For most Vim commands, the default range is the current line. However we can control ranges, and in that way execute commands over the custom range of liness or characters in the current buffer.<br />
@@ -172,6 +221,85 @@ $ last line<br />
 <code>^E</code> = <code>ctrl-e</code> scroll up the screen; <code>^Y</code> = <code>ctrl-y</code> scroll down the screen.</p>
 <p><code>:vimgrep warning *.md</code> search ‘warning’ in all markdown files in the current directory.</p>
 ]]></content>
+      <categories>
+        <category>编程</category>
+        <category>Vim</category>
+      </categories>
+      <tags>
+        <tag>Vim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>函数介绍2</title>
+    <url>/2024/04/09/text_string_post/</url>
+    <content><![CDATA[<h1 id="help"><a class="markdownIt-Anchor" href="#help"></a> help()</h1>
+<p>help() 是python中的内置函数, 使用它可以可以查询函数的用法.但是当我们使用help()来查询自定义函数的时候，它无法显示函数的说明，只能显示函数的结构，比如：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>(<span class="params">a</span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="number">10</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">help</span>(fn)</span><br></pre></td></tr></table></figure>
+<p>返回值为<code>Help on function fn in module __main__:</code><br />
+如果我们想返回函数的说明，就要在函数中添加文本字符串。比如</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>(<span class="params">a,b,c</span>):</span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">这是一个文档字符串实例</span></span><br><span class="line"><span class="string">函数的作用是：</span></span><br><span class="line"><span class="string">函数的参数：</span></span><br><span class="line"><span class="string">a.作用，类型，默认值...</span></span><br><span class="line"><span class="string">b.作用，类型，默认值...</span></span><br><span class="line"><span class="string">c.作用，类型，默认值...</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line">  <span class="keyword">return</span> <span class="number">10</span></span><br><span class="line"><span class="built_in">help</span>(fn)</span><br></pre></td></tr></table></figure>
+<p>此时就会返回三个引号内的内容。我们也在参数后边加上参数的类型，比如<code>def fn(a:int,b:bool,c:str)</code></p>
+<h1 id="作用域scope"><a class="markdownIt-Anchor" href="#作用域scope"></a> 作用域(scope)</h1>
+<p>指的是变量生效的区域，比如</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>():</span><br><span class="line">    a = <span class="number">10</span></span><br><span class="line">    <span class="built_in">print</span>(a)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用函数</span></span><br><span class="line">fn()</span><br></pre></td></tr></table></figure>
+<p>此时就会返回<code>10</code><br />
+我们调用函数，就是输出<code>a</code>，是因为变量和输出都是在函数的作用域内。<br />
+python中的作用域分类两种：</p>
+<ol>
+<li>全局作用域</li>
+</ol>
+<ul>
+<li>全局作用域在程序执行时创建，在程序执行结束时销毁。</li>
+<li>所有函数以外的区域就是全局作用域。</li>
+<li>在全局作用域中定义的变量就是全局变量，全局变量可以在程序的任意位置被访问。</li>
+</ul>
+<ol start="2">
+<li>函数作用域</li>
+</ol>
+<ul>
+<li>在函数调用时创建， 在调用结束时销毁。</li>
+<li>函数没调用一次，就会产生一个新的函数作用域。</li>
+<li>在函数作用域中定义的变量，都是局部变量，它只能在函数内部被访问。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">b = <span class="number">20</span> <span class="comment"># 全局变量</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>():</span><br><span class="line">    a = <span class="number">10</span> <span class="comment"># 10局部变量</span></span><br><span class="line">    <span class="built_in">print</span>(a) <span class="comment"># 只能在函数内部被访问</span></span><br><span class="line">    <span class="built_in">print</span>(b) <span class="comment"># 可以在任意位置被访问</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用函数</span></span><br><span class="line">fn()</span><br></pre></td></tr></table></figure>
+<p>此时返回结果为<code>10 20</code><br />
+3. 当我们使用变量时，优先在当前作用域中寻找此变量，如果没有，则继续在上一级的作用域中去寻找。如果在全局变量中依然没找到，则返回NameError。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">b = <span class="number">20</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>():</span><br><span class="line">    a = <span class="number">10</span></span><br><span class="line">    b = <span class="number">30</span></span><br><span class="line">    <span class="built_in">print</span>(a)</span><br><span class="line">    <span class="built_in">print</span>(b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用函数</span></span><br><span class="line">fn()</span><br></pre></td></tr></table></figure>
+<p>此时返回结果为<code>10 30</code>。<br />
+4. 如果希望在函数内部使用同名的全局变量，可以使用global关键字。比如</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">b = <span class="number">20</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>():</span><br><span class="line">    a = <span class="number">10</span></span><br><span class="line">    <span class="keyword">global</span> b</span><br><span class="line">    b = <span class="number">5</span></span><br><span class="line">    <span class="built_in">print</span>(a)</span><br><span class="line">    <span class="built_in">print</span>(b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用函数</span></span><br><span class="line">fn()</span><br></pre></td></tr></table></figure>
+<p>此时返回<code>10 5</code></p>
+<h1 id="命名空间space"><a class="markdownIt-Anchor" href="#命名空间space"></a> 命名空间(space)</h1>
+<p>命名空间就是变量的存储位置，每一个变量都需要存储到指定的命名空间中。每一个作用域都会有一个它对应的命名空间。<br />
+命名空间实际上就是一个字典，是一个专门专门用来存储变量的字典。<br />
+使用locals()来获取当前作用域的命名空间。它返回的是一个字典<br />
+global()函数可以用来在任意位置获取我们的全局命名空间</p>
+<h1 id="递归"><a class="markdownIt-Anchor" href="#递归"></a> 递归</h1>
+<ul>
+<li>阶乘</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">1! = 1*1 =1</span><br><span class="line">2! = 1*2 =2</span><br><span class="line">3! = 1*2*3 =6</span><br><span class="line">4! = 1*2*3*4 =24</span><br></pre></td></tr></table></figure>
+<p>求10的阶乘</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = <span class="number">10</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">10</span>): <span class="comment"># range函数包含开始不包含结束</span></span><br><span class="line">  n *= i</span><br><span class="line"><span class="built_in">print</span>(n)</span><br></pre></td></tr></table></figure>
+<p>创建一个函数，求任意数的阶乘。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">factorial</span>(<span class="params">a</span>):</span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    该函数用来求任意数的阶乘</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    参数n是任意数</span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    n = a</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,a):</span><br><span class="line">        n *= i</span><br><span class="line">    <span class="keyword">return</span> n</span><br></pre></td></tr></table></figure>
+<ul>
+<li>递归式函数<br />
+递归式函数就是在函数中自己调用自己.<br />
+递归函数的两个要件：</li>
+</ul>
+<ol>
+<li>基线条件：问题继续分解的条件</li>
+<li>递归条件：</li>
+</ol>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
   </entry>
   <entry>
     <title>vim语言</title>
@@ -235,23 +363,6 @@ $ last line<br />
       </categories>
       <tags>
         <tag>Vim</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python的基本语法</title>
-    <url>/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<p>python严格区分大小写。比如<code>Print()</code>不能被执行。</p>
-<p><strong>语句</strong>不建议过长。一条语句可以多行编写，语句以反斜线<code>\</code>换行。</p>
-<p>不要随便写缩进，缩进严格，表示代码块。</p>
-<p><code>%</code>后加空格表示注释。</p>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -338,35 +449,48 @@ When you hit <code>Enter</code> to open a file, it will be opened in the same wi
       </tags>
   </entry>
   <entry>
-    <title>range()函数</title>
-    <url>/2024/04/06/range()%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<p>range()函数是一个可以生成一个自然数的序列<br />
-<code>r = range(5)</code> 生成的序列为[0,1,2,3,4]<br />
-该函数可以生成三个参数:</p>
+    <title>vim shortcuts</title>
+    <url>/2024/04/09/vim%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86post/</url>
+    <content><![CDATA[<ol>
+<li>
+<p>jump to the top of the file <code>gg</code></p>
+</li>
+<li>
+<p>jump to the end of the file <code>G</code></p>
+</li>
+<li>
+<p><code>$ vim +33 my_file.txt</code>, the cursor will be positioned on the line 33 for the first file you open</p>
+</li>
+<li>
+<p>In Vim, the -c cmd option allows you to execute a command after the first file has been read. This can be useful for automating tasks or customizing Vim’s behavior when opening a file.</p>
+<p>Here’s how you can use the -c cmd option in Vim:</p>
 <ol>
-<li>起始位置<br />
-可以省略, 默认为0</li>
-<li>结束位置</li>
-<li>步长<br />
-可以省略步长, 默认为1. 比如</li>
+<li><strong>Open a file and run a command</strong>: You can open a file in Vim and run a command immediately after the file is loaded. For example, to open a file example.txt and jump to line 10, you can use the following command:</li>
 </ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">r = <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">10</span>,<span class="number">2</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(r))</span><br></pre></td></tr></table></figure>
-<p>output为<code>[0, 2, 4, 6, 8]</code><br />
-步长还可以是负数</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">r = <span class="built_in">range</span>(<span class="number">10</span>,<span class="number">0</span>,-<span class="number">2</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(r))</span><br></pre></td></tr></table></figure>
-<p>output<code>[10, 8, 6, 4, 2]</code><br />
-通过rang()可以创建一个指定次数的for循环</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">30</span>):</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure>
-<p>生成一组0到29的数.<br />
-for循环出了创建方式外, 其余跟while是一样的用法.</p>
+<p><code>vim -c &quot;normal 10G&quot; example.txt</code></p>
+<p>This command will open example.txt in Vim and move the cursor to line 10.</p>
+<ol start="2">
+<li><strong>Run multiple commands</strong>: You can also chain multiple commands using the -c option. Separate each command with a semicolon ;. For example, to open a file and set syntax highlighting to a specific type, you can use:</li>
+</ol>
+<p><code>vim -c &quot;set syntax=python&quot; -c &quot;normal G&quot; example.py</code></p>
+<p>This command will open <a href="http://example.py">example.py</a> in Vim, set the syntax highlighting to Python, and move the cursor to the end of the file.</p>
+<ol start="3">
+<li>
+<p><strong>Execute an Ex command</strong>: You can execute Ex commands (commands that start with 😃 using the -c option. For example, to open a file and save it with a different name, you can use:</p>
+<p><code>vim -c &quot;:w newfile.txt&quot; example.txt</code></p>
+<p>This command will open example.txt in Vim and save it as newfile.txt.</p>
+<p>Using the -c cmd option in Vim provides flexibility in automating tasks or customizing Vim’s behavior when opening files. You can experiment with different commands to suit your specific requirements.</p>
+</li>
+</ol>
+</li>
+</ol>
 ]]></content>
       <categories>
         <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
+        <category>Vim快捷键</category>
       </categories>
       <tags>
-        <tag>python</tag>
+        <tag>Vim</tag>
       </tags>
   </entry>
   <entry>
@@ -445,207 +569,6 @@ b = 20<br />
       </tags>
   </entry>
   <entry>
-    <title>函数介绍2</title>
-    <url>/2024/04/09/text_string_post/</url>
-    <content><![CDATA[<h1 id="help"><a class="markdownIt-Anchor" href="#help"></a> help()</h1>
-<p>help() 是python中的内置函数, 使用它可以可以查询函数的用法.但是当我们使用help()来查询自定义函数的时候，它无法显示函数的说明，只能显示函数的结构，比如：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>(<span class="params">a</span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="number">10</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">help</span>(fn)</span><br></pre></td></tr></table></figure>
-<p>返回值为<code>Help on function fn in module __main__:</code><br />
-如果我们想返回函数的说明，就要在函数中添加文本字符串。比如</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>(<span class="params">a,b,c</span>):</span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">这是一个文档字符串实例</span></span><br><span class="line"><span class="string">函数的作用是：</span></span><br><span class="line"><span class="string">函数的参数：</span></span><br><span class="line"><span class="string">a.作用，类型，默认值...</span></span><br><span class="line"><span class="string">b.作用，类型，默认值...</span></span><br><span class="line"><span class="string">c.作用，类型，默认值...</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line">  <span class="keyword">return</span> <span class="number">10</span></span><br><span class="line"><span class="built_in">help</span>(fn)</span><br></pre></td></tr></table></figure>
-<p>此时就会返回三个引号内的内容。我们也在参数后边加上参数的类型，比如<code>def fn(a:int,b:bool,c:str)</code></p>
-<h1 id="作用域scope"><a class="markdownIt-Anchor" href="#作用域scope"></a> 作用域(scope)</h1>
-<p>指的是变量生效的区域，比如</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>():</span><br><span class="line">    a = <span class="number">10</span></span><br><span class="line">    <span class="built_in">print</span>(a)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用函数</span></span><br><span class="line">fn()</span><br></pre></td></tr></table></figure>
-<p>此时就会返回<code>10</code><br />
-我们调用函数，就是输出<code>a</code>，是因为变量和输出都是在函数的作用域内。<br />
-python中的作用域分类两种：</p>
-<ol>
-<li>全局作用域</li>
-</ol>
-<ul>
-<li>全局作用域在程序执行时创建，在程序执行结束时销毁。</li>
-<li>所有函数以外的区域就是全局作用域。</li>
-<li>在全局作用域中定义的变量就是全局变量，全局变量可以在程序的任意位置被访问。</li>
-</ul>
-<ol start="2">
-<li>函数作用域</li>
-</ol>
-<ul>
-<li>在函数调用时创建， 在调用结束时销毁。</li>
-<li>函数没调用一次，就会产生一个新的函数作用域。</li>
-<li>在函数作用域中定义的变量，都是局部变量，它只能在函数内部被访问。</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">b = <span class="number">20</span> <span class="comment"># 全局变量</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>():</span><br><span class="line">    a = <span class="number">10</span> <span class="comment"># 10局部变量</span></span><br><span class="line">    <span class="built_in">print</span>(a) <span class="comment"># 只能在函数内部被访问</span></span><br><span class="line">    <span class="built_in">print</span>(b) <span class="comment"># 可以在任意位置被访问</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用函数</span></span><br><span class="line">fn()</span><br></pre></td></tr></table></figure>
-<p>此时返回结果为<code>10 20</code><br />
-3. 当我们使用变量时，优先在当前作用域中寻找此变量，如果没有，则继续在上一级的作用域中去寻找。如果在全局变量中依然没找到，则返回NameError。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">b = <span class="number">20</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>():</span><br><span class="line">    a = <span class="number">10</span></span><br><span class="line">    b = <span class="number">30</span></span><br><span class="line">    <span class="built_in">print</span>(a)</span><br><span class="line">    <span class="built_in">print</span>(b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用函数</span></span><br><span class="line">fn()</span><br></pre></td></tr></table></figure>
-<p>此时返回结果为<code>10 30</code>。<br />
-4. 如果希望在函数内部使用同名的全局变量，可以使用global关键字。比如</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">b = <span class="number">20</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>():</span><br><span class="line">    a = <span class="number">10</span></span><br><span class="line">    <span class="keyword">global</span> b</span><br><span class="line">    b = <span class="number">5</span></span><br><span class="line">    <span class="built_in">print</span>(a)</span><br><span class="line">    <span class="built_in">print</span>(b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用函数</span></span><br><span class="line">fn()</span><br></pre></td></tr></table></figure>
-<p>此时返回<code>10 5</code></p>
-<h1 id="命名空间space"><a class="markdownIt-Anchor" href="#命名空间space"></a> 命名空间(space)</h1>
-<p>命名空间就是变量的存储位置，每一个变量都需要存储到指定的命名空间中。每一个作用域都会有一个它对应的命名空间。<br />
-命名空间实际上就是一个字典，是一个专门专门用来存储变量的字典。<br />
-使用locals()来获取当前作用域的命名空间。它返回的是一个字典<br />
-global()函数可以用来在任意位置获取我们的全局命名空间</p>
-<h1 id="递归"><a class="markdownIt-Anchor" href="#递归"></a> 递归</h1>
-<ul>
-<li>阶乘</li>
-</ul>
-<figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">1! = 1*1 =1</span><br><span class="line">2! = 1*2 =2</span><br><span class="line">3! = 1*2*3 =6</span><br><span class="line">4! = 1*2*3*4 =24</span><br></pre></td></tr></table></figure>
-<p>求10的阶乘</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = <span class="number">10</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">10</span>): <span class="comment"># range函数包含开始不包含结束</span></span><br><span class="line">  n *= i</span><br><span class="line"><span class="built_in">print</span>(n)</span><br></pre></td></tr></table></figure>
-<p>创建一个函数，求任意数的阶乘。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">factorial</span>(<span class="params">a</span>):</span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    该函数用来求任意数的阶乘</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    参数n是任意数</span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    n = a</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,a):</span><br><span class="line">        n *= i</span><br><span class="line">    <span class="keyword">return</span> n</span><br></pre></td></tr></table></figure>
-<ul>
-<li>递归式函数<br />
-递归式函数就是在函数中自己调用自己.<br />
-递归函数的两个要件：</li>
-</ul>
-<ol>
-<li>基线条件：问题继续分解的条件</li>
-<li>递归条件：</li>
-</ol>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>沙特办理工业许可证的要求和流程</title>
-    <url>/2024/03/28/%E5%8A%9E%E7%90%86%E5%B7%A5%E4%B8%9A%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/</url>
-    <content><![CDATA[<h1 id="定义"><a class="markdownIt-Anchor" href="#定义"></a> 定义</h1>
-<p>沙特工业和矿产资源部提供工业许可证颁发服务，它是本部根据海湾国家合作委员会统一工业管理制度颁发的文件。允许根据特定的流程和机制从事工业项目，从投资者基础建设，施工到生产提供便利。</p>
-<h1 id="企业在申请工业许可证时的三个阶段"><a class="markdownIt-Anchor" href="#企业在申请工业许可证时的三个阶段"></a> 企业在申请工业许可证时的三个阶段</h1>
-<p>工业企业在申请工业许可时有三个阶段，这三个阶段反映了工业项目的发展情况。每个阶段都需要从相关部门申请必要的工业许可。</p>
-<h2 id="基础阶段"><a class="markdownIt-Anchor" href="#基础阶段"></a> 基础阶段</h2>
-<p><strong>要求</strong></p>
-<ul>
-<li>从事工业活动的商业注册证书</li>
-<li>在工业平台提交颁发工业许可的服务</li>
-<li>立即颁发（不受本部限制的工业活动）</li>
-</ul>
-<p><strong>特点</strong></p>
-<ul>
-<li>在工业许可证中注册要生产的产品</li>
-<li>可以在负责场地分配的相关机构申请分配场地</li>
-<li>可以申请工业贷款</li>
-<li><span style='background-color: yellow;'>可以申请配电</span></li>
-</ul>
-<p>许可证的有效期为一年，可以申请更新。</p>
-<h2 id="建设阶段"><a class="markdownIt-Anchor" href="#建设阶段"></a> 建设阶段</h2>
-<p><strong>要求</strong></p>
-<ul>
-<li>从事工业活动的商业注册证书</li>
-<li>从能源部分配能源</li>
-<li>从分配场地的机构获得地点许可证/合同</li>
-<li>环保建设许可证</li>
-<li>在工业平台提交阶段升级申请</li>
-</ul>
-<p><strong>特点</strong></p>
-<ul>
-<li>在建设阶段提供劳工支持</li>
-<li>为机械设备免关税</li>
-<li>为零配件免关税</li>
-<li>化学品清理</li>
-<li>根据法定要求，经该部批准或在合作委员会框架内商定的任何其他福利或豁免</li>
-</ul>
-<p>许可证的有效期为一年，可以申请更新。</p>
-<h2 id="生产阶段"><a class="markdownIt-Anchor" href="#生产阶段"></a> 生产阶段</h2>
-<p><strong>要求</strong></p>
-<ul>
-<li>从事工业活动的商业注册证书</li>
-<li>从相关部门获取的安全环保运行证书</li>
-<li>在工业平台提交升级申请</li>
-<li>从其他相关部门获得的经营要求和许可证，包括经营军工、食品和药品活动。</li>
-</ul>
-<p><strong>特点</strong></p>
-<ul>
-<li>为生产阶段提供劳工支持</li>
-<li>生产投入品免关税</li>
-<li>机械设备免关税</li>
-<li>零配件免关税</li>
-<li>化学品清理</li>
-<li>原产地证书</li>
-<li>根据法定要求，经该部批准或在合作委员会框架内商定的任何其他福利或豁免</li>
-</ul>
-<p>许可证的有效期为五年。</p>
-<h1 id="条件"><a class="markdownIt-Anchor" href="#条件"></a> 条件</h1>
-<p>申请人必须遵守：</p>
-<ul>
-<li>海湾国家合作委员会统一工业管理制度中提到了的条款和现行的法规。</li>
-<li>每6个月在本部电子网站上更新工厂信息。</li>
-<li>允许本部员工进入工业场地审查相关文件和账户，监督生产活动等。</li>
-<li>未经本部同意不得扩大、发展、更换产品、工业项目合并或停止工业项目。</li>
-<li>允许本部审查企业相关的所有数据并提交给所有政府机构。</li>
-<li>只允许在完成工业项目、获得了安全环保许可以及其他部门的要求后进行工业活动和实际生产，然后需要将工业许可证升级到“生产”。</li>
-</ul>
-<h1 id="颁发许可证所需时间"><a class="markdownIt-Anchor" href="#颁发许可证所需时间"></a> 颁发许可证所需时间</h1>
-<p>立即颁发（本部限制的活动除外）</p>
-<p><a href="https://mim.gov.sa/mim/services/31393/">本文翻译自工业部网站</a></p>
-]]></content>
-      <categories>
-        <category>制度学习</category>
-        <category>沙特工业和矿产资源部制度</category>
-      </categories>
-      <tags>
-        <tag>沙特投资</tag>
-        <tag>沙特</tag>
-        <tag>工业许可证</tag>
-        <tag>沙特工业和矿产资源部</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>vim shortcuts</title>
-    <url>/2024/04/09/vim%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86post/</url>
-    <content><![CDATA[<ol>
-<li>
-<p>jump to the top of the file <code>gg</code></p>
-</li>
-<li>
-<p>jump to the end of the file <code>G</code></p>
-</li>
-<li>
-<p><code>$ vim +33 my_file.txt</code>, the cursor will be positioned on the line 33 for the first file you open</p>
-</li>
-<li>
-<p>In Vim, the -c cmd option allows you to execute a command after the first file has been read. This can be useful for automating tasks or customizing Vim’s behavior when opening a file.</p>
-<p>Here’s how you can use the -c cmd option in Vim:</p>
-<ol>
-<li><strong>Open a file and run a command</strong>: You can open a file in Vim and run a command immediately after the file is loaded. For example, to open a file example.txt and jump to line 10, you can use the following command:</li>
-</ol>
-<p><code>vim -c &quot;normal 10G&quot; example.txt</code></p>
-<p>This command will open example.txt in Vim and move the cursor to line 10.</p>
-<ol start="2">
-<li><strong>Run multiple commands</strong>: You can also chain multiple commands using the -c option. Separate each command with a semicolon ;. For example, to open a file and set syntax highlighting to a specific type, you can use:</li>
-</ol>
-<p><code>vim -c &quot;set syntax=python&quot; -c &quot;normal G&quot; example.py</code></p>
-<p>This command will open <a href="http://example.py">example.py</a> in Vim, set the syntax highlighting to Python, and move the cursor to the end of the file.</p>
-<ol start="3">
-<li>
-<p><strong>Execute an Ex command</strong>: You can execute Ex commands (commands that start with 😃 using the -c option. For example, to open a file and save it with a different name, you can use:</p>
-<p><code>vim -c &quot;:w newfile.txt&quot; example.txt</code></p>
-<p>This command will open example.txt in Vim and save it as newfile.txt.</p>
-<p>Using the -c cmd option in Vim provides flexibility in automating tasks or customizing Vim’s behavior when opening files. You can experiment with different commands to suit your specific requirements.</p>
-</li>
-</ol>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>Vim快捷键</category>
-      </categories>
-      <tags>
-        <tag>Vim</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>字典</title>
     <url>/2024/04/06/%E5%87%BD%E6%95%B0%E7%AE%80%E4%BB%8B/</url>
     <content><![CDATA[<p>函数也是一个对象. 比如有三行代码是一个完整的功能, 这个功能在不同的地方反复调用, 那么函数就可以用来保存一些<br />
@@ -680,69 +603,6 @@ global()函数可以用来在任意位置获取我们的全局命名空间</p>
 <p>返回值, 返回值就是函数执行的结果. return 后边跟的就是函数的返回值, 可以直接使用函数的返回值, 也可以用一个变量来接受函数的返回值.</p>
 <p>不写return, 或者只写return相当与返回None.<br />
 return后的代码都不会执行</p>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>变量和标识符</title>
-    <url>/2024/03/31/%E5%8F%98%E9%87%8F%E5%92%8C%E6%A0%87%E8%AF%86%E7%AC%A6/</url>
-    <content><![CDATA[<p>使用变量不需要声明，直接为变量赋值，但是不能使用未被赋值的变量</p>
-<p>python是一个动态类型的语言，可以给变量赋<strong>任意类型的值</strong>。也可以任意修改变量的值。</p>
-<p>通常变量的名要有意义，比如年龄18，那么我们可以写<code>age = 18</code></p>
-<p>sypder快捷键注释</p>
-<ol>
-<li>Ctrl + 1	注释/反注释</li>
-<li>Ctrl + 4/5	块注释/块反注释</li>
-<li>Ctrl + L	跳转到行号</li>
-<li>Tab/Shift + Tab	代码缩进/反缩进</li>
-<li>Ctrl ＋I	显示帮助</li>
-</ol>
-<hr />
-<p>标识符：html中是名值对，这里是标识符和值成对。</p>
-<p>python中所有可以自主命名的内容都是标识符。比如变量名、函数名、类名。</p>
-<ol>
-<li>标识符只能含有字母、数字、下划线。但是不能用数字开头，一般都是用字母开头。</li>
-<li>标识符不能是python关键字和保留字。不建议使用函数名作为标识符。会导致函数被覆盖。</li>
-<li>规范：
-<ol>
-<li>下划线命名法，比如<code>max_length</code>, <code>hello_world</code>（用得最多）</li>
-<li>帕斯卡命名法，每个单词开头字母大写，其余小写，比如<code>MaxLength</code>, <code>HelloWorld</code>（类名，使用此类）</li>
-<li></li>
-</ol>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>spyder快捷键</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>可变对象</title>
-    <url>/2024/04/06/%E5%8F%AF%E5%8F%98%E5%AF%B9%E8%B1%A1/</url>
-    <content><![CDATA[<p>对象的三个属性:</p>
-<ul>
-<li>id</li>
-<li>类型</li>
-<li>值<br />
-可变是指的<strong>值</strong>可变.<br />
-我们修改对象时, 如果有其他变量也指向了该对象, 那么这几个变量也会改变. 注意, 它们的id都没有改变. 因为修改<br />
-对象是修改对象的值.<br />
-给变量重新赋值时, 不影响其他变量.<br />
-<code>==</code>比较的是对象的值是否相等, <code>is/is not</code>是比较对象的id是否相等.</li>
-</ul>
 ]]></content>
       <categories>
         <category>编程</category>
@@ -881,6 +741,153 @@ code block<br />
       </categories>
       <tags>
         <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>沙特办理工业许可证的要求和流程</title>
+    <url>/2024/03/28/%E5%8A%9E%E7%90%86%E5%B7%A5%E4%B8%9A%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/</url>
+    <content><![CDATA[<h1 id="定义"><a class="markdownIt-Anchor" href="#定义"></a> 定义</h1>
+<p>沙特工业和矿产资源部提供工业许可证颁发服务，它是本部根据海湾国家合作委员会统一工业管理制度颁发的文件。允许根据特定的流程和机制从事工业项目，从投资者基础建设，施工到生产提供便利。</p>
+<h1 id="企业在申请工业许可证时的三个阶段"><a class="markdownIt-Anchor" href="#企业在申请工业许可证时的三个阶段"></a> 企业在申请工业许可证时的三个阶段</h1>
+<p>工业企业在申请工业许可时有三个阶段，这三个阶段反映了工业项目的发展情况。每个阶段都需要从相关部门申请必要的工业许可。</p>
+<h2 id="基础阶段"><a class="markdownIt-Anchor" href="#基础阶段"></a> 基础阶段</h2>
+<p><strong>要求</strong></p>
+<ul>
+<li>从事工业活动的商业注册证书</li>
+<li>在工业平台提交颁发工业许可的服务</li>
+<li>立即颁发（不受本部限制的工业活动）</li>
+</ul>
+<p><strong>特点</strong></p>
+<ul>
+<li>在工业许可证中注册要生产的产品</li>
+<li>可以在负责场地分配的相关机构申请分配场地</li>
+<li>可以申请工业贷款</li>
+<li><span style='background-color: yellow;'>可以申请配电</span></li>
+</ul>
+<p>许可证的有效期为一年，可以申请更新。</p>
+<h2 id="建设阶段"><a class="markdownIt-Anchor" href="#建设阶段"></a> 建设阶段</h2>
+<p><strong>要求</strong></p>
+<ul>
+<li>从事工业活动的商业注册证书</li>
+<li>从能源部分配能源</li>
+<li>从分配场地的机构获得地点许可证/合同</li>
+<li>环保建设许可证</li>
+<li>在工业平台提交阶段升级申请</li>
+</ul>
+<p><strong>特点</strong></p>
+<ul>
+<li>在建设阶段提供劳工支持</li>
+<li>为机械设备免关税</li>
+<li>为零配件免关税</li>
+<li>化学品清理</li>
+<li>根据法定要求，经该部批准或在合作委员会框架内商定的任何其他福利或豁免</li>
+</ul>
+<p>许可证的有效期为一年，可以申请更新。</p>
+<h2 id="生产阶段"><a class="markdownIt-Anchor" href="#生产阶段"></a> 生产阶段</h2>
+<p><strong>要求</strong></p>
+<ul>
+<li>从事工业活动的商业注册证书</li>
+<li>从相关部门获取的安全环保运行证书</li>
+<li>在工业平台提交升级申请</li>
+<li>从其他相关部门获得的经营要求和许可证，包括经营军工、食品和药品活动。</li>
+</ul>
+<p><strong>特点</strong></p>
+<ul>
+<li>为生产阶段提供劳工支持</li>
+<li>生产投入品免关税</li>
+<li>机械设备免关税</li>
+<li>零配件免关税</li>
+<li>化学品清理</li>
+<li>原产地证书</li>
+<li>根据法定要求，经该部批准或在合作委员会框架内商定的任何其他福利或豁免</li>
+</ul>
+<p>许可证的有效期为五年。</p>
+<h1 id="条件"><a class="markdownIt-Anchor" href="#条件"></a> 条件</h1>
+<p>申请人必须遵守：</p>
+<ul>
+<li>海湾国家合作委员会统一工业管理制度中提到了的条款和现行的法规。</li>
+<li>每6个月在本部电子网站上更新工厂信息。</li>
+<li>允许本部员工进入工业场地审查相关文件和账户，监督生产活动等。</li>
+<li>未经本部同意不得扩大、发展、更换产品、工业项目合并或停止工业项目。</li>
+<li>允许本部审查企业相关的所有数据并提交给所有政府机构。</li>
+<li>只允许在完成工业项目、获得了安全环保许可以及其他部门的要求后进行工业活动和实际生产，然后需要将工业许可证升级到“生产”。</li>
+</ul>
+<h1 id="颁发许可证所需时间"><a class="markdownIt-Anchor" href="#颁发许可证所需时间"></a> 颁发许可证所需时间</h1>
+<p>立即颁发（本部限制的活动除外）</p>
+<p><a href="https://mim.gov.sa/mim/services/31393/">本文翻译自工业部网站</a></p>
+]]></content>
+      <categories>
+        <category>制度学习</category>
+        <category>沙特工业和矿产资源部制度</category>
+      </categories>
+      <tags>
+        <tag>沙特投资</tag>
+        <tag>沙特</tag>
+        <tag>工业许可证</tag>
+        <tag>沙特工业和矿产资源部</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>可变对象</title>
+    <url>/2024/04/06/%E5%8F%AF%E5%8F%98%E5%AF%B9%E8%B1%A1/</url>
+    <content><![CDATA[<p>对象的三个属性:</p>
+<ul>
+<li>id</li>
+<li>类型</li>
+<li>值<br />
+可变是指的<strong>值</strong>可变.<br />
+我们修改对象时, 如果有其他变量也指向了该对象, 那么这几个变量也会改变. 注意, 它们的id都没有改变. 因为修改<br />
+对象是修改对象的值.<br />
+给变量重新赋值时, 不影响其他变量.<br />
+<code>==</code>比较的是对象的值是否相等, <code>is/is not</code>是比较对象的id是否相等.</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>变量和标识符</title>
+    <url>/2024/03/31/%E5%8F%98%E9%87%8F%E5%92%8C%E6%A0%87%E8%AF%86%E7%AC%A6/</url>
+    <content><![CDATA[<p>使用变量不需要声明，直接为变量赋值，但是不能使用未被赋值的变量</p>
+<p>python是一个动态类型的语言，可以给变量赋<strong>任意类型的值</strong>。也可以任意修改变量的值。</p>
+<p>通常变量的名要有意义，比如年龄18，那么我们可以写<code>age = 18</code></p>
+<p>sypder快捷键注释</p>
+<ol>
+<li>Ctrl + 1	注释/反注释</li>
+<li>Ctrl + 4/5	块注释/块反注释</li>
+<li>Ctrl + L	跳转到行号</li>
+<li>Tab/Shift + Tab	代码缩进/反缩进</li>
+<li>Ctrl ＋I	显示帮助</li>
+</ol>
+<hr />
+<p>标识符：html中是名值对，这里是标识符和值成对。</p>
+<p>python中所有可以自主命名的内容都是标识符。比如变量名、函数名、类名。</p>
+<ol>
+<li>标识符只能含有字母、数字、下划线。但是不能用数字开头，一般都是用字母开头。</li>
+<li>标识符不能是python关键字和保留字。不建议使用函数名作为标识符。会导致函数被覆盖。</li>
+<li>规范：
+<ol>
+<li>下划线命名法，比如<code>max_length</code>, <code>hello_world</code>（用得最多）</li>
+<li>帕斯卡命名法，每个单词开头字母大写，其余小写，比如<code>MaxLength</code>, <code>HelloWorld</code>（类名，使用此类）</li>
+<li></li>
+</ol>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>spyder快捷键</tag>
       </tags>
   </entry>
   <entry>
@@ -1116,27 +1123,6 @@ This is-a line, with special/separated/words (and some more).</p>
       </tags>
   </entry>
   <entry>
-    <title>循环语句</title>
-    <url>/2024/04/05/%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/</url>
-    <content><![CDATA[<p>循环语句，可以使指定的代码块重复指定的次数，有两种while循环和for循环。</p>
-<h1 id="while循环"><a class="markdownIt-Anchor" href="#while循环"></a> while循环</h1>
-<p>【语法】：<br />
-while 条件表达式：<br />
-代码块<br />
-else：</p>
-<p>【执行流程】：<br />
-先对条件表达式进行求值判断。如果结果为真，执行代码块，后继续对条件表达式进行判断，如此循环。直到判断条件表达式的结果为假时，停止循环。执行else。</p>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>字符串的复制</title>
     <url>/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%A4%8D%E5%88%B6/</url>
     <content><![CDATA[<p>将字符串和数字相乘, 就是复制字符串</p>
@@ -1218,6 +1204,27 @@ else：</p>
     <content><![CDATA[<p>布尔值(bool)用来做逻辑判断. 一共有两个<code>True</code>和<code>False</code>. 注意Python是一个大小写敏感的语言.<br />
 也可以理解为一个整数, true 是 1 false 是 0</p>
 <p><code>None</code>空值,表示不存在.</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>循环语句</title>
+    <url>/2024/04/05/%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/</url>
+    <content><![CDATA[<p>循环语句，可以使指定的代码块重复指定的次数，有两种while循环和for循环。</p>
+<h1 id="while循环"><a class="markdownIt-Anchor" href="#while循环"></a> while循环</h1>
+<p>【语法】：<br />
+while 条件表达式：<br />
+代码块<br />
+else：</p>
+<p>【执行流程】：<br />
+先对条件表达式进行求值判断。如果结果为真，执行代码块，后继续对条件表达式进行判断，如此循环。直到判断条件表达式的结果为假时，停止循环。执行else。</p>
 ]]></content>
       <categories>
         <category>编程</category>
@@ -1318,6 +1325,41 @@ else：</p>
       </tags>
   </entry>
   <entry>
+    <title></title>
+    <url>/2024/03/26/%E6%97%A0%E7%BA%BA%E5%B8%83%E4%B8%93%E4%B8%9A%E8%8B%B1%E8%AF%AD%E6%9C%AF%E8%AF%AD1/</url>
+    <content><![CDATA[<p>聚酯切片：</p>
+<p>淀粉：</p>
+<p>丙烯酸胶：</p>
+<p>玻纤纱：</p>
+<p>针刺机：</p>
+<p>涤纶纺粘胎基布：</p>
+<p>免税通过海关：free of duty through customs</p>
+<p>钢结构：steel structure</p>
+<p>钢筋：rebar /ˈriːˌbɑːr/</p>
+<p>电缆：electrical cable</p>
+<p>电子元器件：electron component /ɪˈlektrɑːn/</p>
+<p>进口材料：imported material</p>
+<p>外商独资项目：wholly foreign owned enterprise</p>
+<p>全资子公司：subsidiary of solo investment</p>
+<p>进口材料及设备占投资金额的比例限制是多少？<br />
+What is the <strong>limit</strong> <strong>on</strong> the proportion of imported materials and equipment <strong>in</strong> the investment amount？</p>
+<p>型钢：structural steel</p>
+<p>圆钢：round steel</p>
+<p>角钢：angle steel</p>
+<p>工型钢：universal beams</p>
+<p>槽型钢：channel steel</p>
+<p>六角钢：hexagonal steel</p>
+<p>扁钢：flat steel</p>
+<p>矩形：rectangle</p>
+<p>无缝管：seamless tube</p>
+<p>备案手续：recordation formalities of relevant documents</p>
+<p>示范合同、标准合同：model contract /ˈmɑːd(ə)l/</p>
+<p>特种作业人员：special appliance operator</p>
+<p>电工：electrician</p>
+<p>焊工：welder</p>
+]]></content>
+  </entry>
+  <entry>
     <title>格式化字符串</title>
     <url>/2024/03/31/%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
     <content><![CDATA[<h1 id="字符串之间可以进行加法运算-但是不能和其他数据进行加法运算"><a class="markdownIt-Anchor" href="#字符串之间可以进行加法运算-但是不能和其他数据进行加法运算"></a> 字符串之间可以进行加法运算, 但是不能和其他数据进行加法运算</h1>
@@ -1357,173 +1399,6 @@ else：</p>
       </categories>
       <tags>
         <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>沙特工业园建厂要求</title>
-    <url>/2024/03/28/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%BB%BA%E5%8E%82%E8%A6%81%E6%B1%82/</url>
-    <content><![CDATA[<p>工厂需要遵循【建厂条件和标准指南】中的建厂要求，可以享受Modon在工业园中提供的服务。</p>
-<ul>
-<li>工厂建设的单元包括：生产车间、原材料仓库、产成品仓库、员工服务、电力供应、工业安全服务、内部道路、疏散区域、<br />
-管理建筑。</li>
-<li>生产车间的高度满足所有任务需求，其中包括根据不同生产类型的生产线所需要的机械作业任务。</li>
-<li>原材料仓库的面积限制在能满足工厂需要的30%-40%，随工厂规模（建筑面积）的增大而增大。</li>
-<li>产成品仓库的面积限制在满足工厂产品存储的30%-40%，随工厂规模（建筑面积）的增大而增大。</li>
-<li>工厂员工服务包括：卫生间、礼拜厅、急救、餐厅、换衣间。</li>
-<li>包括给工厂服务的管理办公室。</li>
-<li>供电工程包括中低压配电室和主断路器室。</li>
-<li>安全服务包括：备用消防箱、灭火系统和火灾警报系统。</li>
-<li>内部道路用来方便工厂不同单元的活动，并且连接工厂各个入口和主道路。</li>
-<li>生产建筑和围墙之间的间隔：前方与道路之间不低于13.5米，与两侧和后方之间不低于6米。</li>
-<li>申请、认证和颁发许可证的要求。</li>
-</ul>
-<p><a href='https://www.modon.gov.sa/ar/Systems/Pages/Requirements.aspx'>内容采集自工业园官网</a></p>
-]]></content>
-      <categories>
-        <category>制度学习</category>
-        <category>沙特工业园制度</category>
-      </categories>
-      <tags>
-        <tag>建厂</tag>
-        <tag>沙特工业园</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2024/03/26/%E6%97%A0%E7%BA%BA%E5%B8%83%E4%B8%93%E4%B8%9A%E8%8B%B1%E8%AF%AD%E6%9C%AF%E8%AF%AD1/</url>
-    <content><![CDATA[<p>聚酯切片：</p>
-<p>淀粉：</p>
-<p>丙烯酸胶：</p>
-<p>玻纤纱：</p>
-<p>针刺机：</p>
-<p>涤纶纺粘胎基布：</p>
-<p>免税通过海关：free of duty through customs</p>
-<p>钢结构：steel structure</p>
-<p>钢筋：rebar /ˈriːˌbɑːr/</p>
-<p>电缆：electrical cable</p>
-<p>电子元器件：electron component /ɪˈlektrɑːn/</p>
-<p>进口材料：imported material</p>
-<p>外商独资项目：wholly foreign owned enterprise</p>
-<p>全资子公司：subsidiary of solo investment</p>
-<p>进口材料及设备占投资金额的比例限制是多少？<br />
-What is the <strong>limit</strong> <strong>on</strong> the proportion of imported materials and equipment <strong>in</strong> the investment amount？</p>
-<p>型钢：structural steel</p>
-<p>圆钢：round steel</p>
-<p>角钢：angle steel</p>
-<p>工型钢：universal beams</p>
-<p>槽型钢：channel steel</p>
-<p>六角钢：hexagonal steel</p>
-<p>扁钢：flat steel</p>
-<p>矩形：rectangle</p>
-<p>无缝管：seamless tube</p>
-<p>备案手续：recordation formalities of relevant documents</p>
-<p>示范合同、标准合同：model contract /ˈmɑːd(ə)l/</p>
-<p>特种作业人员：special appliance operator</p>
-<p>电工：electrician</p>
-<p>焊工：welder</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>沙特工业园投资流程</title>
-    <url>/2024/03/27/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E6%8A%95%E8%B5%84%E6%B5%81%E7%A8%8B/</url>
-    <content><![CDATA[<h1 id="工业园提供的产品和服务"><a class="markdownIt-Anchor" href="#工业园提供的产品和服务"></a> 工业园提供的产品和服务</h1>
-<ol>
-<li>工业用地：Modon在沙特全境提供工业用地，满足工业投资者的需求。</li>
-<li>现成工厂：Modon提供不同面积且服务完备的现成工厂，支持中小企业和男女企业家。</li>
-<li>融资方案：Modon提供多种融资方案，支持投资者的工业发展简化他们获取工业产品的流程。</li>
-</ol>
-<h1 id="申请前"><a class="markdownIt-Anchor" href="#申请前"></a> 申请前</h1>
-<h4 id="获得工业产品的条件"><a class="markdownIt-Anchor" href="#获得工业产品的条件"></a> 获得工业产品的条件</h4>
-<ol>
-<li>从工商局网站获得的工业活动注册证书。</li>
-<li>通过Shareek申请产品。</li>
-</ol>
-<h4 id="申请产品"><a class="markdownIt-Anchor" href="#申请产品"></a> 申请产品</h4>
-<ol>
-<li>填写申请表格：在表格中附上所需文件。</li>
-<li>面谈：跟投资者进行面谈，讨论合作关系和工业项目的关键活动领域。</li>
-<li>产品预览：拜访工业园总部，预览产品并填写预览表。</li>
-<li>签署合同接受产品：在表格中附上所需文件。</li>
-</ol>
-<h1 id="建设阶段"><a class="markdownIt-Anchor" href="#建设阶段"></a> 建设阶段</h1>
-<ol>
-<li>建设咨询办公室的许可：通过Modon中的Shareek门户获取报价，研究建设咨询办公室的要求，认可报价后回去同意。可以通过网站获得咨询公司名单。</li>
-<li>图纸审批：通过Shareek门户上的电子服务平台，咨询办公室根据工业园指导和建设要求，认证主规划和安全规划。</li>
-<li>发出建设许可：通过Shareek门户上的电子服务平台，获得在工业园内进行建设作业的许可证书。</li>
-<li>申请用电：通过Shareek门户提交用电申请，沙特电力公司进行作业。</li>
-<li>现场跟进：Modon对在建工厂进行现场检查，确保建设符合Modon的标准和条件。</li>
-<li>发出竣工证明和运行许可：竣工证书旨在确保企业符合Modon的建设标准和条件，此为第一次发出。</li>
-<li>运行许可证：这是企业运行的许可，需要定期更新。</li>
-</ol>
-<h1 id="运行"><a class="markdownIt-Anchor" href="#运行"></a> 运行</h1>
-<p>在发出竣工证明和运行许可，并且确保企业安全作业以后，工厂可以开始生产制造。</p>
-<h4 id="电子服务"><a class="markdownIt-Anchor" href="#电子服务"></a> 电子服务</h4>
-<p>在开始运行以后，企业可以通过Shareek门户上通过电子服务使用工业园提供的服务：</p>
-<ul>
-<li>合同管理服务</li>
-<li>信件服务</li>
-<li>许可服务</li>
-<li>证书服务</li>
-<li>供应商服务</li>
-<li>工程咨询办公室服务</li>
-<li>票据和投诉</li>
-</ul>
-<h4 id="定期跟踪"><a class="markdownIt-Anchor" href="#定期跟踪"></a> 定期跟踪</h4>
-<p>Modon对工厂进行定期检查，确保工厂符合安全规定，并且保护员工安全。</p>
-<p><a href='https://raw.githubusercontent.com/zmz231126/bolgpicture/main/202403291018552.pdf'>点击这里查看原文档</a></p>
-]]></content>
-      <categories>
-        <category>制度学习</category>
-        <category>沙特工业园制度</category>
-      </categories>
-      <tags>
-        <tag>建厂</tag>
-        <tag>沙特投资</tag>
-        <tag>沙特工业园</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>环境变量</title>
-    <url>/2024/03/31/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</url>
-    <content><![CDATA[<p>环境变量（enviroment variable）指的是操作系统当中的一些变量。<em>主要用来配置一些路径。</em></p>
-<p>比如操作系统允许我们把文件存在电脑上的任意盘符。 那么需要创建一个环境变量比如说abc，a用户把文件存储到了C盘，那么abc=C。b用户把文件存储到了D盘，那么abc=D。系统在运行的时候，只需要找abc就可以了。</p>
-<ol>
-<li>
-<p>查看变量</p>
-<ol>
-<li>用户环境变量→仅对当前用户起作用</li>
-<li>系统环境变量→对所有用户起作用</li>
-</ol>
-</li>
-<li>
-<p>添加环境变量</p>
-<p>变量可以有多个值，各个值之间用<code>;</code>隔开。</p>
-</li>
-<li>
-<p>删除环境变量</p>
-</li>
-</ol>
-<hr />
-<p>示例：打开终端。</p>
-<p>- 输入<code>pwd</code>回车，查看当前所处的文件夹路径。</p>
-<p>- 输入<code>ls</code>列出此文件夹下内所有的文件夹。</p>
-<p>- 输入<code>cd空格紧跟文件夹名称</code>进入指定的文件夹。<em>必须一步一步指定不能跳级指定文件夹。但是可以书写路径指定<code>cd tmp/tmp1</code>直接指定到tmp1文件夹。</em></p>
-<p>- 输入<code>mkdir 空格紧跟新建文件夹名称</code>创建文件夹。*不能同时创建父子目录，如需同时创建多层级目录，请使用<code>mkdir -p</code>比如<code>mkdir -p tmp/tmp1/tmp11</code></p>
-<p>- 输入<code>rmdir 空格紧跟文件夹名称</code>删除文件夹。</p>
-<p>- 输入<code>cd ..</code>返回上一级目录。</p>
-<p>- 输入<code>open tmp.txt</code>打开当前所处文件夹下的tmp.txt文档。<em>同样不能越级打开。</em></p>
-<hr />
-<p>当我们在命令行输入一个命令（或者访问一个文件时）系统首先在当前目录寻找，如果没有找到，就会进入到path环境变量中寻找。都没有找到才会报错。</p>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>Mac终端命令</tag>
-        <tag>环境变量</tag>
       </tags>
   </entry>
   <entry>
@@ -1595,6 +1470,94 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
       </tags>
   </entry>
   <entry>
+    <title>沙特工业园建厂要求</title>
+    <url>/2024/03/28/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%BB%BA%E5%8E%82%E8%A6%81%E6%B1%82/</url>
+    <content><![CDATA[<p>工厂需要遵循【建厂条件和标准指南】中的建厂要求，可以享受Modon在工业园中提供的服务。</p>
+<ul>
+<li>工厂建设的单元包括：生产车间、原材料仓库、产成品仓库、员工服务、电力供应、工业安全服务、内部道路、疏散区域、<br />
+管理建筑。</li>
+<li>生产车间的高度满足所有任务需求，其中包括根据不同生产类型的生产线所需要的机械作业任务。</li>
+<li>原材料仓库的面积限制在能满足工厂需要的30%-40%，随工厂规模（建筑面积）的增大而增大。</li>
+<li>产成品仓库的面积限制在满足工厂产品存储的30%-40%，随工厂规模（建筑面积）的增大而增大。</li>
+<li>工厂员工服务包括：卫生间、礼拜厅、急救、餐厅、换衣间。</li>
+<li>包括给工厂服务的管理办公室。</li>
+<li>供电工程包括中低压配电室和主断路器室。</li>
+<li>安全服务包括：备用消防箱、灭火系统和火灾警报系统。</li>
+<li>内部道路用来方便工厂不同单元的活动，并且连接工厂各个入口和主道路。</li>
+<li>生产建筑和围墙之间的间隔：前方与道路之间不低于13.5米，与两侧和后方之间不低于6米。</li>
+<li>申请、认证和颁发许可证的要求。</li>
+</ul>
+<p><a href='https://www.modon.gov.sa/ar/Systems/Pages/Requirements.aspx'>内容采集自工业园官网</a></p>
+]]></content>
+      <categories>
+        <category>制度学习</category>
+        <category>沙特工业园制度</category>
+      </categories>
+      <tags>
+        <tag>建厂</tag>
+        <tag>沙特工业园</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>沙特工业园投资流程</title>
+    <url>/2024/03/27/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E6%8A%95%E8%B5%84%E6%B5%81%E7%A8%8B/</url>
+    <content><![CDATA[<h1 id="工业园提供的产品和服务"><a class="markdownIt-Anchor" href="#工业园提供的产品和服务"></a> 工业园提供的产品和服务</h1>
+<ol>
+<li>工业用地：Modon在沙特全境提供工业用地，满足工业投资者的需求。</li>
+<li>现成工厂：Modon提供不同面积且服务完备的现成工厂，支持中小企业和男女企业家。</li>
+<li>融资方案：Modon提供多种融资方案，支持投资者的工业发展简化他们获取工业产品的流程。</li>
+</ol>
+<h1 id="申请前"><a class="markdownIt-Anchor" href="#申请前"></a> 申请前</h1>
+<h4 id="获得工业产品的条件"><a class="markdownIt-Anchor" href="#获得工业产品的条件"></a> 获得工业产品的条件</h4>
+<ol>
+<li>从工商局网站获得的工业活动注册证书。</li>
+<li>通过Shareek申请产品。</li>
+</ol>
+<h4 id="申请产品"><a class="markdownIt-Anchor" href="#申请产品"></a> 申请产品</h4>
+<ol>
+<li>填写申请表格：在表格中附上所需文件。</li>
+<li>面谈：跟投资者进行面谈，讨论合作关系和工业项目的关键活动领域。</li>
+<li>产品预览：拜访工业园总部，预览产品并填写预览表。</li>
+<li>签署合同接受产品：在表格中附上所需文件。</li>
+</ol>
+<h1 id="建设阶段"><a class="markdownIt-Anchor" href="#建设阶段"></a> 建设阶段</h1>
+<ol>
+<li>建设咨询办公室的许可：通过Modon中的Shareek门户获取报价，研究建设咨询办公室的要求，认可报价后回去同意。可以通过网站获得咨询公司名单。</li>
+<li>图纸审批：通过Shareek门户上的电子服务平台，咨询办公室根据工业园指导和建设要求，认证主规划和安全规划。</li>
+<li>发出建设许可：通过Shareek门户上的电子服务平台，获得在工业园内进行建设作业的许可证书。</li>
+<li>申请用电：通过Shareek门户提交用电申请，沙特电力公司进行作业。</li>
+<li>现场跟进：Modon对在建工厂进行现场检查，确保建设符合Modon的标准和条件。</li>
+<li>发出竣工证明和运行许可：竣工证书旨在确保企业符合Modon的建设标准和条件，此为第一次发出。</li>
+<li>运行许可证：这是企业运行的许可，需要定期更新。</li>
+</ol>
+<h1 id="运行"><a class="markdownIt-Anchor" href="#运行"></a> 运行</h1>
+<p>在发出竣工证明和运行许可，并且确保企业安全作业以后，工厂可以开始生产制造。</p>
+<h4 id="电子服务"><a class="markdownIt-Anchor" href="#电子服务"></a> 电子服务</h4>
+<p>在开始运行以后，企业可以通过Shareek门户上通过电子服务使用工业园提供的服务：</p>
+<ul>
+<li>合同管理服务</li>
+<li>信件服务</li>
+<li>许可服务</li>
+<li>证书服务</li>
+<li>供应商服务</li>
+<li>工程咨询办公室服务</li>
+<li>票据和投诉</li>
+</ul>
+<h4 id="定期跟踪"><a class="markdownIt-Anchor" href="#定期跟踪"></a> 定期跟踪</h4>
+<p>Modon对工厂进行定期检查，确保工厂符合安全规定，并且保护员工安全。</p>
+<p><a href='https://raw.githubusercontent.com/zmz231126/bolgpicture/main/202403291018552.pdf'>点击这里查看原文档</a></p>
+]]></content>
+      <categories>
+        <category>制度学习</category>
+        <category>沙特工业园制度</category>
+      </categories>
+      <tags>
+        <tag>建厂</tag>
+        <tag>沙特投资</tag>
+        <tag>沙特工业园</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>mermaid 流程图练习</title>
     <url>/2024/03/27/%E6%B5%81%E7%A8%8B%E5%9B%BE/</url>
     <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flowchart LR</span><br><span class="line">   a --&gt; b &amp; c--&gt; d</span><br></pre></td></tr></table></figure>
@@ -1637,6 +1600,172 @@ $$
 ]]></content>
       <tags>
         <tag>练习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>环境变量</title>
+    <url>/2024/03/31/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</url>
+    <content><![CDATA[<p>环境变量（enviroment variable）指的是操作系统当中的一些变量。<em>主要用来配置一些路径。</em></p>
+<p>比如操作系统允许我们把文件存在电脑上的任意盘符。 那么需要创建一个环境变量比如说abc，a用户把文件存储到了C盘，那么abc=C。b用户把文件存储到了D盘，那么abc=D。系统在运行的时候，只需要找abc就可以了。</p>
+<ol>
+<li>
+<p>查看变量</p>
+<ol>
+<li>用户环境变量→仅对当前用户起作用</li>
+<li>系统环境变量→对所有用户起作用</li>
+</ol>
+</li>
+<li>
+<p>添加环境变量</p>
+<p>变量可以有多个值，各个值之间用<code>;</code>隔开。</p>
+</li>
+<li>
+<p>删除环境变量</p>
+</li>
+</ol>
+<hr />
+<p>示例：打开终端。</p>
+<p>- 输入<code>pwd</code>回车，查看当前所处的文件夹路径。</p>
+<p>- 输入<code>ls</code>列出此文件夹下内所有的文件夹。</p>
+<p>- 输入<code>cd空格紧跟文件夹名称</code>进入指定的文件夹。<em>必须一步一步指定不能跳级指定文件夹。但是可以书写路径指定<code>cd tmp/tmp1</code>直接指定到tmp1文件夹。</em></p>
+<p>- 输入<code>mkdir 空格紧跟新建文件夹名称</code>创建文件夹。*不能同时创建父子目录，如需同时创建多层级目录，请使用<code>mkdir -p</code>比如<code>mkdir -p tmp/tmp1/tmp11</code></p>
+<p>- 输入<code>rmdir 空格紧跟文件夹名称</code>删除文件夹。</p>
+<p>- 输入<code>cd ..</code>返回上一级目录。</p>
+<p>- 输入<code>open tmp.txt</code>打开当前所处文件夹下的tmp.txt文档。<em>同样不能越级打开。</em></p>
+<hr />
+<p>当我们在命令行输入一个命令（或者访问一个文件时）系统首先在当前目录寻找，如果没有找到，就会进入到path环境变量中寻找。都没有找到才会报错。</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>Mac终端命令</tag>
+        <tag>环境变量</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2024/03/30/%E7%94%B3%E8%AF%B7%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%8A%A8%E5%B7%A5%E8%AE%B8%E5%8F%AF/</url>
+    <content><![CDATA[<h1 id="申请工业园动工许可"><a class="markdownIt-Anchor" href="#申请工业园动工许可"></a> 申请工业园动工许可</h1>
+<h2 id="第一步"><a class="markdownIt-Anchor" href="#第一步"></a> 第一步</h2>
+<h3 id="注册shareek门户取得id"><a class="markdownIt-Anchor" href="#注册shareek门户取得id"></a> 注册shareek门户取得ID</h3>
+<h3 id="获取调研阶段工业许可"><a class="markdownIt-Anchor" href="#获取调研阶段工业许可"></a> 获取调研阶段工业许可</h3>
+<h2 id="第二步"><a class="markdownIt-Anchor" href="#第二步"></a> 第二步</h2>
+<h3 id="土地租赁"><a class="markdownIt-Anchor" href="#土地租赁"></a> 土地租赁</h3>
+<h3 id="申请分配能源"><a class="markdownIt-Anchor" href="#申请分配能源"></a> 申请分配能源</h3>
+<h2 id="第三步"><a class="markdownIt-Anchor" href="#第三步"></a> 第三步</h2>
+<h3 id="等待盈科完成公司注册流程"><a class="markdownIt-Anchor" href="#等待盈科完成公司注册流程"></a> 等待盈科完成公司注册流程</h3>
+<ul>
+<li>
+<p>税务</p>
+</li>
+<li>
+<p>劳动局及其相关的电子系统</p>
+</li>
+<li>
+<p>总经理居住证</p>
+</li>
+</ul>
+<h3 id="工业园认证的consulting-engineer-office签合同"><a class="markdownIt-Anchor" href="#工业园认证的consulting-engineer-office签合同"></a> 工业园认证的consulting engineer office签合同</h3>
+<h3 id="完成主图纸和安全图纸设计认证"><a class="markdownIt-Anchor" href="#完成主图纸和安全图纸设计认证"></a> 完成主图纸和安全图纸设计认证</h3>
+<h2 id="第四步"><a class="markdownIt-Anchor" href="#第四步"></a> 第四步</h2>
+<h3 id="跟认证的垃圾搬运公司签合同"><a class="markdownIt-Anchor" href="#跟认证的垃圾搬运公司签合同"></a> 跟认证的垃圾搬运公司签合同</h3>
+<h3 id="申请环保动工许可"><a class="markdownIt-Anchor" href="#申请环保动工许可"></a> 申请环保动工许可</h3>
+<h2 id="第五步"><a class="markdownIt-Anchor" href="#第五步"></a> 第五步</h2>
+<h3 id="申请工业部动工许可"><a class="markdownIt-Anchor" href="#申请工业部动工许可"></a> 申请工业部动工许可</h3>
+<ul>
+<li>设备进口免关税</li>
+</ul>
+<h3 id="申请工业园动工许可-2"><a class="markdownIt-Anchor" href="#申请工业园动工许可-2"></a> 申请工业园动工许可</h3>
+<h2 id="第六步"><a class="markdownIt-Anchor" href="#第六步"></a> 第六步</h2>
+<h3 id="安排安全员"><a class="markdownIt-Anchor" href="#安排安全员"></a> 安排安全员</h3>
+<h3 id="安排安保"><a class="markdownIt-Anchor" href="#安排安保"></a> 安排安保</h3>
+<h3 id="安排有资质的建筑公司动工"><a class="markdownIt-Anchor" href="#安排有资质的建筑公司动工"></a> 安排有资质的建筑公司动工</h3>
+]]></content>
+  </entry>
+  <entry>
+    <title>LaTeX中的几个基本概念</title>
+    <url>/2024/03/12/%E7%AC%AC%E4%B8%80%E7%AB%A0LaTex%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
+    <content><![CDATA[<h1 id="latex的基本概念"><a class="markdownIt-Anchor" href="#latex的基本概念"></a> LaTex的基本概念</h1>
+<h2 id="概述"><a class="markdownIt-Anchor" href="#概述"></a> 概述</h2>
+<ul>
+<li>Donald E. Knuth 1982年发布Tex引擎，1989年位更好的支出8-bit字符和多语言排版而予以改进。</li>
+<li>LaTex是一种使用Tex程序作为排版引擎的格式（format）。可以错略的理解为是对Tex的一层封装。起初有Leslie Lamport博士开发，目前又LaTex工作组进行维护。</li>
+</ul>
+<h2 id="latex命令和代码结构"><a class="markdownIt-Anchor" href="#latex命令和代码结构"></a> LaTex命令和代码结构</h2>
+<p>命令两种形式：</p>
+<ol>
+<li><code>\</code>和后面的一串字母，如<code>\LaTex</code>。以任意非字母符号为界限。</li>
+<li><code>\</code>反斜线和后面单个非字母符号，比如<code>\$</code>.</li>
+</ol>
+<p>注意⚠️</p>
+<ol>
+<li>字母形式的LaTex忽略其后的所有连续空格，如果要引入空格，应该写成<code>\LaTex&#123;&#125;</code>。</li>
+<li>LaTex大小写敏感。</li>
+</ol>
+<p>【参数】一些命令可以接受参数，参数影响命令的效果。参数有：</p>
+<ol>
+<li>mandatory arguments，用<code>&#123;&#125;</code>包裹。</li>
+<li>optional arguments，用<code>[]</code>包裹。</li>
+<li><code>*</code>带一个星号和不带星号的命令效果有差异。可以把星号看作一种特殊的可选参数。</li>
+</ol>
+<p>【环境】环境成对出现，环境有时会携带参数，环境名保持一致。部分环境允许嵌套。比如</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;enviroment name&#125;[optional arguments]&#123;mandatory arguments&#125;</span><br><span class="line">……</span><br><span class="line"></span><br><span class="line"><span class="keyword">\end</span>&#123;enviroment name&#125; <span class="comment">% 这里不在需要写参数</span></span><br></pre></td></tr></table></figure>
+<p>【分组】LaTex使用<code>&#123;&#125;</code>作为分组。分组中效果命令被限制在分组内。修改字体字号的命令即属此类。</p>
+<hr />
+<p>LaTex 源码结构：</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>&#123;&#125; <span class="comment">% 指定文档的文档类</span></span><br><span class="line"><span class="comment">%  导言区。一般会在这里调用宏包和对文档进行全局设置。</span></span><br><span class="line"><span class="keyword">\begin</span>&#123;document&#125;</span><br><span class="line"><span class="comment">% 正文内容</span></span><br><span class="line"><span class="keyword">\end</span>&#123;document&#125;</span><br></pre></td></tr></table></figure>
+<hr />
+<h2 id="文档类和宏包"><a class="markdownIt-Anchor" href="#文档类和宏包"></a> 文档类和宏包</h2>
+<p>文档类：</p>
+<p>LaTex中的三个表中文档类：article, report, book. 在此基础上派生的一类文档如中文排版的ctexart, ctexrep, ctexbook.</p>
+<p>可选参数：</p>
+<p>为文档类指定选项，全局规定一些排版参数，如字号、纸张大小、单双面。</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>[11pt,twoside,a4paper]&#123;article&#125;</span><br></pre></td></tr></table></figure>
+<p>三个标准文档类的可指定选项包括：</p>
+<ol>
+<li>字号：10pt, 11pt, 12pt。默认10pt。</li>
+<li>纸张大小：a4paper, letter paper, 等等。</li>
+<li>单双面：twoside, oneside. 双面排版时，奇偶页的页眉页脚、页边距不同。article和report默认为单面。book默认为双面。</li>
+<li>单栏双栏：onecolumn, twocolume. 默认是 onecolumn.</li>
+<li>新一章在起始位置：<code>openright</code>, <code>openany</code>. 指定新一章是否必须从奇数页开始（右侧）。默认article无效；report为<code>openany</code>；book为<code>openright</code>。</li>
+<li>横向排版还是纵向排版：landscape. 默认为纵向。</li>
+<li>标题是否单独成页：titleapge, notitlepage. article默认为不单独成页。report和book默认为单独成页。</li>
+<li>草稿/终稿：draft, final.草稿模式小，不良断行会在行尾条件一个黑色方块。默认为final.</li>
+<li>行间公式左对齐： fleqn，行间公式左对齐。默认居中对齐。</li>
+<li>公式编号放左边：leqno，公式编号放左边，默认放右边。</li>
+</ol>
+<hr />
+<p>宏包：调用宏包的命令<code>usepackage[options]&#123;package name&#125;</code></p>
+<p>可以一次调用多个宏包，中间用逗号隔开。此时一般不指定选项。</p>
+<hr />
+<h2 id="文件的组织方式"><a class="markdownIt-Anchor" href="#文件的组织方式"></a> 文件的组织方式</h2>
+<p>将源文件分割成若干个文件，比如每章的目录放在单独的文件中，会大大缩短修改和校对时间。</p>
+<p>LaTex中向源代码中插入文件的命令：</p>
+<ol>
+<li><code>\include&#123;filename&#125;</code>，filename不带扩展名。如果和要编译的主文件不在同一个目录，要加上相对或者绝对路径。通过include引入的文件，在读入后会另起一页。如果不要另起一页可以用input命令。</li>
+<li><code>\input&#123;filename&#125;</code>。当导言区内容较多时，可以单独放置在一个<code>.tex</code>文档，在用<code>\input&#123;&#125;</code>插入。</li>
+</ol>
+<hr />
+<h2 id="相关术语"><a class="markdownIt-Anchor" href="#相关术语"></a> 相关术语</h2>
+<p>【引擎】又称为编译器，是编译源码并生成文档的程序。如pdftex, xetex等。</p>
+<p>【格式】是定义了一组命令的代码集。LaTex是最广泛应用的一个格式。比如plain Tex格式，没有定义诸如<code>\documentclass</code>和<code>\section</code>等等命令。</p>
+<p>【编译命令】是实际调用的、结合了引擎和格式的命令。xelatex命令是结合了xetex引擎和latex格式的一个编译命令。</p>
+<blockquote>
+<p>调用syntaxonly 可以只编译文档而不生成PDF文档，我们如果只是想检查错误可以使用</p>
+<p><code>\usepackage&#123;syntaxonly&#125;</code></p>
+<p><code>\syntaxonly</code></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>Latex</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
       </tags>
   </entry>
   <entry>
@@ -1865,128 +1994,6 @@ $$
       </tags>
   </entry>
   <entry>
-    <title>LaTeX中的几个基本概念</title>
-    <url>/2024/03/12/%E7%AC%AC%E4%B8%80%E7%AB%A0LaTex%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
-    <content><![CDATA[<h1 id="latex的基本概念"><a class="markdownIt-Anchor" href="#latex的基本概念"></a> LaTex的基本概念</h1>
-<h2 id="概述"><a class="markdownIt-Anchor" href="#概述"></a> 概述</h2>
-<ul>
-<li>Donald E. Knuth 1982年发布Tex引擎，1989年位更好的支出8-bit字符和多语言排版而予以改进。</li>
-<li>LaTex是一种使用Tex程序作为排版引擎的格式（format）。可以错略的理解为是对Tex的一层封装。起初有Leslie Lamport博士开发，目前又LaTex工作组进行维护。</li>
-</ul>
-<h2 id="latex命令和代码结构"><a class="markdownIt-Anchor" href="#latex命令和代码结构"></a> LaTex命令和代码结构</h2>
-<p>命令两种形式：</p>
-<ol>
-<li><code>\</code>和后面的一串字母，如<code>\LaTex</code>。以任意非字母符号为界限。</li>
-<li><code>\</code>反斜线和后面单个非字母符号，比如<code>\$</code>.</li>
-</ol>
-<p>注意⚠️</p>
-<ol>
-<li>字母形式的LaTex忽略其后的所有连续空格，如果要引入空格，应该写成<code>\LaTex&#123;&#125;</code>。</li>
-<li>LaTex大小写敏感。</li>
-</ol>
-<p>【参数】一些命令可以接受参数，参数影响命令的效果。参数有：</p>
-<ol>
-<li>mandatory arguments，用<code>&#123;&#125;</code>包裹。</li>
-<li>optional arguments，用<code>[]</code>包裹。</li>
-<li><code>*</code>带一个星号和不带星号的命令效果有差异。可以把星号看作一种特殊的可选参数。</li>
-</ol>
-<p>【环境】环境成对出现，环境有时会携带参数，环境名保持一致。部分环境允许嵌套。比如</p>
-<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;enviroment name&#125;[optional arguments]&#123;mandatory arguments&#125;</span><br><span class="line">……</span><br><span class="line"></span><br><span class="line"><span class="keyword">\end</span>&#123;enviroment name&#125; <span class="comment">% 这里不在需要写参数</span></span><br></pre></td></tr></table></figure>
-<p>【分组】LaTex使用<code>&#123;&#125;</code>作为分组。分组中效果命令被限制在分组内。修改字体字号的命令即属此类。</p>
-<hr />
-<p>LaTex 源码结构：</p>
-<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>&#123;&#125; <span class="comment">% 指定文档的文档类</span></span><br><span class="line"><span class="comment">%  导言区。一般会在这里调用宏包和对文档进行全局设置。</span></span><br><span class="line"><span class="keyword">\begin</span>&#123;document&#125;</span><br><span class="line"><span class="comment">% 正文内容</span></span><br><span class="line"><span class="keyword">\end</span>&#123;document&#125;</span><br></pre></td></tr></table></figure>
-<hr />
-<h2 id="文档类和宏包"><a class="markdownIt-Anchor" href="#文档类和宏包"></a> 文档类和宏包</h2>
-<p>文档类：</p>
-<p>LaTex中的三个表中文档类：article, report, book. 在此基础上派生的一类文档如中文排版的ctexart, ctexrep, ctexbook.</p>
-<p>可选参数：</p>
-<p>为文档类指定选项，全局规定一些排版参数，如字号、纸张大小、单双面。</p>
-<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>[11pt,twoside,a4paper]&#123;article&#125;</span><br></pre></td></tr></table></figure>
-<p>三个标准文档类的可指定选项包括：</p>
-<ol>
-<li>字号：10pt, 11pt, 12pt。默认10pt。</li>
-<li>纸张大小：a4paper, letter paper, 等等。</li>
-<li>单双面：twoside, oneside. 双面排版时，奇偶页的页眉页脚、页边距不同。article和report默认为单面。book默认为双面。</li>
-<li>单栏双栏：onecolumn, twocolume. 默认是 onecolumn.</li>
-<li>新一章在起始位置：<code>openright</code>, <code>openany</code>. 指定新一章是否必须从奇数页开始（右侧）。默认article无效；report为<code>openany</code>；book为<code>openright</code>。</li>
-<li>横向排版还是纵向排版：landscape. 默认为纵向。</li>
-<li>标题是否单独成页：titleapge, notitlepage. article默认为不单独成页。report和book默认为单独成页。</li>
-<li>草稿/终稿：draft, final.草稿模式小，不良断行会在行尾条件一个黑色方块。默认为final.</li>
-<li>行间公式左对齐： fleqn，行间公式左对齐。默认居中对齐。</li>
-<li>公式编号放左边：leqno，公式编号放左边，默认放右边。</li>
-</ol>
-<hr />
-<p>宏包：调用宏包的命令<code>usepackage[options]&#123;package name&#125;</code></p>
-<p>可以一次调用多个宏包，中间用逗号隔开。此时一般不指定选项。</p>
-<hr />
-<h2 id="文件的组织方式"><a class="markdownIt-Anchor" href="#文件的组织方式"></a> 文件的组织方式</h2>
-<p>将源文件分割成若干个文件，比如每章的目录放在单独的文件中，会大大缩短修改和校对时间。</p>
-<p>LaTex中向源代码中插入文件的命令：</p>
-<ol>
-<li><code>\include&#123;filename&#125;</code>，filename不带扩展名。如果和要编译的主文件不在同一个目录，要加上相对或者绝对路径。通过include引入的文件，在读入后会另起一页。如果不要另起一页可以用input命令。</li>
-<li><code>\input&#123;filename&#125;</code>。当导言区内容较多时，可以单独放置在一个<code>.tex</code>文档，在用<code>\input&#123;&#125;</code>插入。</li>
-</ol>
-<hr />
-<h2 id="相关术语"><a class="markdownIt-Anchor" href="#相关术语"></a> 相关术语</h2>
-<p>【引擎】又称为编译器，是编译源码并生成文档的程序。如pdftex, xetex等。</p>
-<p>【格式】是定义了一组命令的代码集。LaTex是最广泛应用的一个格式。比如plain Tex格式，没有定义诸如<code>\documentclass</code>和<code>\section</code>等等命令。</p>
-<p>【编译命令】是实际调用的、结合了引擎和格式的命令。xelatex命令是结合了xetex引擎和latex格式的一个编译命令。</p>
-<blockquote>
-<p>调用syntaxonly 可以只编译文档而不生成PDF文档，我们如果只是想检查错误可以使用</p>
-<p><code>\usepackage&#123;syntaxonly&#125;</code></p>
-<p><code>\syntaxonly</code></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>Latex</category>
-      </categories>
-      <tags>
-        <tag>LaTeX</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2024/03/30/%E7%94%B3%E8%AF%B7%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%8A%A8%E5%B7%A5%E8%AE%B8%E5%8F%AF/</url>
-    <content><![CDATA[<h1 id="申请工业园动工许可"><a class="markdownIt-Anchor" href="#申请工业园动工许可"></a> 申请工业园动工许可</h1>
-<h2 id="第一步"><a class="markdownIt-Anchor" href="#第一步"></a> 第一步</h2>
-<h3 id="注册shareek门户取得id"><a class="markdownIt-Anchor" href="#注册shareek门户取得id"></a> 注册shareek门户取得ID</h3>
-<h3 id="获取调研阶段工业许可"><a class="markdownIt-Anchor" href="#获取调研阶段工业许可"></a> 获取调研阶段工业许可</h3>
-<h2 id="第二步"><a class="markdownIt-Anchor" href="#第二步"></a> 第二步</h2>
-<h3 id="土地租赁"><a class="markdownIt-Anchor" href="#土地租赁"></a> 土地租赁</h3>
-<h3 id="申请分配能源"><a class="markdownIt-Anchor" href="#申请分配能源"></a> 申请分配能源</h3>
-<h2 id="第三步"><a class="markdownIt-Anchor" href="#第三步"></a> 第三步</h2>
-<h3 id="等待盈科完成公司注册流程"><a class="markdownIt-Anchor" href="#等待盈科完成公司注册流程"></a> 等待盈科完成公司注册流程</h3>
-<ul>
-<li>
-<p>税务</p>
-</li>
-<li>
-<p>劳动局及其相关的电子系统</p>
-</li>
-<li>
-<p>总经理居住证</p>
-</li>
-</ul>
-<h3 id="工业园认证的consulting-engineer-office签合同"><a class="markdownIt-Anchor" href="#工业园认证的consulting-engineer-office签合同"></a> 工业园认证的consulting engineer office签合同</h3>
-<h3 id="完成主图纸和安全图纸设计认证"><a class="markdownIt-Anchor" href="#完成主图纸和安全图纸设计认证"></a> 完成主图纸和安全图纸设计认证</h3>
-<h2 id="第四步"><a class="markdownIt-Anchor" href="#第四步"></a> 第四步</h2>
-<h3 id="跟认证的垃圾搬运公司签合同"><a class="markdownIt-Anchor" href="#跟认证的垃圾搬运公司签合同"></a> 跟认证的垃圾搬运公司签合同</h3>
-<h3 id="申请环保动工许可"><a class="markdownIt-Anchor" href="#申请环保动工许可"></a> 申请环保动工许可</h3>
-<h2 id="第五步"><a class="markdownIt-Anchor" href="#第五步"></a> 第五步</h2>
-<h3 id="申请工业部动工许可"><a class="markdownIt-Anchor" href="#申请工业部动工许可"></a> 申请工业部动工许可</h3>
-<ul>
-<li>设备进口免关税</li>
-</ul>
-<h3 id="申请工业园动工许可-2"><a class="markdownIt-Anchor" href="#申请工业园动工许可-2"></a> 申请工业园动工许可</h3>
-<h2 id="第六步"><a class="markdownIt-Anchor" href="#第六步"></a> 第六步</h2>
-<h3 id="安排安全员"><a class="markdownIt-Anchor" href="#安排安全员"></a> 安排安全员</h3>
-<h3 id="安排安保"><a class="markdownIt-Anchor" href="#安排安保"></a> 安排安保</h3>
-<h3 id="安排有资质的建筑公司动工"><a class="markdownIt-Anchor" href="#安排有资质的建筑公司动工"></a> 安排有资质的建筑公司动工</h3>
-]]></content>
-  </entry>
-  <entry>
     <title>类型检查</title>
     <url>/2024/03/31/%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5/</url>
     <content><![CDATA[<h1 id="数据类型有"><a class="markdownIt-Anchor" href="#数据类型有"></a> 数据类型有</h1>
@@ -2014,6 +2021,78 @@ $$
       </categories>
       <tags>
         <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>编译型语言和解释型语言</title>
+    <url>/2024/03/31/%E7%BC%96%E8%AF%91%E5%9E%8B%E8%AF%AD%E8%A8%80%E5%92%8C%E8%A7%A3%E9%87%8A%E5%9E%8B%E8%AF%AD%E8%A8%80/</url>
+    <content><![CDATA[<p>任何语言在交给计算机执行时，必须转换为机器码。根据转换时机的不同，语言分为两大类：</p>
+<ul>
+<li>编译型语言：会在代码执行前将代码编译为机器码，然后交给计算机执行。执行速度快，跨平台型差。</li>
+<li>解释性语言：不会在执行前对代码进行编译，而是在执行的同时一边执行一边编译。跨平台型好。执行速度慢。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机简介</title>
+    <url>/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<p>计算机是一个用来进行计算的<strong>机器</strong>，跟生活中其他机器不同的点在于计算机是用来<strong>计算</strong>的。</p>
+<p>目前计算机只能根据人类的指令进行操作。我们所学计算机，就是学习如何去进行控制这台机器。</p>
+<p>计算机包含硬件和软件两部分：</p>
+<ul>
+<li>
+<p>硬件：看得见摸得着的鼠标键盘、主板、内存、硬盘。它相当于人的身体器官。</p>
+</li>
+<li>
+<p>软件：看的见摸不着的。软件包含：</p>
+<ul>
+<li>系统软件：Windows，Linux，macOS等。</li>
+<li>应用软件：Office，QQ，王者荣耀等。</li>
+</ul>
+<p>负责计算机的运行。人器官完好也有可能是个死人。</p>
+</li>
+</ul>
+<p>我们需要通过<strong>软件</strong>操作计算机。但是软件中不是所有的功能都会对用户开放，用户需要调取软件的接口/交互界面（interface）来操作计算机。有允许用户调取的接口（用户界面），有不允许用户调取的接口。</p>
+<p>用户界面包括：TUI（文本交互界面）比如Mac的Terminal，GUI（图形交互界面）正常操作的界面。</p>
+<p>我们学习编程就要学习通过TUI操作软件进行控制计算机。</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>计算机简介</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机语言</title>
+    <url>/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<p>计算机语言其实和人类语言没有本质区别，知识交流主体不同。</p>
+<p>机器语言发展的三个阶段：</p>
+<ul>
+<li>机器语言：通过二进制编码来编写程序。编写麻烦，执行效率好。</li>
+<li>汇编语言：使用符号代替机器码。汇编与反汇编。汇编语言只适用于某些硬件，兼容性差。计算机底层一些硬件驱动现在还用汇编语言编写。</li>
+<li>高级语言：和英语语法类似，并且和硬件关系不紧密，通过高级语言编写的程序可以在不同的硬件系统中执行。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>计算机</tag>
       </tags>
   </entry>
   <entry>
@@ -2107,106 +2186,6 @@ $$
       </tags>
   </entry>
   <entry>
-    <title>编译型语言和解释型语言</title>
-    <url>/2024/03/31/%E7%BC%96%E8%AF%91%E5%9E%8B%E8%AF%AD%E8%A8%80%E5%92%8C%E8%A7%A3%E9%87%8A%E5%9E%8B%E8%AF%AD%E8%A8%80/</url>
-    <content><![CDATA[<p>任何语言在交给计算机执行时，必须转换为机器码。根据转换时机的不同，语言分为两大类：</p>
-<ul>
-<li>编译型语言：会在代码执行前将代码编译为机器码，然后交给计算机执行。执行速度快，跨平台型差。</li>
-<li>解释性语言：不会在执行前对代码进行编译，而是在执行的同时一边执行一边编译。跨平台型好。执行速度慢。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算机简介</title>
-    <url>/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<p>计算机是一个用来进行计算的<strong>机器</strong>，跟生活中其他机器不同的点在于计算机是用来<strong>计算</strong>的。</p>
-<p>目前计算机只能根据人类的指令进行操作。我们所学计算机，就是学习如何去进行控制这台机器。</p>
-<p>计算机包含硬件和软件两部分：</p>
-<ul>
-<li>
-<p>硬件：看得见摸得着的鼠标键盘、主板、内存、硬盘。它相当于人的身体器官。</p>
-</li>
-<li>
-<p>软件：看的见摸不着的。软件包含：</p>
-<ul>
-<li>系统软件：Windows，Linux，macOS等。</li>
-<li>应用软件：Office，QQ，王者荣耀等。</li>
-</ul>
-<p>负责计算机的运行。人器官完好也有可能是个死人。</p>
-</li>
-</ul>
-<p>我们需要通过<strong>软件</strong>操作计算机。但是软件中不是所有的功能都会对用户开放，用户需要调取软件的接口/交互界面（interface）来操作计算机。有允许用户调取的接口（用户界面），有不允许用户调取的接口。</p>
-<p>用户界面包括：TUI（文本交互界面）比如Mac的Terminal，GUI（图形交互界面）正常操作的界面。</p>
-<p>我们学习编程就要学习通过TUI操作软件进行控制计算机。</p>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>计算机简介</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算机语言</title>
-    <url>/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<p>计算机语言其实和人类语言没有本质区别，知识交流主体不同。</p>
-<p>机器语言发展的三个阶段：</p>
-<ul>
-<li>机器语言：通过二进制编码来编写程序。编写麻烦，执行效率好。</li>
-<li>汇编语言：使用符号代替机器码。汇编与反汇编。汇编语言只适用于某些硬件，兼容性差。计算机底层一些硬件驱动现在还用汇编语言编写。</li>
-<li>高级语言：和英语语法类似，并且和硬件关系不紧密，通过高级语言编写的程序可以在不同的硬件系统中执行。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>计算机</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>字典</title>
-    <url>/2024/04/06/%E9%9B%86%E5%90%88/</url>
-    <content><![CDATA[<ul>
-<li>sets can be builded by <code>&#123;&#125;</code>or <code>set() function</code></li>
-<li>sets only accepts immutable objects, list for example is not acceptable.</li>
-<li>objects in sets is disorder.</li>
-<li>every object in sets must be unique</li>
-<li><code>set()</code>can change a sequence or dict into a sets. it only accepts the <code>key</code> if you want<br />
-change dict.</li>
-<li>you can not mnipulate sets by index, but you can change it into list firstly</li>
-<li>add() method and add factor to sets.</li>
-<li>update() method, insert a sets into the current sets. it doesn’t have to be sets, sequence and<br />
-dict can also insert to sets in this way.</li>
-<li>pop() method will remove factor randomly and return the deleted factor</li>
-<li>remove(factor). remove the factor you put in argument place.</li>
-<li></li>
-</ul>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>进制</title>
     <url>/2024/03/31/%E8%BF%9B%E5%88%B6/</url>
     <content><![CDATA[<ul>
@@ -2256,8 +2235,36 @@ dict can also insert to sets in this way.</li>
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/css/postpage_style.css</url>
+    <title>字典</title>
+    <url>/2024/04/06/%E9%9B%86%E5%90%88/</url>
+    <content><![CDATA[<ul>
+<li>sets can be builded by <code>&#123;&#125;</code>or <code>set() function</code></li>
+<li>sets only accepts immutable objects, list for example is not acceptable.</li>
+<li>objects in sets is disorder.</li>
+<li>every object in sets must be unique</li>
+<li><code>set()</code>can change a sequence or dict into a sets. it only accepts the <code>key</code> if you want<br />
+change dict.</li>
+<li>you can not mnipulate sets by index, but you can change it into list firstly</li>
+<li>add() method and add factor to sets.</li>
+<li>update() method, insert a sets into the current sets. it doesn’t have to be sets, sequence and<br />
+dict can also insert to sets in this way.</li>
+<li>pop() method will remove factor randomly and return the deleted factor</li>
+<li>remove(factor). remove the factor you put in argument place.</li>
+<li></li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>分类</title>
+    <url>/categories/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -2309,13 +2316,8 @@ dict can also insert to sets in this way.</li>
 }]]></content>
   </entry>
   <entry>
-    <title>分类</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>链接</title>
-    <url>/link/index.html</url>
+    <title></title>
+    <url>/css/postpage_style.css</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -2324,8 +2326,8 @@ dict can also insert to sets in this way.</li>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
+    <title></title>
+    <url>/js/script.js</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -2334,13 +2336,18 @@ dict can also insert to sets in this way.</li>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>电影</title>
-    <url>/movies/index.html</url>
+    <title>标签</title>
+    <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/js/script.js</url>
+    <title>链接</title>
+    <url>/link/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>电影</title>
+    <url>/movies/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
