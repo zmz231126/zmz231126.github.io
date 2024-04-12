@@ -185,64 +185,64 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim -x .vimrc</span><br></pre></td></tr></table></figure>
 <p>whenever you’re not typing, it’s better to get back to Normal mode.</p>
 <p><code>ctrl-o</code> when you are in Insert mode, and press ctrl-o, you will enter Command mode, but after execute one command, you will be automatically sent back to Insert mode.</p>
-<p><code>d4w</code> you will delete four words after your cursor.<br />
+<p><code>d4w</code> you will delete four words after your cursor.<br>
 <code>:e &lt;filename&gt;</code> open a file in your current session.</p>
-<p>You entered a file, want to open another file,<br />
-<code>r newfile.txt</code> insert new file below the cursor in current buffer.<br />
-<code>0r newfile.txt</code> insert new file before the first line.<br />
-<code>r!sed -n 2,8p newfile.txt</code> insert lines 2 to 8 from newfile below the cursor.<br />
+<p>You entered a file, want to open another file,<br>
+<code>r newfile.txt</code> insert new file below the cursor in current buffer.<br>
+<code>0r newfile.txt</code> insert new file before the first line.<br>
+<code>r!sed -n 2,8p newfile.txt</code> insert lines 2 to 8 from newfile below the cursor.<br>
 <code>r !ls</code> insert a directory listing below the cursor.</p>
-<p><code>ZZ</code> Exit Vim but write only when changes have been made.<br />
+<p><code>ZZ</code> Exit Vim but write only when changes have been made.<br>
 <code>qa</code> Exit all opened files in current Vim session.</p>
 <p><code>sav newfilename.txt</code> Save current buffer as a new file by new name.</p>
 <p><code>w,W,e,E,b,B</code></p>
 <p><code>6j</code> take you six lines below.<code>3w</code> take you to the start of the 3rd world next world.</p>
-<p><code>ctrl-d</code> scroll down half page.<br />
-<code>ctrl-u</code> scroll up half page.<br />
-<code>ctrl-f</code> forwards  down full page<br />
+<p><code>ctrl-d</code> scroll down half page.<br>
+<code>ctrl-u</code> scroll up half page.<br>
+<code>ctrl-f</code> forwards  down full page<br>
 <code>ctrl-b</code> backwards up full page</p>
-<p><code>gg</code> go to the top of the file<br />
-<code>G</code> go to the bottom of the file<br />
-<code>50%</code> go to line at the 50% of the file<br />
-<code>:linenumber</code> jump to line specified<br />
-<code>&#123;</code> go to the beginning of the current paragraph<br />
-<code>&#125;</code> go to the end of the current paragraph<br />
+<p><code>gg</code> go to the top of the file<br>
+<code>G</code> go to the bottom of the file<br>
+<code>50%</code> go to line at the 50% of the file<br>
+<code>:linenumber</code> jump to line specified<br>
+<code>&#123;</code> go to the beginning of the current paragraph<br>
+<code>&#125;</code> go to the end of the current paragraph<br>
 <code>%</code> go to the matching pair of (),[],{}</p>
-<p><code>H</code> Move cursor to the highest line in current window<br />
-<code>M</code> Move cursor to the middle line of the current window<br />
+<p><code>H</code> Move cursor to the highest line in current window<br>
+<code>M</code> Move cursor to the middle line of the current window<br>
 <code>L</code> Move cursor to the lowest line of the current window</p>
 <p>search forward <code>/</code> search backward <code>?</code> n⇌N</p>
-<p>Place your cursor to any word, Press <code>*</code> Vim will search forwards for the next occurence of that word. Press <code>#</code> Vim will search backwards for the word under your cursor.<br />
-but these two commands are searching for exact words, if you don’t want exact word matching, use commands <code>g*</code> and <code>g#</code> accordingly.<br />
+<p>Place your cursor to any word, Press <code>*</code> Vim will search forwards for the next occurence of that word. Press <code>#</code> Vim will search backwards for the word under your cursor.<br>
+but these two commands are searching for exact words, if you don’t want exact word matching, use commands <code>g*</code> and <code>g#</code> accordingly.<br>
 in Command mode, <code>ctrl-o</code> jump back to your previous position. <code>ctrl-i</code> jump forwards.</p>
 <p>place the cursor to any word you want to search. Press<code>:/</code> then press <code>ctrl-r</code> and then <code>ctrl-w</code>, these will copy the word under cursor to the command line, ready for searching.</p>
-<p><code>Ex</code> open current dir in current window.<br />
-<code>Ex &lt;dir&gt;</code> open specified directory.<br />
-<code>:Sex</code> open current dir in horizontal split window.<br />
-<code>:Vex</code> open current dir in vertical split window. When you hit enter, it will open file in the original dir window.<br />
-<code>Lexplore</code> open current dir in vertical split window, When you hit enter, it will open file in the original file window.<br />
-<code>:Tex</code> open current dir in a new tab.<br />
+<p><code>Ex</code> open current dir in current window.<br>
+<code>Ex &lt;dir&gt;</code> open specified directory.<br>
+<code>:Sex</code> open current dir in horizontal split window.<br>
+<code>:Vex</code> open current dir in vertical split window. When you hit enter, it will open file in the original dir window.<br>
+<code>Lexplore</code> open current dir in vertical split window, When you hit enter, it will open file in the original file window.<br>
+<code>:Tex</code> open current dir in a new tab.<br>
 You can change the dir listing view to show more or less information, change the sorting order or hide some kind of files. you can hit <code>i</code> to cycle through the view types. There are four of them: thin, long, wide and tree. Once you choose your favorite, set it to be defalut one in your .vimrc file, like: <code>let g:netrw_liststyle = 3</code></p>
-<p><code>vim /Users/ken</code> with Vim, not only can you open files, but you can also open directories.<br />
-<code>D</code> deletes the file under the cursor.<br />
-<code>R</code> rename the file under the cursor.<br />
-<code>X</code> executes the file under the cursor.<br />
-<code>%</code> creates a new file in the current dir. Vim will ask you for a file name and open a new buffer.<br />
+<p><code>vim /Users/ken</code> with Vim, not only can you open files, but you can also open directories.<br>
+<code>D</code> deletes the file under the cursor.<br>
+<code>R</code> rename the file under the cursor.<br>
+<code>X</code> executes the file under the cursor.<br>
+<code>%</code> creates a new file in the current dir. Vim will ask you for a file name and open a new buffer.<br>
 When you hit <code>Enter</code> to open a file, it will be opened in the same window as netrw, if you would like to keep the netrw in a side split, you can add <code>let g:netrw_browe_split = 4</code>.</p>
-<p>If you’re not sure of your home directory location, run<code>echo $HOME</code> in Vim.<br />
+<p>If you’re not sure of your home directory location, run<code>echo $HOME</code> in Vim.<br>
 <code>:colorschemeㄩ</code> then press <code>Tab</code> you can choose the build-in scheme, once you find the color scheme you like, add it to .vimrc file:<code>colorscheme &lt;scheme_name&gt;</code></p>
-<p><code>set cursorline</code> mark the line the cursor is currently in.<br />
-<code>set cursorcolumn</code> mark the current column of the cursor.<br />
+<p><code>set cursorline</code> mark the line the cursor is currently in.<br>
+<code>set cursorcolumn</code> mark the current column of the cursor.<br>
 <code>:g</code> or <code>ctrl+g</code> you can show detailed information about number of lines, words, characters, etc. in you current bufffer.</p>
-<p>You can press <code>u</code> in Normal mode to call undo command, if you want to undo multiple times, attach a digit prefix, for example <code>5u</code> to undo the last 5 changes<br />
-<code>U</code> undo all recent changes on the current line.<br />
+<p>You can press <code>u</code> in Normal mode to call undo command, if you want to undo multiple times, attach a digit prefix, for example <code>5u</code> to undo the last 5 changes<br>
+<code>U</code> undo all recent changes on the current line.<br>
 <code>ctrl-r</code> you’ll run the redo command.</p>
-<p><code>:earlier &lt;digit&gt;</code> revert last <digit> changes<br />
+<p><code>:earlier &lt;digit&gt;</code> revert last <digit> changes<br>
 <code>:later &lt;digit&gt;</code> redo <digit>last changes .</p>
-<p><code>earlier 2d</code> undo changes in last 2 days .<br />
-<code>ea 3h</code> undo changes in last 3 hours .<br />
-<code>ea 1m</code> undo changes in last 1 minute<br />
-<code>lat 15s</code> redo all the changes in last 15 seconds<br />
+<p><code>earlier 2d</code> undo changes in last 2 days .<br>
+<code>ea 3h</code> undo changes in last 3 hours .<br>
+<code>ea 1m</code> undo changes in last 1 minute<br>
+<code>lat 15s</code> redo all the changes in last 15 seconds<br>
 <code>:earlier 3f</code> undo last 3 file states(last 3 buffer writes)</p>
 <p>Vim creates an undo branch every time you hit <code>u</code>. The branch represents the state of the file before you execute undo. So you can use <code>g-</code>command to move backward or <code>g+</code> to move forward between these branches.</p>
 <p>Vim supports persistent undo/redo, you can run undo/redo even from your previous sessions.</p>
