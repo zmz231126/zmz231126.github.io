@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-04-12T03:53:20.131Z</updated>
+  <updated>2024-04-13T10:58:48.011Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,65 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2024/04/13/sort%E6%96%B9%E6%B3%95/"/>
+    <id>http://example.com/2024/04/13/sort%E6%96%B9%E6%B3%95/</id>
+    <published>2024-04-13T10:58:48.011Z</published>
+    <updated>2024-04-13T10:58:48.011Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2024/04/13/%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/"/>
+    <id>http://example.com/2024/04/13/%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/</id>
+    <published>2024-04-13T10:50:25.456Z</published>
+    <updated>2024-04-13T10:50:25.457Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;高阶函数&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#高阶函数&quot;&gt;&lt;/a&gt; 高阶函数&lt;/h1&gt;
+&lt;p&gt;定义：接受函数作为参数，并且将函数作为返回值返回。&lt;br /&gt;
+例子: 定义一个函数，可以将指定列表中所有的偶数返回。&lt;/p&gt;
+&lt;f</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Vim mapping</title>
+    <link href="http://example.com/2024/04/12/vim_mapping/"/>
+    <id>http://example.com/2024/04/12/vim_mapping/</id>
+    <published>2024-04-12T09:54:49.646Z</published>
+    <updated>2024-04-12T12:33:34.061Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;nmap&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#nmap&quot;&gt;&lt;/a&gt; nmap&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;nmap&lt;/code&gt; command is used to define mapping for Normal mod</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="Vim" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim/"/>
+    
+    
+    <category term="Vim" scheme="http://example.com/tags/Vim/"/>
+    
+  </entry>
   
   <entry>
     <title>Vim中的搜索和替换</title>
@@ -448,65 +507,6 @@
   </entry>
   
   <entry>
-    <title>python交互模式</title>
-    <link href="http://example.com/2024/03/31/python%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://example.com/2024/03/31/python%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%BC%8F/</id>
-    <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T03:39:54.811Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;交互界面：当我们通过命令行进入python，所进入的界面就是python的交互界面。&lt;/p&gt;
-&lt;p&gt;交互模式是输入一行执行一行，并不适合日常开发，仅可以做一些日常简单的测试。&lt;/p&gt;
-&lt;p&gt;我们可以编写&lt;code&gt;.py&lt;/code&gt;文档，利用【终端】执行。&lt;/p&gt;
-&lt;p&gt;</summary>
-      
-    
-    
-    
-    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
-    
-    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
-    <category term="Mac终端" scheme="http://example.com/tags/Mac%E7%BB%88%E7%AB%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python的基本语法</title>
-    <link href="http://example.com/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
-    <id>http://example.com/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</id>
-    <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T03:39:54.813Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;python严格区分大小写。比如&lt;code&gt;Print()&lt;/code&gt;不能被执行。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;语句&lt;/strong&gt;不建议过长。一条语句可以多行编写，语句以反斜线&lt;code&gt;&#92;&lt;/code&gt;换行。&lt;/p&gt;
-&lt;p&gt;不要随便写缩进，缩进严格，表示代码块。&lt;</summary>
-      
-    
-    
-    
-    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
-    
-    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
     <title>python中的几个术语</title>
     <link href="http://example.com/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
     <id>http://example.com/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</id>
@@ -535,18 +535,19 @@
   </entry>
   
   <entry>
-    <title>变量和标识符</title>
-    <link href="http://example.com/2024/03/31/%E5%8F%98%E9%87%8F%E5%92%8C%E6%A0%87%E8%AF%86%E7%AC%A6/"/>
-    <id>http://example.com/2024/03/31/%E5%8F%98%E9%87%8F%E5%92%8C%E6%A0%87%E8%AF%86%E7%AC%A6/</id>
+    <title>python交互模式</title>
+    <link href="http://example.com/2024/03/31/python%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://example.com/2024/03/31/python%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%BC%8F/</id>
     <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T03:49:06.980Z</updated>
+    <updated>2024-03-31T03:39:54.811Z</updated>
     
     
       
       
-    <summary type="html">&lt;p&gt;使用变量不需要声明，直接为变量赋值，但是不能使用未被赋值的变量&lt;/p&gt;
-&lt;p&gt;python是一个动态类型的语言，可以给变量赋&lt;strong&gt;任意类型的值&lt;/strong&gt;。也可以任意修改变量的值。&lt;/p&gt;
-&lt;p&gt;通常变量的名要有意义，比如年龄18，那么我们可以写&lt;code&gt;</summary>
+    <summary type="html">&lt;p&gt;交互界面：当我们通过命令行进入python，所进入的界面就是python的交互界面。&lt;/p&gt;
+&lt;p&gt;交互模式是输入一行执行一行，并不适合日常开发，仅可以做一些日常简单的测试。&lt;/p&gt;
+&lt;p&gt;我们可以编写&lt;code&gt;.py&lt;/code&gt;文档，利用【终端】执行。&lt;/p&gt;
+&lt;p&gt;</summary>
       
     
     
@@ -560,37 +561,7 @@
     
     <category term="python" scheme="http://example.com/tags/python/"/>
     
-    <category term="spyder快捷键" scheme="http://example.com/tags/spyder%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>字符串</title>
-    <link href="http://example.com/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    <id>http://example.com/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
-    <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T09:45:21.301Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;字符串用来表示文本信息, 是使用最多的数据类型. 必须用引号包围, 可以理解成某人说:“”.&lt;/li&gt;
-&lt;li&gt;单引号双引号都可以, 但是不可以混合使用. 但是相同的引号不可以嵌套, 但是不同的引号可以嵌套. 下边就是不用引号的嵌套&lt;/li&gt;
-&lt;/ul&gt;
-&lt;fi</summary>
-      
-    
-    
-    
-    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
-    
-    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="python" scheme="http://example.com/tags/python/"/>
+    <category term="Mac终端" scheme="http://example.com/tags/Mac%E7%BB%88%E7%AB%AF/"/>
     
   </entry>
   
