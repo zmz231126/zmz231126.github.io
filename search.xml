@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Vim基础</title>
+    <title>Vim编辑命令2</title>
     <url>/2024/04/11/Vim%20basic%20intro/</url>
     <content><![CDATA[<h1 id="command-mode"><a class="markdownIt-Anchor" href="#command-mode"></a> Command Mode:</h1>
 <p>This is the the default mode in which vim starts. We can use a variety of command in this mode like copy, paste, delete, replace and many more.</p>
@@ -59,25 +59,6 @@ Buffer: when we open a file, Vim load its contents from disk drive. When we edit
       <tags>
         <tag>Vim</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2024/03/24/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
-<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
   </entry>
   <entry>
     <title>流程控制</title>
@@ -397,79 +378,7 @@ $ last line<br />
       </tags>
   </entry>
   <entry>
-    <title>函数介绍2</title>
-    <url>/2024/04/09/text_string_post/</url>
-    <content><![CDATA[<h1 id="help"><a class="markdownIt-Anchor" href="#help"></a> help()</h1>
-<p>help() 是python中的内置函数, 使用它可以可以查询函数的用法.但是当我们使用help()来查询自定义函数的时候，它无法显示函数的说明，只能显示函数的结构，比如：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>(<span class="params">a</span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="number">10</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">help</span>(fn)</span><br></pre></td></tr></table></figure>
-<p>返回值为<code>Help on function fn in module __main__:</code><br />
-如果我们想返回函数的说明，就要在函数中添加文本字符串。比如</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>(<span class="params">a,b,c</span>):</span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">这是一个文档字符串实例</span></span><br><span class="line"><span class="string">函数的作用是：</span></span><br><span class="line"><span class="string">函数的参数：</span></span><br><span class="line"><span class="string">a.作用，类型，默认值...</span></span><br><span class="line"><span class="string">b.作用，类型，默认值...</span></span><br><span class="line"><span class="string">c.作用，类型，默认值...</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line">  <span class="keyword">return</span> <span class="number">10</span></span><br><span class="line"><span class="built_in">help</span>(fn)</span><br></pre></td></tr></table></figure>
-<p>此时就会返回三个引号内的内容。我们也在参数后边加上参数的类型，比如<code>def fn(a:int,b:bool,c:str)</code></p>
-<h1 id="作用域scope"><a class="markdownIt-Anchor" href="#作用域scope"></a> 作用域(scope)</h1>
-<p>指的是变量生效的区域，比如</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>():</span><br><span class="line">    a = <span class="number">10</span></span><br><span class="line">    <span class="built_in">print</span>(a)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用函数</span></span><br><span class="line">fn()</span><br></pre></td></tr></table></figure>
-<p>此时就会返回<code>10</code><br />
-我们调用函数，就是输出<code>a</code>，是因为变量和输出都是在函数的作用域内。<br />
-python中的作用域分类两种：</p>
-<ol>
-<li>全局作用域</li>
-</ol>
-<ul>
-<li>全局作用域在程序执行时创建，在程序执行结束时销毁。</li>
-<li>所有函数以外的区域就是全局作用域。</li>
-<li>在全局作用域中定义的变量就是全局变量，全局变量可以在程序的任意位置被访问。</li>
-</ul>
-<ol start="2">
-<li>函数作用域</li>
-</ol>
-<ul>
-<li>在函数调用时创建， 在调用结束时销毁。</li>
-<li>函数没调用一次，就会产生一个新的函数作用域。</li>
-<li>在函数作用域中定义的变量，都是局部变量，它只能在函数内部被访问。</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">b = <span class="number">20</span> <span class="comment"># 全局变量</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>():</span><br><span class="line">    a = <span class="number">10</span> <span class="comment"># 10局部变量</span></span><br><span class="line">    <span class="built_in">print</span>(a) <span class="comment"># 只能在函数内部被访问</span></span><br><span class="line">    <span class="built_in">print</span>(b) <span class="comment"># 可以在任意位置被访问</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用函数</span></span><br><span class="line">fn()</span><br></pre></td></tr></table></figure>
-<p>此时返回结果为<code>10 20</code><br />
-3. 当我们使用变量时，优先在当前作用域中寻找此变量，如果没有，则继续在上一级的作用域中去寻找。如果在全局变量中依然没找到，则返回NameError。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">b = <span class="number">20</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>():</span><br><span class="line">    a = <span class="number">10</span></span><br><span class="line">    b = <span class="number">30</span></span><br><span class="line">    <span class="built_in">print</span>(a)</span><br><span class="line">    <span class="built_in">print</span>(b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用函数</span></span><br><span class="line">fn()</span><br></pre></td></tr></table></figure>
-<p>此时返回结果为<code>10 30</code>。<br />
-4. 如果希望在函数内部使用同名的全局变量，可以使用global关键字。比如</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">b = <span class="number">20</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>():</span><br><span class="line">    a = <span class="number">10</span></span><br><span class="line">    <span class="keyword">global</span> b</span><br><span class="line">    b = <span class="number">5</span></span><br><span class="line">    <span class="built_in">print</span>(a)</span><br><span class="line">    <span class="built_in">print</span>(b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用函数</span></span><br><span class="line">fn()</span><br></pre></td></tr></table></figure>
-<p>此时返回<code>10 5</code></p>
-<h1 id="命名空间space"><a class="markdownIt-Anchor" href="#命名空间space"></a> 命名空间(space)</h1>
-<p>命名空间就是变量的存储位置，每一个变量都需要存储到指定的命名空间中。每一个作用域都会有一个它对应的命名空间。<br />
-命名空间实际上就是一个字典，是一个专门专门用来存储变量的字典。<br />
-使用locals()来获取当前作用域的命名空间。它返回的是一个字典<br />
-global()函数可以用来在任意位置获取我们的全局命名空间</p>
-<h1 id="递归"><a class="markdownIt-Anchor" href="#递归"></a> 递归</h1>
-<ul>
-<li>阶乘</li>
-</ul>
-<figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">1! = 1*1 =1</span><br><span class="line">2! = 1*2 =2</span><br><span class="line">3! = 1*2*3 =6</span><br><span class="line">4! = 1*2*3*4 =24</span><br></pre></td></tr></table></figure>
-<p>求10的阶乘</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = <span class="number">10</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">10</span>): <span class="comment"># range函数包含开始不包含结束</span></span><br><span class="line">  n *= i</span><br><span class="line"><span class="built_in">print</span>(n)</span><br></pre></td></tr></table></figure>
-<p>创建一个函数，求任意数的阶乘。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">factorial</span>(<span class="params">a</span>):</span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    该函数用来求任意数的阶乘</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    参数n是任意数</span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    n = a</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,a):</span><br><span class="line">        n *= i</span><br><span class="line">    <span class="keyword">return</span> n</span><br></pre></td></tr></table></figure>
-<ul>
-<li>递归式函数<br />
-递归式函数就是在函数中自己调用自己.<br />
-递归函数的两个要件：</li>
-</ul>
-<ol>
-<li>基线条件：问题继续分解的条件</li>
-<li>递归条件：</li>
-</ol>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>vim语言</title>
+    <title>vim编辑命令1</title>
     <url>/2024/04/11/vim%20%E8%AF%AD%E8%A8%80/</url>
     <content><![CDATA[<h1 id="verbs"><a class="markdownIt-Anchor" href="#verbs"></a> Verbs</h1>
 <ol>
@@ -756,6 +665,79 @@ b = 20<br />
 变量全部给带<em>的变量. 同理第一个变量带</em>, 后边的变量从末尾给自分配,<br />
 前边的都给第一个带<em>的变量.</br><br />
 但是不能出现多个</em>变量.</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>函数介绍2</title>
+    <url>/2024/04/09/%E5%87%BD%E6%95%B0%E4%BB%8B%E7%BB%8D2/</url>
+    <content><![CDATA[<h1 id="help"><a class="markdownIt-Anchor" href="#help"></a> help()</h1>
+<p>help() 是python中的内置函数, 使用它可以可以查询函数的用法.但是当我们使用help()来查询自定义函数的时候，它无法显示函数的说明，只能显示函数的结构，比如：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>(<span class="params">a</span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="number">10</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">help</span>(fn)</span><br></pre></td></tr></table></figure>
+<p>返回值为<code>Help on function fn in module __main__:</code><br />
+如果我们想返回函数的说明，就要在函数中添加文本字符串。比如</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>(<span class="params">a,b,c</span>):</span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">这是一个文档字符串实例</span></span><br><span class="line"><span class="string">函数的作用是：</span></span><br><span class="line"><span class="string">函数的参数：</span></span><br><span class="line"><span class="string">a.作用，类型，默认值...</span></span><br><span class="line"><span class="string">b.作用，类型，默认值...</span></span><br><span class="line"><span class="string">c.作用，类型，默认值...</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line">  <span class="keyword">return</span> <span class="number">10</span></span><br><span class="line"><span class="built_in">help</span>(fn)</span><br></pre></td></tr></table></figure>
+<p>此时就会返回三个引号内的内容。我们也在参数后边加上参数的类型，比如<code>def fn(a:int,b:bool,c:str)</code></p>
+<h1 id="作用域scope"><a class="markdownIt-Anchor" href="#作用域scope"></a> 作用域(scope)</h1>
+<p>指的是变量生效的区域，比如</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>():</span><br><span class="line">    a = <span class="number">10</span></span><br><span class="line">    <span class="built_in">print</span>(a)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用函数</span></span><br><span class="line">fn()</span><br></pre></td></tr></table></figure>
+<p>此时就会返回<code>10</code><br />
+我们调用函数，就是输出<code>a</code>，是因为变量和输出都是在函数的作用域内。<br />
+python中的作用域分类两种：</p>
+<ol>
+<li>全局作用域</li>
+</ol>
+<ul>
+<li>全局作用域在程序执行时创建，在程序执行结束时销毁。</li>
+<li>所有函数以外的区域就是全局作用域。</li>
+<li>在全局作用域中定义的变量就是全局变量，全局变量可以在程序的任意位置被访问。</li>
+</ul>
+<ol start="2">
+<li>函数作用域</li>
+</ol>
+<ul>
+<li>在函数调用时创建， 在调用结束时销毁。</li>
+<li>函数没调用一次，就会产生一个新的函数作用域。</li>
+<li>在函数作用域中定义的变量，都是局部变量，它只能在函数内部被访问。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">b = <span class="number">20</span> <span class="comment"># 全局变量</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>():</span><br><span class="line">    a = <span class="number">10</span> <span class="comment"># 10局部变量</span></span><br><span class="line">    <span class="built_in">print</span>(a) <span class="comment"># 只能在函数内部被访问</span></span><br><span class="line">    <span class="built_in">print</span>(b) <span class="comment"># 可以在任意位置被访问</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用函数</span></span><br><span class="line">fn()</span><br></pre></td></tr></table></figure>
+<p>此时返回结果为<code>10 20</code><br />
+3. 当我们使用变量时，优先在当前作用域中寻找此变量，如果没有，则继续在上一级的作用域中去寻找。如果在全局变量中依然没找到，则返回NameError。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">b = <span class="number">20</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>():</span><br><span class="line">    a = <span class="number">10</span></span><br><span class="line">    b = <span class="number">30</span></span><br><span class="line">    <span class="built_in">print</span>(a)</span><br><span class="line">    <span class="built_in">print</span>(b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用函数</span></span><br><span class="line">fn()</span><br></pre></td></tr></table></figure>
+<p>此时返回结果为<code>10 30</code>。<br />
+4. 如果希望在函数内部使用同名的全局变量，可以使用global关键字。比如</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">b = <span class="number">20</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>():</span><br><span class="line">    a = <span class="number">10</span></span><br><span class="line">    <span class="keyword">global</span> b</span><br><span class="line">    b = <span class="number">5</span></span><br><span class="line">    <span class="built_in">print</span>(a)</span><br><span class="line">    <span class="built_in">print</span>(b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用函数</span></span><br><span class="line">fn()</span><br></pre></td></tr></table></figure>
+<p>此时返回<code>10 5</code></p>
+<h1 id="命名空间space"><a class="markdownIt-Anchor" href="#命名空间space"></a> 命名空间(space)</h1>
+<p>命名空间就是变量的存储位置，每一个变量都需要存储到指定的命名空间中。每一个作用域都会有一个它对应的命名空间。<br />
+命名空间实际上就是一个字典，是一个专门专门用来存储变量的字典。<br />
+使用locals()来获取当前作用域的命名空间。它返回的是一个字典<br />
+global()函数可以用来在任意位置获取我们的全局命名空间</p>
+<h1 id="递归"><a class="markdownIt-Anchor" href="#递归"></a> 递归</h1>
+<ul>
+<li>阶乘</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">1! = 1*1 =1</span><br><span class="line">2! = 1*2 =2</span><br><span class="line">3! = 1*2*3 =6</span><br><span class="line">4! = 1*2*3*4 =24</span><br></pre></td></tr></table></figure>
+<p>求10的阶乘</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = <span class="number">10</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">10</span>): <span class="comment"># range函数包含开始不包含结束</span></span><br><span class="line">  n *= i</span><br><span class="line"><span class="built_in">print</span>(n)</span><br></pre></td></tr></table></figure>
+<p>创建一个函数，求任意数的阶乘。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">factorial</span>(<span class="params">a</span>):</span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    该函数用来求任意数的阶乘</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    参数n是任意数</span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    n = a</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,a):</span><br><span class="line">        n *= i</span><br><span class="line">    <span class="keyword">return</span> n</span><br></pre></td></tr></table></figure>
+<ul>
+<li>递归式函数<br />
+递归式函数就是在函数中自己调用自己.<br />
+递归函数的两个要件：</li>
+</ul>
+<ol>
+<li>基线条件：问题继续分解的条件</li>
+<li>递归条件：</li>
+</ol>
 ]]></content>
       <categories>
         <category>编程</category>
@@ -1249,6 +1231,60 @@ This is-a line, with special/separated/words (and some more).</p>
       </tags>
   </entry>
   <entry>
+    <title>字符串</title>
+    <url>/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
+    <content><![CDATA[<ul>
+<li>字符串用来表示文本信息, 是使用最多的数据类型. 必须用引号包围, 可以理解成某人说:“”.</li>
+<li>单引号双引号都可以, 但是不可以混合使用. 但是相同的引号不可以嵌套, 但是不同的引号可以嵌套. 下边就是不用引号的嵌套</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">c = <span class="string">&quot;子曰:&#x27;学而时习之, 不亦说乎&#x27;&quot;</span></span><br><span class="line"><span class="built_in">print</span>(c)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>引号不可以跨行使用, 需要跨行使用<code>\</code>. 注意: 这里跟<code>\n</code>的区别. 单纯的<code>\</code>只是告诉解析器我代码要换行写了, 不影响字符格式.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;锄禾日当午, \</span></span><br><span class="line"><span class="string">汗滴禾下土, \</span></span><br><span class="line"><span class="string">谁知盘中餐, \</span></span><br><span class="line"><span class="string">粒粒皆辛苦.&#x27;</span> </span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(s)</span><br></pre></td></tr></table></figure>
+<p>此时返回</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">锄禾日当午, 汗滴禾下土, 谁知盘中餐, 粒粒皆辛苦.</span><br></pre></td></tr></table></figure>
+<ul>
+<li>如果要保留, 原字符串的格式, 可以使用三个引号, 三个引号可以直接跨行使用, 而且保留字符串的格式.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;&#x27;&#x27;锄禾日当午,</span></span><br><span class="line"><span class="string">行滴禾下土,</span></span><br><span class="line"><span class="string">谁知盘中餐,</span></span><br><span class="line"><span class="string">粒粒皆辛苦.&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s)</span><br></pre></td></tr></table></figure>
+<p>此时返回值为</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">锄禾日当午,</span><br><span class="line">行滴禾下土,</span><br><span class="line">谁知盘中餐,</span><br><span class="line">粒粒皆辛苦.</span><br></pre></td></tr></table></figure>
+<ul>
+<li>转义字符, 比如在字符串内嵌套相同的引号是不允许的, 但是可以使用转义字符,将没有语法意义的引号转义, 告诉解析器, 他就单纯是一个字符而已, 不是一个字面量.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">c = <span class="string">&quot;子曰:\&quot;学而时习之, 不亦说乎\&quot;&quot;</span></span><br><span class="line"><span class="built_in">print</span>(c)</span><br></pre></td></tr></table></figure>
+<p>返回值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">子曰:&quot;学而时习之, 不亦说乎&quot;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>\n</code>表示换行符</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;锄禾日当午,\n汗滴禾下土,\n谁知盘中餐,\n粒粒皆辛苦.&#x27;</span> </span><br><span class="line"><span class="built_in">print</span>(s)</span><br></pre></td></tr></table></figure>
+<p>返回值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">锄禾日当午,</span><br><span class="line">汗滴禾下土,</span><br><span class="line">谁知盘中餐,</span><br><span class="line">粒粒皆辛苦.</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>\t</code>表示制表符</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">w = <span class="string">&#x27;学而时习之,\t不亦说乎&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(w)</span><br></pre></td></tr></table></figure>
+<p>返回值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">学而时习之,	不亦说乎</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>\uxxx</code>表示Unicode编码. 通过这种方式可以打印一些特殊符号.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="string">&#x27;\u0040&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(a)</span><br></pre></td></tr></table></figure>
+<p>返回值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">@</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>字符串的复制</title>
     <url>/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%A4%8D%E5%88%B6/</url>
     <content><![CDATA[<p>将字符串和数字相乘, 就是复制字符串</p>
@@ -1348,60 +1384,6 @@ This is-a line, with special/separated/words (and some more).</p>
     <content><![CDATA[<p>布尔值(bool)用来做逻辑判断. 一共有两个<code>True</code>和<code>False</code>. 注意Python是一个大小写敏感的语言.<br />
 也可以理解为一个整数, true 是 1 false 是 0</p>
 <p><code>None</code>空值,表示不存在.</p>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>字符串</title>
-    <url>/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
-    <content><![CDATA[<ul>
-<li>字符串用来表示文本信息, 是使用最多的数据类型. 必须用引号包围, 可以理解成某人说:“”.</li>
-<li>单引号双引号都可以, 但是不可以混合使用. 但是相同的引号不可以嵌套, 但是不同的引号可以嵌套. 下边就是不用引号的嵌套</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">c = <span class="string">&quot;子曰:&#x27;学而时习之, 不亦说乎&#x27;&quot;</span></span><br><span class="line"><span class="built_in">print</span>(c)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>引号不可以跨行使用, 需要跨行使用<code>\</code>. 注意: 这里跟<code>\n</code>的区别. 单纯的<code>\</code>只是告诉解析器我代码要换行写了, 不影响字符格式.</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;锄禾日当午, \</span></span><br><span class="line"><span class="string">汗滴禾下土, \</span></span><br><span class="line"><span class="string">谁知盘中餐, \</span></span><br><span class="line"><span class="string">粒粒皆辛苦.&#x27;</span> </span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(s)</span><br></pre></td></tr></table></figure>
-<p>此时返回</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">锄禾日当午, 汗滴禾下土, 谁知盘中餐, 粒粒皆辛苦.</span><br></pre></td></tr></table></figure>
-<ul>
-<li>如果要保留, 原字符串的格式, 可以使用三个引号, 三个引号可以直接跨行使用, 而且保留字符串的格式.</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;&#x27;&#x27;锄禾日当午,</span></span><br><span class="line"><span class="string">行滴禾下土,</span></span><br><span class="line"><span class="string">谁知盘中餐,</span></span><br><span class="line"><span class="string">粒粒皆辛苦.&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s)</span><br></pre></td></tr></table></figure>
-<p>此时返回值为</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">锄禾日当午,</span><br><span class="line">行滴禾下土,</span><br><span class="line">谁知盘中餐,</span><br><span class="line">粒粒皆辛苦.</span><br></pre></td></tr></table></figure>
-<ul>
-<li>转义字符, 比如在字符串内嵌套相同的引号是不允许的, 但是可以使用转义字符,将没有语法意义的引号转义, 告诉解析器, 他就单纯是一个字符而已, 不是一个字面量.</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">c = <span class="string">&quot;子曰:\&quot;学而时习之, 不亦说乎\&quot;&quot;</span></span><br><span class="line"><span class="built_in">print</span>(c)</span><br></pre></td></tr></table></figure>
-<p>返回值</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">子曰:&quot;学而时习之, 不亦说乎&quot;</span><br></pre></td></tr></table></figure>
-<ul>
-<li><code>\n</code>表示换行符</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;锄禾日当午,\n汗滴禾下土,\n谁知盘中餐,\n粒粒皆辛苦.&#x27;</span> </span><br><span class="line"><span class="built_in">print</span>(s)</span><br></pre></td></tr></table></figure>
-<p>返回值</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">锄禾日当午,</span><br><span class="line">汗滴禾下土,</span><br><span class="line">谁知盘中餐,</span><br><span class="line">粒粒皆辛苦.</span><br></pre></td></tr></table></figure>
-<ul>
-<li><code>\t</code>表示制表符</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">w = <span class="string">&#x27;学而时习之,\t不亦说乎&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(w)</span><br></pre></td></tr></table></figure>
-<p>返回值</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">学而时习之,	不亦说乎</span><br></pre></td></tr></table></figure>
-<ul>
-<li><code>\uxxx</code>表示Unicode编码. 通过这种方式可以打印一些特殊符号.</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="string">&#x27;\u0040&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(a)</span><br></pre></td></tr></table></figure>
-<p>返回值</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">@</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>编程</category>
@@ -1753,51 +1735,6 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
         <tag>建厂</tag>
         <tag>沙特投资</tag>
         <tag>沙特工业园</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>mermaid 流程图练习</title>
-    <url>/2024/03/27/%E6%B5%81%E7%A8%8B%E5%9B%BE/</url>
-    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flowchart LR</span><br><span class="line">   a --&gt; b &amp; c--&gt; d</span><br></pre></td></tr></table></figure>
-<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲ \label{eq2}
-\b…'>\begin{equation} \label{eq2}
-\begin{aligned}
-a &amp;= b + c \\
-  &amp;= d + e + f + g \\
-  &amp;= h + i
-\end{aligned}
-\end{equation}</p>
-<span>
-$$
-\begin{pmatrix}  
-  a_{11} & a_{12} & a_{13} \\  
-  a_{21} & a_{22} & a_{23} \\  
-  a_{31} & a_{32} & a_{33}  
-\end{pmatrix} 
-$$
-</span>
-<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
-1 \ne b
-\end{e…'>\begin{equation}
-1 \ne b
-\end{equation}
-</p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>1</mn><mo mathvariant="normal">≠</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">1 \ne b
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mrel"><span class="mord vbox"><span class="thinbox"><span class="rlap"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="inner"><span class="mrel"></span></span><span class="fix"></span></span></span></span></span><span class="mrel">=</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">b</span></span></span></span></span></p>
-<p>$ 1 \ne b $<br />
-<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo mathvariant="normal">≠</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">1 \ne b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mrel"><span class="mord vbox"><span class="thinbox"><span class="rlap"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="inner"><span class="mrel"></span></span><span class="fix"></span></span></span></span></span><span class="mrel">=</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">b</span></span></span></span></p>
-<div class="mermaid-wrap"><pre class="mermaid-src" hidden>
-  pie
-    title Key elements in Product X
-    &quot;Calcium&quot; : 42.96
-    &quot;Potassium&quot; : 50.05
-    &quot;Magnesium&quot; : 10.01
-    &quot;Iron&quot; :  5
-  </pre></div>
-<p><a href='https://raw.githubusercontent.com/zmz231126/bolgpicture/main/202403282015711.pdf'>发票</a></p>
-]]></content>
-      <tags>
-        <tag>练习</tag>
       </tags>
   </entry>
   <entry>
@@ -2431,7 +2368,7 @@ $$
       </tags>
   </entry>
   <entry>
-    <title>字典</title>
+    <title>集合</title>
     <url>/2024/04/06/%E9%9B%86%E5%90%88/</url>
     <content><![CDATA[<ul>
 <li>sets can be builded by <code>&#123;&#125;</code>or <code>set() function</code></li>
@@ -2490,6 +2427,7 @@ dict can also insert to sets in this way.</li>
 <p>匿名函数一般是作为参数使用，其他地方一般不会使用。</p>
 ]]></content>
       <categories>
+        <category>编程</category>
         <category>python</category>
         <category>python基础</category>
       </categories>
@@ -2503,13 +2441,18 @@ dict can also insert to sets in this way.</li>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
+    <title>文档</title>
+    <url>/files/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>分类</title>
     <url>/categories/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>文档</title>
-    <url>/files/index.html</url>
+    <title></title>
+    <url>/css/postpage_style.css</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -2559,11 +2502,6 @@ dict can also insert to sets in this way.</li>
         width: 80%
     }
 }]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/css/postpage_style.css</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title></title>
