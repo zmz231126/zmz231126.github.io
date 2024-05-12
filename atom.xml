@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-04-13T13:14:54.560Z</updated>
+  <updated>2024-05-12T16:11:32.809Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,40 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="http://example.com/2024/04/13/sort%E6%96%B9%E6%B3%95/"/>
-    <id>http://example.com/2024/04/13/sort%E6%96%B9%E6%B3%95/</id>
-    <published>2024-04-13T10:58:48.011Z</published>
-    <updated>2024-04-13T13:14:54.560Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://example.com/2024/04/13/%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/"/>
-    <id>http://example.com/2024/04/13/%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/</id>
-    <published>2024-04-13T10:50:25.456Z</published>
-    <updated>2024-04-13T13:14:52.213Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;高阶函数&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#高阶函数&quot;&gt;&lt;/a&gt; 高阶函数&lt;/h1&gt;
-&lt;p&gt;定义：接受函数作为参数，并且将函数作为返回值返回。&lt;br /&gt;
-例子: 定义一个函数，可以将指定列表中所有的偶数返回。&lt;/p&gt;
-&lt;f</summary>
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>Vim mapping</title>
@@ -82,7 +48,7 @@
     <link href="http://example.com/2024/04/11/substitution%20in%20vim/"/>
     <id>http://example.com/2024/04/11/substitution%20in%20vim/</id>
     <published>2024-04-11T11:15:56.137Z</published>
-    <updated>2024-05-12T16:12:49.540Z</updated>
+    <updated>2024-05-12T17:08:17.949Z</updated>
     
     
       
@@ -97,7 +63,34 @@
     
     <category term="Vim" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim/"/>
     
-    <category term="快捷键5" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim/%E5%BF%AB%E6%8D%B7%E9%94%AE5/"/>
+    <category term="Vim快捷键5" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim/Vim%E5%BF%AB%E6%8D%B7%E9%94%AE5/"/>
+    
+    
+    <category term="Vim" scheme="http://example.com/tags/Vim/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vim基础</title>
+    <link href="http://example.com/2024/04/11/Vim%20basic%20intro/"/>
+    <id>http://example.com/2024/04/11/Vim%20basic%20intro/</id>
+    <published>2024-04-11T11:04:00.000Z</published>
+    <updated>2024-05-12T17:10:38.212Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;command-mode&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#command-mode&quot;&gt;&lt;/a&gt; Command Mode:&lt;/h1&gt;
+&lt;p&gt;This is the the default mode in which vim</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="Vim" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim/"/>
+    
+    <category term="Vim快捷键6" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim/Vim%E5%BF%AB%E6%8D%B7%E9%94%AE6/"/>
     
     
     <category term="Vim" scheme="http://example.com/tags/Vim/"/>
@@ -132,6 +125,33 @@
     
     
     <category term="Vim" scheme="http://example.com/tags/Vim/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>高阶函数</title>
+    <link href="http://example.com/2024/04/11/%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/"/>
+    <id>http://example.com/2024/04/11/%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/</id>
+    <published>2024-04-11T11:04:00.000Z</published>
+    <updated>2024-05-12T17:14:12.214Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;高阶函数&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#高阶函数&quot;&gt;&lt;/a&gt; 高阶函数&lt;/h1&gt;
+&lt;p&gt;定义：接受函数作为参数，并且将函数作为返回值返回。&lt;br /&gt;
+例子: 定义一个函数，可以将指定列表中所有的偶数返回。&lt;/p&gt;
+&lt;f</summary>
+      
+    
+    
+    
+    <category term="python" scheme="http://example.com/categories/python/"/>
+    
+    <category term="python基础" scheme="http://example.com/categories/python/python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
     
   </entry>
   
@@ -548,20 +568,18 @@
   </entry>
   
   <entry>
-    <title>字符串</title>
-    <link href="http://example.com/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    <id>http://example.com/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
+    <title>python中的几个术语</title>
+    <link href="http://example.com/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
+    <id>http://example.com/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</id>
     <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T09:45:21.301Z</updated>
+    <updated>2024-03-31T03:39:54.812Z</updated>
     
     
       
       
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;字符串用来表示文本信息, 是使用最多的数据类型. 必须用引号包围, 可以理解成某人说:“”.&lt;/li&gt;
-&lt;li&gt;单引号双引号都可以, 但是不可以混合使用. 但是相同的引号不可以嵌套, 但是不同的引号可以嵌套. 下边就是不用引号的嵌套&lt;/li&gt;
-&lt;/ul&gt;
-&lt;fi</summary>
+    <summary type="html">&lt;p&gt;【表达式】类似于数学公式比如10 + 5；8 + 4.&lt;/p&gt;
+&lt;p&gt;表达式仅仅用来计算一些结果，不会对程序产生实质影响。&lt;/p&gt;
+&lt;p&gt;【语句】语句需要完成某种功能，比如打印信息、获取信息、为变量赋值等比如：&lt;code&gt;print()&lt;/code&gt;, &lt;code&gt;a = </summary>
       
     
     

@@ -1,6 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Vim基础</title>
+    <url>/2024/04/11/Vim%20basic%20intro/</url>
+    <content><![CDATA[<h1 id="command-mode"><a class="markdownIt-Anchor" href="#command-mode"></a> Command Mode:</h1>
+<p>This is the the default mode in which vim starts. We can use a variety of command in this mode like copy, paste, delete, replace and many more.</p>
+<h1 id="insert-mode"><a class="markdownIt-Anchor" href="#insert-mode"></a> Insert Mode:</h1>
+<p>You can use this mode to enter/edit text.</p>
+<h1 id="command-line-mode"><a class="markdownIt-Anchor" href="#command-line-mode"></a> Command Line Mode:</h1>
+<p>Command line mode is used to enter command. The commands start with a colon.</p>
+<h1 id="visual-mode"><a class="markdownIt-Anchor" href="#visual-mode"></a> Visual Mode:</h1>
+<p>In this mode you can visually select text and run commands on selected section.</p>
+<h1 id="create-and-open-files"><a class="markdownIt-Anchor" href="#create-and-open-files"></a> Create and Open Files:</h1>
+<p>Open terminal and run vim, after that, run command `:edit <filename>.<extention>.</p>
+<h1 id="editing"><a class="markdownIt-Anchor" href="#editing"></a> Editing:</h1>
+<p>insert text is writing text before cursor, deletion is deleting after the cursor. there are some shortcuts for insert text.</p>
+<ol>
+<li>insert before cursor <code>i</code></li>
+<li>insert at the begining of the line <code>I</code></li>
+<li>insert at the end of the line <code>A</code></li>
+<li>insert next by one position of the cursor <code>a</code></li>
+<li>open a new line below the current line <code>o</code></li>
+<li>open a new line above the current line <code>O</code>(capital letter o)</li>
+<li>delete the next letter and switch to insert mode<br />
+<code>s</code></li>
+<li>delete the current line and switch to insert mode<code>S</code> or <code>cc</code>.</li>
+<li>if you want to change text from the current cursor position <code>C</code></li>
+<li>replace the next letter without switch to insert mode <code>r</code></li>
+<li>replace the entire line <code>R</code></li>
+<li>move cursor to the begining of the current line in command mode <code>0</code></li>
+<li>move cursor to the end of the current line in command mode <code>$</code></li>
+<li><code>ctrl +f</code> scroll down entire page.</li>
+<li><code>ctrl + b</code> scroll up entrie page</li>
+<li><code>w</code> move cursor to the begining of next word.</li>
+<li><code>b</code> move cursor to the begining of last word.</li>
+<li><code>e</code> move cursor to the end of the current world.</li>
+<li><code>:n</code>jump to the nth line.</li>
+<li><code>:0</code>jump the start of file.</li>
+<li><code>:$</code>jump to the start of the last sentence.<br />
+Vim keeps track of your navigation using a jump list. You can go backward by <code>ctrl+o</code>, go forward by <code>ctrl + i</code>.<br />
+Buffer: when we open a file, Vim load its contents from disk drive. When we edit a file, we are actually editing the file from buffer. When we finished editing and save file, that time only buffer contents are transferred to appropriate file.<br />
+<code>y</code> copy single character from cursor position.<br />
+<code>p</code> past character after cursor position.<br />
+<code>P</code> past character before cursor positon.<br />
+<code>x</code> delete character from cursor positon.<br />
+<code>X</code> delete previous character from cursor position.<br />
+<code>dw</code> delete word from cursor position<br />
+<code>D</code> delete entire line from cursor positon.<br />
+<code>dd</code> delete entire line<br />
+<code>Y</code>`yy<code>copy entire line To perform multi-line/multi-word actions just use numbers with command. to perform one time undo action excute</code>u<code>to perform multiple undo action, use number withsame command. to undo all execute</code>U<code>to redo</code>ctr+r<code>incremental search: when the user types text, one or more possible matches for the text are found and immediately presented to the user. to perform incremental search</code>:set insearch<code>you can execute the following setting in command mode to custom you search settings:</code>:set hlsearch<code>and</code>:set incsearch<code>or undo execute</code>:set nohlsearch<code>or</code>:set noincsearch<code>add</code>\c<code>or</code>\C<code>to set case sensitive.</code>&lt;<code>search the words which include the letters at the begining of the word</code>&gt; search the words which include the letters at the end.</li>
+</ol>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>Vim</category>
+        <category>Vim快捷键6</category>
+      </categories>
+      <tags>
+        <tag>Vim</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2024/03/24/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -90,6 +150,76 @@ else:<br />
       </tags>
   </entry>
   <entry>
+    <title>python交互模式</title>
+    <url>/2024/03/31/python%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<p>交互界面：当我们通过命令行进入python，所进入的界面就是python的交互界面。</p>
+<p>交互模式是输入一行执行一行，并不适合日常开发，仅可以做一些日常简单的测试。</p>
+<p>我们可以编写<code>.py</code>文档，利用【终端】执行。</p>
+<p>mac终端运行python文件。</p>
+<ol>
+<li>
+<p>比如在桌面新建了<code>.py</code>文档。</p>
+</li>
+<li>
+<p>打开终端，输入<code>cd ~/desktop</code>回车。</p>
+</li>
+<li>
+<p>输入<code>python3 filename.py</code>回车。</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>Mac终端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python中的几个术语</title>
+    <url>/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
+    <content><![CDATA[<p>【表达式】类似于数学公式比如10 + 5；8 + 4.</p>
+<p>表达式仅仅用来计算一些结果，不会对程序产生实质影响。</p>
+<p>【语句】语句需要完成某种功能，比如打印信息、获取信息、为变量赋值等比如：<code>print()</code>, <code>a = 10</code>。</p>
+<p>语句的执行会对程序执行产生影响。语句在命令行中不一定会有执行结果。有返回值的语句，会有返回结果。</p>
+<p>【程序】是多个语句和表达式构成的。</p>
+<p>【函数（function）】函数是一个语句，用来完成特定的功能。函数的结构为<code>***()</code>.括号中的内容叫「参数」，可以没有参数也可以有多个参数，中间用逗号隔开。返回的结果叫做「返回值」，同样可以没有返回值。</p>
+<p>函数分为</p>
+<ol>
+<li>内置函数。python解释器提供的，可以在python中直接使用。</li>
+<li>自定义函数。由程序员自定义的函数。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python的基本语法</title>
+    <url>/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<p>python严格区分大小写。比如<code>Print()</code>不能被执行。</p>
+<p><strong>语句</strong>不建议过长。一条语句可以多行编写，语句以反斜线<code>\</code>换行。</p>
+<p>不要随便写缩进，缩进严格，表示代码块。</p>
+<p><code>%</code>后加空格表示注释。</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>range()函数</title>
     <url>/2024/04/06/range()%E5%87%BD%E6%95%B0/</url>
     <content><![CDATA[<p>range()函数是一个可以生成一个自然数的序列<br />
@@ -120,11 +250,6 @@ for循环出了创建方式外, 其余跟while是一样的用法.</p>
       <tags>
         <tag>python</tag>
       </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2024/04/13/sort%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Vim中的搜索和替换</title>
@@ -265,7 +390,7 @@ $ last line<br />
       <categories>
         <category>编程</category>
         <category>Vim</category>
-        <category>快捷键5</category>
+        <category>Vim快捷键5</category>
       </categories>
       <tags>
         <tag>Vim</tag>
@@ -436,53 +561,6 @@ global()函数可以用来在任意位置获取我们的全局命名空间</p>
       </tags>
   </entry>
   <entry>
-    <title>vim shortcuts</title>
-    <url>/2024/04/09/vim%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86post/</url>
-    <content><![CDATA[<ol>
-<li>
-<p>jump to the top of the file <code>gg</code></p>
-</li>
-<li>
-<p>jump to the end of the file <code>G</code></p>
-</li>
-<li>
-<p><code>$ vim +33 my_file.txt</code>, the cursor will be positioned on the line 33 for the first file you open</p>
-</li>
-<li>
-<p>In Vim, the -c cmd option allows you to execute a command after the first file has been read. This can be useful for automating tasks or customizing Vim’s behavior when opening a file.</p>
-<p>Here’s how you can use the -c cmd option in Vim:</p>
-<ol>
-<li><strong>Open a file and run a command</strong>: You can open a file in Vim and run a command immediately after the file is loaded. For example, to open a file example.txt and jump to line 10, you can use the following command:</li>
-</ol>
-<p><code>vim -c &quot;normal 10G&quot; example.txt</code></p>
-<p>This command will open example.txt in Vim and move the cursor to line 10.</p>
-<ol start="2">
-<li><strong>Run multiple commands</strong>: You can also chain multiple commands using the -c option. Separate each command with a semicolon ;. For example, to open a file and set syntax highlighting to a specific type, you can use:</li>
-</ol>
-<p><code>vim -c &quot;set syntax=python&quot; -c &quot;normal G&quot; example.py</code></p>
-<p>This command will open <a href="http://example.py">example.py</a> in Vim, set the syntax highlighting to Python, and move the cursor to the end of the file.</p>
-<ol start="3">
-<li><strong>Execute an Ex command</strong>: You can execute Ex commands (commands that start with 😃 using the -c option. For example, to open a file and save it with a different name, you can use:</li>
-</ol>
-</li>
-</ol>
-<p>​<br />
-<code>vim -c &quot;:w newfile.txt&quot; example.txt</code></p>
-<pre><code>   This command will open example.txt in Vim and save it as newfile.txt.
-
-   Using the -c cmd option in Vim provides flexibility in automating tasks or customizing Vim's behavior when opening files. You can experiment with different commands to suit your specific requirements. 
-</code></pre>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>Vim</category>
-        <category>Vim快捷键1</category>
-      </categories>
-      <tags>
-        <tag>Vim</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>vim 运算符汇总</title>
     <url>/2024/04/10/vim_operators_post/</url>
     <content><![CDATA[<p><code>+&lt;linenumber&gt;</code> the cursor will be positioned on the specified line for the first file you open.</p>
@@ -567,32 +645,87 @@ When you hit <code>Enter</code> to open a file, it will be opened in the same wi
       </tags>
   </entry>
   <entry>
-    <title>python交互模式</title>
-    <url>/2024/03/31/python%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<p>交互界面：当我们通过命令行进入python，所进入的界面就是python的交互界面。</p>
-<p>交互模式是输入一行执行一行，并不适合日常开发，仅可以做一些日常简单的测试。</p>
-<p>我们可以编写<code>.py</code>文档，利用【终端】执行。</p>
-<p>mac终端运行python文件。</p>
+    <title>vim shortcuts</title>
+    <url>/2024/04/09/vim%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86post/</url>
+    <content><![CDATA[<ol>
+<li>
+<p>jump to the top of the file <code>gg</code></p>
+</li>
+<li>
+<p>jump to the end of the file <code>G</code></p>
+</li>
+<li>
+<p><code>$ vim +33 my_file.txt</code>, the cursor will be positioned on the line 33 for the first file you open</p>
+</li>
+<li>
+<p>In Vim, the -c cmd option allows you to execute a command after the first file has been read. This can be useful for automating tasks or customizing Vim’s behavior when opening a file.</p>
+<p>Here’s how you can use the -c cmd option in Vim:</p>
 <ol>
-<li>
-<p>比如在桌面新建了<code>.py</code>文档。</p>
-</li>
-<li>
-<p>打开终端，输入<code>cd ~/desktop</code>回车。</p>
-</li>
-<li>
-<p>输入<code>python3 filename.py</code>回车。</p>
+<li><strong>Open a file and run a command</strong>: You can open a file in Vim and run a command immediately after the file is loaded. For example, to open a file example.txt and jump to line 10, you can use the following command:</li>
+</ol>
+<p><code>vim -c &quot;normal 10G&quot; example.txt</code></p>
+<p>This command will open example.txt in Vim and move the cursor to line 10.</p>
+<ol start="2">
+<li><strong>Run multiple commands</strong>: You can also chain multiple commands using the -c option. Separate each command with a semicolon ;. For example, to open a file and set syntax highlighting to a specific type, you can use:</li>
+</ol>
+<p><code>vim -c &quot;set syntax=python&quot; -c &quot;normal G&quot; example.py</code></p>
+<p>This command will open <a href="http://example.py">example.py</a> in Vim, set the syntax highlighting to Python, and move the cursor to the end of the file.</p>
+<ol start="3">
+<li><strong>Execute an Ex command</strong>: You can execute Ex commands (commands that start with 😃 using the -c option. For example, to open a file and save it with a different name, you can use:</li>
+</ol>
 </li>
 </ol>
+<p>​<br />
+<code>vim -c &quot;:w newfile.txt&quot; example.txt</code></p>
+<pre><code>   This command will open example.txt in Vim and save it as newfile.txt.
+
+   Using the -c cmd option in Vim provides flexibility in automating tasks or customizing Vim's behavior when opening files. You can experiment with different commands to suit your specific requirements. 
+</code></pre>
 ]]></content>
       <categories>
         <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
+        <category>Vim</category>
+        <category>Vim快捷键1</category>
       </categories>
       <tags>
-        <tag>python</tag>
-        <tag>Mac终端</tag>
+        <tag>Vim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一类项目获取环保许可的要求</title>
+    <url>/2024/03/29/%E4%B8%80%E7%B1%BB%E9%A1%B9%E7%9B%AE%E8%8E%B7%E5%8F%96%E7%8E%AF%E4%BF%9D%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/</url>
+    <content><![CDATA[<p>一类项目对环境影响很小，且影响不回超过活动地点。需要提交电子申请、附上一般要求中提及的文件并且遵守相关条件。</p>
+<p><strong>一般要求</strong></p>
+<ol>
+<li>填写分类表格（<a href="https://raw.githubusercontent.com/zmz231126/bolgpicture/main/202403291608962.pdf">点击此处下载</a>）</li>
+<li>项目简单的初始报告</li>
+<li>无害和已经许可的工业垃圾（液体和固体）的搬运和清理合同</li>
+<li>与认证机构签署的固体市政垃圾的搬运和清理合同</li>
+<li>商业登记证</li>
+<li>税务登记证</li>
+<li>身份证或者居住证</li>
+<li>产权契约或者租赁合同</li>
+</ol>
+<p><strong>相关条件</strong></p>
+<ul>
+<li>商会或者合法机构认证的项目所有人的授权书。</li>
+</ul>
+<p><strong>更新一类环保许可的要求</strong></p>
+<ol>
+<li>上一阶段环保登记证书</li>
+<li>上面要求中的3-8项。</li>
+</ol>
+<p><a href='https://ncec.gov.sa/%d9%85%d8%aa%d8%b7%d9%84%d8%a8%d8%a7%d8%aa-%d8%a7%d9%84%d8%ad%d8%b5%d9%88%d9%84-%d8%b9%d9%84%d9%89-%d9%85%d9%88%d8%a7%d9%81%d9%82%d8%a9-%d8%a8%d9%8a%d8%a6%d9%8a%d8%a9-%d9%84%d9%84%d9%81%d8%a6%d8%a9'>本文引用自nece网站</a></p>
+]]></content>
+      <categories>
+        <category>制度学习</category>
+        <category>沙特环保制度</category>
+      </categories>
+      <tags>
+        <tag>建厂</tag>
+        <tag>沙特投资</tag>
+        <tag>沙特</tag>
+        <tag>沙特环境监察中心</tag>
       </tags>
   </entry>
   <entry>
@@ -809,43 +942,6 @@ code block<br />
       </tags>
   </entry>
   <entry>
-    <title>一类项目获取环保许可的要求</title>
-    <url>/2024/03/29/%E4%B8%80%E7%B1%BB%E9%A1%B9%E7%9B%AE%E8%8E%B7%E5%8F%96%E7%8E%AF%E4%BF%9D%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/</url>
-    <content><![CDATA[<p>一类项目对环境影响很小，且影响不回超过活动地点。需要提交电子申请、附上一般要求中提及的文件并且遵守相关条件。</p>
-<p><strong>一般要求</strong></p>
-<ol>
-<li>填写分类表格（<a href="https://raw.githubusercontent.com/zmz231126/bolgpicture/main/202403291608962.pdf">点击此处下载</a>）</li>
-<li>项目简单的初始报告</li>
-<li>无害和已经许可的工业垃圾（液体和固体）的搬运和清理合同</li>
-<li>与认证机构签署的固体市政垃圾的搬运和清理合同</li>
-<li>商业登记证</li>
-<li>税务登记证</li>
-<li>身份证或者居住证</li>
-<li>产权契约或者租赁合同</li>
-</ol>
-<p><strong>相关条件</strong></p>
-<ul>
-<li>商会或者合法机构认证的项目所有人的授权书。</li>
-</ul>
-<p><strong>更新一类环保许可的要求</strong></p>
-<ol>
-<li>上一阶段环保登记证书</li>
-<li>上面要求中的3-8项。</li>
-</ol>
-<p><a href='https://ncec.gov.sa/%d9%85%d8%aa%d8%b7%d9%84%d8%a8%d8%a7%d8%aa-%d8%a7%d9%84%d8%ad%d8%b5%d9%88%d9%84-%d8%b9%d9%84%d9%89-%d9%85%d9%88%d8%a7%d9%81%d9%82%d8%a9-%d8%a8%d9%8a%d8%a6%d9%8a%d8%a9-%d9%84%d9%84%d9%81%d8%a6%d8%a9'>本文引用自nece网站</a></p>
-]]></content>
-      <categories>
-        <category>制度学习</category>
-        <category>沙特环保制度</category>
-      </categories>
-      <tags>
-        <tag>建厂</tag>
-        <tag>沙特投资</tag>
-        <tag>沙特</tag>
-        <tag>沙特环境监察中心</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>沙特办理工业许可证的要求和流程</title>
     <url>/2024/03/28/%E5%8A%9E%E7%90%86%E5%B7%A5%E4%B8%9A%E8%AE%B8%E5%8F%AF%E7%9A%84%E8%A6%81%E6%B1%82/</url>
     <content><![CDATA[<h1 id="定义"><a class="markdownIt-Anchor" href="#定义"></a> 定义</h1>
@@ -927,6 +1023,45 @@ code block<br />
         <tag>沙特</tag>
         <tag>工业许可证</tag>
         <tag>沙特工业和矿产资源部</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>变量和标识符</title>
+    <url>/2024/03/31/%E5%8F%98%E9%87%8F%E5%92%8C%E6%A0%87%E8%AF%86%E7%AC%A6/</url>
+    <content><![CDATA[<p>使用变量不需要声明，直接为变量赋值，但是不能使用未被赋值的变量</p>
+<p>python是一个动态类型的语言，可以给变量赋<strong>任意类型的值</strong>。也可以任意修改变量的值。</p>
+<p>通常变量的名要有意义，比如年龄18，那么我们可以写<code>age = 18</code></p>
+<p>sypder快捷键注释</p>
+<ol>
+<li>Ctrl + 1	注释/反注释</li>
+<li>Ctrl + 4/5	块注释/块反注释</li>
+<li>Ctrl + L	跳转到行号</li>
+<li>Tab/Shift + Tab	代码缩进/反缩进</li>
+<li>Ctrl ＋I	显示帮助</li>
+</ol>
+<hr />
+<p>标识符：html中是名值对，这里是标识符和值成对。</p>
+<p>python中所有可以自主命名的内容都是标识符。比如变量名、函数名、类名。</p>
+<ol>
+<li>标识符只能含有字母、数字、下划线。但是不能用数字开头，一般都是用字母开头。</li>
+<li>标识符不能是python关键字和保留字。不建议使用函数名作为标识符。会导致函数被覆盖。</li>
+<li>规范：
+<ol>
+<li>下划线命名法，比如<code>max_length</code>, <code>hello_world</code>（用得最多）</li>
+<li>帕斯卡命名法，每个单词开头字母大写，其余小写，比如<code>MaxLength</code>, <code>HelloWorld</code>（类名，使用此类）</li>
+<li></li>
+</ol>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>spyder快捷键</tag>
       </tags>
   </entry>
   <entry>
@@ -1185,12 +1320,12 @@ This is-a line, with special/separated/words (and some more).</p>
       </tags>
   </entry>
   <entry>
-    <title>python的基本语法</title>
-    <url>/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<p>python严格区分大小写。比如<code>Print()</code>不能被执行。</p>
-<p><strong>语句</strong>不建议过长。一条语句可以多行编写，语句以反斜线<code>\</code>换行。</p>
-<p>不要随便写缩进，缩进严格，表示代码块。</p>
-<p><code>%</code>后加空格表示注释。</p>
+    <title>字面变量和变量</title>
+    <url>/2024/03/31/%E5%AD%97%E9%9D%A2%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F/</url>
+    <content><![CDATA[<p>【字面量】一个一个的值，它的意思就是它字面的值。在程序中可以直接使用。</p>
+<p>【变量】与字面量相反。变量可以保存字面量，并且保存的字面量是不定的。</p>
+<p>变量本身无意义，会跟不同的字面量表示不同的意思。</p>
+<p>开发时，通常将字面量保存在变量中，通过变量来引用字面量。这样便于统一管理和引用。</p>
 ]]></content>
       <categories>
         <category>编程</category>
@@ -1199,6 +1334,7 @@ This is-a line, with special/separated/words (and some more).</p>
       </categories>
       <tags>
         <tag>python</tag>
+        <tag>计算机</tag>
       </tags>
   </entry>
   <entry>
@@ -1358,19 +1494,23 @@ else：</p>
       </tags>
   </entry>
   <entry>
-    <title>python中的几个术语</title>
-    <url>/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
-    <content><![CDATA[<p>【表达式】类似于数学公式比如10 + 5；8 + 4.</p>
-<p>表达式仅仅用来计算一些结果，不会对程序产生实质影响。</p>
-<p>【语句】语句需要完成某种功能，比如打印信息、获取信息、为变量赋值等比如：<code>print()</code>, <code>a = 10</code>。</p>
-<p>语句的执行会对程序执行产生影响。语句在命令行中不一定会有执行结果。有返回值的语句，会有返回结果。</p>
-<p>【程序】是多个语句和表达式构成的。</p>
-<p>【函数（function）】函数是一个语句，用来完成特定的功能。函数的结构为<code>***()</code>.括号中的内容叫「参数」，可以没有参数也可以有多个参数，中间用逗号隔开。返回的结果叫做「返回值」，同样可以没有返回值。</p>
-<p>函数分为</p>
-<ol>
-<li>内置函数。python解释器提供的，可以在python中直接使用。</li>
-<li>自定义函数。由程序员自定义的函数。</li>
-</ol>
+    <title>文本文件和字符集</title>
+    <url>/2024/03/31/%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%92%8C%E5%AD%97%E7%AC%A6%E9%9B%86/</url>
+    <content><![CDATA[<p>文本分为纯文本和富文本。</p>
+<p>纯文本在计算机底层也会转换为二进制保存。</p>
+<p>将字符转换为二进制码的过程叫做<strong>编码</strong>。</p>
+<p>将二进制码转换成字符的过程叫做<strong>解码</strong>。</p>
+<p>编码和解码时采用的规则叫做<strong>字符集</strong>。</p>
+<p>常用的字符集：</p>
+<ul>
+<li>ASCII 美国人编码，使用7位（7个1和7个0）来对美国常用的字符进行编码。7个1和7个0的不同组合产生128个字符。</li>
+<li>IS0-8859-1 欧洲的编号，使用8位进行编码，产生256个字符。</li>
+<li>GB2312 GBK中国人的编码</li>
+<li>Unicode 万国码。便携程序时，使用Unicode编码。Unicode有多种实现，UTF-32使用4个字节表示一个字符。UTF-16使用2到4个字节表示一个字符。UTF-8使用1-5个字节表示一个字符。</li>
+</ul>
+<hr />
+<p>乱码</p>
+<p>程序出现乱码，检查字符集是否正确。</p>
 ]]></content>
       <categories>
         <category>编程</category>
@@ -1379,6 +1519,7 @@ else：</p>
       </categories>
       <tags>
         <tag>python</tag>
+        <tag>计算机</tag>
       </tags>
   </entry>
   <entry>
@@ -1459,21 +1600,71 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
       </tags>
   </entry>
   <entry>
-    <title>字面变量和变量</title>
-    <url>/2024/03/31/%E5%AD%97%E9%9D%A2%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F/</url>
-    <content><![CDATA[<p>【字面量】一个一个的值，它的意思就是它字面的值。在程序中可以直接使用。</p>
-<p>【变量】与字面量相反。变量可以保存字面量，并且保存的字面量是不定的。</p>
-<p>变量本身无意义，会跟不同的字面量表示不同的意思。</p>
-<p>开发时，通常将字面量保存在变量中，通过变量来引用字面量。这样便于统一管理和引用。</p>
+    <title>申请沙特工业园工厂运行许可证的要求</title>
+    <url>/2024/03/27/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%B7%A5%E5%8E%82%E8%BF%90%E8%A1%8C%E8%AE%B8%E5%8F%AF%E8%AF%81%E7%9A%84%E8%A6%81%E6%B1%82%E5%92%8C%E8%A7%84%E5%AE%9A/</url>
+    <content><![CDATA[<h1 id="第一阶段通过modon账户提交申请"><a class="markdownIt-Anchor" href="#第一阶段通过modon账户提交申请"></a> 第一阶段：通过MODON账户提交申请</h1>
+<p><strong>申请建筑竣工和运行许可证所需文件</strong></p>
+<ul>
+<li>经Modon认证的安全图。</li>
+<li>绝缘工程完工证明。</li>
+<li>测试安全系统的模型和消防警报器材的清单。</li>
+<li>电路铺设和连接安全证书。</li>
+<li>跟分包商签署的消防警报系统维护的合同，分包商需要经过民防的认证。</li>
+<li>环保证书。</li>
+<li>工业许可证（从工业与矿产资源部网站申请）</li>
+<li>军工单位建设许可和安全等级（军工企业适用）</li>
+</ul>
+<p><strong>运行许可证更新所需文件</strong></p>
+<ul>
+<li>经工业园（MODON）和民防（Civil Defense）认证的设施安全图纸。</li>
+<li>跟分包商签署的消防警报系统维护的合同，分包商需要经过民防的认证。</li>
+<li>测试安全系统的模型和消防警报器材的清单。</li>
+<li>合格且有级别的安全员。</li>
+</ul>
+<p><strong>其他条件</strong></p>
+<ul>
+<li>跟由Modon认证的工程办公室签订合同，由工程办公室根据认证的模版检查消防和安全系统。</li>
+<li>通过Shareek系统申报危险材料，说明在企业内危险品的存储、种类和危害性。</li>
+<li>职业健康和安全领域内合格的安全员。</li>
+<li>企业安保人员：有安保（沙特籍）</li>
+<li>企业内外安装可以存储两个月记录的摄像头。（军工单位适用）</li>
+<li>记录和保存出入数据（员工和拜访人员）的控制系统。（军工企业适用）</li>
+</ul>
+<h1 id="第二阶段参观考察"><a class="markdownIt-Anchor" href="#第二阶段参观考察"></a> 第二阶段：参观考察</h1>
+<p><strong>批准颁发建筑竣工和运行许可或者更新作业许可证和安全标准需要检查的内容</strong></p>
+<ul>
+<li>确保与许可证相符。</li>
+<li>确保消防和疏散系统运行良好且与主控制面板连接。</li>
+<li>确保消防和疏散系统与认证的安全图纸相符，与认证的规格相符。</li>
+<li>确保有安全员进行与安全管理相关的工作。</li>
+<li>检查员工办公地点和基础设施。</li>
+<li>确保企业内部的生产线、电力系统和设备和其他设备的安全。</li>
+<li>确保地板、通风系统和噪声安全。</li>
+<li>确保在处理、运输和储存化学材料和有害气体时，符合安全规定。</li>
+<li>确保不存在不安全或者违规存储，和不符合规定的退线。</li>
+</ul>
+<h1 id="第三阶段颁发竣工证书和运行许可证"><a class="markdownIt-Anchor" href="#第三阶段颁发竣工证书和运行许可证"></a> 第三阶段：颁发竣工证书和运行许可证</h1>
+<p>Modon致力于简化并加速与合作伙伴的合作，其中包括满足工厂需求，保护员工和工业园财产与基础。我们已经对运行许可和有效时限做了如下分类：</p>
+<p><strong>第一次发放期限一年</strong><br />
+对那些完成建设，满足条件，符合安全标准的企业发放我竣工和运行许可证，它可以视为是运行许可证，此许可证有效期为一年。</p>
+<p><strong>更新</strong></p>
+<p>【短期】：6个月</p>
+<p>本许可颁发给那些些存在大量问题和违规行为，需要较长时间跟其他政府部门和相关机构完成手续，并能够快速更正错误，承诺在规定时间纠正其他问题的企业</p>
+<p>【中期】：1年</p>
+<p>本许可颁发给那些存在中等风险的违规行为，需要较长时间与其他政府部门和相关机构对接完成相关手续。前提是尽快纠正错误，并承诺在规定时间能纠正问题的企业。</p>
+<p>【长期】：3年</p>
+<p>三年有效期的许可颁发给那些没有任何问题，已经遵守了所有安全规则和标准。</p>
+<p><a href='https://www.modon.gov.sa/ar/Systems/Pages/Conditions.aspx'>本文翻译自Modon网站</a></p>
 ]]></content>
       <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
+        <category>制度学习</category>
+        <category>沙特工业园制度</category>
       </categories>
       <tags>
-        <tag>python</tag>
-        <tag>计算机</tag>
+        <tag>沙特投资</tag>
+        <tag>沙特</tag>
+        <tag>沙特工业园</tag>
+        <tag>工厂运营许可</tag>
       </tags>
   </entry>
   <entry>
@@ -1694,42 +1885,85 @@ $$
 ]]></content>
   </entry>
   <entry>
-    <title>变量和标识符</title>
-    <url>/2024/03/31/%E5%8F%98%E9%87%8F%E5%92%8C%E6%A0%87%E8%AF%86%E7%AC%A6/</url>
-    <content><![CDATA[<p>使用变量不需要声明，直接为变量赋值，但是不能使用未被赋值的变量</p>
-<p>python是一个动态类型的语言，可以给变量赋<strong>任意类型的值</strong>。也可以任意修改变量的值。</p>
-<p>通常变量的名要有意义，比如年龄18，那么我们可以写<code>age = 18</code></p>
-<p>sypder快捷键注释</p>
+    <title>LaTeX中的几个基本概念</title>
+    <url>/2024/03/12/%E7%AC%AC%E4%B8%80%E7%AB%A0LaTex%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
+    <content><![CDATA[<h1 id="latex的基本概念"><a class="markdownIt-Anchor" href="#latex的基本概念"></a> LaTex的基本概念</h1>
+<h2 id="概述"><a class="markdownIt-Anchor" href="#概述"></a> 概述</h2>
+<ul>
+<li>Donald E. Knuth 1982年发布Tex引擎，1989年位更好的支出8-bit字符和多语言排版而予以改进。</li>
+<li>LaTex是一种使用Tex程序作为排版引擎的格式（format）。可以错略的理解为是对Tex的一层封装。起初有Leslie Lamport博士开发，目前又LaTex工作组进行维护。</li>
+</ul>
+<h2 id="latex命令和代码结构"><a class="markdownIt-Anchor" href="#latex命令和代码结构"></a> LaTex命令和代码结构</h2>
+<p>命令两种形式：</p>
 <ol>
-<li>Ctrl + 1	注释/反注释</li>
-<li>Ctrl + 4/5	块注释/块反注释</li>
-<li>Ctrl + L	跳转到行号</li>
-<li>Tab/Shift + Tab	代码缩进/反缩进</li>
-<li>Ctrl ＋I	显示帮助</li>
+<li><code>\</code>和后面的一串字母，如<code>\LaTex</code>。以任意非字母符号为界限。</li>
+<li><code>\</code>反斜线和后面单个非字母符号，比如<code>\$</code>.</li>
+</ol>
+<p>注意⚠️</p>
+<ol>
+<li>字母形式的LaTex忽略其后的所有连续空格，如果要引入空格，应该写成<code>\LaTex&#123;&#125;</code>。</li>
+<li>LaTex大小写敏感。</li>
+</ol>
+<p>【参数】一些命令可以接受参数，参数影响命令的效果。参数有：</p>
+<ol>
+<li>mandatory arguments，用<code>&#123;&#125;</code>包裹。</li>
+<li>optional arguments，用<code>[]</code>包裹。</li>
+<li><code>*</code>带一个星号和不带星号的命令效果有差异。可以把星号看作一种特殊的可选参数。</li>
+</ol>
+<p>【环境】环境成对出现，环境有时会携带参数，环境名保持一致。部分环境允许嵌套。比如</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;enviroment name&#125;[optional arguments]&#123;mandatory arguments&#125;</span><br><span class="line">……</span><br><span class="line"></span><br><span class="line"><span class="keyword">\end</span>&#123;enviroment name&#125; <span class="comment">% 这里不在需要写参数</span></span><br></pre></td></tr></table></figure>
+<p>【分组】LaTex使用<code>&#123;&#125;</code>作为分组。分组中效果命令被限制在分组内。修改字体字号的命令即属此类。</p>
+<hr />
+<p>LaTex 源码结构：</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>&#123;&#125; <span class="comment">% 指定文档的文档类</span></span><br><span class="line"><span class="comment">%  导言区。一般会在这里调用宏包和对文档进行全局设置。</span></span><br><span class="line"><span class="keyword">\begin</span>&#123;document&#125;</span><br><span class="line"><span class="comment">% 正文内容</span></span><br><span class="line"><span class="keyword">\end</span>&#123;document&#125;</span><br></pre></td></tr></table></figure>
+<hr />
+<h2 id="文档类和宏包"><a class="markdownIt-Anchor" href="#文档类和宏包"></a> 文档类和宏包</h2>
+<p>文档类：</p>
+<p>LaTex中的三个表中文档类：article, report, book. 在此基础上派生的一类文档如中文排版的ctexart, ctexrep, ctexbook.</p>
+<p>可选参数：</p>
+<p>为文档类指定选项，全局规定一些排版参数，如字号、纸张大小、单双面。</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>[11pt,twoside,a4paper]&#123;article&#125;</span><br></pre></td></tr></table></figure>
+<p>三个标准文档类的可指定选项包括：</p>
+<ol>
+<li>字号：10pt, 11pt, 12pt。默认10pt。</li>
+<li>纸张大小：a4paper, letter paper, 等等。</li>
+<li>单双面：twoside, oneside. 双面排版时，奇偶页的页眉页脚、页边距不同。article和report默认为单面。book默认为双面。</li>
+<li>单栏双栏：onecolumn, twocolume. 默认是 onecolumn.</li>
+<li>新一章在起始位置：<code>openright</code>, <code>openany</code>. 指定新一章是否必须从奇数页开始（右侧）。默认article无效；report为<code>openany</code>；book为<code>openright</code>。</li>
+<li>横向排版还是纵向排版：landscape. 默认为纵向。</li>
+<li>标题是否单独成页：titleapge, notitlepage. article默认为不单独成页。report和book默认为单独成页。</li>
+<li>草稿/终稿：draft, final.草稿模式小，不良断行会在行尾条件一个黑色方块。默认为final.</li>
+<li>行间公式左对齐： fleqn，行间公式左对齐。默认居中对齐。</li>
+<li>公式编号放左边：leqno，公式编号放左边，默认放右边。</li>
 </ol>
 <hr />
-<p>标识符：html中是名值对，这里是标识符和值成对。</p>
-<p>python中所有可以自主命名的内容都是标识符。比如变量名、函数名、类名。</p>
+<p>宏包：调用宏包的命令<code>usepackage[options]&#123;package name&#125;</code></p>
+<p>可以一次调用多个宏包，中间用逗号隔开。此时一般不指定选项。</p>
+<hr />
+<h2 id="文件的组织方式"><a class="markdownIt-Anchor" href="#文件的组织方式"></a> 文件的组织方式</h2>
+<p>将源文件分割成若干个文件，比如每章的目录放在单独的文件中，会大大缩短修改和校对时间。</p>
+<p>LaTex中向源代码中插入文件的命令：</p>
 <ol>
-<li>标识符只能含有字母、数字、下划线。但是不能用数字开头，一般都是用字母开头。</li>
-<li>标识符不能是python关键字和保留字。不建议使用函数名作为标识符。会导致函数被覆盖。</li>
-<li>规范：
-<ol>
-<li>下划线命名法，比如<code>max_length</code>, <code>hello_world</code>（用得最多）</li>
-<li>帕斯卡命名法，每个单词开头字母大写，其余小写，比如<code>MaxLength</code>, <code>HelloWorld</code>（类名，使用此类）</li>
-<li></li>
+<li><code>\include&#123;filename&#125;</code>，filename不带扩展名。如果和要编译的主文件不在同一个目录，要加上相对或者绝对路径。通过include引入的文件，在读入后会另起一页。如果不要另起一页可以用input命令。</li>
+<li><code>\input&#123;filename&#125;</code>。当导言区内容较多时，可以单独放置在一个<code>.tex</code>文档，在用<code>\input&#123;&#125;</code>插入。</li>
 </ol>
-</li>
-</ol>
+<hr />
+<h2 id="相关术语"><a class="markdownIt-Anchor" href="#相关术语"></a> 相关术语</h2>
+<p>【引擎】又称为编译器，是编译源码并生成文档的程序。如pdftex, xetex等。</p>
+<p>【格式】是定义了一组命令的代码集。LaTex是最广泛应用的一个格式。比如plain Tex格式，没有定义诸如<code>\documentclass</code>和<code>\section</code>等等命令。</p>
+<p>【编译命令】是实际调用的、结合了引擎和格式的命令。xelatex命令是结合了xetex引擎和latex格式的一个编译命令。</p>
+<blockquote>
+<p>调用syntaxonly 可以只编译文档而不生成PDF文档，我们如果只是想检查错误可以使用</p>
+<p><code>\usepackage&#123;syntaxonly&#125;</code></p>
+<p><code>\syntaxonly</code></p>
+</blockquote>
 ]]></content>
       <categories>
         <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
+        <category>Latex</category>
       </categories>
       <tags>
-        <tag>python</tag>
-        <tag>spyder快捷键</tag>
+        <tag>LaTeX</tag>
       </tags>
   </entry>
   <entry>
@@ -1988,23 +2222,15 @@ $$
       </tags>
   </entry>
   <entry>
-    <title>文本文件和字符集</title>
-    <url>/2024/03/31/%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%92%8C%E5%AD%97%E7%AC%A6%E9%9B%86/</url>
-    <content><![CDATA[<p>文本分为纯文本和富文本。</p>
-<p>纯文本在计算机底层也会转换为二进制保存。</p>
-<p>将字符转换为二进制码的过程叫做<strong>编码</strong>。</p>
-<p>将二进制码转换成字符的过程叫做<strong>解码</strong>。</p>
-<p>编码和解码时采用的规则叫做<strong>字符集</strong>。</p>
-<p>常用的字符集：</p>
+    <title>计算机语言</title>
+    <url>/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<p>计算机语言其实和人类语言没有本质区别，知识交流主体不同。</p>
+<p>机器语言发展的三个阶段：</p>
 <ul>
-<li>ASCII 美国人编码，使用7位（7个1和7个0）来对美国常用的字符进行编码。7个1和7个0的不同组合产生128个字符。</li>
-<li>IS0-8859-1 欧洲的编号，使用8位进行编码，产生256个字符。</li>
-<li>GB2312 GBK中国人的编码</li>
-<li>Unicode 万国码。便携程序时，使用Unicode编码。Unicode有多种实现，UTF-32使用4个字节表示一个字符。UTF-16使用2到4个字节表示一个字符。UTF-8使用1-5个字节表示一个字符。</li>
+<li>机器语言：通过二进制编码来编写程序。编写麻烦，执行效率好。</li>
+<li>汇编语言：使用符号代替机器码。汇编与反汇编。汇编语言只适用于某些硬件，兼容性差。计算机底层一些硬件驱动现在还用汇编语言编写。</li>
+<li>高级语言：和英语语法类似，并且和硬件关系不紧密，通过高级语言编写的程序可以在不同的硬件系统中执行。</li>
 </ul>
-<hr />
-<p>乱码</p>
-<p>程序出现乱码，检查字符集是否正确。</p>
 ]]></content>
       <categories>
         <category>编程</category>
@@ -2017,153 +2243,36 @@ $$
       </tags>
   </entry>
   <entry>
-    <title>LaTeX中的几个基本概念</title>
-    <url>/2024/03/12/%E7%AC%AC%E4%B8%80%E7%AB%A0LaTex%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
-    <content><![CDATA[<h1 id="latex的基本概念"><a class="markdownIt-Anchor" href="#latex的基本概念"></a> LaTex的基本概念</h1>
-<h2 id="概述"><a class="markdownIt-Anchor" href="#概述"></a> 概述</h2>
+    <title>计算机简介</title>
+    <url>/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<p>计算机是一个用来进行计算的<strong>机器</strong>，跟生活中其他机器不同的点在于计算机是用来<strong>计算</strong>的。</p>
+<p>目前计算机只能根据人类的指令进行操作。我们所学计算机，就是学习如何去进行控制这台机器。</p>
+<p>计算机包含硬件和软件两部分：</p>
 <ul>
-<li>Donald E. Knuth 1982年发布Tex引擎，1989年位更好的支出8-bit字符和多语言排版而予以改进。</li>
-<li>LaTex是一种使用Tex程序作为排版引擎的格式（format）。可以错略的理解为是对Tex的一层封装。起初有Leslie Lamport博士开发，目前又LaTex工作组进行维护。</li>
+<li>
+<p>硬件：看得见摸得着的鼠标键盘、主板、内存、硬盘。它相当于人的身体器官。</p>
+</li>
+<li>
+<p>软件：看的见摸不着的。软件包含：</p>
+<ul>
+<li>系统软件：Windows，Linux，macOS等。</li>
+<li>应用软件：Office，QQ，王者荣耀等。</li>
 </ul>
-<h2 id="latex命令和代码结构"><a class="markdownIt-Anchor" href="#latex命令和代码结构"></a> LaTex命令和代码结构</h2>
-<p>命令两种形式：</p>
-<ol>
-<li><code>\</code>和后面的一串字母，如<code>\LaTex</code>。以任意非字母符号为界限。</li>
-<li><code>\</code>反斜线和后面单个非字母符号，比如<code>\$</code>.</li>
-</ol>
-<p>注意⚠️</p>
-<ol>
-<li>字母形式的LaTex忽略其后的所有连续空格，如果要引入空格，应该写成<code>\LaTex&#123;&#125;</code>。</li>
-<li>LaTex大小写敏感。</li>
-</ol>
-<p>【参数】一些命令可以接受参数，参数影响命令的效果。参数有：</p>
-<ol>
-<li>mandatory arguments，用<code>&#123;&#125;</code>包裹。</li>
-<li>optional arguments，用<code>[]</code>包裹。</li>
-<li><code>*</code>带一个星号和不带星号的命令效果有差异。可以把星号看作一种特殊的可选参数。</li>
-</ol>
-<p>【环境】环境成对出现，环境有时会携带参数，环境名保持一致。部分环境允许嵌套。比如</p>
-<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;enviroment name&#125;[optional arguments]&#123;mandatory arguments&#125;</span><br><span class="line">……</span><br><span class="line"></span><br><span class="line"><span class="keyword">\end</span>&#123;enviroment name&#125; <span class="comment">% 这里不在需要写参数</span></span><br></pre></td></tr></table></figure>
-<p>【分组】LaTex使用<code>&#123;&#125;</code>作为分组。分组中效果命令被限制在分组内。修改字体字号的命令即属此类。</p>
-<hr />
-<p>LaTex 源码结构：</p>
-<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>&#123;&#125; <span class="comment">% 指定文档的文档类</span></span><br><span class="line"><span class="comment">%  导言区。一般会在这里调用宏包和对文档进行全局设置。</span></span><br><span class="line"><span class="keyword">\begin</span>&#123;document&#125;</span><br><span class="line"><span class="comment">% 正文内容</span></span><br><span class="line"><span class="keyword">\end</span>&#123;document&#125;</span><br></pre></td></tr></table></figure>
-<hr />
-<h2 id="文档类和宏包"><a class="markdownIt-Anchor" href="#文档类和宏包"></a> 文档类和宏包</h2>
-<p>文档类：</p>
-<p>LaTex中的三个表中文档类：article, report, book. 在此基础上派生的一类文档如中文排版的ctexart, ctexrep, ctexbook.</p>
-<p>可选参数：</p>
-<p>为文档类指定选项，全局规定一些排版参数，如字号、纸张大小、单双面。</p>
-<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>[11pt,twoside,a4paper]&#123;article&#125;</span><br></pre></td></tr></table></figure>
-<p>三个标准文档类的可指定选项包括：</p>
-<ol>
-<li>字号：10pt, 11pt, 12pt。默认10pt。</li>
-<li>纸张大小：a4paper, letter paper, 等等。</li>
-<li>单双面：twoside, oneside. 双面排版时，奇偶页的页眉页脚、页边距不同。article和report默认为单面。book默认为双面。</li>
-<li>单栏双栏：onecolumn, twocolume. 默认是 onecolumn.</li>
-<li>新一章在起始位置：<code>openright</code>, <code>openany</code>. 指定新一章是否必须从奇数页开始（右侧）。默认article无效；report为<code>openany</code>；book为<code>openright</code>。</li>
-<li>横向排版还是纵向排版：landscape. 默认为纵向。</li>
-<li>标题是否单独成页：titleapge, notitlepage. article默认为不单独成页。report和book默认为单独成页。</li>
-<li>草稿/终稿：draft, final.草稿模式小，不良断行会在行尾条件一个黑色方块。默认为final.</li>
-<li>行间公式左对齐： fleqn，行间公式左对齐。默认居中对齐。</li>
-<li>公式编号放左边：leqno，公式编号放左边，默认放右边。</li>
-</ol>
-<hr />
-<p>宏包：调用宏包的命令<code>usepackage[options]&#123;package name&#125;</code></p>
-<p>可以一次调用多个宏包，中间用逗号隔开。此时一般不指定选项。</p>
-<hr />
-<h2 id="文件的组织方式"><a class="markdownIt-Anchor" href="#文件的组织方式"></a> 文件的组织方式</h2>
-<p>将源文件分割成若干个文件，比如每章的目录放在单独的文件中，会大大缩短修改和校对时间。</p>
-<p>LaTex中向源代码中插入文件的命令：</p>
-<ol>
-<li><code>\include&#123;filename&#125;</code>，filename不带扩展名。如果和要编译的主文件不在同一个目录，要加上相对或者绝对路径。通过include引入的文件，在读入后会另起一页。如果不要另起一页可以用input命令。</li>
-<li><code>\input&#123;filename&#125;</code>。当导言区内容较多时，可以单独放置在一个<code>.tex</code>文档，在用<code>\input&#123;&#125;</code>插入。</li>
-</ol>
-<hr />
-<h2 id="相关术语"><a class="markdownIt-Anchor" href="#相关术语"></a> 相关术语</h2>
-<p>【引擎】又称为编译器，是编译源码并生成文档的程序。如pdftex, xetex等。</p>
-<p>【格式】是定义了一组命令的代码集。LaTex是最广泛应用的一个格式。比如plain Tex格式，没有定义诸如<code>\documentclass</code>和<code>\section</code>等等命令。</p>
-<p>【编译命令】是实际调用的、结合了引擎和格式的命令。xelatex命令是结合了xetex引擎和latex格式的一个编译命令。</p>
-<blockquote>
-<p>调用syntaxonly 可以只编译文档而不生成PDF文档，我们如果只是想检查错误可以使用</p>
-<p><code>\usepackage&#123;syntaxonly&#125;</code></p>
-<p><code>\syntaxonly</code></p>
-</blockquote>
+<p>负责计算机的运行。人器官完好也有可能是个死人。</p>
+</li>
+</ul>
+<p>我们需要通过<strong>软件</strong>操作计算机。但是软件中不是所有的功能都会对用户开放，用户需要调取软件的接口/交互界面（interface）来操作计算机。有允许用户调取的接口（用户界面），有不允许用户调取的接口。</p>
+<p>用户界面包括：TUI（文本交互界面）比如Mac的Terminal，GUI（图形交互界面）正常操作的界面。</p>
+<p>我们学习编程就要学习通过TUI操作软件进行控制计算机。</p>
 ]]></content>
       <categories>
         <category>编程</category>
-        <category>Latex</category>
+        <category>python</category>
+        <category>python基础</category>
       </categories>
       <tags>
-        <tag>LaTeX</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>申请沙特工业园工厂运行许可证的要求</title>
-    <url>/2024/03/27/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%B7%A5%E5%8E%82%E8%BF%90%E8%A1%8C%E8%AE%B8%E5%8F%AF%E8%AF%81%E7%9A%84%E8%A6%81%E6%B1%82%E5%92%8C%E8%A7%84%E5%AE%9A/</url>
-    <content><![CDATA[<h1 id="第一阶段通过modon账户提交申请"><a class="markdownIt-Anchor" href="#第一阶段通过modon账户提交申请"></a> 第一阶段：通过MODON账户提交申请</h1>
-<p><strong>申请建筑竣工和运行许可证所需文件</strong></p>
-<ul>
-<li>经Modon认证的安全图。</li>
-<li>绝缘工程完工证明。</li>
-<li>测试安全系统的模型和消防警报器材的清单。</li>
-<li>电路铺设和连接安全证书。</li>
-<li>跟分包商签署的消防警报系统维护的合同，分包商需要经过民防的认证。</li>
-<li>环保证书。</li>
-<li>工业许可证（从工业与矿产资源部网站申请）</li>
-<li>军工单位建设许可和安全等级（军工企业适用）</li>
-</ul>
-<p><strong>运行许可证更新所需文件</strong></p>
-<ul>
-<li>经工业园（MODON）和民防（Civil Defense）认证的设施安全图纸。</li>
-<li>跟分包商签署的消防警报系统维护的合同，分包商需要经过民防的认证。</li>
-<li>测试安全系统的模型和消防警报器材的清单。</li>
-<li>合格且有级别的安全员。</li>
-</ul>
-<p><strong>其他条件</strong></p>
-<ul>
-<li>跟由Modon认证的工程办公室签订合同，由工程办公室根据认证的模版检查消防和安全系统。</li>
-<li>通过Shareek系统申报危险材料，说明在企业内危险品的存储、种类和危害性。</li>
-<li>职业健康和安全领域内合格的安全员。</li>
-<li>企业安保人员：有安保（沙特籍）</li>
-<li>企业内外安装可以存储两个月记录的摄像头。（军工单位适用）</li>
-<li>记录和保存出入数据（员工和拜访人员）的控制系统。（军工企业适用）</li>
-</ul>
-<h1 id="第二阶段参观考察"><a class="markdownIt-Anchor" href="#第二阶段参观考察"></a> 第二阶段：参观考察</h1>
-<p><strong>批准颁发建筑竣工和运行许可或者更新作业许可证和安全标准需要检查的内容</strong></p>
-<ul>
-<li>确保与许可证相符。</li>
-<li>确保消防和疏散系统运行良好且与主控制面板连接。</li>
-<li>确保消防和疏散系统与认证的安全图纸相符，与认证的规格相符。</li>
-<li>确保有安全员进行与安全管理相关的工作。</li>
-<li>检查员工办公地点和基础设施。</li>
-<li>确保企业内部的生产线、电力系统和设备和其他设备的安全。</li>
-<li>确保地板、通风系统和噪声安全。</li>
-<li>确保在处理、运输和储存化学材料和有害气体时，符合安全规定。</li>
-<li>确保不存在不安全或者违规存储，和不符合规定的退线。</li>
-</ul>
-<h1 id="第三阶段颁发竣工证书和运行许可证"><a class="markdownIt-Anchor" href="#第三阶段颁发竣工证书和运行许可证"></a> 第三阶段：颁发竣工证书和运行许可证</h1>
-<p>Modon致力于简化并加速与合作伙伴的合作，其中包括满足工厂需求，保护员工和工业园财产与基础。我们已经对运行许可和有效时限做了如下分类：</p>
-<p><strong>第一次发放期限一年</strong><br />
-对那些完成建设，满足条件，符合安全标准的企业发放我竣工和运行许可证，它可以视为是运行许可证，此许可证有效期为一年。</p>
-<p><strong>更新</strong></p>
-<p>【短期】：6个月</p>
-<p>本许可颁发给那些些存在大量问题和违规行为，需要较长时间跟其他政府部门和相关机构完成手续，并能够快速更正错误，承诺在规定时间纠正其他问题的企业</p>
-<p>【中期】：1年</p>
-<p>本许可颁发给那些存在中等风险的违规行为，需要较长时间与其他政府部门和相关机构对接完成相关手续。前提是尽快纠正错误，并承诺在规定时间能纠正问题的企业。</p>
-<p>【长期】：3年</p>
-<p>三年有效期的许可颁发给那些没有任何问题，已经遵守了所有安全规则和标准。</p>
-<p><a href='https://www.modon.gov.sa/ar/Systems/Pages/Conditions.aspx'>本文翻译自Modon网站</a></p>
-]]></content>
-      <categories>
-        <category>制度学习</category>
-        <category>沙特工业园制度</category>
-      </categories>
-      <tags>
-        <tag>沙特投资</tag>
-        <tag>沙特</tag>
-        <tag>沙特工业园</tag>
-        <tag>工厂运营许可</tag>
+        <tag>python</tag>
+        <tag>计算机简介</tag>
       </tags>
   </entry>
   <entry>
@@ -2257,24 +2366,6 @@ $$
       </tags>
   </entry>
   <entry>
-    <title>编译型语言和解释型语言</title>
-    <url>/2024/03/31/%E7%BC%96%E8%AF%91%E5%9E%8B%E8%AF%AD%E8%A8%80%E5%92%8C%E8%A7%A3%E9%87%8A%E5%9E%8B%E8%AF%AD%E8%A8%80/</url>
-    <content><![CDATA[<p>任何语言在交给计算机执行时，必须转换为机器码。根据转换时机的不同，语言分为两大类：</p>
-<ul>
-<li>编译型语言：会在代码执行前将代码编译为机器码，然后交给计算机执行。执行速度快，跨平台型差。</li>
-<li>解释性语言：不会在执行前对代码进行编译，而是在执行的同时一边执行一边编译。跨平台型好。执行速度慢。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>字典</title>
     <url>/2024/04/06/%E9%9B%86%E5%90%88/</url>
     <content><![CDATA[<ul>
@@ -2300,92 +2391,6 @@ dict can also insert to sets in this way.</li>
       </categories>
       <tags>
         <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2024/04/13/%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<h1 id="高阶函数"><a class="markdownIt-Anchor" href="#高阶函数"></a> 高阶函数</h1>
-<p>定义：接受函数作为参数，并且将函数作为返回值返回。<br />
-例子: 定义一个函数，可以将指定列表中所有的偶数返回。</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">lst = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>]</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>(<span class="params">lst</span>):</span><br><span class="line">    new_lst = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> lst:</span><br><span class="line">        <span class="keyword">if</span> i % <span class="number">2</span> == <span class="number">0</span>:</span><br><span class="line">            new_lst.append(i)</span><br><span class="line">    <span class="keyword">return</span> new_lst</span><br><span class="line"><span class="built_in">print</span>(fn(lst))</span><br></pre></td></tr></table></figure>
-<p>这只是一个普通的函数，只能返回列表中的偶数，如果我们要让这一个函数，既能返回奇数又能返回偶数，而且可以返回大于5的数呢？</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">lst = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>]</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn1</span>(<span class="params">i</span>):</span><br><span class="line">    <span class="keyword">if</span> i % <span class="number">2</span> == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn2</span>(<span class="params">i</span>):</span><br><span class="line">    <span class="keyword">if</span> i % <span class="number">2</span> != <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn3</span>(<span class="params">i</span>):</span><br><span class="line">    <span class="keyword">if</span> i &gt; <span class="number">5</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>(<span class="params">a</span>):</span><br><span class="line">    new_lst = []</span><br><span class="line">    <span class="keyword">for</span> n <span class="keyword">in</span> lst:</span><br><span class="line">        <span class="keyword">if</span> a:</span><br><span class="line">            new_lst.append(n)</span><br><span class="line">    <span class="keyword">return</span> new_lst</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(fn(fn1))</span><br></pre></td></tr></table></figure>
-<p>这里，我们可以将任意已经定义的函数作为参数，从而求出不同的值。这里我们传递不同的函数，就是传递不同的代码。</p>
-<h1 id="filter函数"><a class="markdownIt-Anchor" href="#filter函数"></a> filter()函数</h1>
-<p>它可以从序列中过滤出符合条件的元素，保存到一个新的序列中。<br />
-需要两个参数：</p>
-<ol>
-<li>函数，根据该函数进行过滤。</li>
-<li>需要过滤的序列名。<br />
-但是它的返回值是一个可迭代的结构，是无法直接打印的。可以把它转换成列表进行打印输出。</li>
-</ol>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">lst = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>]</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn1</span>(<span class="params">i</span>):</span><br><span class="line">    <span class="keyword">if</span> i % <span class="number">2</span> == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn2</span>(<span class="params">i</span>):</span><br><span class="line">    <span class="keyword">if</span> i % <span class="number">2</span> != <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn3</span>(<span class="params">i</span>):</span><br><span class="line">    <span class="keyword">if</span> i &gt; <span class="number">5</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>(<span class="params">a</span>):</span><br><span class="line">    new_lst = []                                                                </span><br><span class="line">    <span class="keyword">for</span> n <span class="keyword">in</span> lst:</span><br><span class="line">        <span class="keyword">if</span> a:</span><br><span class="line">            new_lst.append(n)</span><br><span class="line">    <span class="keyword">return</span> new_lst</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(fn(fn1))</span><br></pre></td></tr></table></figure>
-<h1 id="lamda函数"><a class="markdownIt-Anchor" href="#lamda函数"></a> lamda函数</h1>
-<p>专门用来创建一些简单的函数，它是函数创建的另一种方式。<br />
-它的结构为<code>lamda</code>+<code>arguments</code>+<code>:</code>+<code>return</code></p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">fn5</span>(<span class="params">a,b</span>):</span><br><span class="line">    <span class="keyword">return</span> a + b</span><br></pre></td></tr></table></figure>
-<p>等价于：</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">lamda a,b : a + b</span><br></pre></td></tr></table></figure>
-<p>同样可以，把它赋值给一个变量</p>
-<h1 id="map函数"><a class="markdownIt-Anchor" href="#map函数"></a> map()函数</h1>
-<p>对可迭代的对象中的元素进行制定操作，然后添加到一个新的对象中返回</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">lst = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>]</span><br><span class="line"><span class="keyword">lambda</span> i : i + <span class="number">1</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(<span class="built_in">map</span>(<span class="keyword">lambda</span> i : i + <span class="number">1</span>,lst)))</span><br></pre></td></tr></table></figure>
-<p>匿名函数一般是作为参数使用，其他地方一般不会使用。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>计算机简介</title>
-    <url>/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<p>计算机是一个用来进行计算的<strong>机器</strong>，跟生活中其他机器不同的点在于计算机是用来<strong>计算</strong>的。</p>
-<p>目前计算机只能根据人类的指令进行操作。我们所学计算机，就是学习如何去进行控制这台机器。</p>
-<p>计算机包含硬件和软件两部分：</p>
-<ul>
-<li>
-<p>硬件：看得见摸得着的鼠标键盘、主板、内存、硬盘。它相当于人的身体器官。</p>
-</li>
-<li>
-<p>软件：看的见摸不着的。软件包含：</p>
-<ul>
-<li>系统软件：Windows，Linux，macOS等。</li>
-<li>应用软件：Office，QQ，王者荣耀等。</li>
-</ul>
-<p>负责计算机的运行。人器官完好也有可能是个死人。</p>
-</li>
-</ul>
-<p>我们需要通过<strong>软件</strong>操作计算机。但是软件中不是所有的功能都会对用户开放，用户需要调取软件的接口/交互界面（interface）来操作计算机。有允许用户调取的接口（用户界面），有不允许用户调取的接口。</p>
-<p>用户界面包括：TUI（文本交互界面）比如Mac的Terminal，GUI（图形交互界面）正常操作的界面。</p>
-<p>我们学习编程就要学习通过TUI操作软件进行控制计算机。</p>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>计算机简介</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算机语言</title>
-    <url>/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<p>计算机语言其实和人类语言没有本质区别，知识交流主体不同。</p>
-<p>机器语言发展的三个阶段：</p>
-<ul>
-<li>机器语言：通过二进制编码来编写程序。编写麻烦，执行效率好。</li>
-<li>汇编语言：使用符号代替机器码。汇编与反汇编。汇编语言只适用于某些硬件，兼容性差。计算机底层一些硬件驱动现在还用汇编语言编写。</li>
-<li>高级语言：和英语语法类似，并且和硬件关系不紧密，通过高级语言编写的程序可以在不同的硬件系统中执行。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>计算机</tag>
       </tags>
   </entry>
   <entry>
@@ -2438,24 +2443,61 @@ dict can also insert to sets in this way.</li>
       </tags>
   </entry>
   <entry>
-    <title>关于</title>
-    <url>/about/index.html</url>
-    <content><![CDATA[]]></content>
+    <title>编译型语言和解释型语言</title>
+    <url>/2024/03/31/%E7%BC%96%E8%AF%91%E5%9E%8B%E8%AF%AD%E8%A8%80%E5%92%8C%E8%A7%A3%E9%87%8A%E5%9E%8B%E8%AF%AD%E8%A8%80/</url>
+    <content><![CDATA[<p>任何语言在交给计算机执行时，必须转换为机器码。根据转换时机的不同，语言分为两大类：</p>
+<ul>
+<li>编译型语言：会在代码执行前将代码编译为机器码，然后交给计算机执行。执行速度快，跨平台型差。</li>
+<li>解释性语言：不会在执行前对代码进行编译，而是在执行的同时一边执行一边编译。跨平台型好。执行速度慢。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
   </entry>
   <entry>
-    <title>分类</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>文档</title>
-    <url>/files/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
+    <title>高阶函数</title>
+    <url>/2024/04/11/%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<h1 id="高阶函数"><a class="markdownIt-Anchor" href="#高阶函数"></a> 高阶函数</h1>
+<p>定义：接受函数作为参数，并且将函数作为返回值返回。<br />
+例子: 定义一个函数，可以将指定列表中所有的偶数返回。</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">lst = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>]</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>(<span class="params">lst</span>):</span><br><span class="line">    new_lst = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> lst:</span><br><span class="line">        <span class="keyword">if</span> i % <span class="number">2</span> == <span class="number">0</span>:</span><br><span class="line">            new_lst.append(i)</span><br><span class="line">    <span class="keyword">return</span> new_lst</span><br><span class="line"><span class="built_in">print</span>(fn(lst))</span><br></pre></td></tr></table></figure>
+<p>这只是一个普通的函数，只能返回列表中的偶数，如果我们要让这一个函数，既能返回奇数又能返回偶数，而且可以返回大于5的数呢？</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">lst = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>]</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn1</span>(<span class="params">i</span>):</span><br><span class="line">    <span class="keyword">if</span> i % <span class="number">2</span> == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn2</span>(<span class="params">i</span>):</span><br><span class="line">    <span class="keyword">if</span> i % <span class="number">2</span> != <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn3</span>(<span class="params">i</span>):</span><br><span class="line">    <span class="keyword">if</span> i &gt; <span class="number">5</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>(<span class="params">a</span>):</span><br><span class="line">    new_lst = []</span><br><span class="line">    <span class="keyword">for</span> n <span class="keyword">in</span> lst:</span><br><span class="line">        <span class="keyword">if</span> a:</span><br><span class="line">            new_lst.append(n)</span><br><span class="line">    <span class="keyword">return</span> new_lst</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(fn(fn1))</span><br></pre></td></tr></table></figure>
+<p>这里，我们可以将任意已经定义的函数作为参数，从而求出不同的值。这里我们传递不同的函数，就是传递不同的代码。</p>
+<h1 id="filter函数"><a class="markdownIt-Anchor" href="#filter函数"></a> filter()函数</h1>
+<p>它可以从序列中过滤出符合条件的元素，保存到一个新的序列中。<br />
+需要两个参数：</p>
+<ol>
+<li>函数，根据该函数进行过滤。</li>
+<li>需要过滤的序列名。<br />
+但是它的返回值是一个可迭代的结构，是无法直接打印的。可以把它转换成列表进行打印输出。</li>
+</ol>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">lst = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>]</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn1</span>(<span class="params">i</span>):</span><br><span class="line">    <span class="keyword">if</span> i % <span class="number">2</span> == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn2</span>(<span class="params">i</span>):</span><br><span class="line">    <span class="keyword">if</span> i % <span class="number">2</span> != <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn3</span>(<span class="params">i</span>):</span><br><span class="line">    <span class="keyword">if</span> i &gt; <span class="number">5</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fn</span>(<span class="params">a</span>):</span><br><span class="line">    new_lst = []                                                                </span><br><span class="line">    <span class="keyword">for</span> n <span class="keyword">in</span> lst:</span><br><span class="line">        <span class="keyword">if</span> a:</span><br><span class="line">            new_lst.append(n)</span><br><span class="line">    <span class="keyword">return</span> new_lst</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(fn(fn1))</span><br></pre></td></tr></table></figure>
+<h1 id="lamda函数"><a class="markdownIt-Anchor" href="#lamda函数"></a> lamda函数</h1>
+<p>专门用来创建一些简单的函数，它是函数创建的另一种方式。<br />
+它的结构为<code>lamda</code>+<code>arguments</code>+<code>:</code>+<code>return</code></p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">fn5</span>(<span class="params">a,b</span>):</span><br><span class="line">    <span class="keyword">return</span> a + b</span><br></pre></td></tr></table></figure>
+<p>等价于：</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">lamda a,b : a + b</span><br></pre></td></tr></table></figure>
+<p>同样可以，把它赋值给一个变量</p>
+<h1 id="map函数"><a class="markdownIt-Anchor" href="#map函数"></a> map()函数</h1>
+<p>对可迭代的对象中的元素进行制定操作，然后添加到一个新的对象中返回</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">lst = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>]</span><br><span class="line"><span class="keyword">lambda</span> i : i + <span class="number">1</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(<span class="built_in">map</span>(<span class="keyword">lambda</span> i : i + <span class="number">1</span>,lst)))</span><br></pre></td></tr></table></figure>
+<p>匿名函数一般是作为参数使用，其他地方一般不会使用。</p>
+]]></content>
+      <categories>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
   </entry>
   <entry>
     <title></title>
@@ -2506,6 +2548,21 @@ dict can also insert to sets in this way.</li>
 }]]></content>
   </entry>
   <entry>
+    <title>文档</title>
+    <url>/files/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/css/postpage_style.css</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/js/script.js</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>链接</title>
     <url>/link/index.html</url>
     <content><![CDATA[]]></content>
@@ -2521,13 +2578,18 @@ dict can also insert to sets in this way.</li>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/js/script.js</url>
+    <title>分类</title>
+    <url>/categories/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/css/postpage_style.css</url>
+    <title>标签</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>关于</title>
+    <url>/about/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>
