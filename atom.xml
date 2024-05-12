@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-04-13T10:58:48.011Z</updated>
+  <updated>2024-04-13T13:14:54.560Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2024/04/13/sort%E6%96%B9%E6%B3%95/"/>
     <id>http://example.com/2024/04/13/sort%E6%96%B9%E6%B3%95/</id>
     <published>2024-04-13T10:58:48.011Z</published>
-    <updated>2024-04-13T10:58:48.011Z</updated>
+    <updated>2024-04-13T13:14:54.560Z</updated>
     
     
     
@@ -34,7 +34,7 @@
     <link href="http://example.com/2024/04/13/%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/"/>
     <id>http://example.com/2024/04/13/%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/</id>
     <published>2024-04-13T10:50:25.456Z</published>
-    <updated>2024-04-13T10:50:25.457Z</updated>
+    <updated>2024-04-13T13:14:52.213Z</updated>
     
     
       
@@ -55,7 +55,7 @@
     <link href="http://example.com/2024/04/12/vim_mapping/"/>
     <id>http://example.com/2024/04/12/vim_mapping/</id>
     <published>2024-04-12T09:54:49.646Z</published>
-    <updated>2024-04-12T12:33:34.061Z</updated>
+    <updated>2024-05-12T16:11:32.809Z</updated>
     
     
       
@@ -70,6 +70,8 @@
     
     <category term="Vim" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim/"/>
     
+    <category term="Vim快捷键3" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim/Vim%E5%BF%AB%E6%8D%B7%E9%94%AE3/"/>
+    
     
     <category term="Vim" scheme="http://example.com/tags/Vim/"/>
     
@@ -80,7 +82,7 @@
     <link href="http://example.com/2024/04/11/substitution%20in%20vim/"/>
     <id>http://example.com/2024/04/11/substitution%20in%20vim/</id>
     <published>2024-04-11T11:15:56.137Z</published>
-    <updated>2024-04-12T03:53:20.131Z</updated>
+    <updated>2024-05-12T16:12:49.540Z</updated>
     
     
       
@@ -95,6 +97,8 @@
     
     <category term="Vim" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim/"/>
     
+    <category term="快捷键5" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim/%E5%BF%AB%E6%8D%B7%E9%94%AE5/"/>
+    
     
     <category term="Vim" scheme="http://example.com/tags/Vim/"/>
     
@@ -105,7 +109,7 @@
     <link href="http://example.com/2024/04/11/vim%20%E8%AF%AD%E8%A8%80/"/>
     <id>http://example.com/2024/04/11/vim%20%E8%AF%AD%E8%A8%80/</id>
     <published>2024-04-11T11:04:00.000Z</published>
-    <updated>2024-04-12T03:37:44.378Z</updated>
+    <updated>2024-05-12T16:11:52.003Z</updated>
     
     
       
@@ -124,6 +128,8 @@
     
     <category term="Vim" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim/"/>
     
+    <category term="Vim快捷键4" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim/Vim%E5%BF%AB%E6%8D%B7%E9%94%AE4/"/>
+    
     
     <category term="Vim" scheme="http://example.com/tags/Vim/"/>
     
@@ -134,7 +140,7 @@
     <link href="http://example.com/2024/04/10/vim_operators_post/"/>
     <id>http://example.com/2024/04/10/vim_operators_post/</id>
     <published>2024-04-10T00:46:00.000Z</published>
-    <updated>2024-04-12T03:37:44.379Z</updated>
+    <updated>2024-05-12T16:11:06.276Z</updated>
     
     
       
@@ -148,6 +154,8 @@
     <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
     
     <category term="Vim" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim/"/>
+    
+    <category term="Vim 快捷键2" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim/Vim-%E5%BF%AB%E6%8D%B7%E9%94%AE2/"/>
     
     
     <category term="Vim" scheme="http://example.com/tags/Vim/"/>
@@ -184,7 +192,7 @@
     <link href="http://example.com/2024/04/09/vim%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86post/"/>
     <id>http://example.com/2024/04/09/vim%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86post/</id>
     <published>2024-04-08T16:00:00.000Z</published>
-    <updated>2024-04-12T03:37:44.381Z</updated>
+    <updated>2024-05-12T16:11:15.690Z</updated>
     
     
       
@@ -204,7 +212,9 @@
     
     <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
     
-    <category term="Vim快捷键" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    <category term="Vim" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim/"/>
+    
+    <category term="Vim快捷键1" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim/Vim%E5%BF%AB%E6%8D%B7%E9%94%AE1/"/>
     
     
     <category term="Vim" scheme="http://example.com/tags/Vim/"/>
@@ -507,34 +517,6 @@
   </entry>
   
   <entry>
-    <title>python中的几个术语</title>
-    <link href="http://example.com/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
-    <id>http://example.com/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</id>
-    <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T03:39:54.812Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;【表达式】类似于数学公式比如10 + 5；8 + 4.&lt;/p&gt;
-&lt;p&gt;表达式仅仅用来计算一些结果，不会对程序产生实质影响。&lt;/p&gt;
-&lt;p&gt;【语句】语句需要完成某种功能，比如打印信息、获取信息、为变量赋值等比如：&lt;code&gt;print()&lt;/code&gt;, &lt;code&gt;a = </summary>
-      
-    
-    
-    
-    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
-    
-    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
     <title>python交互模式</title>
     <link href="http://example.com/2024/03/31/python%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%BC%8F/"/>
     <id>http://example.com/2024/03/31/python%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%BC%8F/</id>
@@ -562,6 +544,36 @@
     <category term="python" scheme="http://example.com/tags/python/"/>
     
     <category term="Mac终端" scheme="http://example.com/tags/Mac%E7%BB%88%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>字符串</title>
+    <link href="http://example.com/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    <id>http://example.com/2024/03/31/%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
+    <published>2024-03-30T16:00:00.000Z</published>
+    <updated>2024-03-31T09:45:21.301Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;字符串用来表示文本信息, 是使用最多的数据类型. 必须用引号包围, 可以理解成某人说:“”.&lt;/li&gt;
+&lt;li&gt;单引号双引号都可以, 但是不可以混合使用. 但是相同的引号不可以嵌套, 但是不同的引号可以嵌套. 下边就是不用引号的嵌套&lt;/li&gt;
+&lt;/ul&gt;
+&lt;fi</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
+    
+    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
     
   </entry>
   
