@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-05-12T16:11:32.809Z</updated>
+  <updated>2024-05-14T20:18:41.148Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,66 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2024/05/15/1.3%20BELOW%20YOUR%20PROGRAM/"/>
+    <id>http://example.com/2024/05/15/1.3%20BELOW%20YOUR%20PROGRAM/</id>
+    <published>2024-05-14T20:02:02.746Z</published>
+    <updated>2024-05-14T20:18:41.148Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;systems-software&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#systems-software&quot;&gt;&lt;/a&gt; Systems Software&lt;/h1&gt;
+&lt;p&gt;Sitting between the hardware a</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2024/05/15/1.2%20EIGHT%20GREAT%20IDEAS%20IN%20COMPUTER%20ARCHITECTURE/"/>
+    <id>http://example.com/2024/05/15/1.2%20EIGHT%20GREAT%20IDEAS%20IN%20COMPUTER%20ARCHITECTURE/</id>
+    <published>2024-05-14T18:48:53.718Z</published>
+    <updated>2024-05-14T19:32:06.528Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;design-for-moores-law&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#design-for-moores-law&quot;&gt;&lt;/a&gt; design for Moore’s law&lt;/h1&gt;
+&lt;p&gt;The one consta</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>function1</title>
+    <link href="http://example.com/2024/05/13/function1/"/>
+    <id>http://example.com/2024/05/13/function1/</id>
+    <published>2024-05-12T16:00:00.000Z</published>
+    <updated>2024-05-14T09:55:35.383Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;定义函数&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#定义函数&quot;&gt;&lt;/a&gt; 定义函数&lt;/h1&gt;
+&lt;p&gt;函数是一个带名字的代块&lt;/p&gt;
+&lt;figure class=&quot;highlight py&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=</summary>
+      
+    
+    
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>Vim mapping</title>
@@ -91,6 +151,33 @@
     <category term="Vim" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim/"/>
     
     <category term="Vim快捷键6" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim/Vim%E5%BF%AB%E6%8D%B7%E9%94%AE6/"/>
+    
+    
+    <category term="Vim" scheme="http://example.com/tags/Vim/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>sort方法</title>
+    <link href="http://example.com/2024/04/11/sort%E6%96%B9%E6%B3%95/"/>
+    <id>http://example.com/2024/04/11/sort%E6%96%B9%E6%B3%95/</id>
+    <published>2024-04-11T11:04:00.000Z</published>
+    <updated>2024-05-12T17:11:35.344Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;sort&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#sort&quot;&gt;&lt;/a&gt; .sort()&lt;/h1&gt;
+&lt;p&gt;sort可以接受一个函数作为参数，当设置了函数作为参数，它会遍历列表中的元素作为函数的参数，并根据函数的返回值作为依据进行排序</summary>
+      
+    
+    
+    
+    <category term="python" scheme="http://example.com/categories/python/"/>
+    
+    <category term="python基础" scheme="http://example.com/categories/python/python%E5%9F%BA%E7%A1%80/"/>
+    
+    <category term="Vim快捷键4" scheme="http://example.com/categories/python/python%E5%9F%BA%E7%A1%80/Vim%E5%BF%AB%E6%8D%B7%E9%94%AE4/"/>
     
     
     <category term="Vim" scheme="http://example.com/tags/Vim/"/>
@@ -468,122 +555,6 @@
     <summary type="html">&lt;p&gt;循环语句，可以使指定的代码块重复指定的次数，有两种while循环和for循环。&lt;/p&gt;
 &lt;h1 id=&quot;while循环&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#while循环&quot;&gt;&lt;/a&gt; while循环&lt;/h1&gt;
 &lt;p&gt;【语法】：&lt;br /</summary>
-      
-    
-    
-    
-    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
-    
-    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>第二章 LaTeX中几个常用的基本语法</title>
-    <link href="http://example.com/2024/04/04/%E7%AC%AC%E4%BA%8C%E7%AB%A0%20LaTeX%E4%B8%AD%E5%87%A0%E4%B8%AA%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
-    <id>http://example.com/2024/04/04/%E7%AC%AC%E4%BA%8C%E7%AB%A0%20LaTeX%E4%B8%AD%E5%87%A0%E4%B8%AA%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</id>
-    <published>2024-04-04T11:30:05.899Z</published>
-    <updated>2024-04-05T00:19:56.692Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;latex中，多个空格视为一个空格，连个回车键视为分段，也可以使用&lt;code&gt;&#92;par&lt;/code&gt;命令分段。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;连字：西文字体很多会出现连字现象，可以在字母间加上&lt;code&gt;&amp;#123;&amp;#125;&lt;/code&gt;阻止这</summary>
-      
-    
-    
-    
-    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="Latex" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Latex/"/>
-    
-    
-    <category term="LaTeX" scheme="http://example.com/tags/LaTeX/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>流程控制</title>
-    <link href="http://example.com/2024/04/01/if%E8%AF%AD%E5%8F%A5/"/>
-    <id>http://example.com/2024/04/01/if%E8%AF%AD%E5%8F%A5/</id>
-    <published>2024-03-31T16:00:00.000Z</published>
-    <updated>2024-04-05T00:54:48.249Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Python代码是按照自上而下执行的. 但是通过流程控制语句可以改变流程控制顺序, 也可以让程序反复执行多次.&lt;br /&gt;
-分为两大类:&lt;/p&gt;
-&lt;h1 id=&quot;条件判断语句&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#条件判断语句&quot;&gt;&lt;/a&gt;</summary>
-      
-    
-    
-    
-    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
-    
-    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python交互模式</title>
-    <link href="http://example.com/2024/03/31/python%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://example.com/2024/03/31/python%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%BC%8F/</id>
-    <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T03:39:54.811Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;交互界面：当我们通过命令行进入python，所进入的界面就是python的交互界面。&lt;/p&gt;
-&lt;p&gt;交互模式是输入一行执行一行，并不适合日常开发，仅可以做一些日常简单的测试。&lt;/p&gt;
-&lt;p&gt;我们可以编写&lt;code&gt;.py&lt;/code&gt;文档，利用【终端】执行。&lt;/p&gt;
-&lt;p&gt;</summary>
-      
-    
-    
-    
-    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
-    
-    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
-    <category term="Mac终端" scheme="http://example.com/tags/Mac%E7%BB%88%E7%AB%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python中的几个术语</title>
-    <link href="http://example.com/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
-    <id>http://example.com/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</id>
-    <published>2024-03-30T16:00:00.000Z</published>
-    <updated>2024-03-31T03:39:54.812Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;【表达式】类似于数学公式比如10 + 5；8 + 4.&lt;/p&gt;
-&lt;p&gt;表达式仅仅用来计算一些结果，不会对程序产生实质影响。&lt;/p&gt;
-&lt;p&gt;【语句】语句需要完成某种功能，比如打印信息、获取信息、为变量赋值等比如：&lt;code&gt;print()&lt;/code&gt;, &lt;code&gt;a = </summary>
       
     
     
