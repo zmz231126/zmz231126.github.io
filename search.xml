@@ -799,8 +799,8 @@ When you hit <code>Enter</code> to open a file, it will be opened in the same wi
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/2024/05/15/%E4%BC%A0%E9%80%92%E5%88%97%E8%A1%A8/</url>
+    <title>传递列表</title>
+    <url>/2024/05/16/%E4%BC%A0%E9%80%92%E5%88%97%E8%A1%A8/</url>
     <content><![CDATA[<h1 id="在函数中修改列表"><a class="markdownIt-Anchor" href="#在函数中修改列表"></a> 在函数中修改列表</h1>
 <p>将列表传递给函数以后，函数就可以对其进行修改。这让你能够高效的处理数据</p>
 <figure class="highlight py"><table><tr><td class="code"><pre><span class="line">unprinted_designs = [<span class="string">&quot;dodecahedron&quot;</span>,<span class="string">&quot;robot pendant&quot;</span>,<span class="string">&quot;iphone case&quot;</span>]</span><br><span class="line">completed_models = []</span><br><span class="line"><span class="keyword">while</span> unprinted_designs:</span><br><span class="line">    current_designs = unprinted_designs.pop()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Printing model: &quot;</span> + current_designs)</span><br><span class="line">    completed_models.append(current_designs)</span><br><span class="line">    <span class="keyword">continue</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;The following models have been printed&quot;</span>)</span><br><span class="line"><span class="keyword">for</span> completed_model <span class="keyword">in</span> completed_models:</span><br><span class="line">    <span class="built_in">print</span>(completed_model.title())</span><br><span class="line"></span><br><span class="line">    <span class="comment">#将程序移动到两个函数中，使主程序更容易理解</span></span><br><span class="line">unprinted_designs = [<span class="string">&quot;dodecahedron&quot;</span>,<span class="string">&quot;robot pendant&quot;</span>,<span class="string">&quot;iphone case&quot;</span>]</span><br><span class="line">completed_models = []</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">print_models</span>(<span class="params">unprinted_designs, completed_models</span>):</span><br><span class="line">    <span class="keyword">while</span> unprinted_designs:</span><br><span class="line">        current_designs = unprinted_designs.pop()</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Printing model: &quot;</span> + current_designs)</span><br><span class="line">        completed_models.append(current_designs)</span><br><span class="line">   </span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">show_printed_models</span>(<span class="params">completed_models</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;The following models have been printed&quot;</span>)</span><br><span class="line">    <span class="keyword">for</span> completed_model <span class="keyword">in</span> completed_models:</span><br><span class="line">        <span class="built_in">print</span>(completed_model.title())</span><br><span class="line">   </span><br><span class="line"></span><br><span class="line">print_models(unprinted_designs, completed_models) <span class="comment">#如果要保留原来的unpringted_design。可以在这里传递函数的副本。这样，函数修改的是列表的副本，列表本身不变。`print_models(unprinted_designs[:],completed_models)`</span></span><br><span class="line">show_printed_models(completed_models)</span><br></pre></td></tr></table></figure>
@@ -808,6 +808,14 @@ When you hit <code>Enter</code> to open a file, it will be opened in the same wi
 这个函数还演示了一种理念，即每个函数只负责一项具体的功能,编写函数的时候，如果发现它执行的任务太多，请将程序分到多个函数中。别忘了我们可以在一个函数中调用另一个函数，这有助于将复杂的任务分成一系列的步骤。</p>
 <figure class="highlight py"><table><tr><td class="code"><pre><span class="line">magicians = [<span class="string">&quot;sarah&quot;</span>,<span class="string">&quot;bob&quot;</span>,<span class="string">&quot;tom&quot;</span>]</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">show_magicians</span>(<span class="params">magicians</span>):</span><br><span class="line">    magicians = [name.replace(name, <span class="string">&quot;The great &quot;</span> + name) <span class="keyword">for</span> name <span class="keyword">in</span> magicians]</span><br><span class="line">    <span class="built_in">print</span>(magicians)</span><br><span class="line">    <span class="comment"># 这里我们通过解析列表和调用.replace()方法将列表元素批量修改。</span></span><br><span class="line"></span><br><span class="line">show_magicians(magicians)</span><br></pre></td></tr></table></figure>
 ]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
   </entry>
   <entry>
     <title>元组</title>
@@ -1180,6 +1188,30 @@ code block<br />
       </tags>
   </entry>
   <entry>
+    <title>可变对象</title>
+    <url>/2024/04/06/%E5%8F%AF%E5%8F%98%E5%AF%B9%E8%B1%A1/</url>
+    <content><![CDATA[<p>对象的三个属性:</p>
+<ul>
+<li>id</li>
+<li>类型</li>
+<li>值<br />
+可变是指的<strong>值</strong>可变.<br />
+我们修改对象时, 如果有其他变量也指向了该对象, 那么这几个变量也会改变. 注意, 它们的id都没有改变. 因为修改<br />
+对象是修改对象的值.<br />
+给变量重新赋值时, 不影响其他变量.<br />
+<code>==</code>比较的是对象的值是否相等, <code>is/is not</code>是比较对象的id是否相等.</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>变量和标识符</title>
     <url>/2024/03/31/%E5%8F%98%E9%87%8F%E5%92%8C%E6%A0%87%E8%AF%86%E7%AC%A6/</url>
     <content><![CDATA[<p>使用变量不需要声明，直接为变量赋值，但是不能使用未被赋值的变量</p>
@@ -1216,30 +1248,6 @@ code block<br />
       <tags>
         <tag>python</tag>
         <tag>spyder快捷键</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>可变对象</title>
-    <url>/2024/04/06/%E5%8F%AF%E5%8F%98%E5%AF%B9%E8%B1%A1/</url>
-    <content><![CDATA[<p>对象的三个属性:</p>
-<ul>
-<li>id</li>
-<li>类型</li>
-<li>值<br />
-可变是指的<strong>值</strong>可变.<br />
-我们修改对象时, 如果有其他变量也指向了该对象, 那么这几个变量也会改变. 注意, 它们的id都没有改变. 因为修改<br />
-对象是修改对象的值.<br />
-给变量重新赋值时, 不影响其他变量.<br />
-<code>==</code>比较的是对象的值是否相等, <code>is/is not</code>是比较对象的id是否相等.</li>
-</ul>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -1508,6 +1516,65 @@ This is-a line, with special/separated/words (and some more).</p>
       </tags>
   </entry>
   <entry>
+    <title>对象(object)</title>
+    <url>/2024/03/31/%E5%AF%B9%E8%B1%A1(object)/</url>
+    <content><![CDATA[<h1 id="对象介绍"><a class="markdownIt-Anchor" href="#对象介绍"></a> 对象介绍</h1>
+<p>Python是一个面向对象的语言. 一切皆对象.<br />
+程序运行中, 所有的数据都是存储在内存中, 硬盘–&gt;内存–&gt;CPU.<br />
+对象就是内存中专门用来存储指定数据的区域. 对象实际上就是一个容器.<br />
+数值，字符串, None都是对象</p>
+<h1 id="对象结构"><a class="markdownIt-Anchor" href="#对象结构"></a> 对象结构</h1>
+<p>每个对象都有三个部分</p>
+<ul>
+<li>id<br />
+用来标识对象的唯一性, 相当于人的身份证号.<br />
+可以通过函数<code>id()</code>来查看对象的id<br />
+对象一经创建, id就是无法改变了.</li>
+<li>type<br />
+当前对象所属的类型, 类型决定了对象的功能. 比如自行车那它有什么功能, 牛有哪些功能.<br />
+<code>type()</code>查看类型<br />
+同样, 类型同样无法更改</li>
+<li>value<br />
+对象所存储的数据.<br />
+我们平时直接看到的就是对象的值. id和type要用函数才能看到.<br />
+值有些对象能改变, 有些不能改变.</li>
+</ul>
+<h1 id="变量和对象"><a class="markdownIt-Anchor" href="#变量和对象"></a> 变量和对象</h1>
+<p>a = 3<br />
+这里的’3’是一个对象, 它有上部分提到的三部分构成. 对象并不是存储在变量中, 变量更像是对象的一个别名.<br />
+变量中存储的是对象的id, 当我们使用变量时, 解析器根据id去寻找对象.</p>
+<h1 id="类型转换"><a class="markdownIt-Anchor" href="#类型转换"></a> 类型转换</h1>
+<p>类型转换不是改变对象本身的类型, 而是根据当前对象的值创建新的对象.<br />
+三个函数;</p>
+<ul>
+<li><code>int()</code>
+<ul>
+<li>浮点数会直接取整, 没有四舍五入;</li>
+<li>True --&gt; 1; False --&gt; 0;</li>
+<li>整数的数据直接转换成整数, 不是整数字符串(11.5, None, Hello)会报错.</li>
+</ul>
+</li>
+<li><code>float()</code>
+<ul>
+<li>跟<code>int()</code>类似, 但是会将数据转换成浮点数<br />
+<code>str()</code>,</li>
+<li>什么都可以, 只不过转换成了字符串<br />
+<code>bool()</code></li>
+<li>什么都可以, 转换成Ture或者Flase. 所有空性数据会转成Flase, 其他的会转成True</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>循环语句</title>
     <url>/2024/04/05/%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/</url>
     <content><![CDATA[<p>循环语句，可以使指定的代码块重复指定的次数，有两种while循环和for循环。</p>
@@ -1518,6 +1585,121 @@ while 条件表达式：<br />
 else：</p>
 <p>【执行流程】：<br />
 先对条件表达式进行求值判断。如果结果为真，执行代码块，后继续对条件表达式进行判断，如此循环。直到判断条件表达式的结果为假时，停止循环。执行else。</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2024/03/26/%E6%97%A0%E7%BA%BA%E5%B8%83%E4%B8%93%E4%B8%9A%E8%8B%B1%E8%AF%AD%E6%9C%AF%E8%AF%AD1/</url>
+    <content><![CDATA[<p>聚酯切片：</p>
+<p>淀粉：</p>
+<p>丙烯酸胶：</p>
+<p>玻纤纱：</p>
+<p>针刺机：</p>
+<p>涤纶纺粘胎基布：</p>
+<p>免税通过海关：free of duty through customs</p>
+<p>钢结构：steel structure</p>
+<p>钢筋：rebar /ˈriːˌbɑːr/</p>
+<p>电缆：electrical cable</p>
+<p>电子元器件：electron component /ɪˈlektrɑːn/</p>
+<p>进口材料：imported material</p>
+<p>外商独资项目：wholly foreign owned enterprise</p>
+<p>全资子公司：subsidiary of solo investment</p>
+<p>进口材料及设备占投资金额的比例限制是多少？<br />
+What is the <strong>limit</strong> <strong>on</strong> the proportion of imported materials and equipment <strong>in</strong> the investment amount？</p>
+<p>型钢：structural steel</p>
+<p>圆钢：round steel</p>
+<p>角钢：angle steel</p>
+<p>工型钢：universal beams</p>
+<p>槽型钢：channel steel</p>
+<p>六角钢：hexagonal steel</p>
+<p>扁钢：flat steel</p>
+<p>矩形：rectangle</p>
+<p>无缝管：seamless tube</p>
+<p>备案手续：recordation formalities of relevant documents</p>
+<p>示范合同、标准合同：model contract /ˈmɑːd(ə)l/</p>
+<p>特种作业人员：special appliance operator</p>
+<p>电工：electrician</p>
+<p>焊工：welder</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>格式化字符串</title>
+    <url>/2024/03/31/%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
+    <content><![CDATA[<h1 id="字符串之间可以进行加法运算-但是不能和其他数据进行加法运算"><a class="markdownIt-Anchor" href="#字符串之间可以进行加法运算-但是不能和其他数据进行加法运算"></a> 字符串之间可以进行加法运算, 但是不能和其他数据进行加法运算</h1>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="string">&#x27;Ken&#x27;</span></span><br><span class="line">b = <span class="string">&#x27; how are you&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(a + b)</span><br></pre></td></tr></table></figure>
+<p>返回值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Ken how are you</span><br></pre></td></tr></table></figure>
+<h1 id="在创建字符串时候-可以在字符串中制定占位符s"><a class="markdownIt-Anchor" href="#在创建字符串时候-可以在字符串中制定占位符s"></a> 在创建字符串时候, 可以在字符串中制定占位符<code>%s</code></h1>
+<p><code>%s&quot;%Ken&quot;</code>这里我们用Ken填充占位符<code>%s</code></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">b = <span class="string">&quot;Hello %s&quot;</span> %<span class="string">&#x27;Ken&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(b)</span><br></pre></td></tr></table></figure>
+<p>返回值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Hello Ken</span><br></pre></td></tr></table></figure>
+<p>这里注意: 在字符串外部对占位符进行填充, 填充的字符用引号包围.</p>
+<p>字符串中有多个占位符时候, 后边也要用多个字符进行依次填充.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">c = <span class="string">&quot;Hello %s,你好 %s&quot;</span> %(<span class="string">&#x27;Tom&#x27;</span>,<span class="string">&#x27;孙悟空&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(c)</span><br></pre></td></tr></table></figure>
+<p>返回值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Hello Tom,你好 孙悟空</span><br></pre></td></tr></table></figure>
+<p><code>%3s</code>表示, 要填充的字符串最少是3个字符, 少于3个字符用空格补齐. <code>%3.5</code>表示填充的字符必须是3到5个, 多余5个舍去, 少于3个用空格补齐.<br />
+要注意, 占位符可以用字符串填充, 也可以用数值填充, <b>也可以用变量填充</b>.</p>
+<h1 id="专业的浮点数占位符是f这个占位符可以对数值的小数进行精确控制"><a class="markdownIt-Anchor" href="#专业的浮点数占位符是f这个占位符可以对数值的小数进行精确控制"></a> 专业的浮点数占位符是<code>%f</code>,这个占位符可以对数值的小数进行精确控制.</h1>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="string">&quot;Hello, %.2f&quot;</span> %<span class="number">123.4</span></span><br><span class="line"><span class="built_in">print</span>(a)</span><br></pre></td></tr></table></figure>
+<p>返回值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Hello, 123.40</span><br></pre></td></tr></table></figure>
+<p>这里<code>.2f</code>就是保留两个小数, 而且会自动四舍五入.</p>
+<h1 id="整数占位符是d-它是没有四舍五入的"><a class="markdownIt-Anchor" href="#整数占位符是d-它是没有四舍五入的"></a> 整数占位符是<code>%d</code>, 它是没有四舍五入的.</h1>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">b = <span class="string">&quot;Hello, %d&quot;</span> %<span class="number">123.456</span></span><br><span class="line"><span class="built_in">print</span>(b)</span><br></pre></td></tr></table></figure>
+<p>返回值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">123</span><br></pre></td></tr></table></figure>
+<h1 id="格式化字符串-b格式化字符串中可以嵌入变量b-变量用包围-格式化字符串的方法是在字符串前加一个f"><a class="markdownIt-Anchor" href="#格式化字符串-b格式化字符串中可以嵌入变量b-变量用包围-格式化字符串的方法是在字符串前加一个f"></a> 格式化字符串, <b>格式化字符串中可以嵌入变量</b>, 变量用<code>&#123;&#125;</code>包围. 格式化字符串的方法是在字符串前加一个<code>f</code>.</h1>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="number">123</span></span><br><span class="line">b = <span class="string">&#x27;呵呵&#x27;</span></span><br><span class="line"></span><br><span class="line">c = <span class="string">f&quot;hello <span class="subst">&#123;a&#125;</span> <span class="subst">&#123;b&#125;</span>&quot;</span></span><br><span class="line"><span class="built_in">print</span>(c) </span><br></pre></td></tr></table></figure>
+<p>返回值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hello 123 呵呵</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>modules</title>
+    <url>/2024/05/16/%E6%A8%A1%E5%9D%97/</url>
+    <content><![CDATA[<h1 id="将函数存储在模块中"><a class="markdownIt-Anchor" href="#将函数存储在模块中"></a> 将函数存储在模块中</h1>
+<p>函数的优点之一就是可以将代码与主程序分离，将主程序重点放在高层次的逻辑上。通过将函数存储在单独的文件中，可以在不同的程序中多次调用。我们将这种文件称为模块。<br />
+我们还可以使用其他程序员使用的模块，提高程序编写效率。</p>
+<h1 id="导入模块"><a class="markdownIt-Anchor" href="#导入模块"></a> 导入模块</h1>
+<p>导入模块使用import语句</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> module_name <span class="comment"># 调用模块</span></span><br><span class="line">module_name.function_name() <span class="comment"># 指定模块名，后跟上调用的函数名即可</span></span><br></pre></td></tr></table></figure>
+<p>如果我们只想导入模块中的特定函数而不是整个代码块，可以使用下列语句</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> module_name <span class="keyword">import</span> function_0, function_1, function_2</span><br></pre></td></tr></table></figure>
+<p>这种方法调用函数，直接调用函数即可，不再需要模块名➕句点。<br />
+如果要导入的函数名称太长，或者和现有程序中的其他名称冲突，那么可以使用<strong>别名</strong>，语法为：</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> module <span class="keyword">import</span> function_name <span class="keyword">as</span> function_new_name</span><br></pre></td></tr></table></figure>
+<p>我们还可以给模块指定别名，语法为:</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> module_name <span class="keyword">as</span> mn</span><br></pre></td></tr></table></figure>
+<p>这样可以让我们不再关注模块名称，而是关注函数名称，对理解代码而言，更为简洁。<br />
+我们还可以直接带入模块中的所有函数，语法为：</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> module_name <span class="keyword">import</span> *</span><br></pre></td></tr></table></figure>
+<p>通过此方法导入的函数同样可以直接调用而不用加上模块名称。但是最好不要这样做，因为你不知道模块中的函数名称是否与你主程序中的其他函数或者变量名称相同。此方法不建议使用。</p>
+<h1 id="函数编写约定"><a class="markdownIt-Anchor" href="#函数编写约定"></a> 函数编写约定</h1>
+<ol>
+<li>函数名称应该具有描述性,模块的命名同样如此。</li>
+<li>每个函数都应包含阐述其功能的注释，这个注释叫做文档字符串。</li>
+<li>给形参指定默认值或者实参使用关键字实参时，等号两边不加空格。</li>
+<li>函数形参过长时，可以采用块状写法。</li>
+<li>相邻的函数用两个空行分隔。</li>
+</ol>
 ]]></content>
       <categories>
         <category>编程</category>
@@ -1618,177 +1800,32 @@ else：</p>
       </tags>
   </entry>
   <entry>
-    <title>对象(object)</title>
-    <url>/2024/03/31/%E5%AF%B9%E8%B1%A1(object)/</url>
-    <content><![CDATA[<h1 id="对象介绍"><a class="markdownIt-Anchor" href="#对象介绍"></a> 对象介绍</h1>
-<p>Python是一个面向对象的语言. 一切皆对象.<br />
-程序运行中, 所有的数据都是存储在内存中, 硬盘–&gt;内存–&gt;CPU.<br />
-对象就是内存中专门用来存储指定数据的区域. 对象实际上就是一个容器.<br />
-数值，字符串, None都是对象</p>
-<h1 id="对象结构"><a class="markdownIt-Anchor" href="#对象结构"></a> 对象结构</h1>
-<p>每个对象都有三个部分</p>
+    <title>沙特工业园建厂要求</title>
+    <url>/2024/03/28/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%BB%BA%E5%8E%82%E8%A6%81%E6%B1%82/</url>
+    <content><![CDATA[<p>工厂需要遵循【建厂条件和标准指南】中的建厂要求，可以享受Modon在工业园中提供的服务。</p>
 <ul>
-<li>id<br />
-用来标识对象的唯一性, 相当于人的身份证号.<br />
-可以通过函数<code>id()</code>来查看对象的id<br />
-对象一经创建, id就是无法改变了.</li>
-<li>type<br />
-当前对象所属的类型, 类型决定了对象的功能. 比如自行车那它有什么功能, 牛有哪些功能.<br />
-<code>type()</code>查看类型<br />
-同样, 类型同样无法更改</li>
-<li>value<br />
-对象所存储的数据.<br />
-我们平时直接看到的就是对象的值. id和type要用函数才能看到.<br />
-值有些对象能改变, 有些不能改变.</li>
+<li>工厂建设的单元包括：生产车间、原材料仓库、产成品仓库、员工服务、电力供应、工业安全服务、内部道路、疏散区域、<br />
+管理建筑。</li>
+<li>生产车间的高度满足所有任务需求，其中包括根据不同生产类型的生产线所需要的机械作业任务。</li>
+<li>原材料仓库的面积限制在能满足工厂需要的30%-40%，随工厂规模（建筑面积）的增大而增大。</li>
+<li>产成品仓库的面积限制在满足工厂产品存储的30%-40%，随工厂规模（建筑面积）的增大而增大。</li>
+<li>工厂员工服务包括：卫生间、礼拜厅、急救、餐厅、换衣间。</li>
+<li>包括给工厂服务的管理办公室。</li>
+<li>供电工程包括中低压配电室和主断路器室。</li>
+<li>安全服务包括：备用消防箱、灭火系统和火灾警报系统。</li>
+<li>内部道路用来方便工厂不同单元的活动，并且连接工厂各个入口和主道路。</li>
+<li>生产建筑和围墙之间的间隔：前方与道路之间不低于13.5米，与两侧和后方之间不低于6米。</li>
+<li>申请、认证和颁发许可证的要求。</li>
 </ul>
-<h1 id="变量和对象"><a class="markdownIt-Anchor" href="#变量和对象"></a> 变量和对象</h1>
-<p>a = 3<br />
-这里的’3’是一个对象, 它有上部分提到的三部分构成. 对象并不是存储在变量中, 变量更像是对象的一个别名.<br />
-变量中存储的是对象的id, 当我们使用变量时, 解析器根据id去寻找对象.</p>
-<h1 id="类型转换"><a class="markdownIt-Anchor" href="#类型转换"></a> 类型转换</h1>
-<p>类型转换不是改变对象本身的类型, 而是根据当前对象的值创建新的对象.<br />
-三个函数;</p>
-<ul>
-<li><code>int()</code>
-<ul>
-<li>浮点数会直接取整, 没有四舍五入;</li>
-<li>True --&gt; 1; False --&gt; 0;</li>
-<li>整数的数据直接转换成整数, 不是整数字符串(11.5, None, Hello)会报错.</li>
-</ul>
-</li>
-<li><code>float()</code>
-<ul>
-<li>跟<code>int()</code>类似, 但是会将数据转换成浮点数<br />
-<code>str()</code>,</li>
-<li>什么都可以, 只不过转换成了字符串<br />
-<code>bool()</code></li>
-<li>什么都可以, 转换成Ture或者Flase. 所有空性数据会转成Flase, 其他的会转成True</li>
-</ul>
-</li>
-</ul>
+<p><a href='https://www.modon.gov.sa/ar/Systems/Pages/Requirements.aspx'>内容采集自工业园官网</a></p>
 ]]></content>
       <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
+        <category>制度学习</category>
+        <category>沙特工业园制度</category>
       </categories>
       <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2024/03/26/%E6%97%A0%E7%BA%BA%E5%B8%83%E4%B8%93%E4%B8%9A%E8%8B%B1%E8%AF%AD%E6%9C%AF%E8%AF%AD1/</url>
-    <content><![CDATA[<p>聚酯切片：</p>
-<p>淀粉：</p>
-<p>丙烯酸胶：</p>
-<p>玻纤纱：</p>
-<p>针刺机：</p>
-<p>涤纶纺粘胎基布：</p>
-<p>免税通过海关：free of duty through customs</p>
-<p>钢结构：steel structure</p>
-<p>钢筋：rebar /ˈriːˌbɑːr/</p>
-<p>电缆：electrical cable</p>
-<p>电子元器件：electron component /ɪˈlektrɑːn/</p>
-<p>进口材料：imported material</p>
-<p>外商独资项目：wholly foreign owned enterprise</p>
-<p>全资子公司：subsidiary of solo investment</p>
-<p>进口材料及设备占投资金额的比例限制是多少？<br />
-What is the <strong>limit</strong> <strong>on</strong> the proportion of imported materials and equipment <strong>in</strong> the investment amount？</p>
-<p>型钢：structural steel</p>
-<p>圆钢：round steel</p>
-<p>角钢：angle steel</p>
-<p>工型钢：universal beams</p>
-<p>槽型钢：channel steel</p>
-<p>六角钢：hexagonal steel</p>
-<p>扁钢：flat steel</p>
-<p>矩形：rectangle</p>
-<p>无缝管：seamless tube</p>
-<p>备案手续：recordation formalities of relevant documents</p>
-<p>示范合同、标准合同：model contract /ˈmɑːd(ə)l/</p>
-<p>特种作业人员：special appliance operator</p>
-<p>电工：electrician</p>
-<p>焊工：welder</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>modules</title>
-    <url>/2024/05/16/%E6%A8%A1%E5%9D%97/</url>
-    <content><![CDATA[<h1 id="将函数存储在模块中"><a class="markdownIt-Anchor" href="#将函数存储在模块中"></a> 将函数存储在模块中</h1>
-<p>函数的优点之一就是可以将代码与主程序分离，将主程序重点放在高层次的逻辑上。通过将函数存储在单独的文件中，可以在不同的程序中多次调用。我们将这种文件称为模块。<br />
-我们还可以使用其他程序员使用的模块，提高程序编写效率。</p>
-<h1 id="导入模块"><a class="markdownIt-Anchor" href="#导入模块"></a> 导入模块</h1>
-<p>导入模块使用import语句</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> module_name <span class="comment"># 调用模块</span></span><br><span class="line">module_name.function_name() <span class="comment"># 指定模块名，后跟上调用的函数名即可</span></span><br></pre></td></tr></table></figure>
-<p>如果我们只想导入模块中的特定函数而不是整个代码块，可以使用下列语句</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> module_name <span class="keyword">import</span> function_0, function_1, function_2</span><br></pre></td></tr></table></figure>
-<p>这种方法调用函数，直接调用函数即可，不再需要模块名➕句点。<br />
-如果要导入的函数名称太长，或者和现有程序中的其他名称冲突，那么可以使用<strong>别名</strong>，语法为：</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> module <span class="keyword">import</span> function_name <span class="keyword">as</span> function_new_name</span><br></pre></td></tr></table></figure>
-<p>我们还可以给模块指定别名，语法为:</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> module_name <span class="keyword">as</span> mn</span><br></pre></td></tr></table></figure>
-<p>这样可以让我们不再关注模块名称，而是关注函数名称，对理解代码而言，更为简洁。<br />
-我们还可以直接带入模块中的所有函数，语法为：</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> module_name <span class="keyword">import</span> *</span><br></pre></td></tr></table></figure>
-<p>通过此方法导入的函数同样可以直接调用而不用加上模块名称。但是最好不要这样做，因为你不知道模块中的函数名称是否与你主程序中的其他函数或者变量名称相同。此方法不建议使用。</p>
-<h1 id="函数编写约定"><a class="markdownIt-Anchor" href="#函数编写约定"></a> 函数编写约定</h1>
-<ol>
-<li>函数名称应该具有描述性,模块的命名同样如此。</li>
-<li>每个函数都应包含阐述其功能的注释，这个注释叫做文档字符串。</li>
-<li>给形参指定默认值或者实参使用关键字实参时，等号两边不加空格。</li>
-<li>函数形参过长时，可以采用块状写法。</li>
-<li>相邻的函数用两个空行分隔。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>格式化字符串</title>
-    <url>/2024/03/31/%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
-    <content><![CDATA[<h1 id="字符串之间可以进行加法运算-但是不能和其他数据进行加法运算"><a class="markdownIt-Anchor" href="#字符串之间可以进行加法运算-但是不能和其他数据进行加法运算"></a> 字符串之间可以进行加法运算, 但是不能和其他数据进行加法运算</h1>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="string">&#x27;Ken&#x27;</span></span><br><span class="line">b = <span class="string">&#x27; how are you&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(a + b)</span><br></pre></td></tr></table></figure>
-<p>返回值</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Ken how are you</span><br></pre></td></tr></table></figure>
-<h1 id="在创建字符串时候-可以在字符串中制定占位符s"><a class="markdownIt-Anchor" href="#在创建字符串时候-可以在字符串中制定占位符s"></a> 在创建字符串时候, 可以在字符串中制定占位符<code>%s</code></h1>
-<p><code>%s&quot;%Ken&quot;</code>这里我们用Ken填充占位符<code>%s</code></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">b = <span class="string">&quot;Hello %s&quot;</span> %<span class="string">&#x27;Ken&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(b)</span><br></pre></td></tr></table></figure>
-<p>返回值</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Hello Ken</span><br></pre></td></tr></table></figure>
-<p>这里注意: 在字符串外部对占位符进行填充, 填充的字符用引号包围.</p>
-<p>字符串中有多个占位符时候, 后边也要用多个字符进行依次填充.</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">c = <span class="string">&quot;Hello %s,你好 %s&quot;</span> %(<span class="string">&#x27;Tom&#x27;</span>,<span class="string">&#x27;孙悟空&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(c)</span><br></pre></td></tr></table></figure>
-<p>返回值</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Hello Tom,你好 孙悟空</span><br></pre></td></tr></table></figure>
-<p><code>%3s</code>表示, 要填充的字符串最少是3个字符, 少于3个字符用空格补齐. <code>%3.5</code>表示填充的字符必须是3到5个, 多余5个舍去, 少于3个用空格补齐.<br />
-要注意, 占位符可以用字符串填充, 也可以用数值填充, <b>也可以用变量填充</b>.</p>
-<h1 id="专业的浮点数占位符是f这个占位符可以对数值的小数进行精确控制"><a class="markdownIt-Anchor" href="#专业的浮点数占位符是f这个占位符可以对数值的小数进行精确控制"></a> 专业的浮点数占位符是<code>%f</code>,这个占位符可以对数值的小数进行精确控制.</h1>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="string">&quot;Hello, %.2f&quot;</span> %<span class="number">123.4</span></span><br><span class="line"><span class="built_in">print</span>(a)</span><br></pre></td></tr></table></figure>
-<p>返回值</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Hello, 123.40</span><br></pre></td></tr></table></figure>
-<p>这里<code>.2f</code>就是保留两个小数, 而且会自动四舍五入.</p>
-<h1 id="整数占位符是d-它是没有四舍五入的"><a class="markdownIt-Anchor" href="#整数占位符是d-它是没有四舍五入的"></a> 整数占位符是<code>%d</code>, 它是没有四舍五入的.</h1>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">b = <span class="string">&quot;Hello, %d&quot;</span> %<span class="number">123.456</span></span><br><span class="line"><span class="built_in">print</span>(b)</span><br></pre></td></tr></table></figure>
-<p>返回值</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">123</span><br></pre></td></tr></table></figure>
-<h1 id="格式化字符串-b格式化字符串中可以嵌入变量b-变量用包围-格式化字符串的方法是在字符串前加一个f"><a class="markdownIt-Anchor" href="#格式化字符串-b格式化字符串中可以嵌入变量b-变量用包围-格式化字符串的方法是在字符串前加一个f"></a> 格式化字符串, <b>格式化字符串中可以嵌入变量</b>, 变量用<code>&#123;&#125;</code>包围. 格式化字符串的方法是在字符串前加一个<code>f</code>.</h1>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="number">123</span></span><br><span class="line">b = <span class="string">&#x27;呵呵&#x27;</span></span><br><span class="line"></span><br><span class="line">c = <span class="string">f&quot;hello <span class="subst">&#123;a&#125;</span> <span class="subst">&#123;b&#125;</span>&quot;</span></span><br><span class="line"><span class="built_in">print</span>(c) </span><br></pre></td></tr></table></figure>
-<p>返回值</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hello 123 呵呵</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
+        <tag>建厂</tag>
+        <tag>沙特工业园</tag>
       </tags>
   </entry>
   <entry>
@@ -1857,35 +1894,6 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
         <tag>沙特</tag>
         <tag>沙特工业园</tag>
         <tag>工厂运营许可</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>沙特工业园建厂要求</title>
-    <url>/2024/03/28/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%BB%BA%E5%8E%82%E8%A6%81%E6%B1%82/</url>
-    <content><![CDATA[<p>工厂需要遵循【建厂条件和标准指南】中的建厂要求，可以享受Modon在工业园中提供的服务。</p>
-<ul>
-<li>工厂建设的单元包括：生产车间、原材料仓库、产成品仓库、员工服务、电力供应、工业安全服务、内部道路、疏散区域、<br />
-管理建筑。</li>
-<li>生产车间的高度满足所有任务需求，其中包括根据不同生产类型的生产线所需要的机械作业任务。</li>
-<li>原材料仓库的面积限制在能满足工厂需要的30%-40%，随工厂规模（建筑面积）的增大而增大。</li>
-<li>产成品仓库的面积限制在满足工厂产品存储的30%-40%，随工厂规模（建筑面积）的增大而增大。</li>
-<li>工厂员工服务包括：卫生间、礼拜厅、急救、餐厅、换衣间。</li>
-<li>包括给工厂服务的管理办公室。</li>
-<li>供电工程包括中低压配电室和主断路器室。</li>
-<li>安全服务包括：备用消防箱、灭火系统和火灾警报系统。</li>
-<li>内部道路用来方便工厂不同单元的活动，并且连接工厂各个入口和主道路。</li>
-<li>生产建筑和围墙之间的间隔：前方与道路之间不低于13.5米，与两侧和后方之间不低于6米。</li>
-<li>申请、认证和颁发许可证的要求。</li>
-</ul>
-<p><a href='https://www.modon.gov.sa/ar/Systems/Pages/Requirements.aspx'>内容采集自工业园官网</a></p>
-]]></content>
-      <categories>
-        <category>制度学习</category>
-        <category>沙特工业园制度</category>
-      </categories>
-      <tags>
-        <tag>建厂</tag>
-        <tag>沙特工业园</tag>
       </tags>
   </entry>
   <entry>
@@ -2397,6 +2405,27 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
       </tags>
   </entry>
   <entry>
+    <title>计算机语言</title>
+    <url>/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<p>计算机语言其实和人类语言没有本质区别，知识交流主体不同。</p>
+<p>机器语言发展的三个阶段：</p>
+<ul>
+<li>机器语言：通过二进制编码来编写程序。编写麻烦，执行效率好。</li>
+<li>汇编语言：使用符号代替机器码。汇编与反汇编。汇编语言只适用于某些硬件，兼容性差。计算机底层一些硬件驱动现在还用汇编语言编写。</li>
+<li>高级语言：和英语语法类似，并且和硬件关系不紧密，通过高级语言编写的程序可以在不同的硬件系统中执行。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>计算机</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>计算机简介</title>
     <url>/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%AE%80%E4%BB%8B/</url>
     <content><![CDATA[<p>计算机是一个用来进行计算的<strong>机器</strong>，跟生活中其他机器不同的点在于计算机是用来<strong>计算</strong>的。</p>
@@ -2427,27 +2456,6 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
       <tags>
         <tag>python</tag>
         <tag>计算机简介</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算机语言</title>
-    <url>/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<p>计算机语言其实和人类语言没有本质区别，知识交流主体不同。</p>
-<p>机器语言发展的三个阶段：</p>
-<ul>
-<li>机器语言：通过二进制编码来编写程序。编写麻烦，执行效率好。</li>
-<li>汇编语言：使用符号代替机器码。汇编与反汇编。汇编语言只适用于某些硬件，兼容性差。计算机底层一些硬件驱动现在还用汇编语言编写。</li>
-<li>高级语言：和英语语法类似，并且和硬件关系不紧密，通过高级语言编写的程序可以在不同的硬件系统中执行。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>计算机</tag>
       </tags>
   </entry>
   <entry>
@@ -2658,13 +2666,13 @@ dict can also insert to sets in this way.</li>
       </tags>
   </entry>
   <entry>
-    <title>分类</title>
-    <url>/categories/index.html</url>
+    <title>关于</title>
+    <url>/about/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>关于</title>
-    <url>/about/index.html</url>
+    <title>分类</title>
+    <url>/categories/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -2716,18 +2724,13 @@ dict can also insert to sets in this way.</li>
 }]]></content>
   </entry>
   <entry>
-    <title>文档</title>
-    <url>/files/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title></title>
     <url>/css/postpage_style.css</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>文档</title>
+    <url>/files/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -2736,18 +2739,23 @@ dict can also insert to sets in this way.</li>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>电影</title>
-    <url>/movies/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>链接</title>
     <url>/link/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
+    <title>电影</title>
+    <url>/movies/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>音乐</title>
     <url>/music/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>标签</title>
+    <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>
