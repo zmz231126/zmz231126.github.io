@@ -82,6 +82,10 @@ The computer architects should anticipate where the technology will be when the 
 <li>Integrated Circuit: also call as “chip”, a device combining dozens to millions of transistors.</li>
 </ol>
 ]]></content>
+      <categories>
+        <category>计算机</category>
+        <category>COMPUTER ORGANIZATION AND DESIGN</category>
+      </categories>
       <tags>
         <tag>计算机硬件</tag>
       </tags>
@@ -282,30 +286,6 @@ else:<br />
       </tags>
   </entry>
   <entry>
-    <title>python中的几个术语</title>
-    <url>/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
-    <content><![CDATA[<p>【表达式】类似于数学公式比如10 + 5；8 + 4.</p>
-<p>表达式仅仅用来计算一些结果，不会对程序产生实质影响。</p>
-<p>【语句】语句需要完成某种功能，比如打印信息、获取信息、为变量赋值等比如：<code>print()</code>, <code>a = 10</code>。</p>
-<p>语句的执行会对程序执行产生影响。语句在命令行中不一定会有执行结果。有返回值的语句，会有返回结果。</p>
-<p>【程序】是多个语句和表达式构成的。</p>
-<p>【函数（function）】函数是一个语句，用来完成特定的功能。函数的结构为<code>***()</code>.括号中的内容叫「参数」，可以没有参数也可以有多个参数，中间用逗号隔开。返回的结果叫做「返回值」，同样可以没有返回值。</p>
-<p>函数分为</p>
-<ol>
-<li>内置函数。python解释器提供的，可以在python中直接使用。</li>
-<li>自定义函数。由程序员自定义的函数。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>python的基本语法</title>
     <url>/2024/03/31/python%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<p>python严格区分大小写。比如<code>Print()</code>不能被执行。</p>
@@ -367,12 +347,12 @@ for循环出了创建方式外, 其余跟while是一样的用法.</p>
 </code></pre>
 ]]></content>
       <categories>
+        <category>编程</category>
         <category>python</category>
         <category>python基础</category>
-        <category>Vim快捷键4</category>
       </categories>
       <tags>
-        <tag>Vim</tag>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -518,6 +498,30 @@ $ last line<br />
       </categories>
       <tags>
         <tag>Vim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python中的几个术语</title>
+    <url>/2024/03/31/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
+    <content><![CDATA[<p>【表达式】类似于数学公式比如10 + 5；8 + 4.</p>
+<p>表达式仅仅用来计算一些结果，不会对程序产生实质影响。</p>
+<p>【语句】语句需要完成某种功能，比如打印信息、获取信息、为变量赋值等比如：<code>print()</code>, <code>a = 10</code>。</p>
+<p>语句的执行会对程序执行产生影响。语句在命令行中不一定会有执行结果。有返回值的语句，会有返回结果。</p>
+<p>【程序】是多个语句和表达式构成的。</p>
+<p>【函数（function）】函数是一个语句，用来完成特定的功能。函数的结构为<code>***()</code>.括号中的内容叫「参数」，可以没有参数也可以有多个参数，中间用逗号隔开。返回的结果叫做「返回值」，同样可以没有返回值。</p>
+<p>函数分为</p>
+<ol>
+<li>内置函数。python解释器提供的，可以在python中直接使用。</li>
+<li>自定义函数。由程序员自定义的函数。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -784,6 +788,11 @@ When you hit <code>Enter</code> to open a file, it will be opened in the same wi
     <url>/2024/05/18/%E4%BB%8E%E6%96%87%E4%BB%B6%E4%B8%AD%E8%AF%BB%E5%8F%96%E6%95%B0%E6%8D%AE/</url>
     <content><![CDATA[<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">file_name = <span class="string">&quot;pi_digits.txt&quot;</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(file_name) <span class="keyword">as</span> file_object:</span><br><span class="line">    lines = file_object.readlines() <span class="comment"># open返回的对象只在with代码块中可用.readlines()方法从文件中读取每一行，并且存储在lines列表中，以便于在其他地方调用。</span></span><br><span class="line"><span class="keyword">for</span> line <span class="keyword">in</span> lines:</span><br><span class="line">    new_line =  line.replace(<span class="string">&quot;python&quot;</span>,<span class="string">&quot;C&quot;</span>) <span class="comment"># .replace()不会修改原字符串，而是返回一个新字符串。直接打印line不会有变化。</span></span><br><span class="line">    <span class="built_in">print</span>(new_line)</span><br><span class="line">pi_string = <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="keyword">for</span> line <span class="keyword">in</span> lines:</span><br><span class="line">    pi_string += line.rstrip() <span class="comment">#.strip()方法用于去除字符串左右两侧的字符，默认为空格。.rstrip()方法用于去除字符串右侧的字符默认为空格。</span></span><br><span class="line"><span class="built_in">print</span>(pi_string)</span><br></pre></td></tr></table></figure>
 ]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
   </entry>
   <entry>
     <title>传递任意数量的实参</title>
@@ -794,6 +803,11 @@ When you hit <code>Enter</code> to open a file, it will be opened in the same wi
 <p>如果要使用多种类型的形参，要注意python匹配顺序规则是位置实参、关键字实参，最后将其与的实参都收集到最后一个形参中。</p>
 <figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">build_profile</span>(<span class="params">first, last, **user_info</span>): <span class="comment">#这里的`**`表示的是创建词典</span></span><br><span class="line">    profile = &#123;&#125;</span><br><span class="line">    profile[<span class="string">&quot;first_name&quot;</span>] = first</span><br><span class="line">    profile[<span class="string">&quot;last_name&quot;</span>] = last</span><br><span class="line">    <span class="keyword">for</span> key, value <span class="keyword">in</span> user_info.items(): <span class="comment">#这里就是词典的调用方法。</span></span><br><span class="line">        profile[key] = value <span class="comment">#这里将user_info这个词典中的键值对转存到profile这个词典中。</span></span><br><span class="line">    <span class="keyword">return</span> profile</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">user_profile = build_profile(<span class="string">&quot;albert&quot;</span>,<span class="string">&quot;einstein&quot;</span>,location=<span class="string">&quot;princeton&quot;</span>,field=<span class="string">&#x27;phusics&#x27;</span>) <span class="comment">#这里我们使用了关键字参数来传递给字典user_info。</span></span><br><span class="line"><span class="built_in">print</span>(user_profile)</span><br></pre></td></tr></table></figure>
 ]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
       <tags>
         <tag>python</tag>
       </tags>
@@ -1188,30 +1202,6 @@ code block<br />
       </tags>
   </entry>
   <entry>
-    <title>可变对象</title>
-    <url>/2024/04/06/%E5%8F%AF%E5%8F%98%E5%AF%B9%E8%B1%A1/</url>
-    <content><![CDATA[<p>对象的三个属性:</p>
-<ul>
-<li>id</li>
-<li>类型</li>
-<li>值<br />
-可变是指的<strong>值</strong>可变.<br />
-我们修改对象时, 如果有其他变量也指向了该对象, 那么这几个变量也会改变. 注意, 它们的id都没有改变. 因为修改<br />
-对象是修改对象的值.<br />
-给变量重新赋值时, 不影响其他变量.<br />
-<code>==</code>比较的是对象的值是否相等, <code>is/is not</code>是比较对象的id是否相等.</li>
-</ul>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>变量和标识符</title>
     <url>/2024/03/31/%E5%8F%98%E9%87%8F%E5%92%8C%E6%A0%87%E8%AF%86%E7%AC%A6/</url>
     <content><![CDATA[<p>使用变量不需要声明，直接为变量赋值，但是不能使用未被赋值的变量</p>
@@ -1248,6 +1238,30 @@ code block<br />
       <tags>
         <tag>python</tag>
         <tag>spyder快捷键</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>可变对象</title>
+    <url>/2024/04/06/%E5%8F%AF%E5%8F%98%E5%AF%B9%E8%B1%A1/</url>
+    <content><![CDATA[<p>对象的三个属性:</p>
+<ul>
+<li>id</li>
+<li>类型</li>
+<li>值<br />
+可变是指的<strong>值</strong>可变.<br />
+我们修改对象时, 如果有其他变量也指向了该对象, 那么这几个变量也会改变. 注意, 它们的id都没有改变. 因为修改<br />
+对象是修改对象的值.<br />
+给变量重新赋值时, 不影响其他变量.<br />
+<code>==</code>比较的是对象的值是否相等, <code>is/is not</code>是比较对象的id是否相等.</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -1500,22 +1514,6 @@ This is-a line, with special/separated/words (and some more).</p>
       </tags>
   </entry>
   <entry>
-    <title>布尔值</title>
-    <url>/2024/03/31/%E5%B8%83%E5%B0%94%E5%80%BC/</url>
-    <content><![CDATA[<p>布尔值(bool)用来做逻辑判断. 一共有两个<code>True</code>和<code>False</code>. 注意Python是一个大小写敏感的语言.<br />
-也可以理解为一个整数, true 是 1 false 是 0</p>
-<p><code>None</code>空值,表示不存在.</p>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>对象(object)</title>
     <url>/2024/03/31/%E5%AF%B9%E8%B1%A1(object)/</url>
     <content><![CDATA[<h1 id="对象介绍"><a class="markdownIt-Anchor" href="#对象介绍"></a> 对象介绍</h1>
@@ -1575,6 +1573,22 @@ This is-a line, with special/separated/words (and some more).</p>
       </tags>
   </entry>
   <entry>
+    <title>布尔值</title>
+    <url>/2024/03/31/%E5%B8%83%E5%B0%94%E5%80%BC/</url>
+    <content><![CDATA[<p>布尔值(bool)用来做逻辑判断. 一共有两个<code>True</code>和<code>False</code>. 注意Python是一个大小写敏感的语言.<br />
+也可以理解为一个整数, true 是 1 false 是 0</p>
+<p><code>None</code>空值,表示不存在.</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>循环语句</title>
     <url>/2024/04/05/%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/</url>
     <content><![CDATA[<p>循环语句，可以使指定的代码块重复指定的次数，有两种while循环和for循环。</p>
@@ -1593,6 +1607,95 @@ else：</p>
       </categories>
       <tags>
         <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数值</title>
+    <url>/2024/03/31/%E6%95%B0%E5%80%BC/</url>
+    <content><![CDATA[<p>数据类型：就是给变量赋的值的类型。</p>
+<ul>
+<li>数值
+<ul>
+<li>整数</li>
+<li>布尔值</li>
+<li>浮点数</li>
+<li>复数</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>字符串</li>
+<li>空值<br />
+编程语言是人创造的，学习的时候要关联现实生活，这样容易理解。</li>
+</ul>
+<p>python 数值有三种：</p>
+<ul>
+<li>整数（int）
+<ul>
+<li>数大小没有限制，可以是任意大小。</li>
+<li>如果数字过长，我们可以用<code>_</code>作为分隔符，比如<strong>千位分隔符</strong>。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">c = <span class="number">123_456_789</span></span><br><span class="line"><span class="built_in">print</span>(c)</span><br></pre></td></tr></table></figure>
+<p>返回值为:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">123456789</span><br></pre></td></tr></table></figure>
+<p>数字不能以<code>0</code>开头。<br />
+二进制数字用<code>0b</code>开头<br />
+八进制数字用<code>0o</code>开头<br />
+十六进制数字用<code>0x</code>开头<br />
+任何进制的数字返回的都是十进制的数字</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">e = <span class="number">0b10</span></span><br><span class="line"><span class="built_in">print</span>(e)</span><br></pre></td></tr></table></figure>
+<p>返回值为：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">2</span><br></pre></td></tr></table></figure>
+<ul>
+<li>浮点数（小数）<br />
+所有的小数都是浮点数, 对浮点数的计算可能不准确.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">c = <span class="number">0.1</span> + <span class="number">0.2</span></span><br><span class="line"><span class="built_in">print</span>(c)</span><br></pre></td></tr></table></figure>
+<p>返回值为:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">0.30000000000000004</span><br></pre></td></tr></table></figure>
+<p>所有不建议对浮点数进行直接运算.</p>
+<ul>
+<li>复数</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>文本文件和字符集</title>
+    <url>/2024/03/31/%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%92%8C%E5%AD%97%E7%AC%A6%E9%9B%86/</url>
+    <content><![CDATA[<p>文本分为纯文本和富文本。</p>
+<p>纯文本在计算机底层也会转换为二进制保存。</p>
+<p>将字符转换为二进制码的过程叫做<strong>编码</strong>。</p>
+<p>将二进制码转换成字符的过程叫做<strong>解码</strong>。</p>
+<p>编码和解码时采用的规则叫做<strong>字符集</strong>。</p>
+<p>常用的字符集：</p>
+<ul>
+<li>ASCII 美国人编码，使用7位（7个1和7个0）来对美国常用的字符进行编码。7个1和7个0的不同组合产生128个字符。</li>
+<li>IS0-8859-1 欧洲的编号，使用8位进行编码，产生256个字符。</li>
+<li>GB2312 GBK中国人的编码</li>
+<li>Unicode 万国码。便携程序时，使用Unicode编码。Unicode有多种实现，UTF-32使用4个字节表示一个字符。UTF-16使用2到4个字节表示一个字符。UTF-8使用1-5个字节表示一个字符。</li>
+</ul>
+<hr />
+<p>乱码</p>
+<p>程序出现乱码，检查字符集是否正确。</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>计算机</tag>
       </tags>
   </entry>
   <entry>
@@ -1711,124 +1814,6 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
       </tags>
   </entry>
   <entry>
-    <title>数值</title>
-    <url>/2024/03/31/%E6%95%B0%E5%80%BC/</url>
-    <content><![CDATA[<p>数据类型：就是给变量赋的值的类型。</p>
-<ul>
-<li>数值
-<ul>
-<li>整数</li>
-<li>布尔值</li>
-<li>浮点数</li>
-<li>复数</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>字符串</li>
-<li>空值<br />
-编程语言是人创造的，学习的时候要关联现实生活，这样容易理解。</li>
-</ul>
-<p>python 数值有三种：</p>
-<ul>
-<li>整数（int）
-<ul>
-<li>数大小没有限制，可以是任意大小。</li>
-<li>如果数字过长，我们可以用<code>_</code>作为分隔符，比如<strong>千位分隔符</strong>。</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">c = <span class="number">123_456_789</span></span><br><span class="line"><span class="built_in">print</span>(c)</span><br></pre></td></tr></table></figure>
-<p>返回值为:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">123456789</span><br></pre></td></tr></table></figure>
-<p>数字不能以<code>0</code>开头。<br />
-二进制数字用<code>0b</code>开头<br />
-八进制数字用<code>0o</code>开头<br />
-十六进制数字用<code>0x</code>开头<br />
-任何进制的数字返回的都是十进制的数字</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">e = <span class="number">0b10</span></span><br><span class="line"><span class="built_in">print</span>(e)</span><br></pre></td></tr></table></figure>
-<p>返回值为：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">2</span><br></pre></td></tr></table></figure>
-<ul>
-<li>浮点数（小数）<br />
-所有的小数都是浮点数, 对浮点数的计算可能不准确.</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">c = <span class="number">0.1</span> + <span class="number">0.2</span></span><br><span class="line"><span class="built_in">print</span>(c)</span><br></pre></td></tr></table></figure>
-<p>返回值为:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">0.30000000000000004</span><br></pre></td></tr></table></figure>
-<p>所有不建议对浮点数进行直接运算.</p>
-<ul>
-<li>复数</li>
-</ul>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>文本文件和字符集</title>
-    <url>/2024/03/31/%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%92%8C%E5%AD%97%E7%AC%A6%E9%9B%86/</url>
-    <content><![CDATA[<p>文本分为纯文本和富文本。</p>
-<p>纯文本在计算机底层也会转换为二进制保存。</p>
-<p>将字符转换为二进制码的过程叫做<strong>编码</strong>。</p>
-<p>将二进制码转换成字符的过程叫做<strong>解码</strong>。</p>
-<p>编码和解码时采用的规则叫做<strong>字符集</strong>。</p>
-<p>常用的字符集：</p>
-<ul>
-<li>ASCII 美国人编码，使用7位（7个1和7个0）来对美国常用的字符进行编码。7个1和7个0的不同组合产生128个字符。</li>
-<li>IS0-8859-1 欧洲的编号，使用8位进行编码，产生256个字符。</li>
-<li>GB2312 GBK中国人的编码</li>
-<li>Unicode 万国码。便携程序时，使用Unicode编码。Unicode有多种实现，UTF-32使用4个字节表示一个字符。UTF-16使用2到4个字节表示一个字符。UTF-8使用1-5个字节表示一个字符。</li>
-</ul>
-<hr />
-<p>乱码</p>
-<p>程序出现乱码，检查字符集是否正确。</p>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>计算机</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>沙特工业园建厂要求</title>
-    <url>/2024/03/28/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%BB%BA%E5%8E%82%E8%A6%81%E6%B1%82/</url>
-    <content><![CDATA[<p>工厂需要遵循【建厂条件和标准指南】中的建厂要求，可以享受Modon在工业园中提供的服务。</p>
-<ul>
-<li>工厂建设的单元包括：生产车间、原材料仓库、产成品仓库、员工服务、电力供应、工业安全服务、内部道路、疏散区域、<br />
-管理建筑。</li>
-<li>生产车间的高度满足所有任务需求，其中包括根据不同生产类型的生产线所需要的机械作业任务。</li>
-<li>原材料仓库的面积限制在能满足工厂需要的30%-40%，随工厂规模（建筑面积）的增大而增大。</li>
-<li>产成品仓库的面积限制在满足工厂产品存储的30%-40%，随工厂规模（建筑面积）的增大而增大。</li>
-<li>工厂员工服务包括：卫生间、礼拜厅、急救、餐厅、换衣间。</li>
-<li>包括给工厂服务的管理办公室。</li>
-<li>供电工程包括中低压配电室和主断路器室。</li>
-<li>安全服务包括：备用消防箱、灭火系统和火灾警报系统。</li>
-<li>内部道路用来方便工厂不同单元的活动，并且连接工厂各个入口和主道路。</li>
-<li>生产建筑和围墙之间的间隔：前方与道路之间不低于13.5米，与两侧和后方之间不低于6米。</li>
-<li>申请、认证和颁发许可证的要求。</li>
-</ul>
-<p><a href='https://www.modon.gov.sa/ar/Systems/Pages/Requirements.aspx'>内容采集自工业园官网</a></p>
-]]></content>
-      <categories>
-        <category>制度学习</category>
-        <category>沙特工业园制度</category>
-      </categories>
-      <tags>
-        <tag>建厂</tag>
-        <tag>沙特工业园</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>申请沙特工业园工厂运行许可证的要求</title>
     <url>/2024/03/27/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%B7%A5%E5%8E%82%E8%BF%90%E8%A1%8C%E8%AE%B8%E5%8F%AF%E8%AF%81%E7%9A%84%E8%A6%81%E6%B1%82%E5%92%8C%E8%A7%84%E5%AE%9A/</url>
     <content><![CDATA[<h1 id="第一阶段通过modon账户提交申请"><a class="markdownIt-Anchor" href="#第一阶段通过modon账户提交申请"></a> 第一阶段：通过MODON账户提交申请</h1>
@@ -1894,6 +1879,35 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
         <tag>沙特</tag>
         <tag>沙特工业园</tag>
         <tag>工厂运营许可</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>沙特工业园建厂要求</title>
+    <url>/2024/03/28/%E6%B2%99%E7%89%B9%E5%B7%A5%E4%B8%9A%E5%9B%AD%E5%BB%BA%E5%8E%82%E8%A6%81%E6%B1%82/</url>
+    <content><![CDATA[<p>工厂需要遵循【建厂条件和标准指南】中的建厂要求，可以享受Modon在工业园中提供的服务。</p>
+<ul>
+<li>工厂建设的单元包括：生产车间、原材料仓库、产成品仓库、员工服务、电力供应、工业安全服务、内部道路、疏散区域、<br />
+管理建筑。</li>
+<li>生产车间的高度满足所有任务需求，其中包括根据不同生产类型的生产线所需要的机械作业任务。</li>
+<li>原材料仓库的面积限制在能满足工厂需要的30%-40%，随工厂规模（建筑面积）的增大而增大。</li>
+<li>产成品仓库的面积限制在满足工厂产品存储的30%-40%，随工厂规模（建筑面积）的增大而增大。</li>
+<li>工厂员工服务包括：卫生间、礼拜厅、急救、餐厅、换衣间。</li>
+<li>包括给工厂服务的管理办公室。</li>
+<li>供电工程包括中低压配电室和主断路器室。</li>
+<li>安全服务包括：备用消防箱、灭火系统和火灾警报系统。</li>
+<li>内部道路用来方便工厂不同单元的活动，并且连接工厂各个入口和主道路。</li>
+<li>生产建筑和围墙之间的间隔：前方与道路之间不低于13.5米，与两侧和后方之间不低于6米。</li>
+<li>申请、认证和颁发许可证的要求。</li>
+</ul>
+<p><a href='https://www.modon.gov.sa/ar/Systems/Pages/Requirements.aspx'>内容采集自工业园官网</a></p>
+]]></content>
+      <categories>
+        <category>制度学习</category>
+        <category>沙特工业园制度</category>
+      </categories>
+      <tags>
+        <tag>建厂</tag>
+        <tag>沙特工业园</tag>
       </tags>
   </entry>
   <entry>
@@ -2352,6 +2366,11 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
 <figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Dog</span>():</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,name,age</span>): <span class="comment"># 这是一种特殊方法，每当根据Dog创建实例时，都会自动运行此方法。</span></span><br><span class="line">        <span class="comment">#每个与类相关的方法调用，都会自动传递实参slef,它是一个指向实例本身的引用，让实例可以访问类中的公共属性和方法。</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.age = age</span><br><span class="line"><span class="comment"># 以self为前缀的变量可以供类中的所有方法调用，self,name = name获取存储在形参name中的值，将其存储到变量name中然后该变量被关联到当前创建的实例。</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">sit</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(self.name.title() + <span class="string">&quot; is now sitting&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">roll_over</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(self.name.title() + <span class="string">&quot; rolled over&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">dog_1 = Dog(<span class="string">&quot;willie&quot;</span>,<span class="number">18</span>)</span><br><span class="line"><span class="comment"># 我们可以将类视作对实例的说明，这里我们创建了一个实例，并将其赋值给我变量dog_1中。通常，类名首字母大写，实例名称全部小写。</span></span><br><span class="line">dog_1.sit()</span><br><span class="line">dog_1.roll_over()</span><br></pre></td></tr></table></figure>
 <figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">User</span>():</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,first_name,last_name,age,gender</span>):</span><br><span class="line">        self.first_name = first_name</span><br><span class="line">        self.last_name = last_name</span><br><span class="line">        self.age = age</span><br><span class="line">        self.login_attempts = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">user_info</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">User info is listed below:</span></span><br><span class="line"><span class="string"><span class="subst">&#123;self.first_name&#125;</span></span></span><br><span class="line"><span class="string"><span class="subst">&#123;self.last_name&#125;</span></span></span><br><span class="line"><span class="string"><span class="subst">&#123;self.age&#125;</span></span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">greetings</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;Hi <span class="subst">&#123;self.first_name&#125;</span> <span class="subst">&#123;self.last_name&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">increment_login</span>(<span class="params">self</span>):</span><br><span class="line">        self.login_attempts += <span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">reset_login</span>(<span class="params">self</span>):</span><br><span class="line">        self.login_attempts = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">user_1 = User(<span class="string">&quot;Sarah&quot;</span>,<span class="string">&quot;John&quot;</span>,<span class="number">18</span>,<span class="string">&quot;male&quot;</span>)</span><br><span class="line">user_2 = User(<span class="string">&quot;Sarah&quot;</span>,<span class="string">&quot;Bob&quot;</span>,<span class="number">17</span>,<span class="string">&quot;male&quot;</span>)</span><br><span class="line">user_3 = User(<span class="string">&quot;Sarah&quot;</span>,<span class="string">&quot;Tom&quot;</span>,<span class="number">16</span>,<span class="string">&quot;female&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">user_1.user_info()</span><br><span class="line">user_1.greetings()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">user_2.increment_login()</span><br><span class="line">user_2.increment_login()</span><br><span class="line">user_2.increment_login()</span><br><span class="line">user_2.increment_login()</span><br><span class="line"><span class="built_in">print</span>(user_2.login_attempts)</span><br><span class="line">user_2.reset_login()</span><br><span class="line"><span class="built_in">print</span>(user_2.login_attempts)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Car</span>():</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    一次模拟汽车的简单尝试</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,make,model,year</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        初始化描述汽车的属性</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        self.make = make</span><br><span class="line">        self.model = model</span><br><span class="line">        self.year = year</span><br><span class="line">        self.odometer_reading = <span class="number">0</span>   <span class="comment">#这里设置属性的初始值</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">get_descriptive_name</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        返回整洁的描述信息</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        long_name = <span class="built_in">str</span>(self.year) + <span class="string">&quot; &quot;</span> + self.make + <span class="string">&quot; &quot;</span> + self.model</span><br><span class="line">        <span class="keyword">return</span> long_name</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">update_odometer</span>(<span class="params">self,mileage</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        将里程表读数设置为指定值</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        <span class="keyword">if</span> mileage &gt;= self.odometer_reading:</span><br><span class="line">            self.odometer_reading = mileage</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;you can&#x27;t roll back the odometer&quot;</span>)</span><br><span class="line"><span class="comment"># 这里我们对方法进行了扩展，防止数字回调。</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">increment_odometer</span>(<span class="params">self,increment</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        将里程数增加指定量</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        self.odometer_reading += increment</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">read_odometer</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        打印一条指出汽车历程的信息</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;This car has &quot;</span> + <span class="built_in">str</span>(self.odometer_reading) + <span class="string">&quot; miles on it&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">my_new_car = Car(<span class="string">&quot;audi&quot;</span>,<span class="string">&quot;a4&quot;</span>,<span class="number">2016</span>)</span><br><span class="line"><span class="built_in">print</span>(my_new_car.get_descriptive_name())</span><br><span class="line">my_new_car.odometer_reading = <span class="number">23</span>  <span class="comment"># 这里直接访问并修改了属性值。实例属性值优先级大于类中设置的属性优先级</span></span><br><span class="line">my_new_car.read_odometer()</span><br><span class="line"><span class="comment"># 这里我们设置了一个方法，通过方法改变了初始值</span></span><br><span class="line">my_new_car.update_odometer(<span class="number">24</span>)</span><br><span class="line">my_new_car.read_odometer()</span><br><span class="line">my_new_car.increment_odometer(<span class="number">10</span>)</span><br><span class="line">my_new_car.read_odometer()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ElectricCar</span>(<span class="title class_ inherited__">Car</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,make,model,year</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;初始化父类属性&quot;&quot;&quot;</span></span><br><span class="line">        <span class="built_in">super</span>().__init__(make,model,year) <span class="comment"># 将父类属性赋给子类</span></span><br><span class="line">        self.battery_size = <span class="number">70</span> <span class="comment"># 初始化子类属性</span></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">describe_battery</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;The car has a &quot;</span> + <span class="built_in">str</span>(self.battery_size) + <span class="string">&quot; KWH battery&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">fill_gas_tank</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;This car doesn&#x27;t need a gas tank&quot;</span>)</span><br><span class="line">        <span class="comment"># 如果父类的方法不符合子类的特征，可以在子类中重新定义这个方法，只要方法名相同即可，这样，python就不会在此子类中去寻找父类的同名方法，直接使用子类的方法。</span></span><br><span class="line">my_tesla = ElectricCar(<span class="string">&quot;tesla&quot;</span>,<span class="string">&quot;model s&quot;</span>,<span class="number">2016</span>)</span><br><span class="line"><span class="built_in">print</span>(my_tesla.get_descriptive_name())</span><br><span class="line">my_tesla.describe_battery()</span><br></pre></td></tr></table></figure>
 ]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>编程基础</category>
+      </categories>
       <tags>
         <tag>python</tag>
       </tags>
@@ -2405,27 +2424,6 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
       </tags>
   </entry>
   <entry>
-    <title>计算机语言</title>
-    <url>/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<p>计算机语言其实和人类语言没有本质区别，知识交流主体不同。</p>
-<p>机器语言发展的三个阶段：</p>
-<ul>
-<li>机器语言：通过二进制编码来编写程序。编写麻烦，执行效率好。</li>
-<li>汇编语言：使用符号代替机器码。汇编与反汇编。汇编语言只适用于某些硬件，兼容性差。计算机底层一些硬件驱动现在还用汇编语言编写。</li>
-<li>高级语言：和英语语法类似，并且和硬件关系不紧密，通过高级语言编写的程序可以在不同的硬件系统中执行。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>计算机</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>计算机简介</title>
     <url>/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%AE%80%E4%BB%8B/</url>
     <content><![CDATA[<p>计算机是一个用来进行计算的<strong>机器</strong>，跟生活中其他机器不同的点在于计算机是用来<strong>计算</strong>的。</p>
@@ -2456,6 +2454,27 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
       <tags>
         <tag>python</tag>
         <tag>计算机简介</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机语言</title>
+    <url>/2024/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<p>计算机语言其实和人类语言没有本质区别，知识交流主体不同。</p>
+<p>机器语言发展的三个阶段：</p>
+<ul>
+<li>机器语言：通过二进制编码来编写程序。编写麻烦，执行效率好。</li>
+<li>汇编语言：使用符号代替机器码。汇编与反汇编。汇编语言只适用于某些硬件，兼容性差。计算机底层一些硬件驱动现在还用汇编语言编写。</li>
+<li>高级语言：和英语语法类似，并且和硬件关系不紧密，通过高级语言编写的程序可以在不同的硬件系统中执行。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>计算机</tag>
       </tags>
   </entry>
   <entry>
@@ -2666,13 +2685,18 @@ dict can also insert to sets in this way.</li>
       </tags>
   </entry>
   <entry>
+    <title>分类</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>关于</title>
     <url>/about/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>分类</title>
-    <url>/categories/index.html</url>
+    <title></title>
+    <url>/js/script.js</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -2734,8 +2758,8 @@ dict can also insert to sets in this way.</li>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/js/script.js</url>
+    <title>标签</title>
+    <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -2751,11 +2775,6 @@ dict can also insert to sets in this way.</li>
   <entry>
     <title>音乐</title>
     <url>/music/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>
