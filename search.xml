@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
-    <url>/2024/05/15/1.2%20EIGHT%20GREAT%20IDEAS%20IN%20COMPUTER%20ARCHITECTURE/</url>
+    <title>1.2 EIGHT GREAT IDEAS</title>
+    <url>/2024/05/17/1.2%20EIGHT%20GREAT%20IDEAS%20IN%20COMPUTER%20ARCHITECTURE/</url>
     <content><![CDATA[<h1 id="design-for-moores-law"><a class="markdownIt-Anchor" href="#design-for-moores-law"></a> design for Moore’s law</h1>
 <p>The one constant for computer designers is rapid change.<br />
 Moore’s law indicates that the integrated circuit resources double every 18-24 months.<br />
@@ -22,10 +22,13 @@ The computer architects should anticipate where the technology will be when the 
 <h1 id="dependability-via-redundancy"><a class="markdownIt-Anchor" href="#dependability-via-redundancy"></a> dependability via redundancy</h1>
 <p>Since any physical device can fail, we make systems dependable by including redundant components that can take over when a failure occurs and to help detect failures.</p>
 ]]></content>
+      <tags>
+        <tag>计算机硬件</tag>
+      </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/2024/05/15/1.3%20BELOW%20YOUR%20PROGRAM/</url>
+    <title>1.3 BELOW YOUR PROGRAM</title>
+    <url>/2024/05/16/1.3%20BELOW%20YOUR%20PROGRAM/</url>
     <content><![CDATA[<h1 id="systems-software"><a class="markdownIt-Anchor" href="#systems-software"></a> Systems Software</h1>
 <p>Sitting between the hardware and the application, provides services that are commonly useful, including operating systems, compliers, loaders, assemblers.</p>
 <h1 id="operating-system"><a class="markdownIt-Anchor" href="#operating-system"></a> Operating System</h1>
@@ -50,6 +53,38 @@ The computer architects should anticipate where the technology will be when the 
 <h1 id="high-level-language"><a class="markdownIt-Anchor" href="#high-level-language"></a> High-level language</h1>
 <p>Composed of words and algebric notations that can be translated through a complier into assembly language.</p>
 ]]></content>
+      <categories>
+        <category>计算机</category>
+        <category>COMPUTER ORGRANIZATION AND DESIGN</category>
+      </categories>
+      <tags>
+        <tag>计算机硬件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>1.4 UNDER THE COVERS</title>
+    <url>/2024/05/17/1.4%20UNDER%20THE%20COVERS/</url>
+    <content><![CDATA[<h1 id="the-big-picture"><a class="markdownIt-Anchor" href="#the-big-picture"></a> The Big Picture</h1>
+<p>The five classic components of a computer are: input, output, memeory, datapath, control, with the last two sometimes combined and called processor.</p>
+<ol>
+<li>The processor gets instructions and data from memory.</li>
+<li>Input writes data to memory.</li>
+<li>Output reads data to memory.</li>
+<li>Control sends singnals and determines the operations of input, output, memory,datapath according to the instructions of the program.</li>
+<li>Datapath: the component of processor that perform the arithemetic operations.</li>
+<li>Memory: the storeage area in which programs are kept when they are running and that contains the data needed by the running programs.</li>
+</ol>
+<p>CRT stands for Cathode Ray Tube. It is a technology used in older television sets and computer monitors to display images. A CRT display works by using an electron gun to shoot a beam of electrons onto a phosphor-coated screen, creating images through the illumination of different colored phosphors. While CRT technology has largely been replaced by newer display technologies like LCD and LED, it was widely used for many years in televisions and computer monitors.</p>
+<h1 id="through-the-looking-glass"><a class="markdownIt-Anchor" href="#through-the-looking-glass"></a> Through The Looking Glass</h1>
+<ol>
+<li>Liquid Crystal Display: a display technology using a thin layer of liquid polymer that can be used to tansmit or block light, according to whether a charge is applied.</li>
+<li>Active Matrix Disply: a liquid crystal display that use a transistor to control the transmission of light at each individual pixel.</li>
+<li>Integrated Circuit: also call as “chip”, a device combining dozens to millions of transistors.</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>计算机硬件</tag>
+      </tags>
   </entry>
   <entry>
     <title>Vim编辑命令2</title>
@@ -105,7 +140,7 @@ Buffer: when we open a file, Vim load its contents from disk drive. When we edit
       <categories>
         <category>编程</category>
         <category>Vim</category>
-        <category>Vim快捷键6</category>
+        <category>Vim快捷键</category>
       </categories>
       <tags>
         <tag>Vim</tag>
@@ -479,7 +514,7 @@ $ last line<br />
       <categories>
         <category>编程</category>
         <category>Vim</category>
-        <category>Vim快捷键5</category>
+        <category>Vim快捷键</category>
       </categories>
       <tags>
         <tag>Vim</tag>
@@ -544,7 +579,7 @@ $ last line<br />
       <categories>
         <category>编程</category>
         <category>Vim</category>
-        <category>Vim快捷键4</category>
+        <category>Vim快捷键</category>
       </categories>
       <tags>
         <tag>Vim</tag>
@@ -571,7 +606,7 @@ $ last line<br />
       <categories>
         <category>编程</category>
         <category>Vim</category>
-        <category>Vim快捷键3</category>
+        <category>Vim快捷键</category>
       </categories>
       <tags>
         <tag>Vim</tag>
@@ -655,7 +690,7 @@ When you hit <code>Enter</code> to open a file, it will be opened in the same wi
       <categories>
         <category>编程</category>
         <category>Vim</category>
-        <category>Vim 快捷键2</category>
+        <category>Vim 快捷键</category>
       </categories>
       <tags>
         <tag>Vim</tag>
@@ -688,21 +723,20 @@ When you hit <code>Enter</code> to open a file, it will be opened in the same wi
 <p><code>vim -c &quot;set syntax=python&quot; -c &quot;normal G&quot; example.py</code></p>
 <p>This command will open <a href="http://example.py">example.py</a> in Vim, set the syntax highlighting to Python, and move the cursor to the end of the file.</p>
 <ol start="3">
-<li><strong>Execute an Ex command</strong>: You can execute Ex commands (commands that start with 😃 using the -c option. For example, to open a file and save it with a different name, you can use:</li>
+<li>
+<p><strong>Execute an Ex command</strong>: You can execute Ex commands (commands that start with 😃 using the -c option. For example, to open a file and save it with a different name, you can use:</p>
+<p><code>vim -c &quot;:w newfile.txt&quot; example.txt</code></p>
+<p>This command will open example.txt in Vim and save it as newfile.txt.</p>
+<p>Using the -c cmd option in Vim provides flexibility in automating tasks or customizing Vim’s behavior when opening files. You can experiment with different commands to suit your specific requirements.</p>
+</li>
 </ol>
 </li>
 </ol>
-<p>​<br />
-<code>vim -c &quot;:w newfile.txt&quot; example.txt</code></p>
-<pre><code>   This command will open example.txt in Vim and save it as newfile.txt.
-
-   Using the -c cmd option in Vim provides flexibility in automating tasks or customizing Vim's behavior when opening files. You can experiment with different commands to suit your specific requirements. 
-</code></pre>
 ]]></content>
       <categories>
         <category>编程</category>
         <category>Vim</category>
-        <category>Vim快捷键1</category>
+        <category>Vim快捷键</category>
       </categories>
       <tags>
         <tag>Vim</tag>
@@ -744,6 +778,36 @@ When you hit <code>Enter</code> to open a file, it will be opened in the same wi
         <tag>沙特</tag>
         <tag>沙特环境监察中心</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>从文件中读取数据</title>
+    <url>/2024/05/18/%E4%BB%8E%E6%96%87%E4%BB%B6%E4%B8%AD%E8%AF%BB%E5%8F%96%E6%95%B0%E6%8D%AE/</url>
+    <content><![CDATA[<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">file_name = <span class="string">&quot;pi_digits.txt&quot;</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(file_name) <span class="keyword">as</span> file_object:</span><br><span class="line">    lines = file_object.readlines() <span class="comment"># open返回的对象只在with代码块中可用.readlines()方法从文件中读取每一行，并且存储在lines列表中，以便于在其他地方调用。</span></span><br><span class="line"><span class="keyword">for</span> line <span class="keyword">in</span> lines:</span><br><span class="line">    new_line =  line.replace(<span class="string">&quot;python&quot;</span>,<span class="string">&quot;C&quot;</span>) <span class="comment"># .replace()不会修改原字符串，而是返回一个新字符串。直接打印line不会有变化。</span></span><br><span class="line">    <span class="built_in">print</span>(new_line)</span><br><span class="line">pi_string = <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="keyword">for</span> line <span class="keyword">in</span> lines:</span><br><span class="line">    pi_string += line.rstrip() <span class="comment">#.strip()方法用于去除字符串左右两侧的字符，默认为空格。.rstrip()方法用于去除字符串右侧的字符默认为空格。</span></span><br><span class="line"><span class="built_in">print</span>(pi_string)</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>传递任意数量的实参</title>
+    <url>/2024/05/17/%E4%BC%A0%E9%80%92%E4%BB%BB%E6%84%8F%E6%95%B0%E9%87%8F%E7%9A%84%E5%AE%9E%E5%8F%82/</url>
+    <content><![CDATA[<h1 id="创建-parameter"><a class="markdownIt-Anchor" href="#创建-parameter"></a> 创建 <code>*parameter</code></h1>
+<p>通过这种方式，将形参变成了一个空<strong>元组</strong>。不管调用语句提供了多少个形参，元组统统将他们收入囊中。</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">make_pizza</span>(<span class="params">*toppings</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;\nMaking pizza with the following toppings&quot;</span>)</span><br><span class="line">    <span class="keyword">for</span> topping <span class="keyword">in</span> toppings:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;- &quot;</span> + topping)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">make_pizza(<span class="string">&quot;pepperoni&quot;</span>) <span class="comment"># 不管收到一个还是多个，这种语法都能管用</span></span><br><span class="line">make_pizza(<span class="string">&quot;mushrooms&quot;</span>,<span class="string">&quot;green peppers&quot;</span>,<span class="string">&quot;extra cheese&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>如果要使用多种类型的形参，要注意python匹配顺序规则是位置实参、关键字实参，最后将其与的实参都收集到最后一个形参中。</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">build_profile</span>(<span class="params">first, last, **user_info</span>): <span class="comment">#这里的`**`表示的是创建词典</span></span><br><span class="line">    profile = &#123;&#125;</span><br><span class="line">    profile[<span class="string">&quot;first_name&quot;</span>] = first</span><br><span class="line">    profile[<span class="string">&quot;last_name&quot;</span>] = last</span><br><span class="line">    <span class="keyword">for</span> key, value <span class="keyword">in</span> user_info.items(): <span class="comment">#这里就是词典的调用方法。</span></span><br><span class="line">        profile[key] = value <span class="comment">#这里将user_info这个词典中的键值对转存到profile这个词典中。</span></span><br><span class="line">    <span class="keyword">return</span> profile</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">user_profile = build_profile(<span class="string">&quot;albert&quot;</span>,<span class="string">&quot;einstein&quot;</span>,location=<span class="string">&quot;princeton&quot;</span>,field=<span class="string">&#x27;phusics&#x27;</span>) <span class="comment">#这里我们使用了关键字参数来传递给字典user_info。</span></span><br><span class="line"><span class="built_in">print</span>(user_profile)</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2024/05/15/%E4%BC%A0%E9%80%92%E5%88%97%E8%A1%A8/</url>
+    <content><![CDATA[<h1 id="在函数中修改列表"><a class="markdownIt-Anchor" href="#在函数中修改列表"></a> 在函数中修改列表</h1>
+<p>将列表传递给函数以后，函数就可以对其进行修改。这让你能够高效的处理数据</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">unprinted_designs = [<span class="string">&quot;dodecahedron&quot;</span>,<span class="string">&quot;robot pendant&quot;</span>,<span class="string">&quot;iphone case&quot;</span>]</span><br><span class="line">completed_models = []</span><br><span class="line"><span class="keyword">while</span> unprinted_designs:</span><br><span class="line">    current_designs = unprinted_designs.pop()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Printing model: &quot;</span> + current_designs)</span><br><span class="line">    completed_models.append(current_designs)</span><br><span class="line">    <span class="keyword">continue</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;The following models have been printed&quot;</span>)</span><br><span class="line"><span class="keyword">for</span> completed_model <span class="keyword">in</span> completed_models:</span><br><span class="line">    <span class="built_in">print</span>(completed_model.title())</span><br><span class="line"></span><br><span class="line">    <span class="comment">#将程序移动到两个函数中，使主程序更容易理解</span></span><br><span class="line">unprinted_designs = [<span class="string">&quot;dodecahedron&quot;</span>,<span class="string">&quot;robot pendant&quot;</span>,<span class="string">&quot;iphone case&quot;</span>]</span><br><span class="line">completed_models = []</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">print_models</span>(<span class="params">unprinted_designs, completed_models</span>):</span><br><span class="line">    <span class="keyword">while</span> unprinted_designs:</span><br><span class="line">        current_designs = unprinted_designs.pop()</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Printing model: &quot;</span> + current_designs)</span><br><span class="line">        completed_models.append(current_designs)</span><br><span class="line">   </span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">show_printed_models</span>(<span class="params">completed_models</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;The following models have been printed&quot;</span>)</span><br><span class="line">    <span class="keyword">for</span> completed_model <span class="keyword">in</span> completed_models:</span><br><span class="line">        <span class="built_in">print</span>(completed_model.title())</span><br><span class="line">   </span><br><span class="line"></span><br><span class="line">print_models(unprinted_designs, completed_models) <span class="comment">#如果要保留原来的unpringted_design。可以在这里传递函数的副本。这样，函数修改的是列表的副本，列表本身不变。`print_models(unprinted_designs[:],completed_models)`</span></span><br><span class="line">show_printed_models(completed_models)</span><br></pre></td></tr></table></figure>
+<p>相比于没有函数的版本，使用函数存储代码更容易管理。只需要在需要的时候直接调用就可以，需要修改程序的时候，只需要修改一次，不影响其他调用位置。<br />
+这个函数还演示了一种理念，即每个函数只负责一项具体的功能,编写函数的时候，如果发现它执行的任务太多，请将程序分到多个函数中。别忘了我们可以在一个函数中调用另一个函数，这有助于将复杂的任务分成一系列的步骤。</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">magicians = [<span class="string">&quot;sarah&quot;</span>,<span class="string">&quot;bob&quot;</span>,<span class="string">&quot;tom&quot;</span>]</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">show_magicians</span>(<span class="params">magicians</span>):</span><br><span class="line">    magicians = [name.replace(name, <span class="string">&quot;The great &quot;</span> + name) <span class="keyword">for</span> name <span class="keyword">in</span> magicians]</span><br><span class="line">    <span class="built_in">print</span>(magicians)</span><br><span class="line">    <span class="comment"># 这里我们通过解析列表和调用.replace()方法将列表元素批量修改。</span></span><br><span class="line"></span><br><span class="line">show_magicians(magicians)</span><br></pre></td></tr></table></figure>
+]]></content>
   </entry>
   <entry>
     <title>元组</title>
@@ -1428,65 +1492,6 @@ This is-a line, with special/separated/words (and some more).</p>
       </tags>
   </entry>
   <entry>
-    <title>对象(object)</title>
-    <url>/2024/03/31/%E5%AF%B9%E8%B1%A1(object)/</url>
-    <content><![CDATA[<h1 id="对象介绍"><a class="markdownIt-Anchor" href="#对象介绍"></a> 对象介绍</h1>
-<p>Python是一个面向对象的语言. 一切皆对象.<br />
-程序运行中, 所有的数据都是存储在内存中, 硬盘–&gt;内存–&gt;CPU.<br />
-对象就是内存中专门用来存储指定数据的区域. 对象实际上就是一个容器.<br />
-数值，字符串, None都是对象</p>
-<h1 id="对象结构"><a class="markdownIt-Anchor" href="#对象结构"></a> 对象结构</h1>
-<p>每个对象都有三个部分</p>
-<ul>
-<li>id<br />
-用来标识对象的唯一性, 相当于人的身份证号.<br />
-可以通过函数<code>id()</code>来查看对象的id<br />
-对象一经创建, id就是无法改变了.</li>
-<li>type<br />
-当前对象所属的类型, 类型决定了对象的功能. 比如自行车那它有什么功能, 牛有哪些功能.<br />
-<code>type()</code>查看类型<br />
-同样, 类型同样无法更改</li>
-<li>value<br />
-对象所存储的数据.<br />
-我们平时直接看到的就是对象的值. id和type要用函数才能看到.<br />
-值有些对象能改变, 有些不能改变.</li>
-</ul>
-<h1 id="变量和对象"><a class="markdownIt-Anchor" href="#变量和对象"></a> 变量和对象</h1>
-<p>a = 3<br />
-这里的’3’是一个对象, 它有上部分提到的三部分构成. 对象并不是存储在变量中, 变量更像是对象的一个别名.<br />
-变量中存储的是对象的id, 当我们使用变量时, 解析器根据id去寻找对象.</p>
-<h1 id="类型转换"><a class="markdownIt-Anchor" href="#类型转换"></a> 类型转换</h1>
-<p>类型转换不是改变对象本身的类型, 而是根据当前对象的值创建新的对象.<br />
-三个函数;</p>
-<ul>
-<li><code>int()</code>
-<ul>
-<li>浮点数会直接取整, 没有四舍五入;</li>
-<li>True --&gt; 1; False --&gt; 0;</li>
-<li>整数的数据直接转换成整数, 不是整数字符串(11.5, None, Hello)会报错.</li>
-</ul>
-</li>
-<li><code>float()</code>
-<ul>
-<li>跟<code>int()</code>类似, 但是会将数据转换成浮点数<br />
-<code>str()</code>,</li>
-<li>什么都可以, 只不过转换成了字符串<br />
-<code>bool()</code></li>
-<li>什么都可以, 转换成Ture或者Flase. 所有空性数据会转成Flase, 其他的会转成True</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>编程</category>
-        <category>python</category>
-        <category>python基础</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>布尔值</title>
     <url>/2024/03/31/%E5%B8%83%E5%B0%94%E5%80%BC/</url>
     <content><![CDATA[<p>布尔值(bool)用来做逻辑判断. 一共有两个<code>True</code>和<code>False</code>. 注意Python是一个大小写敏感的语言.<br />
@@ -1613,6 +1618,65 @@ else：</p>
       </tags>
   </entry>
   <entry>
+    <title>对象(object)</title>
+    <url>/2024/03/31/%E5%AF%B9%E8%B1%A1(object)/</url>
+    <content><![CDATA[<h1 id="对象介绍"><a class="markdownIt-Anchor" href="#对象介绍"></a> 对象介绍</h1>
+<p>Python是一个面向对象的语言. 一切皆对象.<br />
+程序运行中, 所有的数据都是存储在内存中, 硬盘–&gt;内存–&gt;CPU.<br />
+对象就是内存中专门用来存储指定数据的区域. 对象实际上就是一个容器.<br />
+数值，字符串, None都是对象</p>
+<h1 id="对象结构"><a class="markdownIt-Anchor" href="#对象结构"></a> 对象结构</h1>
+<p>每个对象都有三个部分</p>
+<ul>
+<li>id<br />
+用来标识对象的唯一性, 相当于人的身份证号.<br />
+可以通过函数<code>id()</code>来查看对象的id<br />
+对象一经创建, id就是无法改变了.</li>
+<li>type<br />
+当前对象所属的类型, 类型决定了对象的功能. 比如自行车那它有什么功能, 牛有哪些功能.<br />
+<code>type()</code>查看类型<br />
+同样, 类型同样无法更改</li>
+<li>value<br />
+对象所存储的数据.<br />
+我们平时直接看到的就是对象的值. id和type要用函数才能看到.<br />
+值有些对象能改变, 有些不能改变.</li>
+</ul>
+<h1 id="变量和对象"><a class="markdownIt-Anchor" href="#变量和对象"></a> 变量和对象</h1>
+<p>a = 3<br />
+这里的’3’是一个对象, 它有上部分提到的三部分构成. 对象并不是存储在变量中, 变量更像是对象的一个别名.<br />
+变量中存储的是对象的id, 当我们使用变量时, 解析器根据id去寻找对象.</p>
+<h1 id="类型转换"><a class="markdownIt-Anchor" href="#类型转换"></a> 类型转换</h1>
+<p>类型转换不是改变对象本身的类型, 而是根据当前对象的值创建新的对象.<br />
+三个函数;</p>
+<ul>
+<li><code>int()</code>
+<ul>
+<li>浮点数会直接取整, 没有四舍五入;</li>
+<li>True --&gt; 1; False --&gt; 0;</li>
+<li>整数的数据直接转换成整数, 不是整数字符串(11.5, None, Hello)会报错.</li>
+</ul>
+</li>
+<li><code>float()</code>
+<ul>
+<li>跟<code>int()</code>类似, 但是会将数据转换成浮点数<br />
+<code>str()</code>,</li>
+<li>什么都可以, 只不过转换成了字符串<br />
+<code>bool()</code></li>
+<li>什么都可以, 转换成Ture或者Flase. 所有空性数据会转成Flase, 其他的会转成True</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title></title>
     <url>/2024/03/26/%E6%97%A0%E7%BA%BA%E5%B8%83%E4%B8%93%E4%B8%9A%E8%8B%B1%E8%AF%AD%E6%9C%AF%E8%AF%AD1/</url>
     <content><![CDATA[<p>聚酯切片：</p>
@@ -1646,6 +1710,44 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
 <p>电工：electrician</p>
 <p>焊工：welder</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>modules</title>
+    <url>/2024/05/16/%E6%A8%A1%E5%9D%97/</url>
+    <content><![CDATA[<h1 id="将函数存储在模块中"><a class="markdownIt-Anchor" href="#将函数存储在模块中"></a> 将函数存储在模块中</h1>
+<p>函数的优点之一就是可以将代码与主程序分离，将主程序重点放在高层次的逻辑上。通过将函数存储在单独的文件中，可以在不同的程序中多次调用。我们将这种文件称为模块。<br />
+我们还可以使用其他程序员使用的模块，提高程序编写效率。</p>
+<h1 id="导入模块"><a class="markdownIt-Anchor" href="#导入模块"></a> 导入模块</h1>
+<p>导入模块使用import语句</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> module_name <span class="comment"># 调用模块</span></span><br><span class="line">module_name.function_name() <span class="comment"># 指定模块名，后跟上调用的函数名即可</span></span><br></pre></td></tr></table></figure>
+<p>如果我们只想导入模块中的特定函数而不是整个代码块，可以使用下列语句</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> module_name <span class="keyword">import</span> function_0, function_1, function_2</span><br></pre></td></tr></table></figure>
+<p>这种方法调用函数，直接调用函数即可，不再需要模块名➕句点。<br />
+如果要导入的函数名称太长，或者和现有程序中的其他名称冲突，那么可以使用<strong>别名</strong>，语法为：</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> module <span class="keyword">import</span> function_name <span class="keyword">as</span> function_new_name</span><br></pre></td></tr></table></figure>
+<p>我们还可以给模块指定别名，语法为:</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> module_name <span class="keyword">as</span> mn</span><br></pre></td></tr></table></figure>
+<p>这样可以让我们不再关注模块名称，而是关注函数名称，对理解代码而言，更为简洁。<br />
+我们还可以直接带入模块中的所有函数，语法为：</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> module_name <span class="keyword">import</span> *</span><br></pre></td></tr></table></figure>
+<p>通过此方法导入的函数同样可以直接调用而不用加上模块名称。但是最好不要这样做，因为你不知道模块中的函数名称是否与你主程序中的其他函数或者变量名称相同。此方法不建议使用。</p>
+<h1 id="函数编写约定"><a class="markdownIt-Anchor" href="#函数编写约定"></a> 函数编写约定</h1>
+<ol>
+<li>函数名称应该具有描述性,模块的命名同样如此。</li>
+<li>每个函数都应包含阐述其功能的注释，这个注释叫做文档字符串。</li>
+<li>给形参指定默认值或者实参使用关键字实参时，等号两边不加空格。</li>
+<li>函数形参过长时，可以采用块状写法。</li>
+<li>相邻的函数用两个空行分隔。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>python</category>
+        <category>python基础</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
   </entry>
   <entry>
     <title>格式化字符串</title>
@@ -2235,6 +2337,18 @@ What is the <strong>limit</strong> <strong>on</strong> the proportion of importe
       </tags>
   </entry>
   <entry>
+    <title>类</title>
+    <url>/2024/05/18/%E7%B1%BB/</url>
+    <content><![CDATA[<h1 id="创建和使用类"><a class="markdownIt-Anchor" href="#创建和使用类"></a> 创建和使用类</h1>
+<p>我们基于现实世界中的事物或者情景来编写类，并基于这些类来创建对象。基于类创建对象时，这些对象自动具备类的通用特性，然后我们可以根据需要对每个对象赋予独特的个性。使用面向对象的编程语言，可以逼真的模拟现实情境。其逼真的程度令人惊讶。</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Dog</span>():</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,name,age</span>): <span class="comment"># 这是一种特殊方法，每当根据Dog创建实例时，都会自动运行此方法。</span></span><br><span class="line">        <span class="comment">#每个与类相关的方法调用，都会自动传递实参slef,它是一个指向实例本身的引用，让实例可以访问类中的公共属性和方法。</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.age = age</span><br><span class="line"><span class="comment"># 以self为前缀的变量可以供类中的所有方法调用，self,name = name获取存储在形参name中的值，将其存储到变量name中然后该变量被关联到当前创建的实例。</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">sit</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(self.name.title() + <span class="string">&quot; is now sitting&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">roll_over</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(self.name.title() + <span class="string">&quot; rolled over&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">dog_1 = Dog(<span class="string">&quot;willie&quot;</span>,<span class="number">18</span>)</span><br><span class="line"><span class="comment"># 我们可以将类视作对实例的说明，这里我们创建了一个实例，并将其赋值给我变量dog_1中。通常，类名首字母大写，实例名称全部小写。</span></span><br><span class="line">dog_1.sit()</span><br><span class="line">dog_1.roll_over()</span><br></pre></td></tr></table></figure>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">User</span>():</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,first_name,last_name,age,gender</span>):</span><br><span class="line">        self.first_name = first_name</span><br><span class="line">        self.last_name = last_name</span><br><span class="line">        self.age = age</span><br><span class="line">        self.login_attempts = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">user_info</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">User info is listed below:</span></span><br><span class="line"><span class="string"><span class="subst">&#123;self.first_name&#125;</span></span></span><br><span class="line"><span class="string"><span class="subst">&#123;self.last_name&#125;</span></span></span><br><span class="line"><span class="string"><span class="subst">&#123;self.age&#125;</span></span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">greetings</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;Hi <span class="subst">&#123;self.first_name&#125;</span> <span class="subst">&#123;self.last_name&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">increment_login</span>(<span class="params">self</span>):</span><br><span class="line">        self.login_attempts += <span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">reset_login</span>(<span class="params">self</span>):</span><br><span class="line">        self.login_attempts = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">user_1 = User(<span class="string">&quot;Sarah&quot;</span>,<span class="string">&quot;John&quot;</span>,<span class="number">18</span>,<span class="string">&quot;male&quot;</span>)</span><br><span class="line">user_2 = User(<span class="string">&quot;Sarah&quot;</span>,<span class="string">&quot;Bob&quot;</span>,<span class="number">17</span>,<span class="string">&quot;male&quot;</span>)</span><br><span class="line">user_3 = User(<span class="string">&quot;Sarah&quot;</span>,<span class="string">&quot;Tom&quot;</span>,<span class="number">16</span>,<span class="string">&quot;female&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">user_1.user_info()</span><br><span class="line">user_1.greetings()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">user_2.increment_login()</span><br><span class="line">user_2.increment_login()</span><br><span class="line">user_2.increment_login()</span><br><span class="line">user_2.increment_login()</span><br><span class="line"><span class="built_in">print</span>(user_2.login_attempts)</span><br><span class="line">user_2.reset_login()</span><br><span class="line"><span class="built_in">print</span>(user_2.login_attempts)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Car</span>():</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    一次模拟汽车的简单尝试</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,make,model,year</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        初始化描述汽车的属性</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        self.make = make</span><br><span class="line">        self.model = model</span><br><span class="line">        self.year = year</span><br><span class="line">        self.odometer_reading = <span class="number">0</span>   <span class="comment">#这里设置属性的初始值</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">get_descriptive_name</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        返回整洁的描述信息</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        long_name = <span class="built_in">str</span>(self.year) + <span class="string">&quot; &quot;</span> + self.make + <span class="string">&quot; &quot;</span> + self.model</span><br><span class="line">        <span class="keyword">return</span> long_name</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">update_odometer</span>(<span class="params">self,mileage</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        将里程表读数设置为指定值</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        <span class="keyword">if</span> mileage &gt;= self.odometer_reading:</span><br><span class="line">            self.odometer_reading = mileage</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;you can&#x27;t roll back the odometer&quot;</span>)</span><br><span class="line"><span class="comment"># 这里我们对方法进行了扩展，防止数字回调。</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">increment_odometer</span>(<span class="params">self,increment</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        将里程数增加指定量</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        self.odometer_reading += increment</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">read_odometer</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        打印一条指出汽车历程的信息</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;This car has &quot;</span> + <span class="built_in">str</span>(self.odometer_reading) + <span class="string">&quot; miles on it&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">my_new_car = Car(<span class="string">&quot;audi&quot;</span>,<span class="string">&quot;a4&quot;</span>,<span class="number">2016</span>)</span><br><span class="line"><span class="built_in">print</span>(my_new_car.get_descriptive_name())</span><br><span class="line">my_new_car.odometer_reading = <span class="number">23</span>  <span class="comment"># 这里直接访问并修改了属性值。实例属性值优先级大于类中设置的属性优先级</span></span><br><span class="line">my_new_car.read_odometer()</span><br><span class="line"><span class="comment"># 这里我们设置了一个方法，通过方法改变了初始值</span></span><br><span class="line">my_new_car.update_odometer(<span class="number">24</span>)</span><br><span class="line">my_new_car.read_odometer()</span><br><span class="line">my_new_car.increment_odometer(<span class="number">10</span>)</span><br><span class="line">my_new_car.read_odometer()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ElectricCar</span>(<span class="title class_ inherited__">Car</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,make,model,year</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;初始化父类属性&quot;&quot;&quot;</span></span><br><span class="line">        <span class="built_in">super</span>().__init__(make,model,year) <span class="comment"># 将父类属性赋给子类</span></span><br><span class="line">        self.battery_size = <span class="number">70</span> <span class="comment"># 初始化子类属性</span></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">describe_battery</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;The car has a &quot;</span> + <span class="built_in">str</span>(self.battery_size) + <span class="string">&quot; KWH battery&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">fill_gas_tank</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;This car doesn&#x27;t need a gas tank&quot;</span>)</span><br><span class="line">        <span class="comment"># 如果父类的方法不符合子类的特征，可以在子类中重新定义这个方法，只要方法名相同即可，这样，python就不会在此子类中去寻找父类的同名方法，直接使用子类的方法。</span></span><br><span class="line">my_tesla = ElectricCar(<span class="string">&quot;tesla&quot;</span>,<span class="string">&quot;model s&quot;</span>,<span class="number">2016</span>)</span><br><span class="line"><span class="built_in">print</span>(my_tesla.get_descriptive_name())</span><br><span class="line">my_tesla.describe_battery()</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>类型检查</title>
     <url>/2024/03/31/%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5/</url>
     <content><![CDATA[<h1 id="数据类型有"><a class="markdownIt-Anchor" href="#数据类型有"></a> 数据类型有</h1>
@@ -2602,16 +2716,6 @@ dict can also insert to sets in this way.</li>
 }]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/css/postpage_style.css</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/js/script.js</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>文档</title>
     <url>/files/index.html</url>
     <content><![CDATA[]]></content>
@@ -2622,18 +2726,28 @@ dict can also insert to sets in this way.</li>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
+    <title></title>
+    <url>/css/postpage_style.css</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/js/script.js</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>电影</title>
     <url>/movies/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>音乐</title>
-    <url>/music/index.html</url>
+    <title>链接</title>
+    <url>/link/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>链接</title>
-    <url>/link/index.html</url>
+    <title>音乐</title>
+    <url>/music/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>
