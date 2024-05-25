@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-05-17T18:33:35.141Z</updated>
+  <updated>2024-05-24T14:42:02.221Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,97 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Latex数学公式</title>
+    <link href="http://example.com/2025/05/24/Latex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"/>
+    <id>http://example.com/2025/05/24/Latex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</id>
+    <published>2025-05-23T16:00:00.000Z</published>
+    <updated>2024-05-24T14:42:02.221Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;$0 &#92;ne 1$&lt;/p&gt;
+&lt;p&gt;$1 &#92;equiv 1$&lt;/p&gt;
+&lt;p&gt;$1 = 9 &#92;bmod 2$&lt;/p&gt;
+&lt;p&gt;$&#92;sqrt{x} + &#92;sqrt{x^2 + &#92;sqrt{y}} = &#92;sqrt[3]{k_3} - &#92;frac{x}{m}$&lt;/p&gt;
+&lt;p&gt;$&#92;ove</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="Latex" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Latex/"/>
+    
+    
+    <category term="LaTeX" scheme="http://example.com/tags/LaTeX/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Binary Systems</title>
+    <link href="http://example.com/2025/05/22/Binary%20Systems/"/>
+    <id>http://example.com/2025/05/22/Binary%20Systems/</id>
+    <published>2025-05-21T16:00:00.000Z</published>
+    <updated>2024-05-25T17:32:29.570Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1&gt;Digit Computers and Digital Systems&lt;/h1&gt;
+&lt;p&gt;Characteristic of a digital system is its manipulation of discrete elements of information. </summary>
+      
+    
+    
+    
+    
+    <category term="数字逻辑" scheme="http://example.com/tags/%E6%95%B0%E5%AD%97%E9%80%BB%E8%BE%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>异常的处理</title>
+    <link href="http://example.com/2025/05/20/%E5%BC%82%E5%B8%B8%E7%9A%84%E5%A4%84%E7%90%86/"/>
+    <id>http://example.com/2025/05/20/%E5%BC%82%E5%B8%B8%E7%9A%84%E5%A4%84%E7%90%86/</id>
+    <published>2025-05-19T16:00:00.000Z</published>
+    <updated>2024-05-19T17:01:56.539Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight py&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</summary>
+      
+    
+    
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>写入文件</title>
+    <link href="http://example.com/2024/05/19/%E5%86%99%E5%85%A5%E6%96%87%E4%BB%B6/"/>
+    <id>http://example.com/2024/05/19/%E5%86%99%E5%85%A5%E6%96%87%E4%BB%B6/</id>
+    <published>2024-05-18T16:00:00.000Z</published>
+    <updated>2024-05-19T16:00:42.207Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;保存数据最简单的方式是写入文件，这样即使关闭包含程序输出的终端窗口，这些输出依然存在。后续可以查看分享这些文件，还可以编写程序将这些文件读取到内存中进行处理。&lt;/p&gt;
+&lt;h1&gt;写入文件&lt;/h1&gt;
+&lt;figure class=&quot;highlight py&quot;&gt;&lt;table&gt;&lt;tr</summary>
+      
+    
+    
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>从文件中读取数据</title>
@@ -45,13 +136,14 @@
     <link href="http://example.com/2024/05/18/%E7%B1%BB/"/>
     <id>http://example.com/2024/05/18/%E7%B1%BB/</id>
     <published>2024-05-17T16:00:00.000Z</published>
-    <updated>2024-05-17T18:35:30.831Z</updated>
+    <updated>2024-05-25T17:37:37.909Z</updated>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;创建和使用类&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#创建和使用类&quot;&gt;&lt;/a&gt; 创建和使用类&lt;/h1&gt;
-&lt;p&gt;我们基于现实世界中的事物或者情景来编写类，并基于这些类来创建对象。基于类创建对象时，这些对象自动具备类的通用特性，然后我</summary>
+    <summary type="html">&lt;h1&gt;创建和使用类&lt;/h1&gt;
+&lt;p&gt;我们基于现实世界中的事物或者情景来编写类，并基于这些类来创建对象。基于类创建对象时，这些对象自动具备类的通用特性，然后我们可以根据需要对每个对象赋予独特的个性。使用面向对象的编程语言，可以逼真的模拟现实情境。其逼真的程度令人惊讶。&lt;/p&gt;
+&lt;</summary>
       
     
     
@@ -60,7 +152,7 @@
     
     <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
     
-    <category term="编程基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/"/>
+    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
     
     
     <category term="python" scheme="http://example.com/tags/python/"/>
@@ -72,13 +164,14 @@
     <link href="http://example.com/2024/05/17/1.2%20EIGHT%20GREAT%20IDEAS%20IN%20COMPUTER%20ARCHITECTURE/"/>
     <id>http://example.com/2024/05/17/1.2%20EIGHT%20GREAT%20IDEAS%20IN%20COMPUTER%20ARCHITECTURE/</id>
     <published>2024-05-16T16:00:00.000Z</published>
-    <updated>2024-05-17T09:07:24.948Z</updated>
+    <updated>2024-05-18T10:16:01.124Z</updated>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;design-for-moores-law&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#design-for-moores-law&quot;&gt;&lt;/a&gt; design for Moore’s law&lt;/h1&gt;
-&lt;p&gt;The one consta</summary>
+    <summary type="html">&lt;h1&gt;design for Moore’s law&lt;/h1&gt;
+&lt;p&gt;The one constant for computer designers is rapid change.&lt;br&gt;
+Moore’s law indicates that the integrated ci</summary>
       
     
     
@@ -93,13 +186,13 @@
     <link href="http://example.com/2024/05/17/1.4%20UNDER%20THE%20COVERS/"/>
     <id>http://example.com/2024/05/17/1.4%20UNDER%20THE%20COVERS/</id>
     <published>2024-05-16T16:00:00.000Z</published>
-    <updated>2024-05-17T18:36:38.087Z</updated>
+    <updated>2024-05-19T12:26:37.983Z</updated>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;the-big-picture&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#the-big-picture&quot;&gt;&lt;/a&gt; The Big Picture&lt;/h1&gt;
-&lt;p&gt;The five classic components of a </summary>
+    <summary type="html">&lt;h1&gt;The Big Picture&lt;/h1&gt;
+&lt;p&gt;The five classic components of a computer are: input, output, memeory, datapath, control, with the last two some</summary>
       
     
     
@@ -123,8 +216,9 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;创建-parameter&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#创建-parameter&quot;&gt;&lt;/a&gt; 创建 &lt;code&gt;*parameter&lt;/code&gt;&lt;/h1&gt;
-&lt;p&gt;通过这种方式，将形参变成了一个空&lt;strong&gt;元组&lt;/</summary>
+    <summary type="html">&lt;h1&gt;创建 &lt;code&gt;*parameter&lt;/code&gt;&lt;/h1&gt;
+&lt;p&gt;通过这种方式，将形参变成了一个空&lt;strong&gt;元组&lt;/strong&gt;。不管调用语句提供了多少个形参，元组统统将他们收入囊中。&lt;/p&gt;
+&lt;figure class=&quot;highlight py&quot;&gt;&lt;tab</summary>
       
     
     
@@ -145,20 +239,20 @@
     <link href="http://example.com/2024/05/16/1.3%20BELOW%20YOUR%20PROGRAM/"/>
     <id>http://example.com/2024/05/16/1.3%20BELOW%20YOUR%20PROGRAM/</id>
     <published>2024-05-15T16:00:00.000Z</published>
-    <updated>2024-05-17T09:07:28.413Z</updated>
+    <updated>2024-05-25T17:35:24.666Z</updated>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;systems-software&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#systems-software&quot;&gt;&lt;/a&gt; Systems Software&lt;/h1&gt;
-&lt;p&gt;Sitting between the hardware a</summary>
+    <summary type="html">&lt;h1&gt;Systems Software&lt;/h1&gt;
+&lt;p&gt;Sitting between the hardware and the application, provides services that are commonly useful, including operati</summary>
       
     
     
     
     <category term="计算机" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
-    <category term="COMPUTER ORGRANIZATION AND DESIGN" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/COMPUTER-ORGRANIZATION-AND-DESIGN/"/>
+    <category term="COMPUTER ORGARIZATION AND DESIGN" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/COMPUTER-ORGARIZATION-AND-DESIGN/"/>
     
     
     <category term="计算机硬件" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A1%AC%E4%BB%B6/"/>
@@ -175,9 +269,9 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;在函数中修改列表&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#在函数中修改列表&quot;&gt;&lt;/a&gt; 在函数中修改列表&lt;/h1&gt;
+    <summary type="html">&lt;h1&gt;在函数中修改列表&lt;/h1&gt;
 &lt;p&gt;将列表传递给函数以后，函数就可以对其进行修改。这让你能够高效的处理数据&lt;/p&gt;
-&lt;figure class=</summary>
+&lt;figure class=&quot;highlight py&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;li</summary>
       
     
     
@@ -203,8 +297,10 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;将函数存储在模块中&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#将函数存储在模块中&quot;&gt;&lt;/a&gt; 将函数存储在模块中&lt;/h1&gt;
-&lt;p&gt;函数的优点之一就是可以将代码与主程序分离，将主程序重点放在高层次的逻辑上。通过将函数存储在单独的文件中</summary>
+    <summary type="html">&lt;h1&gt;将函数存储在模块中&lt;/h1&gt;
+&lt;p&gt;函数的优点之一就是可以将代码与主程序分离，将主程序重点放在高层次的逻辑上。通过将函数存储在单独的文件中，可以在不同的程序中多次调用。我们将这种文件称为模块。&lt;br&gt;
+我们还可以使用其他程序员使用的模块，提高程序编写效率。&lt;/p&gt;
+&lt;h1</summary>
       
     
     
@@ -230,9 +326,9 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;定义函数&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#定义函数&quot;&gt;&lt;/a&gt; 定义函数&lt;/h1&gt;
+    <summary type="html">&lt;h1&gt;定义函数&lt;/h1&gt;
 &lt;p&gt;函数是一个带名字的代块&lt;/p&gt;
-&lt;figure class=&quot;highlight py&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=</summary>
+&lt;figure class=&quot;highlight py&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=</summary>
       
     
     
@@ -252,8 +348,9 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;nmap&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#nmap&quot;&gt;&lt;/a&gt; nmap&lt;/h1&gt;
-&lt;p&gt;&lt;code&gt;nmap&lt;/code&gt; command is used to define mapping for Normal mod</summary>
+    <summary type="html">&lt;h1&gt;nmap&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;nmap&lt;/code&gt; command is used to define mapping for Normal mode only. This grammar should be same as this:&lt;/p&gt;
+&lt;figure </summary>
       
     
     
@@ -279,8 +376,8 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;ranges&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#ranges&quot;&gt;&lt;/a&gt; Ranges&lt;/h1&gt;
-&lt;p&gt;For most Vim commands, the default range is the current line</summary>
+    <summary type="html">&lt;h1&gt;Ranges&lt;/h1&gt;
+&lt;p&gt;For most Vim commands, the default range is the current line. However we can control ranges, and in that way execute comm</summary>
       
     
     
@@ -306,8 +403,8 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;command-mode&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#command-mode&quot;&gt;&lt;/a&gt; Command Mode:&lt;/h1&gt;
-&lt;p&gt;This is the the default mode in which vim</summary>
+    <summary type="html">&lt;h1&gt;Command Mode:&lt;/h1&gt;
+&lt;p&gt;This is the the default mode in which vim starts. We can use a variety of command in this mode like copy, paste, d</summary>
       
     
     
@@ -333,8 +430,9 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;sort&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#sort&quot;&gt;&lt;/a&gt; .sort()&lt;/h1&gt;
-&lt;p&gt;sort可以接受一个函数作为参数，当设置了函数作为参数，它会遍历列表中的元素作为函数的参数，并根据函数的返回值作为依据进行排序</summary>
+    <summary type="html">&lt;h1&gt;.sort()&lt;/h1&gt;
+&lt;p&gt;sort可以接受一个函数作为参数，当设置了函数作为参数，它会遍历列表中的元素作为函数的参数，并根据函数的返回值作为依据进行排序。&lt;/p&gt;
+&lt;figure class=&quot;highlight py&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;</summary>
       
     
     
@@ -360,12 +458,13 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;verbs&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#verbs&quot;&gt;&lt;/a&gt; Verbs&lt;/h1&gt;
+    <summary type="html">&lt;h1&gt;Verbs&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;Powerless verbs&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;x&lt;/code&gt; delete</summary>
+&lt;li&gt;&lt;code&gt;x&lt;/code&gt; delete character under the cursor to the right&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;X&lt;/</summary>
       
     
     
@@ -391,10 +490,10 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;高阶函数&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#高阶函数&quot;&gt;&lt;/a&gt; 高阶函数&lt;/h1&gt;
-&lt;p&gt;定义：接受函数作为参数，并且将函数作为返回值返回。&lt;br /&gt;
+    <summary type="html">&lt;h1&gt;高阶函数&lt;/h1&gt;
+&lt;p&gt;定义：接受函数作为参数，并且将函数作为返回值返回。&lt;br&gt;
 例子: 定义一个函数，可以将指定列表中所有的偶数返回。&lt;/p&gt;
-&lt;f</summary>
+&lt;figure class=&quot;highlight py&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;p</summary>
       
     
     
@@ -415,7 +514,7 @@
     <link href="http://example.com/2024/04/10/vim_operators_post/"/>
     <id>http://example.com/2024/04/10/vim_operators_post/</id>
     <published>2024-04-10T00:46:00.000Z</published>
-    <updated>2024-05-17T09:07:41.400Z</updated>
+    <updated>2024-05-25T17:38:31.263Z</updated>
     
     
       
@@ -430,131 +529,10 @@
     
     <category term="Vim" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim/"/>
     
-    <category term="Vim 快捷键" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim/Vim-%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
-    
-    
-    <category term="Vim" scheme="http://example.com/tags/Vim/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>函数介绍2</title>
-    <link href="http://example.com/2024/04/09/%E5%87%BD%E6%95%B0%E4%BB%8B%E7%BB%8D2/"/>
-    <id>http://example.com/2024/04/09/%E5%87%BD%E6%95%B0%E4%BB%8B%E7%BB%8D2/</id>
-    <published>2024-04-09T10:22:00.000Z</published>
-    <updated>2024-05-12T17:29:33.787Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;help&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#help&quot;&gt;&lt;/a&gt; help()&lt;/h1&gt;
-&lt;p&gt;help() 是python中的内置函数, 使用它可以可以查询函数的用法.但是当我们使用help()来查询自定义函数的时候，它无</summary>
-      
-    
-    
-    
-    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
-    
-    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vim shortcuts</title>
-    <link href="http://example.com/2024/04/09/vim%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86post/"/>
-    <id>http://example.com/2024/04/09/vim%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86post/</id>
-    <published>2024-04-08T16:00:00.000Z</published>
-    <updated>2024-05-17T09:07:18.237Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;jump to the top of the file &lt;code&gt;gg&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;jump to the end of the file &lt;code&gt;G&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;cod</summary>
-      
-    
-    
-    
-    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="Vim" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim/"/>
-    
     <category term="Vim快捷键" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/Vim/Vim%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
     
     
     <category term="Vim" scheme="http://example.com/tags/Vim/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>函数简介</title>
-    <link href="http://example.com/2024/04/06/%E5%87%BD%E6%95%B0%E7%AE%80%E4%BB%8B/"/>
-    <id>http://example.com/2024/04/06/%E5%87%BD%E6%95%B0%E7%AE%80%E4%BB%8B/</id>
-    <published>2024-04-06T11:59:00.000Z</published>
-    <updated>2024-05-12T17:21:19.784Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;函数也是一个对象. 比如有三行代码是一个完整的功能, 这个功能在不同的地方反复调用, 那么函数就可以用来保存一些&lt;br /&gt;
-可以执行的代码, 并且可以在需要时多次调用.&lt;br /&gt;
-创建函数&lt;br /&gt;
-函数名符合标识符的命名规范&lt;/p&gt;
-&lt;figure class=&quot;h</summary>
-      
-    
-    
-    
-    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
-    
-    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>字典</title>
-    <link href="http://example.com/2024/04/06/%E5%AD%97%E5%85%B8/"/>
-    <id>http://example.com/2024/04/06/%E5%AD%97%E5%85%B8/</id>
-    <published>2024-04-06T07:33:00.000Z</published>
-    <updated>2024-04-09T06:54:27.919Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;字典是一种新的数据结构, 称为映射(mapping)&lt;/li&gt;
-&lt;li&gt;字典的作用和列表类似, 都是存储对象的容器&lt;/li&gt;
-&lt;li&gt;列表存储数据的性能良好, 但是查询数据的性能很差.&lt;/li&gt;
-&lt;li&gt;字典中, 每一个元素都有一个唯一的名字, 通过这个名字可以</summary>
-      
-    
-    
-    
-    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="python" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/"/>
-    
-    <category term="python基础" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/python/python%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="python" scheme="http://example.com/tags/python/"/>
     
   </entry>
   
